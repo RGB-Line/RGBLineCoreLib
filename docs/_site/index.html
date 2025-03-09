@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/docs/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9f2e8c0d-7701-4050-ae0e-4d59992ec7b6" alt="Simple Icons" width=70>
+  <h3 align="center">RGB Line Core Lib</h3>
+
+<p align="center">
+  <img alt="Static Badge" src="https://img.shields.io/badge/Lang-CSharp-blue">
+  <img alt="Static Badge" src="https://img.shields.io/badge/Target-Unity-green">
+  <br>
+  <img alt="Static Badge" src="https://img.shields.io/badge/Usage-Plugin-red">
+</p>
+<br>
+<h2 id="abstract">Abstract</h2>
+<p>본 Plugin은 RGB Line Project의 핵심 기능을 담고 있다</p>
+<p>Plugin은 <code>RGBLineCoreLib.dll</code>과 <code>RGBLineCoreLib_ForEditor.dll</code>의 두 가지 형태로 제공된다</p>
+<h2 id="usage">Usage</h2>
+<blockquote>
+<p>[!IMPORTANT]<br>
+Editor의 경우 필히 <code>RGBLineCoreLib_ForEditor.dll</code>를 사용할 것</p>
+</blockquote>
+<h2 id="common-dependency">Common Dependency</h2>
+<pre><code>UnityEngine.dll
+CommonUtilLib.dll
+Newtonsoft.Json.dll
+</code></pre>
+<h2 id="features">Features</h2>
+<ul>
+<li>Common Utils</li>
+<li>Resource Management</li>
+<li>Map Generation</li>
+<li>Tool</li>
+<li>In-Game Management
+<ul>
+<li>Map Streaming Management</li>
+<li>PC/NPC Movement</li>
+</ul>
+</li>
+</ul>
+<h2 id="module-tree">Module Tree</h2>
+<pre><code>Fogotten
+├── Common Util
+│   └── &lt;Repo&gt; CommonUtilLib
+├── Resource Management
+│   ├── &lt;Repo&gt; ResourcePathManagementLib
+│   └── &lt;Repo&gt; ResourceDataManagementLib
+├── Map Generation
+│   ├── &lt;Repo&gt; ChiefMapGenerationLib
+│   └── &lt;Repo&gt; MapGenerationAgent
+├── Tool
+│   └── &lt;Repo&gt; MapGenerationInputTool
+└── In-Game Management
+    └── PC/NPC Movement
+        └── &lt;Repo&gt; PcNpcMovementLib
+</code></pre>
+<h2 id="hands-on-manual">Hands-On Manual</h2>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/docs/index.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

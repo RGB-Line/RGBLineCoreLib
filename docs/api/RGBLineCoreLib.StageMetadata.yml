@@ -1,0 +1,483 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.StageMetadata
+  commentId: T:RGBLineCoreLib.StageMetadata
+  id: StageMetadata
+  parent: RGBLineCoreLib
+  children:
+  - RGBLineCoreLib.StageMetadata.Artist
+  - RGBLineCoreLib.StageMetadata.BestScore
+  - RGBLineCoreLib.StageMetadata.MajorDifficulty
+  - RGBLineCoreLib.StageMetadata.MinorDifficulty
+  - RGBLineCoreLib.StageMetadata.MusicLength
+  - RGBLineCoreLib.StageMetadata.Title
+  langs:
+  - csharp
+  - vb
+  name: StageMetadata
+  nameWithType: StageMetadata
+  fullName: RGBLineCoreLib.StageMetadata
+  type: Struct
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageMetadataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: StageMetadata
+    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
+    startLine: 9
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: public struct StageMetadata
+    content.vb: Public Structure StageMetadata
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: RGBLineCoreLib.StageMetadata.Title
+  commentId: F:RGBLineCoreLib.StageMetadata.Title
+  id: Title
+  parent: RGBLineCoreLib.StageMetadata
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: StageMetadata.Title
+  fullName: RGBLineCoreLib.StageMetadata.Title
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageMetadataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Title
+    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
+    startLine: 20
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: public string Title
+    return:
+      type: System.String
+    content.vb: Public Title As String
+- uid: RGBLineCoreLib.StageMetadata.Artist
+  commentId: F:RGBLineCoreLib.StageMetadata.Artist
+  id: Artist
+  parent: RGBLineCoreLib.StageMetadata
+  langs:
+  - csharp
+  - vb
+  name: Artist
+  nameWithType: StageMetadata.Artist
+  fullName: RGBLineCoreLib.StageMetadata.Artist
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageMetadataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Artist
+    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
+    startLine: 21
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: public string Artist
+    return:
+      type: System.String
+    content.vb: Public Artist As String
+- uid: RGBLineCoreLib.StageMetadata.MusicLength
+  commentId: F:RGBLineCoreLib.StageMetadata.MusicLength
+  id: MusicLength
+  parent: RGBLineCoreLib.StageMetadata
+  langs:
+  - csharp
+  - vb
+  name: MusicLength
+  nameWithType: StageMetadata.MusicLength
+  fullName: RGBLineCoreLib.StageMetadata.MusicLength
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageMetadataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: MusicLength
+    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
+    startLine: 22
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: public float MusicLength
+    return:
+      type: System.Single
+    content.vb: Public MusicLength As Single
+- uid: RGBLineCoreLib.StageMetadata.MajorDifficulty
+  commentId: F:RGBLineCoreLib.StageMetadata.MajorDifficulty
+  id: MajorDifficulty
+  parent: RGBLineCoreLib.StageMetadata
+  langs:
+  - csharp
+  - vb
+  name: MajorDifficulty
+  nameWithType: StageMetadata.MajorDifficulty
+  fullName: RGBLineCoreLib.StageMetadata.MajorDifficulty
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageMetadataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: MajorDifficulty
+    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
+    startLine: 24
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: public StageMetadata.MajorDifficultyLevel MajorDifficulty
+    return:
+      type: RGBLineCoreLib.StageMetadata.MajorDifficultyLevel
+    content.vb: Public MajorDifficulty As StageMetadata.MajorDifficultyLevel
+- uid: RGBLineCoreLib.StageMetadata.MinorDifficulty
+  commentId: F:RGBLineCoreLib.StageMetadata.MinorDifficulty
+  id: MinorDifficulty
+  parent: RGBLineCoreLib.StageMetadata
+  langs:
+  - csharp
+  - vb
+  name: MinorDifficulty
+  nameWithType: StageMetadata.MinorDifficulty
+  fullName: RGBLineCoreLib.StageMetadata.MinorDifficulty
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageMetadataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: MinorDifficulty
+    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
+    startLine: 25
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: public int MinorDifficulty
+    return:
+      type: System.Int32
+    content.vb: Public MinorDifficulty As Integer
+- uid: RGBLineCoreLib.StageMetadata.BestScore
+  commentId: F:RGBLineCoreLib.StageMetadata.BestScore
+  id: BestScore
+  parent: RGBLineCoreLib.StageMetadata
+  langs:
+  - csharp
+  - vb
+  name: BestScore
+  nameWithType: StageMetadata.BestScore
+  fullName: RGBLineCoreLib.StageMetadata.BestScore
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageMetadataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: BestScore
+    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
+    startLine: 27
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: public int BestScore
+    return:
+      type: System.Int32
+    content.vb: Public BestScore As Integer
+references:
+- uid: RGBLineCoreLib
+  commentId: N:RGBLineCoreLib
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib
+  nameWithType: RGBLineCoreLib
+  fullName: RGBLineCoreLib
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: RGBLineCoreLib.StageMetadata.MajorDifficultyLevel
+  commentId: T:RGBLineCoreLib.StageMetadata.MajorDifficultyLevel
+  parent: RGBLineCoreLib
+  href: RGBLineCoreLib.StageMetadata.html
+  name: StageMetadata.MajorDifficultyLevel
+  nameWithType: StageMetadata.MajorDifficultyLevel
+  fullName: RGBLineCoreLib.StageMetadata.MajorDifficultyLevel
+  spec.csharp:
+  - uid: RGBLineCoreLib.StageMetadata
+    name: StageMetadata
+    href: RGBLineCoreLib.StageMetadata.html
+  - name: .
+  - uid: RGBLineCoreLib.StageMetadata.MajorDifficultyLevel
+    name: MajorDifficultyLevel
+    href: RGBLineCoreLib.StageMetadata.MajorDifficultyLevel.html
+  spec.vb:
+  - uid: RGBLineCoreLib.StageMetadata
+    name: StageMetadata
+    href: RGBLineCoreLib.StageMetadata.html
+  - name: .
+  - uid: RGBLineCoreLib.StageMetadata.MajorDifficultyLevel
+    name: MajorDifficultyLevel
+    href: RGBLineCoreLib.StageMetadata.MajorDifficultyLevel.html
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

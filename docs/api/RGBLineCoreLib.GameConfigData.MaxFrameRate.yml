@@ -1,0 +1,166 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.GameConfigData.MaxFrameRate
+  commentId: T:RGBLineCoreLib.GameConfigData.MaxFrameRate
+  id: GameConfigData.MaxFrameRate
+  parent: RGBLineCoreLib
+  children:
+  - RGBLineCoreLib.GameConfigData.MaxFrameRate.Frame_120
+  - RGBLineCoreLib.GameConfigData.MaxFrameRate.Frame_30
+  - RGBLineCoreLib.GameConfigData.MaxFrameRate.Frame_60
+  - RGBLineCoreLib.GameConfigData.MaxFrameRate.Frame_90
+  langs:
+  - csharp
+  - vb
+  name: GameConfigData.MaxFrameRate
+  nameWithType: GameConfigData.MaxFrameRate
+  fullName: RGBLineCoreLib.GameConfigData.MaxFrameRate
+  type: Enum
+  source:
+    remote:
+      path: Public/Data/Configs/GameConfigData.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: MaxFrameRate
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 11
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: public enum GameConfigData.MaxFrameRate
+    content.vb: Public Enum GameConfigData.MaxFrameRate
+- uid: RGBLineCoreLib.GameConfigData.MaxFrameRate.Frame_30
+  commentId: F:RGBLineCoreLib.GameConfigData.MaxFrameRate.Frame_30
+  id: Frame_30
+  parent: RGBLineCoreLib.GameConfigData.MaxFrameRate
+  langs:
+  - csharp
+  - vb
+  name: Frame_30
+  nameWithType: GameConfigData.MaxFrameRate.Frame_30
+  fullName: RGBLineCoreLib.GameConfigData.MaxFrameRate.Frame_30
+  type: Field
+  source:
+    remote:
+      path: Public/Data/Configs/GameConfigData.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Frame_30
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 13
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: Frame_30 = 0
+    return:
+      type: RGBLineCoreLib.GameConfigData.MaxFrameRate
+- uid: RGBLineCoreLib.GameConfigData.MaxFrameRate.Frame_60
+  commentId: F:RGBLineCoreLib.GameConfigData.MaxFrameRate.Frame_60
+  id: Frame_60
+  parent: RGBLineCoreLib.GameConfigData.MaxFrameRate
+  langs:
+  - csharp
+  - vb
+  name: Frame_60
+  nameWithType: GameConfigData.MaxFrameRate.Frame_60
+  fullName: RGBLineCoreLib.GameConfigData.MaxFrameRate.Frame_60
+  type: Field
+  source:
+    remote:
+      path: Public/Data/Configs/GameConfigData.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Frame_60
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 14
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: Frame_60 = 1
+    return:
+      type: RGBLineCoreLib.GameConfigData.MaxFrameRate
+- uid: RGBLineCoreLib.GameConfigData.MaxFrameRate.Frame_90
+  commentId: F:RGBLineCoreLib.GameConfigData.MaxFrameRate.Frame_90
+  id: Frame_90
+  parent: RGBLineCoreLib.GameConfigData.MaxFrameRate
+  langs:
+  - csharp
+  - vb
+  name: Frame_90
+  nameWithType: GameConfigData.MaxFrameRate.Frame_90
+  fullName: RGBLineCoreLib.GameConfigData.MaxFrameRate.Frame_90
+  type: Field
+  source:
+    remote:
+      path: Public/Data/Configs/GameConfigData.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Frame_90
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 15
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: Frame_90 = 2
+    return:
+      type: RGBLineCoreLib.GameConfigData.MaxFrameRate
+- uid: RGBLineCoreLib.GameConfigData.MaxFrameRate.Frame_120
+  commentId: F:RGBLineCoreLib.GameConfigData.MaxFrameRate.Frame_120
+  id: Frame_120
+  parent: RGBLineCoreLib.GameConfigData.MaxFrameRate
+  langs:
+  - csharp
+  - vb
+  name: Frame_120
+  nameWithType: GameConfigData.MaxFrameRate.Frame_120
+  fullName: RGBLineCoreLib.GameConfigData.MaxFrameRate.Frame_120
+  type: Field
+  source:
+    remote:
+      path: Public/Data/Configs/GameConfigData.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Frame_120
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 16
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: Frame_120 = 3
+    return:
+      type: RGBLineCoreLib.GameConfigData.MaxFrameRate
+references:
+- uid: RGBLineCoreLib
+  commentId: N:RGBLineCoreLib
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib
+  nameWithType: RGBLineCoreLib
+  fullName: RGBLineCoreLib
+- uid: RGBLineCoreLib.GameConfigData.MaxFrameRate
+  commentId: T:RGBLineCoreLib.GameConfigData.MaxFrameRate
+  parent: RGBLineCoreLib
+  href: RGBLineCoreLib.GameConfigData.html
+  name: GameConfigData.MaxFrameRate
+  nameWithType: GameConfigData.MaxFrameRate
+  fullName: RGBLineCoreLib.GameConfigData.MaxFrameRate
+  spec.csharp:
+  - uid: RGBLineCoreLib.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.GameConfigData.MaxFrameRate
+    name: MaxFrameRate
+    href: RGBLineCoreLib.GameConfigData.MaxFrameRate.html
+  spec.vb:
+  - uid: RGBLineCoreLib.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.GameConfigData.MaxFrameRate
+    name: MaxFrameRate
+    href: RGBLineCoreLib.GameConfigData.MaxFrameRate.html

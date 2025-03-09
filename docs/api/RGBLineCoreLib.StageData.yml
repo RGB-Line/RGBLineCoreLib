@@ -1,0 +1,636 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.StageData
+  commentId: T:RGBLineCoreLib.StageData
+  id: StageData
+  parent: RGBLineCoreLib
+  children:
+  - RGBLineCoreLib.StageData.LineDataTable
+  - RGBLineCoreLib.StageData.NoteDataTable
+  - RGBLineCoreLib.StageData.RegionDataTable
+  - RGBLineCoreLib.StageData.StageConfig
+  langs:
+  - csharp
+  - vb
+  name: StageData
+  nameWithType: StageData
+  fullName: RGBLineCoreLib.StageData
+  type: Struct
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: StageData
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 15
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  summary: 각 Stage의 내부 구성 데이터를 담는 구조체
+  remarks: DTO로서만 사용되며, 별도의 Interface를 거치지 않은 접근은 권장하지 않음
+  example: []
+  syntax:
+    content: public struct StageData
+    content.vb: Public Structure StageData
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: RGBLineCoreLib.StageData.RegionDataTable
+  commentId: F:RGBLineCoreLib.StageData.RegionDataTable
+  id: RegionDataTable
+  parent: RGBLineCoreLib.StageData
+  langs:
+  - csharp
+  - vb
+  name: RegionDataTable
+  nameWithType: StageData.RegionDataTable
+  fullName: RGBLineCoreLib.StageData.RegionDataTable
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: RegionDataTable
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 191
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  summary: RegionData와 그에 대응하는 ID를 담은 Table
+  remarks: 기본 가정으로 RegionDataTable는 StartOffsetFrame 기준으로 정렬되어 있음
+  example: []
+  syntax:
+    content: public Dictionary<Guid, StageData.RegionData> RegionDataTable
+    return:
+      type: System.Collections.Generic.Dictionary{System.Guid,RGBLineCoreLib.StageData.RegionData}
+    content.vb: Public RegionDataTable As Dictionary(Of Guid, StageData.RegionData)
+- uid: RGBLineCoreLib.StageData.LineDataTable
+  commentId: F:RGBLineCoreLib.StageData.LineDataTable
+  id: LineDataTable
+  parent: RGBLineCoreLib.StageData
+  langs:
+  - csharp
+  - vb
+  name: LineDataTable
+  nameWithType: StageData.LineDataTable
+  fullName: RGBLineCoreLib.StageData.LineDataTable
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: LineDataTable
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 198
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  summary: LineData와 그에 대응하는 ID를 담은 Table
+  remarks: 기본 가정으로 LineDataTable는 정렬되지 않은 상태
+  example: []
+  syntax:
+    content: public Dictionary<Guid, StageData.LineData> LineDataTable
+    return:
+      type: System.Collections.Generic.Dictionary{System.Guid,RGBLineCoreLib.StageData.LineData}
+    content.vb: Public LineDataTable As Dictionary(Of Guid, StageData.LineData)
+- uid: RGBLineCoreLib.StageData.NoteDataTable
+  commentId: F:RGBLineCoreLib.StageData.NoteDataTable
+  id: NoteDataTable
+  parent: RGBLineCoreLib.StageData
+  langs:
+  - csharp
+  - vb
+  name: NoteDataTable
+  nameWithType: StageData.NoteDataTable
+  fullName: RGBLineCoreLib.StageData.NoteDataTable
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: NoteDataTable
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 205
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  summary: NoteData와 그에 대응하는 ID를 담은 Table
+  remarks: 기본 가정으로 NoteDataTable은 정렬되지 않은 상태
+  example: []
+  syntax:
+    content: public Dictionary<Guid, StageData.NoteData> NoteDataTable
+    return:
+      type: System.Collections.Generic.Dictionary{System.Guid,RGBLineCoreLib.StageData.NoteData}
+    content.vb: Public NoteDataTable As Dictionary(Of Guid, StageData.NoteData)
+- uid: RGBLineCoreLib.StageData.StageConfig
+  commentId: F:RGBLineCoreLib.StageData.StageConfig
+  id: StageConfig
+  parent: RGBLineCoreLib.StageData
+  langs:
+  - csharp
+  - vb
+  name: StageConfig
+  nameWithType: StageData.StageConfig
+  fullName: RGBLineCoreLib.StageData.StageConfig
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: StageConfig
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 207
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: public StageData.StageConfigData StageConfig
+    return:
+      type: RGBLineCoreLib.StageData.StageConfigData
+    content.vb: Public StageConfig As StageData.StageConfigData
+references:
+- uid: RGBLineCoreLib
+  commentId: N:RGBLineCoreLib
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib
+  nameWithType: RGBLineCoreLib
+  fullName: RGBLineCoreLib
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.Dictionary{System.Guid,RGBLineCoreLib.StageData.RegionData}
+  commentId: T:System.Collections.Generic.Dictionary{System.Guid,RGBLineCoreLib.StageData.RegionData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<Guid, StageData.RegionData>
+  nameWithType: Dictionary<Guid, StageData.RegionData>
+  fullName: System.Collections.Generic.Dictionary<System.Guid, RGBLineCoreLib.StageData.RegionData>
+  nameWithType.vb: Dictionary(Of Guid, StageData.RegionData)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Guid, RGBLineCoreLib.StageData.RegionData)
+  name.vb: Dictionary(Of Guid, StageData.RegionData)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.RegionData
+    name: RegionData
+    href: RGBLineCoreLib.StageData.RegionData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.RegionData
+    name: RegionData
+    href: RGBLineCoreLib.StageData.RegionData.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.Dictionary{System.Guid,RGBLineCoreLib.StageData.LineData}
+  commentId: T:System.Collections.Generic.Dictionary{System.Guid,RGBLineCoreLib.StageData.LineData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<Guid, StageData.LineData>
+  nameWithType: Dictionary<Guid, StageData.LineData>
+  fullName: System.Collections.Generic.Dictionary<System.Guid, RGBLineCoreLib.StageData.LineData>
+  nameWithType.vb: Dictionary(Of Guid, StageData.LineData)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Guid, RGBLineCoreLib.StageData.LineData)
+  name.vb: Dictionary(Of Guid, StageData.LineData)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.LineData
+    name: LineData
+    href: RGBLineCoreLib.StageData.LineData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.LineData
+    name: LineData
+    href: RGBLineCoreLib.StageData.LineData.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.Guid,RGBLineCoreLib.StageData.NoteData}
+  commentId: T:System.Collections.Generic.Dictionary{System.Guid,RGBLineCoreLib.StageData.NoteData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<Guid, StageData.NoteData>
+  nameWithType: Dictionary<Guid, StageData.NoteData>
+  fullName: System.Collections.Generic.Dictionary<System.Guid, RGBLineCoreLib.StageData.NoteData>
+  nameWithType.vb: Dictionary(Of Guid, StageData.NoteData)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.Guid, RGBLineCoreLib.StageData.NoteData)
+  name.vb: Dictionary(Of Guid, StageData.NoteData)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.StageData.NoteData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.StageData.NoteData.html
+  - name: )
+- uid: RGBLineCoreLib.StageData.StageConfigData
+  commentId: T:RGBLineCoreLib.StageData.StageConfigData
+  parent: RGBLineCoreLib
+  href: RGBLineCoreLib.StageData.html
+  name: StageData.StageConfigData
+  nameWithType: StageData.StageConfigData
+  fullName: RGBLineCoreLib.StageData.StageConfigData
+  spec.csharp:
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.StageConfigData
+    name: StageConfigData
+    href: RGBLineCoreLib.StageData.StageConfigData.html
+  spec.vb:
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.StageConfigData
+    name: StageConfigData
+    href: RGBLineCoreLib.StageData.StageConfigData.html

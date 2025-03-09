@@ -1,0 +1,405 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.StageData.RegionData
+  commentId: T:RGBLineCoreLib.StageData.RegionData
+  id: StageData.RegionData
+  parent: RGBLineCoreLib
+  children:
+  - RGBLineCoreLib.StageData.RegionData.CurColorType
+  - RGBLineCoreLib.StageData.RegionData.MinorOffsetTime
+  - RGBLineCoreLib.StageData.RegionData.StartOffsetFrame
+  langs:
+  - csharp
+  - vb
+  name: StageData.RegionData
+  nameWithType: StageData.RegionData
+  fullName: RGBLineCoreLib.StageData.RegionData
+  type: Struct
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: RegionData
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 20
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  summary: 각 Region의 데이터를 담는 구조체
+  example: []
+  syntax:
+    content: public struct StageData.RegionData
+    content.vb: Public Structure StageData.RegionData
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: RGBLineCoreLib.StageData.RegionData.StartOffsetFrame
+  commentId: F:RGBLineCoreLib.StageData.RegionData.StartOffsetFrame
+  id: StartOffsetFrame
+  parent: RGBLineCoreLib.StageData.RegionData
+  langs:
+  - csharp
+  - vb
+  name: StartOffsetFrame
+  nameWithType: StageData.RegionData.StartOffsetFrame
+  fullName: RGBLineCoreLib.StageData.RegionData.StartOffsetFrame
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: StartOffsetFrame
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 34
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  summary: 해당 Region이 시작하는 Frame 단위 위치를 의미
+  example: []
+  syntax:
+    content: public int StartOffsetFrame
+    return:
+      type: System.Int32
+    content.vb: Public StartOffsetFrame As Integer
+- uid: RGBLineCoreLib.StageData.RegionData.MinorOffsetTime
+  commentId: F:RGBLineCoreLib.StageData.RegionData.MinorOffsetTime
+  id: MinorOffsetTime
+  parent: RGBLineCoreLib.StageData.RegionData
+  langs:
+  - csharp
+  - vb
+  name: MinorOffsetTime
+  nameWithType: StageData.RegionData.MinorOffsetTime
+  fullName: RGBLineCoreLib.StageData.RegionData.MinorOffsetTime
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: MinorOffsetTime
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 41
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  summary: RegionData.StartOffsetFrame을 기준으로 FrameUnitSize * MinorOffsetTime 만큼 이동한 위치를 의미. 즉, 세부 위치 조정을 담당
+  remarks: 허용 범위는 [-0.5, 0.5]
+  example: []
+  syntax:
+    content: public float MinorOffsetTime
+    return:
+      type: System.Single
+    content.vb: Public MinorOffsetTime As Single
+- uid: RGBLineCoreLib.StageData.RegionData.CurColorType
+  commentId: F:RGBLineCoreLib.StageData.RegionData.CurColorType
+  id: CurColorType
+  parent: RGBLineCoreLib.StageData.RegionData
+  langs:
+  - csharp
+  - vb
+  name: CurColorType
+  nameWithType: StageData.RegionData.CurColorType
+  fullName: RGBLineCoreLib.StageData.RegionData.CurColorType
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: CurColorType
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 46
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  summary: 해당 Region의 Mode를 의미
+  example: []
+  syntax:
+    content: public StageData.RegionData.ColorType CurColorType
+    return:
+      type: RGBLineCoreLib.StageData.RegionData.ColorType
+    content.vb: Public CurColorType As StageData.RegionData.ColorType
+references:
+- uid: RGBLineCoreLib
+  commentId: N:RGBLineCoreLib
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib
+  nameWithType: RGBLineCoreLib
+  fullName: RGBLineCoreLib
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: RGBLineCoreLib.StageData.RegionData.ColorType
+  commentId: T:RGBLineCoreLib.StageData.RegionData.ColorType
+  parent: RGBLineCoreLib
+  href: RGBLineCoreLib.StageData.html
+  name: StageData.RegionData.ColorType
+  nameWithType: StageData.RegionData.ColorType
+  fullName: RGBLineCoreLib.StageData.RegionData.ColorType
+  spec.csharp:
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.RegionData
+    name: RegionData
+    href: RGBLineCoreLib.StageData.RegionData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.RegionData.ColorType
+    name: ColorType
+    href: RGBLineCoreLib.StageData.RegionData.ColorType.html
+  spec.vb:
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.RegionData
+    name: RegionData
+    href: RGBLineCoreLib.StageData.RegionData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.RegionData.ColorType
+    name: ColorType
+    href: RGBLineCoreLib.StageData.RegionData.ColorType.html

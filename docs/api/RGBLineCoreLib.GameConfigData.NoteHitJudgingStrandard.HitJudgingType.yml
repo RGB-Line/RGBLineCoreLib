@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  commentId: T:RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  id: GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  parent: RGBLineCoreLib
+  children:
+  - RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Good
+  - RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Miss
+  - RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Perfect
+  langs:
+  - csharp
+  - vb
+  name: GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  nameWithType: GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  fullName: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  type: Enum
+  source:
+    remote:
+      path: Public/Data/Configs/GameConfigData.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: HitJudgingType
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 22
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: public enum GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+    content.vb: Public Enum GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+- uid: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Perfect
+  commentId: F:RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Perfect
+  id: Perfect
+  parent: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  langs:
+  - csharp
+  - vb
+  name: Perfect
+  nameWithType: GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Perfect
+  fullName: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Perfect
+  type: Field
+  source:
+    remote:
+      path: Public/Data/Configs/GameConfigData.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Perfect
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 24
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: Perfect = 0
+    return:
+      type: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+- uid: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Good
+  commentId: F:RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Good
+  id: Good
+  parent: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  langs:
+  - csharp
+  - vb
+  name: Good
+  nameWithType: GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Good
+  fullName: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Good
+  type: Field
+  source:
+    remote:
+      path: Public/Data/Configs/GameConfigData.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Good
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 25
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: Good = 1
+    return:
+      type: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+- uid: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Miss
+  commentId: F:RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Miss
+  id: Miss
+  parent: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  langs:
+  - csharp
+  - vb
+  name: Miss
+  nameWithType: GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Miss
+  fullName: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Miss
+  type: Field
+  source:
+    remote:
+      path: Public/Data/Configs/GameConfigData.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Miss
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 26
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: Miss = 2
+    return:
+      type: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+references:
+- uid: RGBLineCoreLib
+  commentId: N:RGBLineCoreLib
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib
+  nameWithType: RGBLineCoreLib
+  fullName: RGBLineCoreLib
+- uid: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  commentId: T:RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  parent: RGBLineCoreLib
+  href: RGBLineCoreLib.GameConfigData.html
+  name: GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  nameWithType: GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  fullName: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  spec.csharp:
+  - uid: RGBLineCoreLib.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard
+    name: NoteHitJudgingStrandard
+    href: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.html
+  - name: .
+  - uid: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+    name: HitJudgingType
+    href: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.html
+  spec.vb:
+  - uid: RGBLineCoreLib.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard
+    name: NoteHitJudgingStrandard
+    href: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.html
+  - name: .
+  - uid: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+    name: HitJudgingType
+    href: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.html

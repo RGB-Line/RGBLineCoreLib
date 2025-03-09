@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection
+  commentId: T:RGBLineCoreLib.StageData.NoteData.FlipNoteDirection
+  id: StageData.NoteData.FlipNoteDirection
+  parent: RGBLineCoreLib
+  children:
+  - RGBLineCoreLib.StageData.NoteData.FlipNoteDirection.Left
+  - RGBLineCoreLib.StageData.NoteData.FlipNoteDirection.Right
+  langs:
+  - csharp
+  - vb
+  name: StageData.NoteData.FlipNoteDirection
+  nameWithType: StageData.NoteData.FlipNoteDirection
+  fullName: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection
+  type: Enum
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: FlipNoteDirection
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 115
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  summary: 해당 Note가 Flip Note일 때, Flip Note의 방향을 나타내는 Flag
+  example: []
+  syntax:
+    content: public enum StageData.NoteData.FlipNoteDirection
+    content.vb: Public Enum StageData.NoteData.FlipNoteDirection
+- uid: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection.Left
+  commentId: F:RGBLineCoreLib.StageData.NoteData.FlipNoteDirection.Left
+  id: Left
+  parent: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: StageData.NoteData.FlipNoteDirection.Left
+  fullName: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection.Left
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Left
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 117
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: Left = 0
+    return:
+      type: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection
+- uid: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection.Right
+  commentId: F:RGBLineCoreLib.StageData.NoteData.FlipNoteDirection.Right
+  id: Right
+  parent: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: StageData.NoteData.FlipNoteDirection.Right
+  fullName: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection.Right
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Right
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 117
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: Right = 1
+    return:
+      type: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection
+references:
+- uid: RGBLineCoreLib
+  commentId: N:RGBLineCoreLib
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib
+  nameWithType: RGBLineCoreLib
+  fullName: RGBLineCoreLib
+- uid: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection
+  commentId: T:RGBLineCoreLib.StageData.NoteData.FlipNoteDirection
+  parent: RGBLineCoreLib
+  href: RGBLineCoreLib.StageData.html
+  name: StageData.NoteData.FlipNoteDirection
+  nameWithType: StageData.NoteData.FlipNoteDirection
+  fullName: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection
+  spec.csharp:
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.StageData.NoteData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection
+    name: FlipNoteDirection
+    href: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection.html
+  spec.vb:
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.StageData.NoteData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection
+    name: FlipNoteDirection
+    href: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection.html

@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.StageData.NoteData.NoteType
+  commentId: T:RGBLineCoreLib.StageData.NoteData.NoteType
+  id: StageData.NoteData.NoteType
+  parent: RGBLineCoreLib
+  children:
+  - RGBLineCoreLib.StageData.NoteData.NoteType.Common
+  - RGBLineCoreLib.StageData.NoteData.NoteType.Flip
+  - RGBLineCoreLib.StageData.NoteData.NoteType.Long
+  langs:
+  - csharp
+  - vb
+  name: StageData.NoteData.NoteType
+  nameWithType: StageData.NoteData.NoteType
+  fullName: RGBLineCoreLib.StageData.NoteData.NoteType
+  type: Enum
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: NoteType
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 106
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  summary: 세 가지 Note Type을 구분하는 Flag
+  example: []
+  syntax:
+    content: 'public enum StageData.NoteData.NoteType : byte'
+    content.vb: Public Enum StageData.NoteData.NoteType As Byte
+- uid: RGBLineCoreLib.StageData.NoteData.NoteType.Common
+  commentId: F:RGBLineCoreLib.StageData.NoteData.NoteType.Common
+  id: Common
+  parent: RGBLineCoreLib.StageData.NoteData.NoteType
+  langs:
+  - csharp
+  - vb
+  name: Common
+  nameWithType: StageData.NoteData.NoteType.Common
+  fullName: RGBLineCoreLib.StageData.NoteData.NoteType.Common
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Common
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 108
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: Common = 0
+    return:
+      type: RGBLineCoreLib.StageData.NoteData.NoteType
+- uid: RGBLineCoreLib.StageData.NoteData.NoteType.Flip
+  commentId: F:RGBLineCoreLib.StageData.NoteData.NoteType.Flip
+  id: Flip
+  parent: RGBLineCoreLib.StageData.NoteData.NoteType
+  langs:
+  - csharp
+  - vb
+  name: Flip
+  nameWithType: StageData.NoteData.NoteType.Flip
+  fullName: RGBLineCoreLib.StageData.NoteData.NoteType.Flip
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Flip
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 109
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: Flip = 1
+    return:
+      type: RGBLineCoreLib.StageData.NoteData.NoteType
+- uid: RGBLineCoreLib.StageData.NoteData.NoteType.Long
+  commentId: F:RGBLineCoreLib.StageData.NoteData.NoteType.Long
+  id: Long
+  parent: RGBLineCoreLib.StageData.NoteData.NoteType
+  langs:
+  - csharp
+  - vb
+  name: Long
+  nameWithType: StageData.NoteData.NoteType.Long
+  fullName: RGBLineCoreLib.StageData.NoteData.NoteType.Long
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Long
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 110
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: Long = 2
+    return:
+      type: RGBLineCoreLib.StageData.NoteData.NoteType
+references:
+- uid: RGBLineCoreLib
+  commentId: N:RGBLineCoreLib
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib
+  nameWithType: RGBLineCoreLib
+  fullName: RGBLineCoreLib
+- uid: RGBLineCoreLib.StageData.NoteData.NoteType
+  commentId: T:RGBLineCoreLib.StageData.NoteData.NoteType
+  parent: RGBLineCoreLib
+  href: RGBLineCoreLib.StageData.html
+  name: StageData.NoteData.NoteType
+  nameWithType: StageData.NoteData.NoteType
+  fullName: RGBLineCoreLib.StageData.NoteData.NoteType
+  spec.csharp:
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.StageData.NoteData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.NoteData.NoteType
+    name: NoteType
+    href: RGBLineCoreLib.StageData.NoteData.NoteType.html
+  spec.vb:
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.StageData.NoteData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.NoteData.NoteType
+    name: NoteType
+    href: RGBLineCoreLib.StageData.NoteData.NoteType.html

@@ -12,5 +12,6 @@ namespace RGBLineCoreLib
     public sealed class StageLoadInfoDTO : MonoBehaviour
     {
         public string StageName;
+        public StageMetadata.MajorDifficultyLevel MajorDifficulty;
     }
 }

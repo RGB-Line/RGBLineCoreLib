@@ -28,6 +28,13 @@ namespace RGBLineCoreLib
             m_fadeOut.Timeout = m_timeout;
         }
 
+        public Material[] Materials
+        {
+            get
+            {
+                return m_mats.ToArray().Clone() as Material[];
+            }
+        }
         public float Timeout
         {
             get

@@ -32,6 +32,8 @@ namespace RGBLineCoreLib
         {
             if (m_bisStartEffect)
             {
+                //Debug.Log("RegionFadeoutEffect Update");
+
                 m_curTime += Time.deltaTime;
 
                 m_meshRenderer.material.SetFloat("_Radius", Mathf.Lerp(10000.0f, 0.0f, (m_curTime / m_timeout)));

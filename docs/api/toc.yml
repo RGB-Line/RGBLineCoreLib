@@ -1,0 +1,112 @@
+### YamlMime:TableOfContent
+items:
+- uid: RGBLineCoreLib
+  name: RGBLineCoreLib
+  type: Namespace
+  items:
+  - uid: RGBLineCoreLib.ChiefMainGameManager
+    name: ChiefMainGameManager
+    type: Class
+  - uid: RGBLineCoreLib.DataPathInterface
+    name: DataPathInterface
+    type: Class
+  - uid: RGBLineCoreLib.DataPathManager
+    name: DataPathManager
+    type: Class
+  - uid: RGBLineCoreLib.GameConfigData
+    name: GameConfigData
+    type: Struct
+  - uid: RGBLineCoreLib.GameConfigData.MaxFrameRate
+    name: GameConfigData.MaxFrameRate
+    type: Enum
+  - uid: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard
+    name: GameConfigData.NoteHitJudgingStrandard
+    type: Struct
+  - uid: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+    name: GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+    type: Enum
+  - uid: RGBLineCoreLib.GameConfigDataBuffer
+    name: GameConfigDataBuffer
+    type: Class
+  - uid: RGBLineCoreLib.HalfFloatVector2
+    name: HalfFloatVector2
+    type: Struct
+  - uid: RGBLineCoreLib.LineManager
+    name: LineManager
+    type: Class
+  - uid: RGBLineCoreLib.LobbyBackgroundManager
+    name: LobbyBackgroundManager
+    type: Class
+  - uid: RGBLineCoreLib.NoteManager
+    name: NoteManager
+    type: Class
+  - uid: RGBLineCoreLib.RegionFadeoutEffect
+    name: RegionFadeoutEffect
+    type: Class
+  - uid: RGBLineCoreLib.RegionManager
+    name: RegionManager
+    type: Class
+  - uid: RGBLineCoreLib.RegionManager.RegionSpawnAssets
+    name: RegionManager.RegionSpawnAssets
+    type: Struct
+  - uid: RGBLineCoreLib.RegionTransitionEffector
+    name: RegionTransitionEffector
+    type: Class
+  - uid: RGBLineCoreLib.RenderStageType
+    name: RenderStageType
+    type: Enum
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    type: Struct
+  - uid: RGBLineCoreLib.StageData.LineData
+    name: StageData.LineData
+    type: Struct
+  - uid: RGBLineCoreLib.StageData.LineData.LineSmoothType
+    name: StageData.LineData.LineSmoothType
+    type: Enum
+  - uid: RGBLineCoreLib.StageData.NoteData
+    name: StageData.NoteData
+    type: Struct
+  - uid: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection
+    name: StageData.NoteData.FlipNoteDirection
+    type: Enum
+  - uid: RGBLineCoreLib.StageData.NoteData.NoteType
+    name: StageData.NoteData.NoteType
+    type: Enum
+  - uid: RGBLineCoreLib.StageData.RegionData
+    name: StageData.RegionData
+    type: Struct
+  - uid: RGBLineCoreLib.StageData.RegionData.ColorType
+    name: StageData.RegionData.ColorType
+    type: Enum
+  - uid: RGBLineCoreLib.StageData.StageConfigData
+    name: StageData.StageConfigData
+    type: Struct
+  - uid: RGBLineCoreLib.StageDataInterface
+    name: StageDataInterface
+    type: Class
+  - uid: RGBLineCoreLib.StageDataInterface.LineDataInterface
+    name: StageDataInterface.LineDataInterface
+    type: Class
+  - uid: RGBLineCoreLib.StageDataInterface.NoteDataInterface
+    name: StageDataInterface.NoteDataInterface
+    type: Class
+  - uid: RGBLineCoreLib.StageDataInterface.RegionDataInterface
+    name: StageDataInterface.RegionDataInterface
+    type: Class
+  - uid: RGBLineCoreLib.StageDataInterface.StageConfigDataInterface
+    name: StageDataInterface.StageConfigDataInterface
+    type: Class
+  - uid: RGBLineCoreLib.StageLoadInfoDTO
+    name: StageLoadInfoDTO
+    type: Class
+  - uid: RGBLineCoreLib.StageMetadata
+    name: StageMetadata
+    type: Struct
+  - uid: RGBLineCoreLib.StageMetadata.MajorDifficultyLevel
+    name: StageMetadata.MajorDifficultyLevel
+    type: Enum
+  - uid: RGBLineCoreLib.StageMetadataInterface
+    name: StageMetadataInterface
+    type: Class
+memberLayout: SamePage

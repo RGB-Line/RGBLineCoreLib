@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static RGBLineCoreLib.StageData;
 
 
 namespace RGBLineCoreLib
@@ -18,9 +17,33 @@ namespace RGBLineCoreLib
                 return StageDataBuffer.Instance.StageData.RegionDataTable[targetRegionID];
             }
 
-            public static List<Guid> GetRegionIDs()
+            public static Guid[] GetRegionIDs()
             {
-                return StageDataBuffer.Instance.StageData.RegionDataTable.Keys.ToList();
+                return StageDataBuffer.Instance.StageData.RegionDataTable.Keys.ToArray();
+            }
+
+#if FOR_EDITOR
+            public
+#else
+            internal
+#endif
+            static Guid GetNextRegionID(in Guid curRegionID)
+            {
+                Guid nextRegionID = Guid.Empty;
+                Guid[] regionIDs = GetRegionIDs();
+
+                StageData.RegionData curRegionData = GetRegionData(curRegionID);
+                foreach (Guid regionID in regionIDs)
+                {
+                    StageData.RegionData candidateRegionData = GetRegionData(regionID);
+                    if (candidateRegionData.StartOffsetFrame > curRegionData.StartOffsetFrame)
+                    {
+                        nextRegionID = regionID;
+                        break;
+                    }
+                }
+
+                return nextRegionID;
             }
 
             internal static int GetRegionDataIndex(in Guid targetRegionID)
@@ -62,10 +85,10 @@ namespace RGBLineCoreLib
             #region Setter
             public static bool TryAddRegionData(in Guid targetRegionID, in StageData.RegionData targetRegionData)
             {
-                if(!BIsRegionDataValid(new Tuple<Guid, StageData.RegionData>(targetRegionID, targetRegionData)))
-                {
-                    return false;
-                }
+                //if(!BIsRegionDataValid(new Tuple<Guid, StageData.RegionData>(targetRegionID, targetRegionData)))
+                //{
+                //    return false;
+                //}
 
                 if (StageDataBuffer.Instance.StageData.RegionDataTable.ContainsKey(targetRegionID))
                 {
@@ -81,13 +104,23 @@ namespace RGBLineCoreLib
         public static class LineDataInterface
         {
             #region Getter
+            public static Guid GetAttachedRegionID(in Guid targetLineID)
+            {
+                return StageDataBuffer.Instance.StageData.LineDataTable[targetLineID].AttachedRegionID;
+            }
             public static StageData.RegionData GetAttachedRegionData(in Guid targetLineID)
             {
                 return StageDataBuffer.Instance.StageData.RegionDataTable[StageDataBuffer.Instance.StageData.LineDataTable[targetLineID].AttachedRegionID];
             }
+
             public static StageData.LineData GetLineData(in Guid targetLineID)
             {
                 return StageDataBuffer.Instance.StageData.LineDataTable[targetLineID];
+            }
+
+            public static Guid[] GetLineIDs()
+            {
+                return StageDataBuffer.Instance.StageData.LineDataTable.Keys.ToArray();
             }
 
             internal static bool BIsLineDataValid(in Tuple<Guid, StageData.LineData> targetLineData)
@@ -161,6 +194,11 @@ namespace RGBLineCoreLib
             {
                 return StageDataBuffer.Instance.StageData.NoteDataTable[targetNoteID];
             }
+
+            public static Guid[] GetNoteIDs()
+            {
+                return StageDataBuffer.Instance.StageData.NoteDataTable.Keys.ToArray();
+            }
             #endregion
         }
         public static class StageConfigDataInterface
@@ -173,6 +211,15 @@ namespace RGBLineCoreLib
             #endregion
         }
 
+
+        public static bool TryLoadStageData(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty)
+        {
+            return StageDataBuffer.Instance.TryLoadStageData(targetStageName, majorDifficulty);
+        }
+        public static void DisposeStageData()
+        {
+            StageDataBuffer.Instance.Dispose();
+        }
 
         public static bool BIsStageDataValid()
         {

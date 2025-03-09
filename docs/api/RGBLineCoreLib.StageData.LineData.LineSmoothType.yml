@@ -1,0 +1,126 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.StageData.LineData.LineSmoothType
+  commentId: T:RGBLineCoreLib.StageData.LineData.LineSmoothType
+  id: StageData.LineData.LineSmoothType
+  parent: RGBLineCoreLib
+  children:
+  - RGBLineCoreLib.StageData.LineData.LineSmoothType.Curved
+  - RGBLineCoreLib.StageData.LineData.LineSmoothType.Linear
+  langs:
+  - csharp
+  - vb
+  name: StageData.LineData.LineSmoothType
+  nameWithType: StageData.LineData.LineSmoothType
+  fullName: RGBLineCoreLib.StageData.LineData.LineSmoothType
+  type: Enum
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: LineSmoothType
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 56
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  summary: 해당 Line의 부드러운 정도를 나타내는 Flag
+  example: []
+  syntax:
+    content: 'public enum StageData.LineData.LineSmoothType : byte'
+    content.vb: Public Enum StageData.LineData.LineSmoothType As Byte
+- uid: RGBLineCoreLib.StageData.LineData.LineSmoothType.Linear
+  commentId: F:RGBLineCoreLib.StageData.LineData.LineSmoothType.Linear
+  id: Linear
+  parent: RGBLineCoreLib.StageData.LineData.LineSmoothType
+  langs:
+  - csharp
+  - vb
+  name: Linear
+  nameWithType: StageData.LineData.LineSmoothType.Linear
+  fullName: RGBLineCoreLib.StageData.LineData.LineSmoothType.Linear
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Linear
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 61
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  summary: 딱딱하게 꺽이는 선분들의 형태로 표현
+  example: []
+  syntax:
+    content: Linear = 0
+    return:
+      type: RGBLineCoreLib.StageData.LineData.LineSmoothType
+- uid: RGBLineCoreLib.StageData.LineData.LineSmoothType.Curved
+  commentId: F:RGBLineCoreLib.StageData.LineData.LineSmoothType.Curved
+  id: Curved
+  parent: RGBLineCoreLib.StageData.LineData.LineSmoothType
+  langs:
+  - csharp
+  - vb
+  name: Curved
+  nameWithType: StageData.LineData.LineSmoothType.Curved
+  fullName: RGBLineCoreLib.StageData.LineData.LineSmoothType.Curved
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Curved
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 65
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  summary: 부드럽게 꺽이는 곡선의 형태로 표현
+  example: []
+  syntax:
+    content: Curved = 1
+    return:
+      type: RGBLineCoreLib.StageData.LineData.LineSmoothType
+references:
+- uid: RGBLineCoreLib
+  commentId: N:RGBLineCoreLib
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib
+  nameWithType: RGBLineCoreLib
+  fullName: RGBLineCoreLib
+- uid: RGBLineCoreLib.StageData.LineData.LineSmoothType
+  commentId: T:RGBLineCoreLib.StageData.LineData.LineSmoothType
+  parent: RGBLineCoreLib
+  href: RGBLineCoreLib.StageData.html
+  name: StageData.LineData.LineSmoothType
+  nameWithType: StageData.LineData.LineSmoothType
+  fullName: RGBLineCoreLib.StageData.LineData.LineSmoothType
+  spec.csharp:
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.LineData
+    name: LineData
+    href: RGBLineCoreLib.StageData.LineData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.LineData.LineSmoothType
+    name: LineSmoothType
+    href: RGBLineCoreLib.StageData.LineData.LineSmoothType.html
+  spec.vb:
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.LineData
+    name: LineData
+    href: RGBLineCoreLib.StageData.LineData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.LineData.LineSmoothType
+    name: LineSmoothType
+    href: RGBLineCoreLib.StageData.LineData.LineSmoothType.html

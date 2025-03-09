@@ -1,0 +1,482 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.StageDataInterface.NoteDataInterface
+  commentId: T:RGBLineCoreLib.StageDataInterface.NoteDataInterface
+  id: StageDataInterface.NoteDataInterface
+  parent: RGBLineCoreLib
+  children:
+  - RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedLineData(System.Guid@)
+  - RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedRegionData(System.Guid@)
+  - RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetNoteData(System.Guid@)
+  langs:
+  - csharp
+  - vb
+  name: StageDataInterface.NoteDataInterface
+  nameWithType: StageDataInterface.NoteDataInterface
+  fullName: RGBLineCoreLib.StageDataInterface.NoteDataInterface
+  type: Class
+  source:
+    remote:
+      path: Public/Functor/Interfaces/StageDataInterface.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: NoteDataInterface
+    path: ../Public/Functor/Interfaces/StageDataInterface.cs
+    startLine: 148
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: public static class StageDataInterface.NoteDataInterface
+    content.vb: Public Module StageDataInterface.NoteDataInterface
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedRegionData(System.Guid@)
+  commentId: M:RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedRegionData(System.Guid@)
+  id: GetAttachedRegionData(System.Guid@)
+  parent: RGBLineCoreLib.StageDataInterface.NoteDataInterface
+  langs:
+  - csharp
+  - vb
+  name: GetAttachedRegionData(in Guid)
+  nameWithType: StageDataInterface.NoteDataInterface.GetAttachedRegionData(in Guid)
+  fullName: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedRegionData(in System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Interfaces/StageDataInterface.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: GetAttachedRegionData
+    path: ../Public/Functor/Interfaces/StageDataInterface.cs
+    startLine: 151
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: public static StageData.RegionData GetAttachedRegionData(in Guid targetNoteID)
+    parameters:
+    - id: targetNoteID
+      type: System.Guid
+    return:
+      type: RGBLineCoreLib.StageData.RegionData
+    content.vb: Public Shared Function GetAttachedRegionData(targetNoteID As Guid) As StageData.RegionData
+  overload: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedRegionData*
+  nameWithType.vb: StageDataInterface.NoteDataInterface.GetAttachedRegionData(Guid)
+  fullName.vb: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedRegionData(System.Guid)
+  name.vb: GetAttachedRegionData(Guid)
+- uid: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedLineData(System.Guid@)
+  commentId: M:RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedLineData(System.Guid@)
+  id: GetAttachedLineData(System.Guid@)
+  parent: RGBLineCoreLib.StageDataInterface.NoteDataInterface
+  langs:
+  - csharp
+  - vb
+  name: GetAttachedLineData(in Guid)
+  nameWithType: StageDataInterface.NoteDataInterface.GetAttachedLineData(in Guid)
+  fullName: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedLineData(in System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Interfaces/StageDataInterface.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: GetAttachedLineData
+    path: ../Public/Functor/Interfaces/StageDataInterface.cs
+    startLine: 155
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: public static StageData.LineData GetAttachedLineData(in Guid targetNoteID)
+    parameters:
+    - id: targetNoteID
+      type: System.Guid
+    return:
+      type: RGBLineCoreLib.StageData.LineData
+    content.vb: Public Shared Function GetAttachedLineData(targetNoteID As Guid) As StageData.LineData
+  overload: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedLineData*
+  nameWithType.vb: StageDataInterface.NoteDataInterface.GetAttachedLineData(Guid)
+  fullName.vb: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedLineData(System.Guid)
+  name.vb: GetAttachedLineData(Guid)
+- uid: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetNoteData(System.Guid@)
+  commentId: M:RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetNoteData(System.Guid@)
+  id: GetNoteData(System.Guid@)
+  parent: RGBLineCoreLib.StageDataInterface.NoteDataInterface
+  langs:
+  - csharp
+  - vb
+  name: GetNoteData(in Guid)
+  nameWithType: StageDataInterface.NoteDataInterface.GetNoteData(in Guid)
+  fullName: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetNoteData(in System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Interfaces/StageDataInterface.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: GetNoteData
+    path: ../Public/Functor/Interfaces/StageDataInterface.cs
+    startLine: 159
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib
+  syntax:
+    content: public static StageData.NoteData GetNoteData(in Guid targetNoteID)
+    parameters:
+    - id: targetNoteID
+      type: System.Guid
+    return:
+      type: RGBLineCoreLib.StageData.NoteData
+    content.vb: Public Shared Function GetNoteData(targetNoteID As Guid) As StageData.NoteData
+  overload: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetNoteData*
+  nameWithType.vb: StageDataInterface.NoteDataInterface.GetNoteData(Guid)
+  fullName.vb: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetNoteData(System.Guid)
+  name.vb: GetNoteData(Guid)
+references:
+- uid: RGBLineCoreLib
+  commentId: N:RGBLineCoreLib
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib
+  nameWithType: RGBLineCoreLib
+  fullName: RGBLineCoreLib
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedRegionData*
+  commentId: Overload:RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedRegionData
+  href: RGBLineCoreLib.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_StageDataInterface_NoteDataInterface_GetAttachedRegionData_System_Guid__
+  name: GetAttachedRegionData
+  nameWithType: StageDataInterface.NoteDataInterface.GetAttachedRegionData
+  fullName: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedRegionData
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: RGBLineCoreLib.StageData.RegionData
+  commentId: T:RGBLineCoreLib.StageData.RegionData
+  parent: RGBLineCoreLib
+  href: RGBLineCoreLib.StageData.html
+  name: StageData.RegionData
+  nameWithType: StageData.RegionData
+  fullName: RGBLineCoreLib.StageData.RegionData
+  spec.csharp:
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.RegionData
+    name: RegionData
+    href: RGBLineCoreLib.StageData.RegionData.html
+  spec.vb:
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.RegionData
+    name: RegionData
+    href: RGBLineCoreLib.StageData.RegionData.html
+- uid: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedLineData*
+  commentId: Overload:RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedLineData
+  href: RGBLineCoreLib.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_StageDataInterface_NoteDataInterface_GetAttachedLineData_System_Guid__
+  name: GetAttachedLineData
+  nameWithType: StageDataInterface.NoteDataInterface.GetAttachedLineData
+  fullName: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetAttachedLineData
+- uid: RGBLineCoreLib.StageData.LineData
+  commentId: T:RGBLineCoreLib.StageData.LineData
+  parent: RGBLineCoreLib
+  href: RGBLineCoreLib.StageData.html
+  name: StageData.LineData
+  nameWithType: StageData.LineData
+  fullName: RGBLineCoreLib.StageData.LineData
+  spec.csharp:
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.LineData
+    name: LineData
+    href: RGBLineCoreLib.StageData.LineData.html
+  spec.vb:
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.LineData
+    name: LineData
+    href: RGBLineCoreLib.StageData.LineData.html
+- uid: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetNoteData*
+  commentId: Overload:RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetNoteData
+  href: RGBLineCoreLib.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_StageDataInterface_NoteDataInterface_GetNoteData_System_Guid__
+  name: GetNoteData
+  nameWithType: StageDataInterface.NoteDataInterface.GetNoteData
+  fullName: RGBLineCoreLib.StageDataInterface.NoteDataInterface.GetNoteData
+- uid: RGBLineCoreLib.StageData.NoteData
+  commentId: T:RGBLineCoreLib.StageData.NoteData
+  parent: RGBLineCoreLib
+  href: RGBLineCoreLib.StageData.html
+  name: StageData.NoteData
+  nameWithType: StageData.NoteData
+  fullName: RGBLineCoreLib.StageData.NoteData
+  spec.csharp:
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.StageData.NoteData.html
+  spec.vb:
+  - uid: RGBLineCoreLib.StageData
+    name: StageData
+    href: RGBLineCoreLib.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.StageData.NoteData.html
