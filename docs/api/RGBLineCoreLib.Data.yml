@@ -9,7 +9,6 @@ items:
   - RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard
   - RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
   - RGBLineCoreLib.Data.HalfFloatVector2
-  - RGBLineCoreLib.Data.RenderStageType
   - RGBLineCoreLib.Data.StageData
   - RGBLineCoreLib.Data.StageData.LineData
   - RGBLineCoreLib.Data.StageData.LineData.LineSmoothType
@@ -380,13 +379,6 @@ references:
   - uid: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
     name: MajorDifficultyLevel
     href: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.html
-- uid: RGBLineCoreLib.Data.RenderStageType
-  commentId: T:RGBLineCoreLib.Data.RenderStageType
-  parent: RGBLineCoreLib.Data
-  href: RGBLineCoreLib.Data.RenderStageType.html
-  name: RenderStageType
-  nameWithType: RenderStageType
-  fullName: RGBLineCoreLib.Data.RenderStageType
 - uid: RGBLineCoreLib.Data
   commentId: N:RGBLineCoreLib.Data
   href: RGBLineCoreLib.html

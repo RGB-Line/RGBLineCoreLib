@@ -19,9 +19,6 @@ items:
   - uid: RGBLineCoreLib.Data.HalfFloatVector2
     name: HalfFloatVector2
     type: Struct
-  - uid: RGBLineCoreLib.Data.RenderStageType
-    name: RenderStageType
-    type: Enum
   - uid: RGBLineCoreLib.Data.StageData
     name: StageData
     type: Struct

@@ -2206,22 +2206,6 @@ references:
   commentId: T:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface
   fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface
   nameWithType: StageDataInterface.RegionDataInterface
-- uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID(System.Guid@)
-  name: GetNextRegionID(in Guid)
-  href: api/RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_RegionDataInterface_GetNextRegionID_System_Guid__
-  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID(System.Guid@)
-  name.vb: GetNextRegionID(Guid)
-  fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID(in System.Guid)
-  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID(System.Guid)
-  nameWithType: StageDataInterface.RegionDataInterface.GetNextRegionID(in Guid)
-  nameWithType.vb: StageDataInterface.RegionDataInterface.GetNextRegionID(Guid)
-- uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID*
-  name: GetNextRegionID
-  href: api/RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_RegionDataInterface_GetNextRegionID_
-  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID
-  isSpec: "True"
-  fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID
-  nameWithType: StageDataInterface.RegionDataInterface.GetNextRegionID
 - uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetRegionData(System.Guid@)
   name: GetRegionData(in Guid)
   href: api/RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_RegionDataInterface_GetRegionData_System_Guid__
@@ -2251,22 +2235,6 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetRegionIDs
   nameWithType: StageDataInterface.RegionDataInterface.GetRegionIDs
-- uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData(System.Guid@,RGBLineCoreLib.Data.StageData.RegionData@)
-  name: TryAddRegionData(in Guid, in RegionData)
-  href: api/RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_RegionDataInterface_TryAddRegionData_System_Guid__RGBLineCoreLib_Data_StageData_RegionData__
-  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData(System.Guid@,RGBLineCoreLib.Data.StageData.RegionData@)
-  name.vb: TryAddRegionData(Guid, RegionData)
-  fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData(in System.Guid, in RGBLineCoreLib.Data.StageData.RegionData)
-  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData(System.Guid, RGBLineCoreLib.Data.StageData.RegionData)
-  nameWithType: StageDataInterface.RegionDataInterface.TryAddRegionData(in Guid, in StageData.RegionData)
-  nameWithType.vb: StageDataInterface.RegionDataInterface.TryAddRegionData(Guid, StageData.RegionData)
-- uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData*
-  name: TryAddRegionData
-  href: api/RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_RegionDataInterface_TryAddRegionData_
-  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData
-  isSpec: "True"
-  fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData
-  nameWithType: StageDataInterface.RegionDataInterface.TryAddRegionData
 - uid: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface
   name: StageDataInterface.StageConfigDataInterface
   href: api/RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.html
