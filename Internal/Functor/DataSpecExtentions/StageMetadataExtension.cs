@@ -4,8 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using RGBLineCoreLib.Data;
 
-namespace RGBLineCoreLib
+
+namespace RGBLineCoreLib.Functor
 {
     internal static class StageMetadataExtension
     {

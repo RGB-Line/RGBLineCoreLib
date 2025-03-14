@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 using UnityEngine;
 
+using RGBLineCoreLib.Data;
+using RGBLineCoreLib.Manager;
 
-namespace RGBLineCoreLib
+
+namespace RGBLineCoreLib.Functor
 {
     public class GreenNote : MonoBehaviour, IGreenNote
     {
@@ -15,17 +18,35 @@ namespace RGBLineCoreLib
 
         private LineRenderer m_lineRenderer = null;
 
+        [SerializeField] private BoxCollider2D m_startJudgeBox = null;
+        [SerializeField] private BoxCollider2D m_endJudgeBox = null;
+
 
         public void Awake()
         {
             m_lineRenderer = GetComponent<LineRenderer>();
         }
 
+        public Guid AttachedNoteID
+        {
+            get
+            {
+                return m_noteItem.NoteID;
+            }
+        }
         public Transform Transform
         {
             get
             {
                 return transform;
+            }
+        }
+
+        public float CurveStartYPos
+        {
+            get
+            {
+                return m_lineRenderer.GetPosition(0).y;
             }
         }
 
@@ -76,36 +97,33 @@ namespace RGBLineCoreLib
             m_lineRenderer.SetPositions(linePoses.ToArray());
 
             m_lineRenderer.numCapVertices = 90;
-            //m_lineRenderer.alignment = LineAlignment.TransformZ;
 
-            //m_transform_StartJudgeBox.position = startPos;
-            //m_transform_EndJudgeBox.position = endPos;
+            m_startJudgeBox.transform.position = startPos;
+            m_endJudgeBox.transform.position = endPos;
 
-            //float velocity = (GridRenderManager.Instance.GetTotalBitCount() * (StageDataBuffer.Instance.CurStageData.Value.StageConfig.LengthPerBit / StageDataBuffer.Instance.CurStageData.Value.StageConfig.BitSubDivision)) / ChiefGameManager.Instance.CurMusicClip.length;
-            //m_transform_StartJudgeBox.GetComponent<BoxCollider2D>().size = new Vector2()
-            //{
-            //    x = 1.0f,
-            //    y = velocity * (GameConfigDataBuffer.Instance.GameConfigData.Value.noteHitJudgingStrandard.HitJudgingRanges[2] / 1000.0f) * 4.0f
-            //};
-            //m_transform_EndJudgeBox.GetComponent<BoxCollider2D>().size = new Vector2()
-            //{
-            //    x = 1.0f,
-            //    y = velocity * (GameConfigDataBuffer.Instance.GameConfigData.Value.noteHitJudgingStrandard.HitJudgingRanges[2] / 1000.0f) * 4.0f
-            //};
+            StageData.StageConfigData curStageConfigData = StageDataInterface.StageConfigDataInterface.GetStageConfigData();
+            StageMetadata stageMetadata = StageMetadataInterface.GetStageMetadata();
+            float velocity = (GridManager.Instance.GetTotalFrameCount() * (curStageConfigData.LengthPerBit / curStageConfigData.BitSubDivision)) / stageMetadata.MusicLength;
 
-            //m_transform_StartJudgeBox.GetComponent<Editor_Note_GreenHitJudgeBox>().Init(NoteID);
-            //m_transform_EndJudgeBox.GetComponent<Editor_Note_GreenHitJudgeBox>().Init(NoteID);
+            GameConfigData gameConfigData = GameConfigDataBuffer.Instance.ConfigData;
+            m_startJudgeBox.size = new Vector2()
+            {
+                x = 1.0f,
+                y = velocity * (gameConfigData.NoteHitJudgeStrandard.HitJudgingRanges[2] / 1000.0f) * 4.0f
+            };
+            m_endJudgeBox.size = new Vector2()
+            {
+                x = 1.0f,
+                y = 0.1f
+            };
+        }
 
-            //try
-            //{
-            //    Mesh mesh = new Mesh();
-            //    m_lineRenderer.BakeMesh(mesh, true);
-            //    m_meshCollider.sharedMesh = mesh;
-            //}
-            //catch
-            //{
-            //    Debug.Log("BakeMesh Error");
-            //}
+        public void Dispose()
+        {
+            m_noteItem = null;
+
+            m_startJudgeBox.size = Vector2.one;
+            m_endJudgeBox.size = Vector2.one;
         }
     }
 }

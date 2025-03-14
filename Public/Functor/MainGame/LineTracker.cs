@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 using UnityEngine;
 
+using RGBLineCoreLib.Data;
+using RGBLineCoreLib.Manager;
 
-namespace RGBLineCoreLib
+
+namespace RGBLineCoreLib.Functor
 {
     public sealed class LineTracker : MonoBehaviour
     {

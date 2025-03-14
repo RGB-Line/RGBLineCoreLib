@@ -4,8 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using RGBLineCoreLib.Data;
 
-namespace RGBLineCoreLib
+
+namespace RGBLineCoreLib.Functor
 {
     public static class StageDataInterface
     {
@@ -190,6 +192,11 @@ namespace RGBLineCoreLib
             {
                 return StageDataBuffer.Instance.StageData.LineDataTable[StageDataBuffer.Instance.StageData.NoteDataTable[targetNoteID].AttachedLineID];
             }
+
+            public static bool BIsNoteIDValid(in Guid targetNoteID)
+            {
+                return StageDataBuffer.Instance.StageData.NoteDataTable.ContainsKey(targetNoteID);
+            }
             public static StageData.NoteData GetNoteData(in Guid targetNoteID)
             {
                 return StageDataBuffer.Instance.StageData.NoteDataTable[targetNoteID];
@@ -204,7 +211,7 @@ namespace RGBLineCoreLib
         public static class StageConfigDataInterface
         {
             #region Getter
-            public static StageData.StageConfigData GetStageMetadata()
+            public static StageData.StageConfigData GetStageConfigData()
             {
                 return StageDataBuffer.Instance.StageData.StageConfig;
             }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace RGBLineCoreLib
+namespace RGBLineCoreLib.Data
 {
 #if FOR_EDITOR
     [Flags]

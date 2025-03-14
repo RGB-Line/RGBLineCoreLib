@@ -8,8 +8,11 @@ using UnityEngine;
 
 using CommonUtilLib.ThreadSafe;
 
+using RGBLineCoreLib.Data;
+using RGBLineCoreLib.Functor;
 
-namespace RGBLineCoreLib
+
+namespace RGBLineCoreLib.Manager
 {
     public sealed class GridManager : SingleTonForGameObject<GridManager>
     {
@@ -20,7 +23,7 @@ namespace RGBLineCoreLib
 
         public int GetTotalFrameCount()
         {
-            StageData.StageConfigData stageConfigData = StageDataInterface.StageConfigDataInterface.GetStageMetadata();
+            StageData.StageConfigData stageConfigData = StageDataInterface.StageConfigDataInterface.GetStageConfigData();
             float BPS = (stageConfigData.BPM * stageConfigData.BitSubDivision) / 60f;
 
             return (int)(BPS * StageMetadataInterface.GetStageMetadata().MusicLength);
@@ -32,7 +35,7 @@ namespace RGBLineCoreLib
         }
         public float GetUnitFrameSize()
         {
-            StageData.StageConfigData stageConfigData = StageDataInterface.StageConfigDataInterface.GetStageMetadata();
+            StageData.StageConfigData stageConfigData = StageDataInterface.StageConfigDataInterface.GetStageConfigData();
             return stageConfigData.LengthPerBit / stageConfigData.BitSubDivision;
         }
 

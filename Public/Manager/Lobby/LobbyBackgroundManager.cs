@@ -9,7 +9,7 @@ using UnityEngine;
 using CommonUtilLib.ThreadSafe;
 
 
-namespace RGBLineCoreLib
+namespace RGBLineCoreLib.Manager
 {
     public class LobbyBackgroundManager : SingleTonForGameObject<LobbyBackgroundManager>
     {

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static RGBLineCoreLib.StageData;
+
+using RGBLineCoreLib.Data;
 
 
-namespace RGBLineCoreLib
+namespace RGBLineCoreLib.Functor
 {
     internal static class StageDataExtension
     {

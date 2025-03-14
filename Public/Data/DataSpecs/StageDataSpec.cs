@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace RGBLineCoreLib
+namespace RGBLineCoreLib.Data
 {
     /// <summary>
     /// 각 Stage의 내부 구성 데이터를 담는 구조체

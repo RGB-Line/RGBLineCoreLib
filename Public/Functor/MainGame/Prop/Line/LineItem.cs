@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 using UnityEngine;
 
+using RGBLineCoreLib.Data;
+using RGBLineCoreLib.Manager;
 
-namespace RGBLineCoreLib
+
+namespace RGBLineCoreLib.Functor
 {
     [RequireComponent(typeof(CurvedLineRenderer))]
     public class LineItem : MonoBehaviour, ILineItem
@@ -28,16 +31,42 @@ namespace RGBLineCoreLib
 
         private LineRenderer m_lineRenderer = null;
         private CurvedLineRenderer m_curvedLineRenderer = null;
+        private MeshCollider m_meshCollider = null;
 
         private Stack<ILinePoint> m_linePoints = new Stack<ILinePoint>();
 
         private Guid m_lineID = Guid.Empty;
+
+        private bool m_bisMeshColliderUpdatable = false;
 
 
         public void Awake()
         {
             m_lineRenderer = GetComponent<LineRenderer>();
             m_curvedLineRenderer = GetComponent<CurvedLineRenderer>();
+            m_meshCollider = GetComponent<MeshCollider>();
+        }
+        public void FixedUpdate()
+        {
+            if (m_bisMeshColliderUpdatable && StageDataInterface.LineDataInterface.GetAttachedRegionData(m_lineID).CurColorType == StageData.RegionData.ColorType.Green)
+            {
+                UpdateMeshCollider();
+            }
+        }
+        public void OnMouseEnter()
+        {
+            if (StageDataInterface.LineDataInterface.GetAttachedRegionData(m_lineID).CurColorType == StageData.RegionData.ColorType.Green)
+            {
+                ScoreManager.Instance.BIsMouseOnGreenLine = true;
+            }
+            else
+            {
+                ScoreManager.Instance.BIsMouseOnGreenLine = false;
+            }
+        }
+        public void OnMouseExit()
+        {
+            ScoreManager.Instance.BIsMouseOnGreenLine = false;
         }
 
         public Transform Transform
@@ -88,24 +117,6 @@ namespace RGBLineCoreLib
             points = StageDataInterface.LineDataInterface.GetLineData(m_lineID).CurvedLinePoints;
             minorOffsetTimes = StageDataInterface.LineDataInterface.GetLineData(m_lineID).MinorOffsetTimes;
 #endif
-            //if (StageDataInterface.LineDataInterface.GetAttachedRegionData(m_lineID).CurColorType == StageData.RegionData.ColorType.Green)
-            //{
-            //    HalfFloatVector2 startPos = new HalfFloatVector2
-            //    {
-            //        X = points.First().X,
-            //        Y = points.First().Y - 1
-            //    };
-            //    points.Insert(0, startPos);
-            //    minorOffsetTimes.Insert(0, 0.0f);
-
-            //    HalfFloatVector2 endPos = new HalfFloatVector2
-            //    {
-            //        X = points.Last().X,
-            //        Y = points.Last().Y + 1
-            //    };
-            //    points.Add(endPos);
-            //    minorOffsetTimes.Add(0.0f);
-            //}
 
             for(int index = 0; index < points.Count; index++)
             {
@@ -187,6 +198,7 @@ namespace RGBLineCoreLib
             {
                 Invoke("RenderGreenOutline", 0.5f);
                 Invoke("RenderGreenCenterLine", 0.5f);
+                Invoke("EnableMeshColliderUpdate", 0.5f);
             }
         }
         public void Dispose()
@@ -205,6 +217,12 @@ namespace RGBLineCoreLib
             }
         }
 
+        private void UpdateMeshCollider()
+        {
+            Mesh mesh = new Mesh();
+            m_lineRenderer.BakeMesh(mesh, true);
+            m_meshCollider.sharedMesh = mesh;
+        }
         private void RenderGreenOutline()
         {
             GameObject outline = new GameObject("Outline");
@@ -240,6 +258,10 @@ namespace RGBLineCoreLib
 
             centerlineRenderer.startWidth = 0.04f;
             centerlineRenderer.endWidth = 0.04f;
+        }
+        private void EnableMeshColliderUpdate()
+        {
+            m_bisMeshColliderUpdatable = true;
         }
     }
 }

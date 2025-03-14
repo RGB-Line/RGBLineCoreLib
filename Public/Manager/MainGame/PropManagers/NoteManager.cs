@@ -8,8 +8,10 @@ using UnityEngine;
 
 using CommonUtilLib.ThreadSafe;
 
+using RGBLineCoreLib.Functor;
 
-namespace RGBLineCoreLib
+
+namespace RGBLineCoreLib.Manager
 {
     public sealed class NoteManager : SingleTonForGameObject<NoteManager>
     {
@@ -22,6 +24,14 @@ namespace RGBLineCoreLib
         public void Awake()
         {
             SetInstance(this);
+        }
+
+        internal int RedLineCornerNoteCount
+        {
+            get
+            {
+                return m_redLineCornerNoteTable.Count;
+            }
         }
 
         public void SpawnNoteProps()
@@ -48,12 +58,31 @@ namespace RGBLineCoreLib
         }
         public void DespawnNoteProps()
         {
+            // Despawn IRedLineCornerNotes
+            foreach(IRedLineCornerNote redLineCornerNoteItem in m_redLineCornerNoteTable.Values)
+            {
+                redLineCornerNoteItem.Dispose();
+                Destroy(redLineCornerNoteItem.Transform.gameObject);
+            }
+            m_redLineCornerNoteTable.Clear();
 
+            // Despawn INoteItems
+            foreach (INoteItem noteItem in m_noteItemTable.Values)
+            {
+                noteItem.Dispose();
+                Destroy(noteItem.Transform.gameObject);
+            }
+            m_noteItemTable.Clear();
         }
 
         public INoteItem GetNoteItem(in Guid targetNoteID)
         {
-            return m_noteItemTable[targetNoteID];
+            if(m_noteItemTable.ContainsKey(targetNoteID))
+            {
+                return m_noteItemTable[targetNoteID];
+            }
+
+            return null;
         }
 
         internal void AddRedLineCornerNoteItem(in Guid noteID, in IRedLineCornerNote redLineCornerNoteItem)
@@ -63,6 +92,16 @@ namespace RGBLineCoreLib
         internal void ClearRedLineCornerNoteItem()
         {
             m_redLineCornerNoteTable.Clear();
+        }
+
+        internal IRedLineCornerNote GetRedLineCornerNote(in Guid targetNoteID)
+        {
+            if(m_redLineCornerNoteTable.ContainsKey(targetNoteID))
+            {
+                return m_redLineCornerNoteTable[targetNoteID];
+            }
+
+            return null;
         }
 
         protected override void Dispose(bool bisDisposing)

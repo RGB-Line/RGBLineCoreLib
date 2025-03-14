@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 
-namespace RGBLineCoreLib
+namespace RGBLineCoreLib.Functor
 {
     public interface IRedLineCornerNote : IDisposable
     {
+        Guid NoteID { get; }
         Transform Transform { get; }
 
         void Render();

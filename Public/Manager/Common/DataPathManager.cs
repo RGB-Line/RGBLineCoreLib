@@ -8,8 +8,10 @@ using UnityEngine;
 
 using CommonUtilLib.ThreadSafe;
 
+using RGBLineCoreLib.Data;
 
-namespace RGBLineCoreLib
+
+namespace RGBLineCoreLib.Manager
 {
     public sealed class DataPathManager : SingleTonForGameObject<DataPathManager>
     {

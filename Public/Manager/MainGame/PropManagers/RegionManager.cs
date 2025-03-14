@@ -8,8 +8,11 @@ using UnityEngine;
 
 using CommonUtilLib.ThreadSafe;
 
+using RGBLineCoreLib.Data;
+using RGBLineCoreLib.Functor;
 
-namespace RGBLineCoreLib
+
+namespace RGBLineCoreLib.Manager
 {
     public sealed class RegionManager : SingleTonForGameObject<RegionManager>
     {
@@ -28,18 +31,6 @@ namespace RGBLineCoreLib
         {
             SetInstance(this);
         }
-        //public void FixedUpdate()
-        //{
-        //    if(!BIsInstanceNull)
-        //    {
-        //        Guid curRegionID = GetRegionIDFromYPos(Camera.main.transform.position.y);
-        //        if (m_prevRegionID != curRegionID)
-        //        {
-        //            m_regionSpawnAssets.m_regionTransitionEffector.StartTransition((int)StageDataInterface.RegionDataInterface.GetRegionData(curRegionID).CurColorType,
-        //                                                                            new Vector2());
-        //        }
-        //    }
-        //}
 
         public void SpawnRegionProps()
         {
@@ -58,7 +49,7 @@ namespace RGBLineCoreLib
             }
         }
 
-        private Guid GetRegionIDFromYPos(in float targetYPos)
+        internal Guid GetRegionIDFromYPos(in float targetYPos)
         {
             float curFrame = GridManager.Instance.GetFrameFromYPos(targetYPos);
 

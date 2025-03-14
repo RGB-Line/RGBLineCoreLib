@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 using UnityEngine;
 
+using RGBLineCoreLib.Data;
+using RGBLineCoreLib.Manager;
 
-namespace RGBLineCoreLib
+
+namespace RGBLineCoreLib.Functor
 {
     public class RedAndBlueNote : MonoBehaviour, IRedAndBlueNote
     {
@@ -16,13 +19,22 @@ namespace RGBLineCoreLib
         private INoteItem m_noteItem;
 
         private SpriteRenderer m_spriteRenderer = null;
+        private BoxCollider2D m_judgeBox = null;
 
 
         public void Awake()
         {
             m_spriteRenderer = GetComponent<SpriteRenderer>();
+            m_judgeBox = GetComponent<BoxCollider2D>();
         }
 
+        public Guid AttachedNoteID
+        {
+            get
+            {
+                return m_noteItem.NoteID;
+            }
+        }
         public Transform Transform
         {
             get
@@ -67,6 +79,24 @@ namespace RGBLineCoreLib
                     GridManager.Instance.GetUnitFrameSize() * curNoteData.MinorOffsetTime,
                 z = -7.5f
             };
+
+            StageData.StageConfigData curStageConfigData = StageDataInterface.StageConfigDataInterface.GetStageConfigData();
+            StageMetadata stageMetadata = StageMetadataInterface.GetStageMetadata();
+            float velocity = (GridManager.Instance.GetTotalFrameCount() * (curStageConfigData.LengthPerBit / curStageConfigData.BitSubDivision)) / stageMetadata.MusicLength;
+
+            GameConfigData gameConfigData = GameConfigDataBuffer.Instance.ConfigData;
+            m_judgeBox.size = new Vector2()
+            {
+                x = 1.0f,
+                y = velocity * (gameConfigData.NoteHitJudgeStrandard.HitJudgingRanges[2] / 1000.0f) * 4.0f
+            };
+        }
+
+        public void Dispose()
+        {
+            m_noteItem = null;
+            m_spriteRenderer.sprite = null;
+            m_judgeBox.size = Vector2.one;
         }
     }
 }

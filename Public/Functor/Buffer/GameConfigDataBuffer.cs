@@ -9,8 +9,10 @@ using CommonUtilLib.ThreadSafe;
 
 using Newtonsoft.Json;
 
+using RGBLineCoreLib.Data;
 
-namespace RGBLineCoreLib
+
+namespace RGBLineCoreLib.Functor
 {
     public sealed class GameConfigDataBuffer : SingleTon<GameConfigDataBuffer>
     {
@@ -41,7 +43,7 @@ namespace RGBLineCoreLib
             {
                 m_gameConfigData = new GameConfigData()
                 {
-                    noteHitJudgingStrandard = new GameConfigData.NoteHitJudgingStrandard()
+                    NoteHitJudgeStrandard = new GameConfigData.NoteHitJudgingStrandard()
                     {
                         HitJudgingRanges = new List<float>() { 50.0f, 100.0f, 200.0f }
                     },

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 
-namespace RGBLineCoreLib
+namespace RGBLineCoreLib.Data
 {
     public sealed class StageLoadInfoDTO : MonoBehaviour
     {

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 
-namespace RGBLineCoreLib
+namespace RGBLineCoreLib.Data
 {
     [CreateAssetMenu(fileName = "DataPathTable", menuName = "RGBLine/DataPathTable", order = 1)]
     internal class DataPathTable : ScriptableObject

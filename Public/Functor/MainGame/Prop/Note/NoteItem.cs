@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 using UnityEngine;
 
+using RGBLineCoreLib.Data;
+using RGBLineCoreLib.Manager;
 
-namespace RGBLineCoreLib
+
+namespace RGBLineCoreLib.Functor
 {
     public class NoteItem : MonoBehaviour, INoteItem
     {
@@ -33,6 +36,28 @@ namespace RGBLineCoreLib
                 return m_noteID;
             }
         }
+        public Transform Transform
+        {
+            get
+            {
+                return transform;
+            }
+        }
+
+        public IRedAndBlueNote RedAndBlueNote
+        {
+            get
+            {
+                return m_redAndBlueNote;
+            }
+        }
+        public IGreenNote GreenNote
+        {
+            get
+            {
+                return m_greenNote;
+            }
+        }
 
         public void Render(in Guid noteID = default)
         {
@@ -44,10 +69,6 @@ namespace RGBLineCoreLib
             {
                 m_noteID = noteID;
             }
-
-#if FOR_EDITOR
-            Dispose();
-#endif
 
             switch (StageDataInterface.NoteDataInterface.GetNoteData(m_noteID).CurNoteType)
             {
@@ -145,7 +166,11 @@ namespace RGBLineCoreLib
 
         public void Dispose()
         {
+            m_redAndBlueNote.Dispose();
+            Destroy(m_redAndBlueNote.Transform.gameObject);
 
+            m_greenNote.Dispose();
+            Destroy(m_greenNote.Transform.gameObject);
         }
     }
 }

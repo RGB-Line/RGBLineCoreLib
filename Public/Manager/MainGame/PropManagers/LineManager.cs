@@ -8,8 +8,10 @@ using UnityEngine;
 
 using CommonUtilLib.ThreadSafe;
 
+using RGBLineCoreLib.Functor;
 
-namespace RGBLineCoreLib
+
+namespace RGBLineCoreLib.Manager
 {
     public sealed class LineManager : SingleTonForGameObject<LineManager>
     {
@@ -49,7 +51,11 @@ namespace RGBLineCoreLib
         }
         public void DespawnLineProps()
         {
-
+            foreach (ILineItem lineItem in m_lineItemTable.Values)
+            {
+                lineItem.Dispose();
+            }
+            m_lineItemTable.Clear();
         }
 
         public ILineItem GetLineItem(in Guid targetLineID)

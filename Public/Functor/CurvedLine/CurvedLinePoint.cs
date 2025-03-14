@@ -1,30 +1,40 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class CurvedLinePoint : MonoBehaviour 
+using UnityEngine;
+
+
+namespace RGBLineCoreLib.Functor
 {
-	[HideInInspector] public bool showGizmo = true;
-	[HideInInspector] public float gizmoSize = 0.1f;
-	[HideInInspector] public Color gizmoColor = new Color(1,0,0,0.5f);
-
-	void OnDrawGizmos()
+	public class CurvedLinePoint : MonoBehaviour
 	{
-		if( showGizmo == true )
-		{
-			Gizmos.color = gizmoColor;
+		[HideInInspector] public bool showGizmo = true;
+		[HideInInspector] public float gizmoSize = 0.1f;
+		[HideInInspector] public Color gizmoColor = new Color(1, 0, 0, 0.5f);
 
-			Gizmos.DrawSphere( this.transform.position, gizmoSize );
+		void OnDrawGizmos()
+		{
+			if (showGizmo == true)
+			{
+				Gizmos.color = gizmoColor;
+
+				Gizmos.DrawSphere(this.transform.position, gizmoSize);
+			}
 		}
-	}
 
-	//update parent line when this point moved
-	void OnDrawGizmosSelected()
-	{
-		CurvedLineRenderer curvedLine = this.transform.parent.GetComponent<CurvedLineRenderer>();
-
-		if( curvedLine != null )
+		//update parent line when this point moved
+		void OnDrawGizmosSelected()
 		{
-			curvedLine.Update();
+			CurvedLineRenderer curvedLine = this.transform.parent.GetComponent<CurvedLineRenderer>();
+
+			if (curvedLine != null)
+			{
+				curvedLine.Update();
+			}
 		}
 	}
 }

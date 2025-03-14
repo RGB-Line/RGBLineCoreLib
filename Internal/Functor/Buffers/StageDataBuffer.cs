@@ -9,8 +9,10 @@ using CommonUtilLib.ThreadSafe;
 
 using Newtonsoft.Json;
 
+using RGBLineCoreLib.Data;
 
-namespace RGBLineCoreLib
+
+namespace RGBLineCoreLib.Functor
 {
     internal sealed class StageDataBuffer : SingleTon<StageDataBuffer>
     {

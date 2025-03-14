@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 
-namespace RGBLineCoreLib
+namespace RGBLineCoreLib.Functor
 {
     public sealed class RegionTransitionEffector : MonoBehaviour
     {

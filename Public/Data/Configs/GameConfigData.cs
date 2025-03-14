@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace RGBLineCoreLib
+namespace RGBLineCoreLib.Data
 {
     public struct GameConfigData
     {
@@ -32,7 +32,7 @@ namespace RGBLineCoreLib
         }
 
 
-        public NoteHitJudgingStrandard noteHitJudgingStrandard;
+        public NoteHitJudgingStrandard NoteHitJudgeStrandard;
 
         public float MusicVolume;
         public MaxFrameRate MaxFrame;
