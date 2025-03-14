@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.Functor.IRedLineCornerNote
+  commentId: T:RGBLineCoreLib.Functor.IRedLineCornerNote
+  id: IRedLineCornerNote
+  parent: RGBLineCoreLib.Functor
+  children:
+  - RGBLineCoreLib.Functor.IRedLineCornerNote.NoteID
+  - RGBLineCoreLib.Functor.IRedLineCornerNote.Render
+  - RGBLineCoreLib.Functor.IRedLineCornerNote.Transform
+  langs:
+  - csharp
+  - vb
+  name: IRedLineCornerNote
+  nameWithType: IRedLineCornerNote
+  fullName: RGBLineCoreLib.Functor.IRedLineCornerNote
+  type: Interface
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Note/IRedLineCornerNote.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: IRedLineCornerNote
+    path: ../Public/Functor/MainGame/Prop/Note/IRedLineCornerNote.cs
+    startLine: 11
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: 'public interface IRedLineCornerNote : IDisposable'
+    content.vb: Public Interface IRedLineCornerNote Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: RGBLineCoreLib.Functor.IRedLineCornerNote.NoteID
+  commentId: P:RGBLineCoreLib.Functor.IRedLineCornerNote.NoteID
+  id: NoteID
+  parent: RGBLineCoreLib.Functor.IRedLineCornerNote
+  langs:
+  - csharp
+  - vb
+  name: NoteID
+  nameWithType: IRedLineCornerNote.NoteID
+  fullName: RGBLineCoreLib.Functor.IRedLineCornerNote.NoteID
+  type: Property
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Note/IRedLineCornerNote.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: NoteID
+    path: ../Public/Functor/MainGame/Prop/Note/IRedLineCornerNote.cs
+    startLine: 13
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: Guid NoteID { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: ReadOnly Property NoteID As Guid
+  overload: RGBLineCoreLib.Functor.IRedLineCornerNote.NoteID*
+- uid: RGBLineCoreLib.Functor.IRedLineCornerNote.Transform
+  commentId: P:RGBLineCoreLib.Functor.IRedLineCornerNote.Transform
+  id: Transform
+  parent: RGBLineCoreLib.Functor.IRedLineCornerNote
+  langs:
+  - csharp
+  - vb
+  name: Transform
+  nameWithType: IRedLineCornerNote.Transform
+  fullName: RGBLineCoreLib.Functor.IRedLineCornerNote.Transform
+  type: Property
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Note/IRedLineCornerNote.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Transform
+    path: ../Public/Functor/MainGame/Prop/Note/IRedLineCornerNote.cs
+    startLine: 14
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: Transform Transform { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Transform
+    content.vb: ReadOnly Property Transform As Transform
+  overload: RGBLineCoreLib.Functor.IRedLineCornerNote.Transform*
+- uid: RGBLineCoreLib.Functor.IRedLineCornerNote.Render
+  commentId: M:RGBLineCoreLib.Functor.IRedLineCornerNote.Render
+  id: Render
+  parent: RGBLineCoreLib.Functor.IRedLineCornerNote
+  langs:
+  - csharp
+  - vb
+  name: Render()
+  nameWithType: IRedLineCornerNote.Render()
+  fullName: RGBLineCoreLib.Functor.IRedLineCornerNote.Render()
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Note/IRedLineCornerNote.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Render
+    path: ../Public/Functor/MainGame/Prop/Note/IRedLineCornerNote.cs
+    startLine: 16
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: void Render()
+    content.vb: Sub Render()
+  overload: RGBLineCoreLib.Functor.IRedLineCornerNote.Render*
+references:
+- uid: RGBLineCoreLib.Functor
+  commentId: N:RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib.Functor
+  nameWithType: RGBLineCoreLib.Functor
+  fullName: RGBLineCoreLib.Functor
+  spec.csharp:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor
+    name: Functor
+    href: RGBLineCoreLib.Functor.html
+  spec.vb:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor
+    name: Functor
+    href: RGBLineCoreLib.Functor.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RGBLineCoreLib.Functor.IRedLineCornerNote.NoteID*
+  commentId: Overload:RGBLineCoreLib.Functor.IRedLineCornerNote.NoteID
+  href: RGBLineCoreLib.Functor.IRedLineCornerNote.html#RGBLineCoreLib_Functor_IRedLineCornerNote_NoteID
+  name: NoteID
+  nameWithType: IRedLineCornerNote.NoteID
+  fullName: RGBLineCoreLib.Functor.IRedLineCornerNote.NoteID
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: RGBLineCoreLib.Functor.IRedLineCornerNote.Transform*
+  commentId: Overload:RGBLineCoreLib.Functor.IRedLineCornerNote.Transform
+  href: RGBLineCoreLib.Functor.IRedLineCornerNote.html#RGBLineCoreLib_Functor_IRedLineCornerNote_Transform
+  name: Transform
+  nameWithType: IRedLineCornerNote.Transform
+  fullName: RGBLineCoreLib.Functor.IRedLineCornerNote.Transform
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: RGBLineCoreLib.Functor.IRedLineCornerNote.Render*
+  commentId: Overload:RGBLineCoreLib.Functor.IRedLineCornerNote.Render
+  href: RGBLineCoreLib.Functor.IRedLineCornerNote.html#RGBLineCoreLib_Functor_IRedLineCornerNote_Render
+  name: Render
+  nameWithType: IRedLineCornerNote.Render
+  fullName: RGBLineCoreLib.Functor.IRedLineCornerNote.Render

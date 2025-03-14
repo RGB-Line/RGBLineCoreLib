@@ -1,0 +1,157 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+  commentId: T:RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+  id: StageMetadata.MajorDifficultyLevel
+  parent: RGBLineCoreLib.Data
+  children:
+  - RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.Easy
+  - RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.Hard
+  - RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.Normal
+  langs:
+  - csharp
+  - vb
+  name: StageMetadata.MajorDifficultyLevel
+  nameWithType: StageMetadata.MajorDifficultyLevel
+  fullName: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+  type: Enum
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageMetadataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: MajorDifficultyLevel
+    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
+    startLine: 14
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: 해당 Stage의 Major Difficulty를 나타내는 Flag
+  example: []
+  syntax:
+    content: 'public enum StageMetadata.MajorDifficultyLevel : byte'
+    content.vb: Public Enum StageMetadata.MajorDifficultyLevel As Byte
+- uid: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.Easy
+  commentId: F:RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.Easy
+  id: Easy
+  parent: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+  langs:
+  - csharp
+  - vb
+  name: Easy
+  nameWithType: StageMetadata.MajorDifficultyLevel.Easy
+  fullName: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.Easy
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageMetadataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Easy
+    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
+    startLine: 16
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: Easy = 0
+    return:
+      type: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+- uid: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.Normal
+  commentId: F:RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.Normal
+  id: Normal
+  parent: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: StageMetadata.MajorDifficultyLevel.Normal
+  fullName: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.Normal
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageMetadataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Normal
+    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
+    startLine: 16
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: Normal = 1
+    return:
+      type: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+- uid: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.Hard
+  commentId: F:RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.Hard
+  id: Hard
+  parent: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+  langs:
+  - csharp
+  - vb
+  name: Hard
+  nameWithType: StageMetadata.MajorDifficultyLevel.Hard
+  fullName: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.Hard
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageMetadataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Hard
+    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
+    startLine: 16
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: Hard = 2
+    return:
+      type: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+references:
+- uid: RGBLineCoreLib.Data
+  commentId: N:RGBLineCoreLib.Data
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib.Data
+  nameWithType: RGBLineCoreLib.Data
+  fullName: RGBLineCoreLib.Data
+  spec.csharp:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+  spec.vb:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+- uid: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+  commentId: T:RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.StageMetadata.html
+  name: StageMetadata.MajorDifficultyLevel
+  nameWithType: StageMetadata.MajorDifficultyLevel
+  fullName: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.StageMetadata
+    name: StageMetadata
+    href: RGBLineCoreLib.Data.StageMetadata.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+    name: MajorDifficultyLevel
+    href: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.StageMetadata
+    name: StageMetadata
+    href: RGBLineCoreLib.Data.StageMetadata.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+    name: MajorDifficultyLevel
+    href: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.html

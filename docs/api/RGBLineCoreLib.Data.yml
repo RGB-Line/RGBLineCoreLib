@@ -1,0 +1,403 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.Data
+  commentId: N:RGBLineCoreLib.Data
+  id: RGBLineCoreLib.Data
+  children:
+  - RGBLineCoreLib.Data.GameConfigData
+  - RGBLineCoreLib.Data.GameConfigData.MaxFrameRate
+  - RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard
+  - RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  - RGBLineCoreLib.Data.HalfFloatVector2
+  - RGBLineCoreLib.Data.StageData
+  - RGBLineCoreLib.Data.StageData.LineData
+  - RGBLineCoreLib.Data.StageData.LineData.LineSmoothType
+  - RGBLineCoreLib.Data.StageData.NoteData
+  - RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
+  - RGBLineCoreLib.Data.StageData.NoteData.NoteType
+  - RGBLineCoreLib.Data.StageData.RegionData
+  - RGBLineCoreLib.Data.StageData.RegionData.ColorType
+  - RGBLineCoreLib.Data.StageData.StageConfigData
+  - RGBLineCoreLib.Data.StageLoadInfoDTO
+  - RGBLineCoreLib.Data.StageMetadata
+  - RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+  langs:
+  - csharp
+  - vb
+  name: RGBLineCoreLib.Data
+  nameWithType: RGBLineCoreLib.Data
+  fullName: RGBLineCoreLib.Data
+  type: Namespace
+  assemblies:
+  - RGBLineCoreLib
+references:
+- uid: RGBLineCoreLib.Data.StageLoadInfoDTO
+  commentId: T:RGBLineCoreLib.Data.StageLoadInfoDTO
+  href: RGBLineCoreLib.Data.StageLoadInfoDTO.html
+  name: StageLoadInfoDTO
+  nameWithType: StageLoadInfoDTO
+  fullName: RGBLineCoreLib.Data.StageLoadInfoDTO
+- uid: RGBLineCoreLib.Data.GameConfigData
+  commentId: T:RGBLineCoreLib.Data.GameConfigData
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.GameConfigData.html
+  name: GameConfigData
+  nameWithType: GameConfigData
+  fullName: RGBLineCoreLib.Data.GameConfigData
+- uid: RGBLineCoreLib.Data.GameConfigData.MaxFrameRate
+  commentId: T:RGBLineCoreLib.Data.GameConfigData.MaxFrameRate
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.GameConfigData.html
+  name: GameConfigData.MaxFrameRate
+  nameWithType: GameConfigData.MaxFrameRate
+  fullName: RGBLineCoreLib.Data.GameConfigData.MaxFrameRate
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.Data.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.GameConfigData.MaxFrameRate
+    name: MaxFrameRate
+    href: RGBLineCoreLib.Data.GameConfigData.MaxFrameRate.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.Data.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.GameConfigData.MaxFrameRate
+    name: MaxFrameRate
+    href: RGBLineCoreLib.Data.GameConfigData.MaxFrameRate.html
+- uid: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard
+  commentId: T:RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.GameConfigData.html
+  name: GameConfigData.NoteHitJudgingStrandard
+  nameWithType: GameConfigData.NoteHitJudgingStrandard
+  fullName: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.Data.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard
+    name: NoteHitJudgingStrandard
+    href: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.Data.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard
+    name: NoteHitJudgingStrandard
+    href: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.html
+- uid: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  commentId: T:RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.GameConfigData.html
+  name: GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  nameWithType: GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  fullName: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.Data.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard
+    name: NoteHitJudgingStrandard
+    href: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+    name: HitJudgingType
+    href: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.Data.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard
+    name: NoteHitJudgingStrandard
+    href: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+    name: HitJudgingType
+    href: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.html
+- uid: RGBLineCoreLib.Data.HalfFloatVector2
+  commentId: T:RGBLineCoreLib.Data.HalfFloatVector2
+  href: RGBLineCoreLib.Data.HalfFloatVector2.html
+  name: HalfFloatVector2
+  nameWithType: HalfFloatVector2
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2
+- uid: RGBLineCoreLib.Data.StageData
+  commentId: T:RGBLineCoreLib.Data.StageData
+  href: RGBLineCoreLib.Data.StageData.html
+  name: StageData
+  nameWithType: StageData
+  fullName: RGBLineCoreLib.Data.StageData
+- uid: RGBLineCoreLib.Data.StageData.RegionData
+  commentId: T:RGBLineCoreLib.Data.StageData.RegionData
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.StageData.html
+  name: StageData.RegionData
+  nameWithType: StageData.RegionData
+  fullName: RGBLineCoreLib.Data.StageData.RegionData
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.RegionData
+    name: RegionData
+    href: RGBLineCoreLib.Data.StageData.RegionData.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.RegionData
+    name: RegionData
+    href: RGBLineCoreLib.Data.StageData.RegionData.html
+- uid: RGBLineCoreLib.Data.StageData.RegionData.ColorType
+  commentId: T:RGBLineCoreLib.Data.StageData.RegionData.ColorType
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.StageData.html
+  name: StageData.RegionData.ColorType
+  nameWithType: StageData.RegionData.ColorType
+  fullName: RGBLineCoreLib.Data.StageData.RegionData.ColorType
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.RegionData
+    name: RegionData
+    href: RGBLineCoreLib.Data.StageData.RegionData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.RegionData.ColorType
+    name: ColorType
+    href: RGBLineCoreLib.Data.StageData.RegionData.ColorType.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.RegionData
+    name: RegionData
+    href: RGBLineCoreLib.Data.StageData.RegionData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.RegionData.ColorType
+    name: ColorType
+    href: RGBLineCoreLib.Data.StageData.RegionData.ColorType.html
+- uid: RGBLineCoreLib.Data.StageData.LineData
+  commentId: T:RGBLineCoreLib.Data.StageData.LineData
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.StageData.html
+  name: StageData.LineData
+  nameWithType: StageData.LineData
+  fullName: RGBLineCoreLib.Data.StageData.LineData
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.LineData
+    name: LineData
+    href: RGBLineCoreLib.Data.StageData.LineData.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.LineData
+    name: LineData
+    href: RGBLineCoreLib.Data.StageData.LineData.html
+- uid: RGBLineCoreLib.Data.StageData.LineData.LineSmoothType
+  commentId: T:RGBLineCoreLib.Data.StageData.LineData.LineSmoothType
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.StageData.html
+  name: StageData.LineData.LineSmoothType
+  nameWithType: StageData.LineData.LineSmoothType
+  fullName: RGBLineCoreLib.Data.StageData.LineData.LineSmoothType
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.LineData
+    name: LineData
+    href: RGBLineCoreLib.Data.StageData.LineData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.LineData.LineSmoothType
+    name: LineSmoothType
+    href: RGBLineCoreLib.Data.StageData.LineData.LineSmoothType.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.LineData
+    name: LineData
+    href: RGBLineCoreLib.Data.StageData.LineData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.LineData.LineSmoothType
+    name: LineSmoothType
+    href: RGBLineCoreLib.Data.StageData.LineData.LineSmoothType.html
+- uid: RGBLineCoreLib.Data.StageData.NoteData
+  commentId: T:RGBLineCoreLib.Data.StageData.NoteData
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.StageData.html
+  name: StageData.NoteData
+  nameWithType: StageData.NoteData
+  fullName: RGBLineCoreLib.Data.StageData.NoteData
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.Data.StageData.NoteData.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.Data.StageData.NoteData.html
+- uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType
+  commentId: T:RGBLineCoreLib.Data.StageData.NoteData.NoteType
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.StageData.html
+  name: StageData.NoteData.NoteType
+  nameWithType: StageData.NoteData.NoteType
+  fullName: RGBLineCoreLib.Data.StageData.NoteData.NoteType
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.Data.StageData.NoteData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType
+    name: NoteType
+    href: RGBLineCoreLib.Data.StageData.NoteData.NoteType.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.Data.StageData.NoteData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType
+    name: NoteType
+    href: RGBLineCoreLib.Data.StageData.NoteData.NoteType.html
+- uid: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
+  commentId: T:RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.StageData.html
+  name: StageData.NoteData.FlipNoteDirection
+  nameWithType: StageData.NoteData.FlipNoteDirection
+  fullName: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.Data.StageData.NoteData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
+    name: FlipNoteDirection
+    href: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.Data.StageData.NoteData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
+    name: FlipNoteDirection
+    href: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection.html
+- uid: RGBLineCoreLib.Data.StageData.StageConfigData
+  commentId: T:RGBLineCoreLib.Data.StageData.StageConfigData
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.StageData.html
+  name: StageData.StageConfigData
+  nameWithType: StageData.StageConfigData
+  fullName: RGBLineCoreLib.Data.StageData.StageConfigData
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.StageConfigData
+    name: StageConfigData
+    href: RGBLineCoreLib.Data.StageData.StageConfigData.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.StageConfigData
+    name: StageConfigData
+    href: RGBLineCoreLib.Data.StageData.StageConfigData.html
+- uid: RGBLineCoreLib.Data.StageMetadata
+  commentId: T:RGBLineCoreLib.Data.StageMetadata
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.StageMetadata.html
+  name: StageMetadata
+  nameWithType: StageMetadata
+  fullName: RGBLineCoreLib.Data.StageMetadata
+- uid: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+  commentId: T:RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.StageMetadata.html
+  name: StageMetadata.MajorDifficultyLevel
+  nameWithType: StageMetadata.MajorDifficultyLevel
+  fullName: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.StageMetadata
+    name: StageMetadata
+    href: RGBLineCoreLib.Data.StageMetadata.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+    name: MajorDifficultyLevel
+    href: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.StageMetadata
+    name: StageMetadata
+    href: RGBLineCoreLib.Data.StageMetadata.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+    name: MajorDifficultyLevel
+    href: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.html
+- uid: RGBLineCoreLib.Data
+  commentId: N:RGBLineCoreLib.Data
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib.Data
+  nameWithType: RGBLineCoreLib.Data
+  fullName: RGBLineCoreLib.Data
+  spec.csharp:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+  spec.vb:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html

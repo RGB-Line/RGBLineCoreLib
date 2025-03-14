@@ -1,0 +1,323 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.Functor
+  commentId: N:RGBLineCoreLib.Functor
+  id: RGBLineCoreLib.Functor
+  children:
+  - RGBLineCoreLib.Functor.CurvedLinePoint
+  - RGBLineCoreLib.Functor.CurvedLineRenderer
+  - RGBLineCoreLib.Functor.DataPathInterface
+  - RGBLineCoreLib.Functor.DeterminLine
+  - RGBLineCoreLib.Functor.GameConfigDataBuffer
+  - RGBLineCoreLib.Functor.GreenNote
+  - RGBLineCoreLib.Functor.IGreenNote
+  - RGBLineCoreLib.Functor.ILineItem
+  - RGBLineCoreLib.Functor.ILinePoint
+  - RGBLineCoreLib.Functor.INoteItem
+  - RGBLineCoreLib.Functor.IRedAndBlueNote
+  - RGBLineCoreLib.Functor.IRedLineCornerNote
+  - RGBLineCoreLib.Functor.LineItem
+  - RGBLineCoreLib.Functor.LineItem.LineMaterials
+  - RGBLineCoreLib.Functor.LinePoint
+  - RGBLineCoreLib.Functor.LineSmoother
+  - RGBLineCoreLib.Functor.LineTracker
+  - RGBLineCoreLib.Functor.NoteItem
+  - RGBLineCoreLib.Functor.RedAndBlueNote
+  - RGBLineCoreLib.Functor.RedLineCornerNote
+  - RGBLineCoreLib.Functor.RegionFadeoutEffect
+  - RGBLineCoreLib.Functor.RegionTransitionEffector
+  - RGBLineCoreLib.Functor.StageDataInterface
+  - RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface
+  - RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface
+  - RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface
+  - RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface
+  - RGBLineCoreLib.Functor.StageMetadataInterface
+  langs:
+  - csharp
+  - vb
+  name: RGBLineCoreLib.Functor
+  nameWithType: RGBLineCoreLib.Functor
+  fullName: RGBLineCoreLib.Functor
+  type: Namespace
+  assemblies:
+  - RGBLineCoreLib
+references:
+- uid: RGBLineCoreLib.Functor.GameConfigDataBuffer
+  commentId: T:RGBLineCoreLib.Functor.GameConfigDataBuffer
+  href: RGBLineCoreLib.Functor.GameConfigDataBuffer.html
+  name: GameConfigDataBuffer
+  nameWithType: GameConfigDataBuffer
+  fullName: RGBLineCoreLib.Functor.GameConfigDataBuffer
+- uid: RGBLineCoreLib.Functor.CurvedLinePoint
+  commentId: T:RGBLineCoreLib.Functor.CurvedLinePoint
+  parent: RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.Functor.CurvedLinePoint.html
+  name: CurvedLinePoint
+  nameWithType: CurvedLinePoint
+  fullName: RGBLineCoreLib.Functor.CurvedLinePoint
+- uid: RGBLineCoreLib.Functor.CurvedLineRenderer
+  commentId: T:RGBLineCoreLib.Functor.CurvedLineRenderer
+  parent: RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.Functor.CurvedLineRenderer.html
+  name: CurvedLineRenderer
+  nameWithType: CurvedLineRenderer
+  fullName: RGBLineCoreLib.Functor.CurvedLineRenderer
+- uid: RGBLineCoreLib.Functor.LineSmoother
+  commentId: T:RGBLineCoreLib.Functor.LineSmoother
+  href: RGBLineCoreLib.Functor.LineSmoother.html
+  name: LineSmoother
+  nameWithType: LineSmoother
+  fullName: RGBLineCoreLib.Functor.LineSmoother
+- uid: RGBLineCoreLib.Functor.DataPathInterface
+  commentId: T:RGBLineCoreLib.Functor.DataPathInterface
+  href: RGBLineCoreLib.Functor.DataPathInterface.html
+  name: DataPathInterface
+  nameWithType: DataPathInterface
+  fullName: RGBLineCoreLib.Functor.DataPathInterface
+- uid: RGBLineCoreLib.Functor.RegionFadeoutEffect
+  commentId: T:RGBLineCoreLib.Functor.RegionFadeoutEffect
+  href: RGBLineCoreLib.Functor.RegionFadeoutEffect.html
+  name: RegionFadeoutEffect
+  nameWithType: RegionFadeoutEffect
+  fullName: RGBLineCoreLib.Functor.RegionFadeoutEffect
+- uid: RGBLineCoreLib.Functor.RegionTransitionEffector
+  commentId: T:RGBLineCoreLib.Functor.RegionTransitionEffector
+  parent: RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.Functor.RegionTransitionEffector.html
+  name: RegionTransitionEffector
+  nameWithType: RegionTransitionEffector
+  fullName: RGBLineCoreLib.Functor.RegionTransitionEffector
+- uid: RGBLineCoreLib.Functor.StageDataInterface
+  commentId: T:RGBLineCoreLib.Functor.StageDataInterface
+  href: RGBLineCoreLib.Functor.StageDataInterface.html
+  name: StageDataInterface
+  nameWithType: StageDataInterface
+  fullName: RGBLineCoreLib.Functor.StageDataInterface
+- uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface
+  commentId: T:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface
+  href: RGBLineCoreLib.Functor.StageDataInterface.html
+  name: StageDataInterface.RegionDataInterface
+  nameWithType: StageDataInterface.RegionDataInterface
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface
+  spec.csharp:
+  - uid: RGBLineCoreLib.Functor.StageDataInterface
+    name: StageDataInterface
+    href: RGBLineCoreLib.Functor.StageDataInterface.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface
+    name: RegionDataInterface
+    href: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Functor.StageDataInterface
+    name: StageDataInterface
+    href: RGBLineCoreLib.Functor.StageDataInterface.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface
+    name: RegionDataInterface
+    href: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html
+- uid: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface
+  commentId: T:RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface
+  href: RGBLineCoreLib.Functor.StageDataInterface.html
+  name: StageDataInterface.LineDataInterface
+  nameWithType: StageDataInterface.LineDataInterface
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface
+  spec.csharp:
+  - uid: RGBLineCoreLib.Functor.StageDataInterface
+    name: StageDataInterface
+    href: RGBLineCoreLib.Functor.StageDataInterface.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface
+    name: LineDataInterface
+    href: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Functor.StageDataInterface
+    name: StageDataInterface
+    href: RGBLineCoreLib.Functor.StageDataInterface.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface
+    name: LineDataInterface
+    href: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.html
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface
+  commentId: T:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface
+  href: RGBLineCoreLib.Functor.StageDataInterface.html
+  name: StageDataInterface.NoteDataInterface
+  nameWithType: StageDataInterface.NoteDataInterface
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface
+  spec.csharp:
+  - uid: RGBLineCoreLib.Functor.StageDataInterface
+    name: StageDataInterface
+    href: RGBLineCoreLib.Functor.StageDataInterface.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface
+    name: NoteDataInterface
+    href: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Functor.StageDataInterface
+    name: StageDataInterface
+    href: RGBLineCoreLib.Functor.StageDataInterface.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface
+    name: NoteDataInterface
+    href: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html
+- uid: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface
+  commentId: T:RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface
+  href: RGBLineCoreLib.Functor.StageDataInterface.html
+  name: StageDataInterface.StageConfigDataInterface
+  nameWithType: StageDataInterface.StageConfigDataInterface
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface
+  spec.csharp:
+  - uid: RGBLineCoreLib.Functor.StageDataInterface
+    name: StageDataInterface
+    href: RGBLineCoreLib.Functor.StageDataInterface.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface
+    name: StageConfigDataInterface
+    href: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Functor.StageDataInterface
+    name: StageDataInterface
+    href: RGBLineCoreLib.Functor.StageDataInterface.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface
+    name: StageConfigDataInterface
+    href: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.html
+- uid: RGBLineCoreLib.Functor.StageMetadataInterface
+  commentId: T:RGBLineCoreLib.Functor.StageMetadataInterface
+  href: RGBLineCoreLib.Functor.StageMetadataInterface.html
+  name: StageMetadataInterface
+  nameWithType: StageMetadataInterface
+  fullName: RGBLineCoreLib.Functor.StageMetadataInterface
+- uid: RGBLineCoreLib.Functor.LineTracker
+  commentId: T:RGBLineCoreLib.Functor.LineTracker
+  href: RGBLineCoreLib.Functor.LineTracker.html
+  name: LineTracker
+  nameWithType: LineTracker
+  fullName: RGBLineCoreLib.Functor.LineTracker
+- uid: RGBLineCoreLib.Functor.DeterminLine
+  commentId: T:RGBLineCoreLib.Functor.DeterminLine
+  href: RGBLineCoreLib.Functor.DeterminLine.html
+  name: DeterminLine
+  nameWithType: DeterminLine
+  fullName: RGBLineCoreLib.Functor.DeterminLine
+- uid: RGBLineCoreLib.Functor.ILineItem
+  commentId: T:RGBLineCoreLib.Functor.ILineItem
+  parent: RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.Functor.ILineItem.html
+  name: ILineItem
+  nameWithType: ILineItem
+  fullName: RGBLineCoreLib.Functor.ILineItem
+- uid: RGBLineCoreLib.Functor.ILinePoint
+  commentId: T:RGBLineCoreLib.Functor.ILinePoint
+  parent: RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.Functor.ILinePoint.html
+  name: ILinePoint
+  nameWithType: ILinePoint
+  fullName: RGBLineCoreLib.Functor.ILinePoint
+- uid: RGBLineCoreLib.Functor.LinePoint
+  commentId: T:RGBLineCoreLib.Functor.LinePoint
+  href: RGBLineCoreLib.Functor.LinePoint.html
+  name: LinePoint
+  nameWithType: LinePoint
+  fullName: RGBLineCoreLib.Functor.LinePoint
+- uid: RGBLineCoreLib.Functor.GreenNote
+  commentId: T:RGBLineCoreLib.Functor.GreenNote
+  href: RGBLineCoreLib.Functor.GreenNote.html
+  name: GreenNote
+  nameWithType: GreenNote
+  fullName: RGBLineCoreLib.Functor.GreenNote
+- uid: RGBLineCoreLib.Functor.IGreenNote
+  commentId: T:RGBLineCoreLib.Functor.IGreenNote
+  parent: RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.Functor.IGreenNote.html
+  name: IGreenNote
+  nameWithType: IGreenNote
+  fullName: RGBLineCoreLib.Functor.IGreenNote
+- uid: RGBLineCoreLib.Functor.INoteItem
+  commentId: T:RGBLineCoreLib.Functor.INoteItem
+  parent: RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.Functor.INoteItem.html
+  name: INoteItem
+  nameWithType: INoteItem
+  fullName: RGBLineCoreLib.Functor.INoteItem
+- uid: RGBLineCoreLib.Functor.LineItem
+  commentId: T:RGBLineCoreLib.Functor.LineItem
+  href: RGBLineCoreLib.Functor.LineItem.html
+  name: LineItem
+  nameWithType: LineItem
+  fullName: RGBLineCoreLib.Functor.LineItem
+- uid: RGBLineCoreLib.Functor.LineItem.LineMaterials
+  commentId: T:RGBLineCoreLib.Functor.LineItem.LineMaterials
+  href: RGBLineCoreLib.Functor.LineItem.html
+  name: LineItem.LineMaterials
+  nameWithType: LineItem.LineMaterials
+  fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials
+  spec.csharp:
+  - uid: RGBLineCoreLib.Functor.LineItem
+    name: LineItem
+    href: RGBLineCoreLib.Functor.LineItem.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor.LineItem.LineMaterials
+    name: LineMaterials
+    href: RGBLineCoreLib.Functor.LineItem.LineMaterials.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Functor.LineItem
+    name: LineItem
+    href: RGBLineCoreLib.Functor.LineItem.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor.LineItem.LineMaterials
+    name: LineMaterials
+    href: RGBLineCoreLib.Functor.LineItem.LineMaterials.html
+- uid: RGBLineCoreLib.Functor.IRedAndBlueNote
+  commentId: T:RGBLineCoreLib.Functor.IRedAndBlueNote
+  parent: RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.Functor.IRedAndBlueNote.html
+  name: IRedAndBlueNote
+  nameWithType: IRedAndBlueNote
+  fullName: RGBLineCoreLib.Functor.IRedAndBlueNote
+- uid: RGBLineCoreLib.Functor.IRedLineCornerNote
+  commentId: T:RGBLineCoreLib.Functor.IRedLineCornerNote
+  parent: RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.Functor.IRedLineCornerNote.html
+  name: IRedLineCornerNote
+  nameWithType: IRedLineCornerNote
+  fullName: RGBLineCoreLib.Functor.IRedLineCornerNote
+- uid: RGBLineCoreLib.Functor.NoteItem
+  commentId: T:RGBLineCoreLib.Functor.NoteItem
+  href: RGBLineCoreLib.Functor.NoteItem.html
+  name: NoteItem
+  nameWithType: NoteItem
+  fullName: RGBLineCoreLib.Functor.NoteItem
+- uid: RGBLineCoreLib.Functor.RedAndBlueNote
+  commentId: T:RGBLineCoreLib.Functor.RedAndBlueNote
+  href: RGBLineCoreLib.Functor.RedAndBlueNote.html
+  name: RedAndBlueNote
+  nameWithType: RedAndBlueNote
+  fullName: RGBLineCoreLib.Functor.RedAndBlueNote
+- uid: RGBLineCoreLib.Functor.RedLineCornerNote
+  commentId: T:RGBLineCoreLib.Functor.RedLineCornerNote
+  href: RGBLineCoreLib.Functor.RedLineCornerNote.html
+  name: RedLineCornerNote
+  nameWithType: RedLineCornerNote
+  fullName: RGBLineCoreLib.Functor.RedLineCornerNote
+- uid: RGBLineCoreLib.Functor
+  commentId: N:RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib.Functor
+  nameWithType: RGBLineCoreLib.Functor
+  fullName: RGBLineCoreLib.Functor
+  spec.csharp:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor
+    name: Functor
+    href: RGBLineCoreLib.Functor.html
+  spec.vb:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor
+    name: Functor
+    href: RGBLineCoreLib.Functor.html

@@ -1,0 +1,220 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.Functor.ILinePoint
+  commentId: T:RGBLineCoreLib.Functor.ILinePoint
+  id: ILinePoint
+  parent: RGBLineCoreLib.Functor
+  children:
+  - RGBLineCoreLib.Functor.ILinePoint.Render(RGBLineCoreLib.Functor.ILineItem@,UnityEngine.Vector2@,System.Single@,System.Int32@)
+  - RGBLineCoreLib.Functor.ILinePoint.Transform
+  langs:
+  - csharp
+  - vb
+  name: ILinePoint
+  nameWithType: ILinePoint
+  fullName: RGBLineCoreLib.Functor.ILinePoint
+  type: Interface
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Line/ILinePoint.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: ILinePoint
+    path: ../Public/Functor/MainGame/Prop/Line/ILinePoint.cs
+    startLine: 11
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: 'public interface ILinePoint : IDisposable'
+    content.vb: Public Interface ILinePoint Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: RGBLineCoreLib.Functor.ILinePoint.Transform
+  commentId: P:RGBLineCoreLib.Functor.ILinePoint.Transform
+  id: Transform
+  parent: RGBLineCoreLib.Functor.ILinePoint
+  langs:
+  - csharp
+  - vb
+  name: Transform
+  nameWithType: ILinePoint.Transform
+  fullName: RGBLineCoreLib.Functor.ILinePoint.Transform
+  type: Property
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Line/ILinePoint.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Transform
+    path: ../Public/Functor/MainGame/Prop/Line/ILinePoint.cs
+    startLine: 13
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: Transform Transform { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Transform
+    content.vb: ReadOnly Property Transform As Transform
+  overload: RGBLineCoreLib.Functor.ILinePoint.Transform*
+- uid: RGBLineCoreLib.Functor.ILinePoint.Render(RGBLineCoreLib.Functor.ILineItem@,UnityEngine.Vector2@,System.Single@,System.Int32@)
+  commentId: M:RGBLineCoreLib.Functor.ILinePoint.Render(RGBLineCoreLib.Functor.ILineItem@,UnityEngine.Vector2@,System.Single@,System.Int32@)
+  id: Render(RGBLineCoreLib.Functor.ILineItem@,UnityEngine.Vector2@,System.Single@,System.Int32@)
+  parent: RGBLineCoreLib.Functor.ILinePoint
+  langs:
+  - csharp
+  - vb
+  name: Render(in ILineItem, in Vector2, in float, in int)
+  nameWithType: ILinePoint.Render(in ILineItem, in Vector2, in float, in int)
+  fullName: RGBLineCoreLib.Functor.ILinePoint.Render(in RGBLineCoreLib.Functor.ILineItem, in UnityEngine.Vector2, in float, in int)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Line/ILinePoint.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Render
+    path: ../Public/Functor/MainGame/Prop/Line/ILinePoint.cs
+    startLine: 15
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: void Render(in ILineItem parentLineItem, in Vector2 pos, in float minorOffsetTime, in int pointIndex)
+    parameters:
+    - id: parentLineItem
+      type: RGBLineCoreLib.Functor.ILineItem
+    - id: pos
+      type: UnityEngine.Vector2
+    - id: minorOffsetTime
+      type: System.Single
+    - id: pointIndex
+      type: System.Int32
+    content.vb: Sub Render(parentLineItem As ILineItem, pos As Vector2, minorOffsetTime As Single, pointIndex As Integer)
+  overload: RGBLineCoreLib.Functor.ILinePoint.Render*
+  nameWithType.vb: ILinePoint.Render(ILineItem, Vector2, Single, Integer)
+  fullName.vb: RGBLineCoreLib.Functor.ILinePoint.Render(RGBLineCoreLib.Functor.ILineItem, UnityEngine.Vector2, Single, Integer)
+  name.vb: Render(ILineItem, Vector2, Single, Integer)
+references:
+- uid: RGBLineCoreLib.Functor
+  commentId: N:RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib.Functor
+  nameWithType: RGBLineCoreLib.Functor
+  fullName: RGBLineCoreLib.Functor
+  spec.csharp:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor
+    name: Functor
+    href: RGBLineCoreLib.Functor.html
+  spec.vb:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor
+    name: Functor
+    href: RGBLineCoreLib.Functor.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RGBLineCoreLib.Functor.ILinePoint.Transform*
+  commentId: Overload:RGBLineCoreLib.Functor.ILinePoint.Transform
+  href: RGBLineCoreLib.Functor.ILinePoint.html#RGBLineCoreLib_Functor_ILinePoint_Transform
+  name: Transform
+  nameWithType: ILinePoint.Transform
+  fullName: RGBLineCoreLib.Functor.ILinePoint.Transform
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: RGBLineCoreLib.Functor.ILinePoint.Render*
+  commentId: Overload:RGBLineCoreLib.Functor.ILinePoint.Render
+  href: RGBLineCoreLib.Functor.ILinePoint.html#RGBLineCoreLib_Functor_ILinePoint_Render_RGBLineCoreLib_Functor_ILineItem__UnityEngine_Vector2__System_Single__System_Int32__
+  name: Render
+  nameWithType: ILinePoint.Render
+  fullName: RGBLineCoreLib.Functor.ILinePoint.Render
+- uid: RGBLineCoreLib.Functor.ILineItem
+  commentId: T:RGBLineCoreLib.Functor.ILineItem
+  parent: RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.Functor.ILineItem.html
+  name: ILineItem
+  nameWithType: ILineItem
+  fullName: RGBLineCoreLib.Functor.ILineItem
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

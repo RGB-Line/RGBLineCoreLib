@@ -1,0 +1,438 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.Functor.LineItem.LineMaterials
+  commentId: T:RGBLineCoreLib.Functor.LineItem.LineMaterials
+  id: LineItem.LineMaterials
+  parent: RGBLineCoreLib.Functor
+  children:
+  - RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_BlueLine
+  - RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_DashLine
+  - RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_GreenLine
+  - RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_Outline
+  - RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_RedLine
+  langs:
+  - csharp
+  - vb
+  name: LineItem.LineMaterials
+  nameWithType: LineItem.LineMaterials
+  fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials
+  type: Struct
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Line/LineItem.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: LineMaterials
+    path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
+    startLine: 17
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct LineItem.LineMaterials
+    content.vb: >-
+      <Serializable>
+
+      Public Structure LineItem.LineMaterials
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_RedLine
+  commentId: F:RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_RedLine
+  id: m_material_RedLine
+  parent: RGBLineCoreLib.Functor.LineItem.LineMaterials
+  langs:
+  - csharp
+  - vb
+  name: m_material_RedLine
+  nameWithType: LineItem.LineMaterials.m_material_RedLine
+  fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_RedLine
+  type: Field
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Line/LineItem.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: m_material_RedLine
+    path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
+    startLine: 19
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public Material m_material_RedLine
+    return:
+      type: UnityEngine.Material
+    content.vb: Public m_material_RedLine As Material
+- uid: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_GreenLine
+  commentId: F:RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_GreenLine
+  id: m_material_GreenLine
+  parent: RGBLineCoreLib.Functor.LineItem.LineMaterials
+  langs:
+  - csharp
+  - vb
+  name: m_material_GreenLine
+  nameWithType: LineItem.LineMaterials.m_material_GreenLine
+  fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_GreenLine
+  type: Field
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Line/LineItem.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: m_material_GreenLine
+    path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
+    startLine: 20
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public Material m_material_GreenLine
+    return:
+      type: UnityEngine.Material
+    content.vb: Public m_material_GreenLine As Material
+- uid: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_BlueLine
+  commentId: F:RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_BlueLine
+  id: m_material_BlueLine
+  parent: RGBLineCoreLib.Functor.LineItem.LineMaterials
+  langs:
+  - csharp
+  - vb
+  name: m_material_BlueLine
+  nameWithType: LineItem.LineMaterials.m_material_BlueLine
+  fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_BlueLine
+  type: Field
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Line/LineItem.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: m_material_BlueLine
+    path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
+    startLine: 21
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public Material m_material_BlueLine
+    return:
+      type: UnityEngine.Material
+    content.vb: Public m_material_BlueLine As Material
+- uid: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_Outline
+  commentId: F:RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_Outline
+  id: m_material_Outline
+  parent: RGBLineCoreLib.Functor.LineItem.LineMaterials
+  langs:
+  - csharp
+  - vb
+  name: m_material_Outline
+  nameWithType: LineItem.LineMaterials.m_material_Outline
+  fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_Outline
+  type: Field
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Line/LineItem.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: m_material_Outline
+    path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
+    startLine: 23
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public Material m_material_Outline
+    return:
+      type: UnityEngine.Material
+    content.vb: Public m_material_Outline As Material
+- uid: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_DashLine
+  commentId: F:RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_DashLine
+  id: m_material_DashLine
+  parent: RGBLineCoreLib.Functor.LineItem.LineMaterials
+  langs:
+  - csharp
+  - vb
+  name: m_material_DashLine
+  nameWithType: LineItem.LineMaterials.m_material_DashLine
+  fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_DashLine
+  type: Field
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Line/LineItem.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: m_material_DashLine
+    path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
+    startLine: 24
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public Material m_material_DashLine
+    return:
+      type: UnityEngine.Material
+    content.vb: Public m_material_DashLine As Material
+references:
+- uid: RGBLineCoreLib.Functor
+  commentId: N:RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib.Functor
+  nameWithType: RGBLineCoreLib.Functor
+  fullName: RGBLineCoreLib.Functor
+  spec.csharp:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor
+    name: Functor
+    href: RGBLineCoreLib.Functor.html
+  spec.vb:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor
+    name: Functor
+    href: RGBLineCoreLib.Functor.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

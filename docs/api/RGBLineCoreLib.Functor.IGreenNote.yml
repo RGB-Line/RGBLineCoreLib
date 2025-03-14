@@ -1,0 +1,276 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.Functor.IGreenNote
+  commentId: T:RGBLineCoreLib.Functor.IGreenNote
+  id: IGreenNote
+  parent: RGBLineCoreLib.Functor
+  children:
+  - RGBLineCoreLib.Functor.IGreenNote.AttachedNoteID
+  - RGBLineCoreLib.Functor.IGreenNote.CurveStartYPos
+  - RGBLineCoreLib.Functor.IGreenNote.Render(RGBLineCoreLib.Functor.INoteItem@)
+  - RGBLineCoreLib.Functor.IGreenNote.Transform
+  langs:
+  - csharp
+  - vb
+  name: IGreenNote
+  nameWithType: IGreenNote
+  fullName: RGBLineCoreLib.Functor.IGreenNote
+  type: Interface
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Note/IGreenNote.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: IGreenNote
+    path: ../Public/Functor/MainGame/Prop/Note/IGreenNote.cs
+    startLine: 11
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: 'public interface IGreenNote : IDisposable'
+    content.vb: Public Interface IGreenNote Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: RGBLineCoreLib.Functor.IGreenNote.AttachedNoteID
+  commentId: P:RGBLineCoreLib.Functor.IGreenNote.AttachedNoteID
+  id: AttachedNoteID
+  parent: RGBLineCoreLib.Functor.IGreenNote
+  langs:
+  - csharp
+  - vb
+  name: AttachedNoteID
+  nameWithType: IGreenNote.AttachedNoteID
+  fullName: RGBLineCoreLib.Functor.IGreenNote.AttachedNoteID
+  type: Property
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Note/IGreenNote.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: AttachedNoteID
+    path: ../Public/Functor/MainGame/Prop/Note/IGreenNote.cs
+    startLine: 13
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: Guid AttachedNoteID { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: ReadOnly Property AttachedNoteID As Guid
+  overload: RGBLineCoreLib.Functor.IGreenNote.AttachedNoteID*
+- uid: RGBLineCoreLib.Functor.IGreenNote.Transform
+  commentId: P:RGBLineCoreLib.Functor.IGreenNote.Transform
+  id: Transform
+  parent: RGBLineCoreLib.Functor.IGreenNote
+  langs:
+  - csharp
+  - vb
+  name: Transform
+  nameWithType: IGreenNote.Transform
+  fullName: RGBLineCoreLib.Functor.IGreenNote.Transform
+  type: Property
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Note/IGreenNote.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Transform
+    path: ../Public/Functor/MainGame/Prop/Note/IGreenNote.cs
+    startLine: 14
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: Transform Transform { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Transform
+    content.vb: ReadOnly Property Transform As Transform
+  overload: RGBLineCoreLib.Functor.IGreenNote.Transform*
+- uid: RGBLineCoreLib.Functor.IGreenNote.CurveStartYPos
+  commentId: P:RGBLineCoreLib.Functor.IGreenNote.CurveStartYPos
+  id: CurveStartYPos
+  parent: RGBLineCoreLib.Functor.IGreenNote
+  langs:
+  - csharp
+  - vb
+  name: CurveStartYPos
+  nameWithType: IGreenNote.CurveStartYPos
+  fullName: RGBLineCoreLib.Functor.IGreenNote.CurveStartYPos
+  type: Property
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Note/IGreenNote.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: CurveStartYPos
+    path: ../Public/Functor/MainGame/Prop/Note/IGreenNote.cs
+    startLine: 16
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: float CurveStartYPos { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: ReadOnly Property CurveStartYPos As Single
+  overload: RGBLineCoreLib.Functor.IGreenNote.CurveStartYPos*
+- uid: RGBLineCoreLib.Functor.IGreenNote.Render(RGBLineCoreLib.Functor.INoteItem@)
+  commentId: M:RGBLineCoreLib.Functor.IGreenNote.Render(RGBLineCoreLib.Functor.INoteItem@)
+  id: Render(RGBLineCoreLib.Functor.INoteItem@)
+  parent: RGBLineCoreLib.Functor.IGreenNote
+  langs:
+  - csharp
+  - vb
+  name: Render(in INoteItem)
+  nameWithType: IGreenNote.Render(in INoteItem)
+  fullName: RGBLineCoreLib.Functor.IGreenNote.Render(in RGBLineCoreLib.Functor.INoteItem)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Note/IGreenNote.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Render
+    path: ../Public/Functor/MainGame/Prop/Note/IGreenNote.cs
+    startLine: 18
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: void Render(in INoteItem noteItem)
+    parameters:
+    - id: noteItem
+      type: RGBLineCoreLib.Functor.INoteItem
+    content.vb: Sub Render(noteItem As INoteItem)
+  overload: RGBLineCoreLib.Functor.IGreenNote.Render*
+  nameWithType.vb: IGreenNote.Render(INoteItem)
+  fullName.vb: RGBLineCoreLib.Functor.IGreenNote.Render(RGBLineCoreLib.Functor.INoteItem)
+  name.vb: Render(INoteItem)
+references:
+- uid: RGBLineCoreLib.Functor
+  commentId: N:RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib.Functor
+  nameWithType: RGBLineCoreLib.Functor
+  fullName: RGBLineCoreLib.Functor
+  spec.csharp:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor
+    name: Functor
+    href: RGBLineCoreLib.Functor.html
+  spec.vb:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor
+    name: Functor
+    href: RGBLineCoreLib.Functor.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RGBLineCoreLib.Functor.IGreenNote.AttachedNoteID*
+  commentId: Overload:RGBLineCoreLib.Functor.IGreenNote.AttachedNoteID
+  href: RGBLineCoreLib.Functor.IGreenNote.html#RGBLineCoreLib_Functor_IGreenNote_AttachedNoteID
+  name: AttachedNoteID
+  nameWithType: IGreenNote.AttachedNoteID
+  fullName: RGBLineCoreLib.Functor.IGreenNote.AttachedNoteID
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: RGBLineCoreLib.Functor.IGreenNote.Transform*
+  commentId: Overload:RGBLineCoreLib.Functor.IGreenNote.Transform
+  href: RGBLineCoreLib.Functor.IGreenNote.html#RGBLineCoreLib_Functor_IGreenNote_Transform
+  name: Transform
+  nameWithType: IGreenNote.Transform
+  fullName: RGBLineCoreLib.Functor.IGreenNote.Transform
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: RGBLineCoreLib.Functor.IGreenNote.CurveStartYPos*
+  commentId: Overload:RGBLineCoreLib.Functor.IGreenNote.CurveStartYPos
+  href: RGBLineCoreLib.Functor.IGreenNote.html#RGBLineCoreLib_Functor_IGreenNote_CurveStartYPos
+  name: CurveStartYPos
+  nameWithType: IGreenNote.CurveStartYPos
+  fullName: RGBLineCoreLib.Functor.IGreenNote.CurveStartYPos
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: RGBLineCoreLib.Functor.IGreenNote.Render*
+  commentId: Overload:RGBLineCoreLib.Functor.IGreenNote.Render
+  href: RGBLineCoreLib.Functor.IGreenNote.html#RGBLineCoreLib_Functor_IGreenNote_Render_RGBLineCoreLib_Functor_INoteItem__
+  name: Render
+  nameWithType: IGreenNote.Render
+  fullName: RGBLineCoreLib.Functor.IGreenNote.Render
+- uid: RGBLineCoreLib.Functor.INoteItem
+  commentId: T:RGBLineCoreLib.Functor.INoteItem
+  parent: RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.Functor.INoteItem.html
+  name: INoteItem
+  nameWithType: INoteItem
+  fullName: RGBLineCoreLib.Functor.INoteItem

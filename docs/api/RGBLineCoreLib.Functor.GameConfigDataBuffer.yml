@@ -1,0 +1,666 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.Functor.GameConfigDataBuffer
+  commentId: T:RGBLineCoreLib.Functor.GameConfigDataBuffer
+  id: GameConfigDataBuffer
+  parent: RGBLineCoreLib.Functor
+  children:
+  - RGBLineCoreLib.Functor.GameConfigDataBuffer.ConfigData
+  - RGBLineCoreLib.Functor.GameConfigDataBuffer.Dispose(System.Boolean)
+  - RGBLineCoreLib.Functor.GameConfigDataBuffer.LoadGameConfigData
+  - RGBLineCoreLib.Functor.GameConfigDataBuffer.SaveGameConfigData
+  langs:
+  - csharp
+  - vb
+  name: GameConfigDataBuffer
+  nameWithType: GameConfigDataBuffer
+  fullName: RGBLineCoreLib.Functor.GameConfigDataBuffer
+  type: Class
+  source:
+    remote:
+      path: Public/Functor/Buffer/GameConfigDataBuffer.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: GameConfigDataBuffer
+    path: ../Public/Functor/Buffer/GameConfigDataBuffer.cs
+    startLine: 16
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: 'public sealed class GameConfigDataBuffer : SingleTon<GameConfigDataBuffer>, IDisposable'
+    content.vb: Public NotInheritable Class GameConfigDataBuffer Inherits SingleTon(Of GameConfigDataBuffer) Implements IDisposable
+  inheritance:
+  - System.Object
+  - CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}.Dispose
+  - CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}.Instance
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+- uid: RGBLineCoreLib.Functor.GameConfigDataBuffer.ConfigData
+  commentId: P:RGBLineCoreLib.Functor.GameConfigDataBuffer.ConfigData
+  id: ConfigData
+  parent: RGBLineCoreLib.Functor.GameConfigDataBuffer
+  langs:
+  - csharp
+  - vb
+  name: ConfigData
+  nameWithType: GameConfigDataBuffer.ConfigData
+  fullName: RGBLineCoreLib.Functor.GameConfigDataBuffer.ConfigData
+  type: Property
+  source:
+    remote:
+      path: Public/Functor/Buffer/GameConfigDataBuffer.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: ConfigData
+    path: ../Public/Functor/Buffer/GameConfigDataBuffer.cs
+    startLine: 21
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public GameConfigData ConfigData { get; set; }
+    parameters: []
+    return:
+      type: RGBLineCoreLib.Data.GameConfigData
+    content.vb: Public Property ConfigData As GameConfigData
+  overload: RGBLineCoreLib.Functor.GameConfigDataBuffer.ConfigData*
+- uid: RGBLineCoreLib.Functor.GameConfigDataBuffer.LoadGameConfigData
+  commentId: M:RGBLineCoreLib.Functor.GameConfigDataBuffer.LoadGameConfigData
+  id: LoadGameConfigData
+  parent: RGBLineCoreLib.Functor.GameConfigDataBuffer
+  langs:
+  - csharp
+  - vb
+  name: LoadGameConfigData()
+  nameWithType: GameConfigDataBuffer.LoadGameConfigData()
+  fullName: RGBLineCoreLib.Functor.GameConfigDataBuffer.LoadGameConfigData()
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Buffer/GameConfigDataBuffer.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: LoadGameConfigData
+    path: ../Public/Functor/Buffer/GameConfigDataBuffer.cs
+    startLine: 38
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public void LoadGameConfigData()
+    content.vb: Public Sub LoadGameConfigData()
+  overload: RGBLineCoreLib.Functor.GameConfigDataBuffer.LoadGameConfigData*
+- uid: RGBLineCoreLib.Functor.GameConfigDataBuffer.SaveGameConfigData
+  commentId: M:RGBLineCoreLib.Functor.GameConfigDataBuffer.SaveGameConfigData
+  id: SaveGameConfigData
+  parent: RGBLineCoreLib.Functor.GameConfigDataBuffer
+  langs:
+  - csharp
+  - vb
+  name: SaveGameConfigData()
+  nameWithType: GameConfigDataBuffer.SaveGameConfigData()
+  fullName: RGBLineCoreLib.Functor.GameConfigDataBuffer.SaveGameConfigData()
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Buffer/GameConfigDataBuffer.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: SaveGameConfigData
+    path: ../Public/Functor/Buffer/GameConfigDataBuffer.cs
+    startLine: 61
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public void SaveGameConfigData()
+    content.vb: Public Sub SaveGameConfigData()
+  overload: RGBLineCoreLib.Functor.GameConfigDataBuffer.SaveGameConfigData*
+- uid: RGBLineCoreLib.Functor.GameConfigDataBuffer.Dispose(System.Boolean)
+  commentId: M:RGBLineCoreLib.Functor.GameConfigDataBuffer.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: RGBLineCoreLib.Functor.GameConfigDataBuffer
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: GameConfigDataBuffer.Dispose(bool)
+  fullName: RGBLineCoreLib.Functor.GameConfigDataBuffer.Dispose(bool)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Buffer/GameConfigDataBuffer.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Dispose
+    path: ../Public/Functor/Buffer/GameConfigDataBuffer.cs
+    startLine: 74
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  example: []
+  syntax:
+    content: protected override void Dispose(bool bisDisposing)
+    parameters:
+    - id: bisDisposing
+      type: System.Boolean
+    content.vb: Protected Overrides Sub Dispose(bisDisposing As Boolean)
+  overridden: CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}.Dispose(System.Boolean)
+  overload: RGBLineCoreLib.Functor.GameConfigDataBuffer.Dispose*
+  nameWithType.vb: GameConfigDataBuffer.Dispose(Boolean)
+  fullName.vb: RGBLineCoreLib.Functor.GameConfigDataBuffer.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+references:
+- uid: RGBLineCoreLib.Functor
+  commentId: N:RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib.Functor
+  nameWithType: RGBLineCoreLib.Functor
+  fullName: RGBLineCoreLib.Functor
+  spec.csharp:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor
+    name: Functor
+    href: RGBLineCoreLib.Functor.html
+  spec.vb:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor
+    name: Functor
+    href: RGBLineCoreLib.Functor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}
+  commentId: T:CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}
+  parent: CommonUtilLib.ThreadSafe
+  definition: CommonUtilLib.ThreadSafe.SingleTon`1
+  href: RGBLineCoreLib.Functor.GameConfigDataBuffer.html
+  name: SingleTon<GameConfigDataBuffer>
+  nameWithType: SingleTon<GameConfigDataBuffer>
+  fullName: CommonUtilLib.ThreadSafe.SingleTon<RGBLineCoreLib.Functor.GameConfigDataBuffer>
+  nameWithType.vb: SingleTon(Of GameConfigDataBuffer)
+  fullName.vb: CommonUtilLib.ThreadSafe.SingleTon(Of RGBLineCoreLib.Functor.GameConfigDataBuffer)
+  name.vb: SingleTon(Of GameConfigDataBuffer)
+  spec.csharp:
+  - uid: CommonUtilLib.ThreadSafe.SingleTon`1
+    name: SingleTon
+    isExternal: true
+  - name: <
+  - uid: RGBLineCoreLib.Functor.GameConfigDataBuffer
+    name: GameConfigDataBuffer
+    href: RGBLineCoreLib.Functor.GameConfigDataBuffer.html
+  - name: '>'
+  spec.vb:
+  - uid: CommonUtilLib.ThreadSafe.SingleTon`1
+    name: SingleTon
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: RGBLineCoreLib.Functor.GameConfigDataBuffer
+    name: GameConfigDataBuffer
+    href: RGBLineCoreLib.Functor.GameConfigDataBuffer.html
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}.Dispose
+  commentId: M:CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}.Dispose
+  parent: CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}
+  definition: CommonUtilLib.ThreadSafe.SingleTon`1.Dispose
+  name: Dispose()
+  nameWithType: SingleTon<GameConfigDataBuffer>.Dispose()
+  fullName: CommonUtilLib.ThreadSafe.SingleTon<RGBLineCoreLib.Functor.GameConfigDataBuffer>.Dispose()
+  nameWithType.vb: SingleTon(Of GameConfigDataBuffer).Dispose()
+  fullName.vb: CommonUtilLib.ThreadSafe.SingleTon(Of RGBLineCoreLib.Functor.GameConfigDataBuffer).Dispose()
+  spec.csharp:
+  - uid: CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}.Dispose
+    name: Dispose
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}.Dispose
+    name: Dispose
+    isExternal: true
+  - name: (
+  - name: )
+- uid: CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}.Instance
+  commentId: P:CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}.Instance
+  parent: CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}
+  definition: CommonUtilLib.ThreadSafe.SingleTon`1.Instance
+  name: Instance
+  nameWithType: SingleTon<GameConfigDataBuffer>.Instance
+  fullName: CommonUtilLib.ThreadSafe.SingleTon<RGBLineCoreLib.Functor.GameConfigDataBuffer>.Instance
+  nameWithType.vb: SingleTon(Of GameConfigDataBuffer).Instance
+  fullName.vb: CommonUtilLib.ThreadSafe.SingleTon(Of RGBLineCoreLib.Functor.GameConfigDataBuffer).Instance
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CommonUtilLib.ThreadSafe.SingleTon`1
+  commentId: T:CommonUtilLib.ThreadSafe.SingleTon`1
+  isExternal: true
+  name: SingleTon<_T>
+  nameWithType: SingleTon<_T>
+  fullName: CommonUtilLib.ThreadSafe.SingleTon<_T>
+  nameWithType.vb: SingleTon(Of _T)
+  fullName.vb: CommonUtilLib.ThreadSafe.SingleTon(Of _T)
+  name.vb: SingleTon(Of _T)
+  spec.csharp:
+  - uid: CommonUtilLib.ThreadSafe.SingleTon`1
+    name: SingleTon
+    isExternal: true
+  - name: <
+  - name: _T
+  - name: '>'
+  spec.vb:
+  - uid: CommonUtilLib.ThreadSafe.SingleTon`1
+    name: SingleTon
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: _T
+  - name: )
+- uid: CommonUtilLib.ThreadSafe
+  commentId: N:CommonUtilLib.ThreadSafe
+  isExternal: true
+  name: CommonUtilLib.ThreadSafe
+  nameWithType: CommonUtilLib.ThreadSafe
+  fullName: CommonUtilLib.ThreadSafe
+  spec.csharp:
+  - uid: CommonUtilLib
+    name: CommonUtilLib
+    isExternal: true
+  - name: .
+  - uid: CommonUtilLib.ThreadSafe
+    name: ThreadSafe
+    isExternal: true
+  spec.vb:
+  - uid: CommonUtilLib
+    name: CommonUtilLib
+    isExternal: true
+  - name: .
+  - uid: CommonUtilLib.ThreadSafe
+    name: ThreadSafe
+    isExternal: true
+- uid: CommonUtilLib.ThreadSafe.SingleTon`1.Dispose
+  commentId: M:CommonUtilLib.ThreadSafe.SingleTon`1.Dispose
+  isExternal: true
+  name: Dispose()
+  nameWithType: SingleTon<_T>.Dispose()
+  fullName: CommonUtilLib.ThreadSafe.SingleTon<_T>.Dispose()
+  nameWithType.vb: SingleTon(Of _T).Dispose()
+  fullName.vb: CommonUtilLib.ThreadSafe.SingleTon(Of _T).Dispose()
+  spec.csharp:
+  - uid: CommonUtilLib.ThreadSafe.SingleTon`1.Dispose
+    name: Dispose
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: CommonUtilLib.ThreadSafe.SingleTon`1.Dispose
+    name: Dispose
+    isExternal: true
+  - name: (
+  - name: )
+- uid: CommonUtilLib.ThreadSafe.SingleTon`1.Instance
+  commentId: P:CommonUtilLib.ThreadSafe.SingleTon`1.Instance
+  isExternal: true
+  name: Instance
+  nameWithType: SingleTon<_T>.Instance
+  fullName: CommonUtilLib.ThreadSafe.SingleTon<_T>.Instance
+  nameWithType.vb: SingleTon(Of _T).Instance
+  fullName.vb: CommonUtilLib.ThreadSafe.SingleTon(Of _T).Instance
+- uid: RGBLineCoreLib.Functor.GameConfigDataBuffer.ConfigData*
+  commentId: Overload:RGBLineCoreLib.Functor.GameConfigDataBuffer.ConfigData
+  href: RGBLineCoreLib.Functor.GameConfigDataBuffer.html#RGBLineCoreLib_Functor_GameConfigDataBuffer_ConfigData
+  name: ConfigData
+  nameWithType: GameConfigDataBuffer.ConfigData
+  fullName: RGBLineCoreLib.Functor.GameConfigDataBuffer.ConfigData
+- uid: RGBLineCoreLib.Data.GameConfigData
+  commentId: T:RGBLineCoreLib.Data.GameConfigData
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.GameConfigData.html
+  name: GameConfigData
+  nameWithType: GameConfigData
+  fullName: RGBLineCoreLib.Data.GameConfigData
+- uid: RGBLineCoreLib.Data
+  commentId: N:RGBLineCoreLib.Data
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib.Data
+  nameWithType: RGBLineCoreLib.Data
+  fullName: RGBLineCoreLib.Data
+  spec.csharp:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+  spec.vb:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+- uid: RGBLineCoreLib.Functor.GameConfigDataBuffer.LoadGameConfigData*
+  commentId: Overload:RGBLineCoreLib.Functor.GameConfigDataBuffer.LoadGameConfigData
+  href: RGBLineCoreLib.Functor.GameConfigDataBuffer.html#RGBLineCoreLib_Functor_GameConfigDataBuffer_LoadGameConfigData
+  name: LoadGameConfigData
+  nameWithType: GameConfigDataBuffer.LoadGameConfigData
+  fullName: RGBLineCoreLib.Functor.GameConfigDataBuffer.LoadGameConfigData
+- uid: RGBLineCoreLib.Functor.GameConfigDataBuffer.SaveGameConfigData*
+  commentId: Overload:RGBLineCoreLib.Functor.GameConfigDataBuffer.SaveGameConfigData
+  href: RGBLineCoreLib.Functor.GameConfigDataBuffer.html#RGBLineCoreLib_Functor_GameConfigDataBuffer_SaveGameConfigData
+  name: SaveGameConfigData
+  nameWithType: GameConfigDataBuffer.SaveGameConfigData
+  fullName: RGBLineCoreLib.Functor.GameConfigDataBuffer.SaveGameConfigData
+- uid: CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}.Dispose(System.Boolean)
+  commentId: M:CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}.Dispose(System.Boolean)
+  parent: CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}
+  definition: CommonUtilLib.ThreadSafe.SingleTon`1.Dispose(System.Boolean)
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Dispose(bool)
+  nameWithType: SingleTon<GameConfigDataBuffer>.Dispose(bool)
+  fullName: CommonUtilLib.ThreadSafe.SingleTon<RGBLineCoreLib.Functor.GameConfigDataBuffer>.Dispose(bool)
+  nameWithType.vb: SingleTon(Of GameConfigDataBuffer).Dispose(Boolean)
+  fullName.vb: CommonUtilLib.ThreadSafe.SingleTon(Of RGBLineCoreLib.Functor.GameConfigDataBuffer).Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: CommonUtilLib.ThreadSafe.SingleTon{RGBLineCoreLib.Functor.GameConfigDataBuffer}.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: RGBLineCoreLib.Functor.GameConfigDataBuffer.Dispose*
+  commentId: Overload:RGBLineCoreLib.Functor.GameConfigDataBuffer.Dispose
+  href: RGBLineCoreLib.Functor.GameConfigDataBuffer.html#RGBLineCoreLib_Functor_GameConfigDataBuffer_Dispose_System_Boolean_
+  name: Dispose
+  nameWithType: GameConfigDataBuffer.Dispose
+  fullName: RGBLineCoreLib.Functor.GameConfigDataBuffer.Dispose
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: CommonUtilLib.ThreadSafe.SingleTon`1.Dispose(System.Boolean)
+  commentId: M:CommonUtilLib.ThreadSafe.SingleTon`1.Dispose(System.Boolean)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Dispose(bool)
+  nameWithType: SingleTon<_T>.Dispose(bool)
+  fullName: CommonUtilLib.ThreadSafe.SingleTon<_T>.Dispose(bool)
+  nameWithType.vb: SingleTon(Of _T).Dispose(Boolean)
+  fullName.vb: CommonUtilLib.ThreadSafe.SingleTon(Of _T).Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: CommonUtilLib.ThreadSafe.SingleTon`1.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: CommonUtilLib.ThreadSafe.SingleTon`1.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )

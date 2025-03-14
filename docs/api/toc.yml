@@ -1,112 +1,174 @@
 ### YamlMime:TableOfContent
 items:
-- uid: RGBLineCoreLib
-  name: RGBLineCoreLib
+- uid: RGBLineCoreLib.Data
+  name: RGBLineCoreLib.Data
   type: Namespace
   items:
-  - uid: RGBLineCoreLib.ChiefMainGameManager
-    name: ChiefMainGameManager
-    type: Class
-  - uid: RGBLineCoreLib.DataPathInterface
-    name: DataPathInterface
-    type: Class
-  - uid: RGBLineCoreLib.DataPathManager
-    name: DataPathManager
-    type: Class
-  - uid: RGBLineCoreLib.GameConfigData
+  - uid: RGBLineCoreLib.Data.GameConfigData
     name: GameConfigData
     type: Struct
-  - uid: RGBLineCoreLib.GameConfigData.MaxFrameRate
+  - uid: RGBLineCoreLib.Data.GameConfigData.MaxFrameRate
     name: GameConfigData.MaxFrameRate
     type: Enum
-  - uid: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard
+  - uid: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard
     name: GameConfigData.NoteHitJudgingStrandard
     type: Struct
-  - uid: RGBLineCoreLib.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  - uid: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
     name: GameConfigData.NoteHitJudgingStrandard.HitJudgingType
     type: Enum
-  - uid: RGBLineCoreLib.GameConfigDataBuffer
-    name: GameConfigDataBuffer
-    type: Class
-  - uid: RGBLineCoreLib.HalfFloatVector2
+  - uid: RGBLineCoreLib.Data.HalfFloatVector2
     name: HalfFloatVector2
     type: Struct
-  - uid: RGBLineCoreLib.LineManager
-    name: LineManager
-    type: Class
-  - uid: RGBLineCoreLib.LobbyBackgroundManager
-    name: LobbyBackgroundManager
-    type: Class
-  - uid: RGBLineCoreLib.NoteManager
-    name: NoteManager
-    type: Class
-  - uid: RGBLineCoreLib.RegionFadeoutEffect
-    name: RegionFadeoutEffect
-    type: Class
-  - uid: RGBLineCoreLib.RegionManager
-    name: RegionManager
-    type: Class
-  - uid: RGBLineCoreLib.RegionManager.RegionSpawnAssets
-    name: RegionManager.RegionSpawnAssets
-    type: Struct
-  - uid: RGBLineCoreLib.RegionTransitionEffector
-    name: RegionTransitionEffector
-    type: Class
-  - uid: RGBLineCoreLib.RenderStageType
-    name: RenderStageType
-    type: Enum
-  - uid: RGBLineCoreLib.StageData
+  - uid: RGBLineCoreLib.Data.StageData
     name: StageData
     type: Struct
-  - uid: RGBLineCoreLib.StageData.LineData
+  - uid: RGBLineCoreLib.Data.StageData.LineData
     name: StageData.LineData
     type: Struct
-  - uid: RGBLineCoreLib.StageData.LineData.LineSmoothType
+  - uid: RGBLineCoreLib.Data.StageData.LineData.LineSmoothType
     name: StageData.LineData.LineSmoothType
     type: Enum
-  - uid: RGBLineCoreLib.StageData.NoteData
+  - uid: RGBLineCoreLib.Data.StageData.NoteData
     name: StageData.NoteData
     type: Struct
-  - uid: RGBLineCoreLib.StageData.NoteData.FlipNoteDirection
+  - uid: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
     name: StageData.NoteData.FlipNoteDirection
     type: Enum
-  - uid: RGBLineCoreLib.StageData.NoteData.NoteType
+  - uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType
     name: StageData.NoteData.NoteType
     type: Enum
-  - uid: RGBLineCoreLib.StageData.RegionData
+  - uid: RGBLineCoreLib.Data.StageData.RegionData
     name: StageData.RegionData
     type: Struct
-  - uid: RGBLineCoreLib.StageData.RegionData.ColorType
+  - uid: RGBLineCoreLib.Data.StageData.RegionData.ColorType
     name: StageData.RegionData.ColorType
     type: Enum
-  - uid: RGBLineCoreLib.StageData.StageConfigData
+  - uid: RGBLineCoreLib.Data.StageData.StageConfigData
     name: StageData.StageConfigData
     type: Struct
-  - uid: RGBLineCoreLib.StageDataInterface
-    name: StageDataInterface
-    type: Class
-  - uid: RGBLineCoreLib.StageDataInterface.LineDataInterface
-    name: StageDataInterface.LineDataInterface
-    type: Class
-  - uid: RGBLineCoreLib.StageDataInterface.NoteDataInterface
-    name: StageDataInterface.NoteDataInterface
-    type: Class
-  - uid: RGBLineCoreLib.StageDataInterface.RegionDataInterface
-    name: StageDataInterface.RegionDataInterface
-    type: Class
-  - uid: RGBLineCoreLib.StageDataInterface.StageConfigDataInterface
-    name: StageDataInterface.StageConfigDataInterface
-    type: Class
-  - uid: RGBLineCoreLib.StageLoadInfoDTO
+  - uid: RGBLineCoreLib.Data.StageLoadInfoDTO
     name: StageLoadInfoDTO
     type: Class
-  - uid: RGBLineCoreLib.StageMetadata
+  - uid: RGBLineCoreLib.Data.StageMetadata
     name: StageMetadata
     type: Struct
-  - uid: RGBLineCoreLib.StageMetadata.MajorDifficultyLevel
+  - uid: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
     name: StageMetadata.MajorDifficultyLevel
     type: Enum
-  - uid: RGBLineCoreLib.StageMetadataInterface
+- uid: RGBLineCoreLib.Functor
+  name: RGBLineCoreLib.Functor
+  type: Namespace
+  items:
+  - uid: RGBLineCoreLib.Functor.CurvedLinePoint
+    name: CurvedLinePoint
+    type: Class
+  - uid: RGBLineCoreLib.Functor.CurvedLineRenderer
+    name: CurvedLineRenderer
+    type: Class
+  - uid: RGBLineCoreLib.Functor.DataPathInterface
+    name: DataPathInterface
+    type: Class
+  - uid: RGBLineCoreLib.Functor.DeterminLine
+    name: DeterminLine
+    type: Class
+  - uid: RGBLineCoreLib.Functor.GameConfigDataBuffer
+    name: GameConfigDataBuffer
+    type: Class
+  - uid: RGBLineCoreLib.Functor.GreenNote
+    name: GreenNote
+    type: Class
+  - uid: RGBLineCoreLib.Functor.IGreenNote
+    name: IGreenNote
+    type: Interface
+  - uid: RGBLineCoreLib.Functor.ILineItem
+    name: ILineItem
+    type: Interface
+  - uid: RGBLineCoreLib.Functor.ILinePoint
+    name: ILinePoint
+    type: Interface
+  - uid: RGBLineCoreLib.Functor.INoteItem
+    name: INoteItem
+    type: Interface
+  - uid: RGBLineCoreLib.Functor.IRedAndBlueNote
+    name: IRedAndBlueNote
+    type: Interface
+  - uid: RGBLineCoreLib.Functor.IRedLineCornerNote
+    name: IRedLineCornerNote
+    type: Interface
+  - uid: RGBLineCoreLib.Functor.LineItem
+    name: LineItem
+    type: Class
+  - uid: RGBLineCoreLib.Functor.LineItem.LineMaterials
+    name: LineItem.LineMaterials
+    type: Struct
+  - uid: RGBLineCoreLib.Functor.LinePoint
+    name: LinePoint
+    type: Class
+  - uid: RGBLineCoreLib.Functor.LineSmoother
+    name: LineSmoother
+    type: Class
+  - uid: RGBLineCoreLib.Functor.LineTracker
+    name: LineTracker
+    type: Class
+  - uid: RGBLineCoreLib.Functor.NoteItem
+    name: NoteItem
+    type: Class
+  - uid: RGBLineCoreLib.Functor.RedAndBlueNote
+    name: RedAndBlueNote
+    type: Class
+  - uid: RGBLineCoreLib.Functor.RedLineCornerNote
+    name: RedLineCornerNote
+    type: Class
+  - uid: RGBLineCoreLib.Functor.RegionFadeoutEffect
+    name: RegionFadeoutEffect
+    type: Class
+  - uid: RGBLineCoreLib.Functor.RegionTransitionEffector
+    name: RegionTransitionEffector
+    type: Class
+  - uid: RGBLineCoreLib.Functor.StageDataInterface
+    name: StageDataInterface
+    type: Class
+  - uid: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface
+    name: StageDataInterface.LineDataInterface
+    type: Class
+  - uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface
+    name: StageDataInterface.NoteDataInterface
+    type: Class
+  - uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface
+    name: StageDataInterface.RegionDataInterface
+    type: Class
+  - uid: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface
+    name: StageDataInterface.StageConfigDataInterface
+    type: Class
+  - uid: RGBLineCoreLib.Functor.StageMetadataInterface
     name: StageMetadataInterface
+    type: Class
+- uid: RGBLineCoreLib.Manager
+  name: RGBLineCoreLib.Manager
+  type: Namespace
+  items:
+  - uid: RGBLineCoreLib.Manager.DataPathManager
+    name: DataPathManager
+    type: Class
+  - uid: RGBLineCoreLib.Manager.GridManager
+    name: GridManager
+    type: Class
+  - uid: RGBLineCoreLib.Manager.LineManager
+    name: LineManager
+    type: Class
+  - uid: RGBLineCoreLib.Manager.LobbyBackgroundManager
+    name: LobbyBackgroundManager
+    type: Class
+  - uid: RGBLineCoreLib.Manager.NoteManager
+    name: NoteManager
+    type: Class
+  - uid: RGBLineCoreLib.Manager.RegionManager
+    name: RegionManager
+    type: Class
+  - uid: RGBLineCoreLib.Manager.RegionManager.RegionSpawnAssets
+    name: RegionManager.RegionSpawnAssets
+    type: Struct
+  - uid: RGBLineCoreLib.Manager.ScoreManager
+    name: ScoreManager
     type: Class
 memberLayout: SamePage

@@ -1,0 +1,421 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.Data.StageData.StageConfigData
+  commentId: T:RGBLineCoreLib.Data.StageData.StageConfigData
+  id: StageData.StageConfigData
+  parent: RGBLineCoreLib.Data
+  children:
+  - RGBLineCoreLib.Data.StageData.StageConfigData.BPM
+  - RGBLineCoreLib.Data.StageData.StageConfigData.BitSubDivision
+  - RGBLineCoreLib.Data.StageData.StageConfigData.LengthPerBit
+  - RGBLineCoreLib.Data.StageData.StageConfigData.MusicStartOffsetTime
+  langs:
+  - csharp
+  - vb
+  name: StageData.StageConfigData
+  nameWithType: StageData.StageConfigData
+  fullName: RGBLineCoreLib.Data.StageData.StageConfigData
+  type: Struct
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: StageConfigData
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 158
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: 각 Stage의 설정 데이터를 담는 구조체
+  example: []
+  syntax:
+    content: public struct StageData.StageConfigData
+    content.vb: Public Structure StageData.StageConfigData
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: RGBLineCoreLib.Data.StageData.StageConfigData.BPM
+  commentId: F:RGBLineCoreLib.Data.StageData.StageConfigData.BPM
+  id: BPM
+  parent: RGBLineCoreLib.Data.StageData.StageConfigData
+  langs:
+  - csharp
+  - vb
+  name: BPM
+  nameWithType: StageData.StageConfigData.BPM
+  fullName: RGBLineCoreLib.Data.StageData.StageConfigData.BPM
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: BPM
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 166
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: 해당 Stage의 BPM을 나타냄
+  remarks: BPM이 크면 화면 진행 속도가 빨라지며, BPM이 작으면 화면 진행 속도가 느려짐
+  example: []
+  syntax:
+    content: public int BPM
+    return:
+      type: System.Int32
+    content.vb: Public BPM As Integer
+- uid: RGBLineCoreLib.Data.StageData.StageConfigData.BitSubDivision
+  commentId: F:RGBLineCoreLib.Data.StageData.StageConfigData.BitSubDivision
+  id: BitSubDivision
+  parent: RGBLineCoreLib.Data.StageData.StageConfigData
+  langs:
+  - csharp
+  - vb
+  name: BitSubDivision
+  nameWithType: StageData.StageConfigData.BitSubDivision
+  fullName: RGBLineCoreLib.Data.StageData.StageConfigData.BitSubDivision
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: BitSubDivision
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 170
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: BPM을 기준으로 한 Frame을 세부적으로 몇 번 더 나눌 것인지를 나타냄. 즉, 새로운 세부 Frame을 만들어내는 배율을 의미
+  example: []
+  syntax:
+    content: public int BitSubDivision
+    return:
+      type: System.Int32
+    content.vb: Public BitSubDivision As Integer
+- uid: RGBLineCoreLib.Data.StageData.StageConfigData.LengthPerBit
+  commentId: F:RGBLineCoreLib.Data.StageData.StageConfigData.LengthPerBit
+  id: LengthPerBit
+  parent: RGBLineCoreLib.Data.StageData.StageConfigData
+  langs:
+  - csharp
+  - vb
+  name: LengthPerBit
+  nameWithType: StageData.StageConfigData.LengthPerBit
+  fullName: RGBLineCoreLib.Data.StageData.StageConfigData.LengthPerBit
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: LengthPerBit
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 177
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: 각 Frame이 In-Game에서 어느 정도의 길이를 가지는지를 나타냄
+  remarks: LengthPerBit가 크면 화면 진행 속도가 빨라지며, LengthPerBit가 작으면 화면 진행 속도가 느려짐
+  example: []
+  syntax:
+    content: public float LengthPerBit
+    return:
+      type: System.Single
+    content.vb: Public LengthPerBit As Single
+- uid: RGBLineCoreLib.Data.StageData.StageConfigData.MusicStartOffsetTime
+  commentId: F:RGBLineCoreLib.Data.StageData.StageConfigData.MusicStartOffsetTime
+  id: MusicStartOffsetTime
+  parent: RGBLineCoreLib.Data.StageData.StageConfigData
+  langs:
+  - csharp
+  - vb
+  name: MusicStartOffsetTime
+  nameWithType: StageData.StageConfigData.MusicStartOffsetTime
+  fullName: RGBLineCoreLib.Data.StageData.StageConfigData.MusicStartOffsetTime
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: MusicStartOffsetTime
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 181
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: 해당 Stage의 Music이 시작하는 시간을 나타냄
+  example: []
+  syntax:
+    content: public float MusicStartOffsetTime
+    return:
+      type: System.Single
+    content.vb: Public MusicStartOffsetTime As Single
+references:
+- uid: RGBLineCoreLib.Data
+  commentId: N:RGBLineCoreLib.Data
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib.Data
+  nameWithType: RGBLineCoreLib.Data
+  fullName: RGBLineCoreLib.Data
+  spec.csharp:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+  spec.vb:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

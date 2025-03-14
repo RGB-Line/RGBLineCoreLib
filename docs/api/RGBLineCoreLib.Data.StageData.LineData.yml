@@ -1,0 +1,612 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.Data.StageData.LineData
+  commentId: T:RGBLineCoreLib.Data.StageData.LineData
+  id: StageData.LineData
+  parent: RGBLineCoreLib.Data
+  children:
+  - RGBLineCoreLib.Data.StageData.LineData.AttachedRegionID
+  - RGBLineCoreLib.Data.StageData.LineData.CurLineSmoothType
+  - RGBLineCoreLib.Data.StageData.LineData.CurvedLinePoints
+  - RGBLineCoreLib.Data.StageData.LineData.LineWidth
+  - RGBLineCoreLib.Data.StageData.LineData.MinorOffsetTimes
+  langs:
+  - csharp
+  - vb
+  name: StageData.LineData
+  nameWithType: StageData.LineData
+  fullName: RGBLineCoreLib.Data.StageData.LineData
+  type: Struct
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: LineData
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 51
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: 각 Line의 데이터를 담는 구조체
+  example: []
+  syntax:
+    content: public struct StageData.LineData
+    content.vb: Public Structure StageData.LineData
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: RGBLineCoreLib.Data.StageData.LineData.AttachedRegionID
+  commentId: F:RGBLineCoreLib.Data.StageData.LineData.AttachedRegionID
+  id: AttachedRegionID
+  parent: RGBLineCoreLib.Data.StageData.LineData
+  langs:
+  - csharp
+  - vb
+  name: AttachedRegionID
+  nameWithType: StageData.LineData.AttachedRegionID
+  fullName: RGBLineCoreLib.Data.StageData.LineData.AttachedRegionID
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: AttachedRegionID
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 72
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: 해당 Line이 속한 Region의 ID
+  example: []
+  syntax:
+    content: public Guid AttachedRegionID
+    return:
+      type: System.Guid
+    content.vb: Public AttachedRegionID As Guid
+- uid: RGBLineCoreLib.Data.StageData.LineData.CurvedLinePoints
+  commentId: F:RGBLineCoreLib.Data.StageData.LineData.CurvedLinePoints
+  id: CurvedLinePoints
+  parent: RGBLineCoreLib.Data.StageData.LineData
+  langs:
+  - csharp
+  - vb
+  name: CurvedLinePoints
+  nameWithType: StageData.LineData.CurvedLinePoints
+  fullName: RGBLineCoreLib.Data.StageData.LineData.CurvedLinePoints
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: CurvedLinePoints
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 80
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: X - 좌우 위치, Y - 해당 Line Point가 위치하는 Frame 단위 위치
+  remarks: 기본 가정으로 CurvedLinePoints는 Y 좌표 기준으로 정렬되어 있으며, Y좌표는 헤당 Line이 속한 Region의 StartOffsetFrame에 더해져 최종 위치를 결정
+  example: []
+  syntax:
+    content: public List<HalfFloatVector2> CurvedLinePoints
+    return:
+      type: System.Collections.Generic.List{RGBLineCoreLib.Data.HalfFloatVector2}
+    content.vb: Public CurvedLinePoints As List(Of HalfFloatVector2)
+- uid: RGBLineCoreLib.Data.StageData.LineData.MinorOffsetTimes
+  commentId: F:RGBLineCoreLib.Data.StageData.LineData.MinorOffsetTimes
+  id: MinorOffsetTimes
+  parent: RGBLineCoreLib.Data.StageData.LineData
+  langs:
+  - csharp
+  - vb
+  name: MinorOffsetTimes
+  nameWithType: StageData.LineData.MinorOffsetTimes
+  fullName: RGBLineCoreLib.Data.StageData.LineData.MinorOffsetTimes
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: MinorOffsetTimes
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 87
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: LineData.CurvedLinePoints에 보조적으로, Line Point의 Y축 위치 세부 조정을 의미
+  remarks: 기본 가정으로 MinorOffsetTimes의 모든 요소는 CurvedLinePoints의 요소와 1:1 대응하며, MinorOffsetTimes의 각 요소의 하용 범위는 [-0.5, 0.5]
+  example: []
+  syntax:
+    content: public List<float> MinorOffsetTimes
+    return:
+      type: System.Collections.Generic.List{System.Single}
+    content.vb: Public MinorOffsetTimes As List(Of Single)
+- uid: RGBLineCoreLib.Data.StageData.LineData.LineWidth
+  commentId: F:RGBLineCoreLib.Data.StageData.LineData.LineWidth
+  id: LineWidth
+  parent: RGBLineCoreLib.Data.StageData.LineData
+  langs:
+  - csharp
+  - vb
+  name: LineWidth
+  nameWithType: StageData.LineData.LineWidth
+  fullName: RGBLineCoreLib.Data.StageData.LineData.LineWidth
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: LineWidth
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 91
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: 해당 Line의 두께를 의미
+  example: []
+  syntax:
+    content: public float LineWidth
+    return:
+      type: System.Single
+    content.vb: Public LineWidth As Single
+- uid: RGBLineCoreLib.Data.StageData.LineData.CurLineSmoothType
+  commentId: F:RGBLineCoreLib.Data.StageData.LineData.CurLineSmoothType
+  id: CurLineSmoothType
+  parent: RGBLineCoreLib.Data.StageData.LineData
+  langs:
+  - csharp
+  - vb
+  name: CurLineSmoothType
+  nameWithType: StageData.LineData.CurLineSmoothType
+  fullName: RGBLineCoreLib.Data.StageData.LineData.CurLineSmoothType
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: CurLineSmoothType
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 96
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: 해당 Line이 직선적인지, 곡선적인지를 묘사
+  example: []
+  syntax:
+    content: public StageData.LineData.LineSmoothType CurLineSmoothType
+    return:
+      type: RGBLineCoreLib.Data.StageData.LineData.LineSmoothType
+    content.vb: Public CurLineSmoothType As StageData.LineData.LineSmoothType
+references:
+- uid: RGBLineCoreLib.Data
+  commentId: N:RGBLineCoreLib.Data
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib.Data
+  nameWithType: RGBLineCoreLib.Data
+  fullName: RGBLineCoreLib.Data
+  spec.csharp:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+  spec.vb:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Collections.Generic.List{RGBLineCoreLib.Data.HalfFloatVector2}
+  commentId: T:System.Collections.Generic.List{RGBLineCoreLib.Data.HalfFloatVector2}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<HalfFloatVector2>
+  nameWithType: List<HalfFloatVector2>
+  fullName: System.Collections.Generic.List<RGBLineCoreLib.Data.HalfFloatVector2>
+  nameWithType.vb: List(Of HalfFloatVector2)
+  fullName.vb: System.Collections.Generic.List(Of RGBLineCoreLib.Data.HalfFloatVector2)
+  name.vb: List(Of HalfFloatVector2)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: RGBLineCoreLib.Data.HalfFloatVector2
+    name: HalfFloatVector2
+    href: RGBLineCoreLib.Data.HalfFloatVector2.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: RGBLineCoreLib.Data.HalfFloatVector2
+    name: HalfFloatVector2
+    href: RGBLineCoreLib.Data.HalfFloatVector2.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{System.Single}
+  commentId: T:System.Collections.Generic.List{System.Single}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<float>
+  nameWithType: List<float>
+  fullName: System.Collections.Generic.List<float>
+  nameWithType.vb: List(Of Single)
+  fullName.vb: System.Collections.Generic.List(Of Single)
+  name.vb: List(Of Single)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: RGBLineCoreLib.Data.StageData.LineData.LineSmoothType
+  commentId: T:RGBLineCoreLib.Data.StageData.LineData.LineSmoothType
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.StageData.html
+  name: StageData.LineData.LineSmoothType
+  nameWithType: StageData.LineData.LineSmoothType
+  fullName: RGBLineCoreLib.Data.StageData.LineData.LineSmoothType
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.LineData
+    name: LineData
+    href: RGBLineCoreLib.Data.StageData.LineData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.LineData.LineSmoothType
+    name: LineSmoothType
+    href: RGBLineCoreLib.Data.StageData.LineData.LineSmoothType.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.LineData
+    name: LineData
+    href: RGBLineCoreLib.Data.StageData.LineData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.LineData.LineSmoothType
+    name: LineSmoothType
+    href: RGBLineCoreLib.Data.StageData.LineData.LineSmoothType.html

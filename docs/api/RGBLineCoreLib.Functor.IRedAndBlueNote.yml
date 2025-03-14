@@ -1,0 +1,284 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.Functor.IRedAndBlueNote
+  commentId: T:RGBLineCoreLib.Functor.IRedAndBlueNote
+  id: IRedAndBlueNote
+  parent: RGBLineCoreLib.Functor
+  children:
+  - RGBLineCoreLib.Functor.IRedAndBlueNote.AttachedNoteID
+  - RGBLineCoreLib.Functor.IRedAndBlueNote.Render(RGBLineCoreLib.Functor.INoteItem@,RGBLineCoreLib.Data.StageData.NoteData.NoteType@)
+  - RGBLineCoreLib.Functor.IRedAndBlueNote.Transform
+  langs:
+  - csharp
+  - vb
+  name: IRedAndBlueNote
+  nameWithType: IRedAndBlueNote
+  fullName: RGBLineCoreLib.Functor.IRedAndBlueNote
+  type: Interface
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Note/IRedAndBlueNote.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: IRedAndBlueNote
+    path: ../Public/Functor/MainGame/Prop/Note/IRedAndBlueNote.cs
+    startLine: 13
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: 'public interface IRedAndBlueNote : IDisposable'
+    content.vb: Public Interface IRedAndBlueNote Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: RGBLineCoreLib.Functor.IRedAndBlueNote.AttachedNoteID
+  commentId: P:RGBLineCoreLib.Functor.IRedAndBlueNote.AttachedNoteID
+  id: AttachedNoteID
+  parent: RGBLineCoreLib.Functor.IRedAndBlueNote
+  langs:
+  - csharp
+  - vb
+  name: AttachedNoteID
+  nameWithType: IRedAndBlueNote.AttachedNoteID
+  fullName: RGBLineCoreLib.Functor.IRedAndBlueNote.AttachedNoteID
+  type: Property
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Note/IRedAndBlueNote.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: AttachedNoteID
+    path: ../Public/Functor/MainGame/Prop/Note/IRedAndBlueNote.cs
+    startLine: 15
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: Guid AttachedNoteID { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: ReadOnly Property AttachedNoteID As Guid
+  overload: RGBLineCoreLib.Functor.IRedAndBlueNote.AttachedNoteID*
+- uid: RGBLineCoreLib.Functor.IRedAndBlueNote.Transform
+  commentId: P:RGBLineCoreLib.Functor.IRedAndBlueNote.Transform
+  id: Transform
+  parent: RGBLineCoreLib.Functor.IRedAndBlueNote
+  langs:
+  - csharp
+  - vb
+  name: Transform
+  nameWithType: IRedAndBlueNote.Transform
+  fullName: RGBLineCoreLib.Functor.IRedAndBlueNote.Transform
+  type: Property
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Note/IRedAndBlueNote.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Transform
+    path: ../Public/Functor/MainGame/Prop/Note/IRedAndBlueNote.cs
+    startLine: 16
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: Transform Transform { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Transform
+    content.vb: ReadOnly Property Transform As Transform
+  overload: RGBLineCoreLib.Functor.IRedAndBlueNote.Transform*
+- uid: RGBLineCoreLib.Functor.IRedAndBlueNote.Render(RGBLineCoreLib.Functor.INoteItem@,RGBLineCoreLib.Data.StageData.NoteData.NoteType@)
+  commentId: M:RGBLineCoreLib.Functor.IRedAndBlueNote.Render(RGBLineCoreLib.Functor.INoteItem@,RGBLineCoreLib.Data.StageData.NoteData.NoteType@)
+  id: Render(RGBLineCoreLib.Functor.INoteItem@,RGBLineCoreLib.Data.StageData.NoteData.NoteType@)
+  parent: RGBLineCoreLib.Functor.IRedAndBlueNote
+  langs:
+  - csharp
+  - vb
+  name: Render(in INoteItem, in NoteType)
+  nameWithType: IRedAndBlueNote.Render(in INoteItem, in StageData.NoteData.NoteType)
+  fullName: RGBLineCoreLib.Functor.IRedAndBlueNote.Render(in RGBLineCoreLib.Functor.INoteItem, in RGBLineCoreLib.Data.StageData.NoteData.NoteType)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Note/IRedAndBlueNote.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Render
+    path: ../Public/Functor/MainGame/Prop/Note/IRedAndBlueNote.cs
+    startLine: 18
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: void Render(in INoteItem noteItem, in StageData.NoteData.NoteType noteType)
+    parameters:
+    - id: noteItem
+      type: RGBLineCoreLib.Functor.INoteItem
+    - id: noteType
+      type: RGBLineCoreLib.Data.StageData.NoteData.NoteType
+    content.vb: Sub Render(noteItem As INoteItem, noteType As StageData.NoteData.NoteType)
+  overload: RGBLineCoreLib.Functor.IRedAndBlueNote.Render*
+  nameWithType.vb: IRedAndBlueNote.Render(INoteItem, StageData.NoteData.NoteType)
+  fullName.vb: RGBLineCoreLib.Functor.IRedAndBlueNote.Render(RGBLineCoreLib.Functor.INoteItem, RGBLineCoreLib.Data.StageData.NoteData.NoteType)
+  name.vb: Render(INoteItem, NoteType)
+references:
+- uid: RGBLineCoreLib.Functor
+  commentId: N:RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib.Functor
+  nameWithType: RGBLineCoreLib.Functor
+  fullName: RGBLineCoreLib.Functor
+  spec.csharp:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor
+    name: Functor
+    href: RGBLineCoreLib.Functor.html
+  spec.vb:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor
+    name: Functor
+    href: RGBLineCoreLib.Functor.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RGBLineCoreLib.Functor.IRedAndBlueNote.AttachedNoteID*
+  commentId: Overload:RGBLineCoreLib.Functor.IRedAndBlueNote.AttachedNoteID
+  href: RGBLineCoreLib.Functor.IRedAndBlueNote.html#RGBLineCoreLib_Functor_IRedAndBlueNote_AttachedNoteID
+  name: AttachedNoteID
+  nameWithType: IRedAndBlueNote.AttachedNoteID
+  fullName: RGBLineCoreLib.Functor.IRedAndBlueNote.AttachedNoteID
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: RGBLineCoreLib.Functor.IRedAndBlueNote.Transform*
+  commentId: Overload:RGBLineCoreLib.Functor.IRedAndBlueNote.Transform
+  href: RGBLineCoreLib.Functor.IRedAndBlueNote.html#RGBLineCoreLib_Functor_IRedAndBlueNote_Transform
+  name: Transform
+  nameWithType: IRedAndBlueNote.Transform
+  fullName: RGBLineCoreLib.Functor.IRedAndBlueNote.Transform
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: RGBLineCoreLib.Functor.IRedAndBlueNote.Render*
+  commentId: Overload:RGBLineCoreLib.Functor.IRedAndBlueNote.Render
+  href: RGBLineCoreLib.Functor.IRedAndBlueNote.html#RGBLineCoreLib_Functor_IRedAndBlueNote_Render_RGBLineCoreLib_Functor_INoteItem__RGBLineCoreLib_Data_StageData_NoteData_NoteType__
+  name: Render
+  nameWithType: IRedAndBlueNote.Render
+  fullName: RGBLineCoreLib.Functor.IRedAndBlueNote.Render
+- uid: RGBLineCoreLib.Functor.INoteItem
+  commentId: T:RGBLineCoreLib.Functor.INoteItem
+  parent: RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.Functor.INoteItem.html
+  name: INoteItem
+  nameWithType: INoteItem
+  fullName: RGBLineCoreLib.Functor.INoteItem
+- uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType
+  commentId: T:RGBLineCoreLib.Data.StageData.NoteData.NoteType
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.StageData.html
+  name: StageData.NoteData.NoteType
+  nameWithType: StageData.NoteData.NoteType
+  fullName: RGBLineCoreLib.Data.StageData.NoteData.NoteType
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.Data.StageData.NoteData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType
+    name: NoteType
+    href: RGBLineCoreLib.Data.StageData.NoteData.NoteType.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.Data.StageData.NoteData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType
+    name: NoteType
+    href: RGBLineCoreLib.Data.StageData.NoteData.NoteType.html
+- uid: RGBLineCoreLib.Data
+  commentId: N:RGBLineCoreLib.Data
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib.Data
+  nameWithType: RGBLineCoreLib.Data
+  fullName: RGBLineCoreLib.Data
+  spec.csharp:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+  spec.vb:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html

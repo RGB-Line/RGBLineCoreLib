@@ -26,6 +26,258 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.GameConfigData.MaxFrameRate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.GameConfigData.MaxFrameRate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.GameConfigData.MaxFrameRate",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.GameConfigData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.GameConfigData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.GameConfigData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.HalfFloatVector2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.HalfFloatVector2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.HalfFloatVector2",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.StageData.LineData.LineSmoothType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.StageData.LineData.LineSmoothType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.StageData.LineData.LineSmoothType",
+      "Summary": "<p sourcefile=\"api/RGBLineCoreLib.Data.StageData.LineData.LineSmoothType.yml\" sourcestartlinenumber=\"1\">해당 Line의 부드러운 정도를 나타내는 Flag</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.StageData.LineData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.StageData.LineData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.StageData.LineData",
+      "Summary": "<p sourcefile=\"api/RGBLineCoreLib.Data.StageData.LineData.yml\" sourcestartlinenumber=\"1\">각 Line의 데이터를 담는 구조체</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection",
+      "Summary": "<p sourcefile=\"api/RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection.yml\" sourcestartlinenumber=\"1\">해당 Note가 Flip Note일 때, Flip Note의 방향을 나타내는 Flag</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.StageData.NoteData.NoteType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.StageData.NoteData.NoteType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.StageData.NoteData.NoteType",
+      "Summary": "<p sourcefile=\"api/RGBLineCoreLib.Data.StageData.NoteData.NoteType.yml\" sourcestartlinenumber=\"1\">세 가지 Note Type을 구분하는 Flag</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.StageData.NoteData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.StageData.NoteData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.StageData.NoteData",
+      "Summary": "<p sourcefile=\"api/RGBLineCoreLib.Data.StageData.NoteData.yml\" sourcestartlinenumber=\"1\">각 Note의 데이터를 담는 구조체</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.StageData.RegionData.ColorType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.StageData.RegionData.ColorType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.StageData.RegionData.ColorType",
+      "Summary": "<p sourcefile=\"api/RGBLineCoreLib.Data.StageData.RegionData.ColorType.yml\" sourcestartlinenumber=\"1\">세 가지 Mode를 구분하는 Flag</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.StageData.RegionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.StageData.RegionData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.StageData.RegionData",
+      "Summary": "<p sourcefile=\"api/RGBLineCoreLib.Data.StageData.RegionData.yml\" sourcestartlinenumber=\"1\">각 Region의 데이터를 담는 구조체</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.StageData.StageConfigData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.StageData.StageConfigData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.StageData.StageConfigData",
+      "Summary": "<p sourcefile=\"api/RGBLineCoreLib.Data.StageData.StageConfigData.yml\" sourcestartlinenumber=\"1\">각 Stage의 설정 데이터를 담는 구조체</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.StageData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.StageData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.StageData",
+      "Summary": "<p sourcefile=\"api/RGBLineCoreLib.Data.StageData.yml\" sourcestartlinenumber=\"1\">각 Stage의 내부 구성 데이터를 담는 구조체</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.StageLoadInfoDTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.StageLoadInfoDTO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.StageLoadInfoDTO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel",
+      "Summary": "<p sourcefile=\"api/RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.yml\" sourcestartlinenumber=\"1\">해당 Stage의 Major Difficulty를 나타내는 Flag</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.StageMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.StageMetadata.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.StageMetadata",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/RGBLineCoreLib.DataPathInterface.yml",
       "output": {
         ".html": {
@@ -50,6 +302,412 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "RGBLineCoreLib.DataPathManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.CurvedLinePoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.CurvedLinePoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.CurvedLinePoint",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.CurvedLineRenderer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.CurvedLineRenderer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.CurvedLineRenderer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.DataPathInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.DataPathInterface.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.DataPathInterface",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.DeterminLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.DeterminLine.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.DeterminLine",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.GameConfigDataBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.GameConfigDataBuffer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.GameConfigDataBuffer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.GreenNote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.GreenNote.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.GreenNote",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.IGreenNote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.IGreenNote.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.IGreenNote",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.ILineItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.ILineItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.ILineItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.ILinePoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.ILinePoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.ILinePoint",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.INoteItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.INoteItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.INoteItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.IRedAndBlueNote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.IRedAndBlueNote.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.IRedAndBlueNote",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.IRedLineCornerNote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.IRedLineCornerNote.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.IRedLineCornerNote",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.LineItem.LineMaterials.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.LineItem.LineMaterials.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.LineItem.LineMaterials",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.LineItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.LineItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.LineItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.LinePoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.LinePoint.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.LinePoint",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.LineSmoother.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.LineSmoother.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.LineSmoother",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.LineTracker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.LineTracker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.LineTracker",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.NoteItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.NoteItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.NoteItem",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.RedAndBlueNote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.RedAndBlueNote.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.RedAndBlueNote",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.RedLineCornerNote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.RedLineCornerNote.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.RedLineCornerNote",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.RegionFadeoutEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.RegionFadeoutEffect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.RegionFadeoutEffect",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.RegionTransitionEffector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.RegionTransitionEffector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.RegionTransitionEffector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.StageDataInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.StageDataInterface.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.StageDataInterface",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.StageMetadataInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.StageMetadataInterface.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.StageMetadataInterface",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor",
       "Summary": null
     },
     {
@@ -162,6 +820,132 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "RGBLineCoreLib.LobbyBackgroundManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Manager.DataPathManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Manager.DataPathManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Manager.DataPathManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Manager.GridManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Manager.GridManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Manager.GridManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Manager.LineManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Manager.LineManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Manager.LineManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Manager.LobbyBackgroundManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Manager.LobbyBackgroundManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Manager.LobbyBackgroundManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Manager.NoteManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Manager.NoteManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Manager.NoteManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Manager.RegionManager.RegionSpawnAssets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Manager.RegionManager.RegionSpawnAssets.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Manager.RegionManager.RegionSpawnAssets",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Manager.RegionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Manager.RegionManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Manager.RegionManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Manager.ScoreManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Manager.ScoreManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Manager.ScoreManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Manager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Manager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Manager",
       "Summary": null
     },
     {

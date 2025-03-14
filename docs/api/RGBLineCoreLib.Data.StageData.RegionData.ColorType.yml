@@ -1,0 +1,165 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.Data.StageData.RegionData.ColorType
+  commentId: T:RGBLineCoreLib.Data.StageData.RegionData.ColorType
+  id: StageData.RegionData.ColorType
+  parent: RGBLineCoreLib.Data
+  children:
+  - RGBLineCoreLib.Data.StageData.RegionData.ColorType.Blue
+  - RGBLineCoreLib.Data.StageData.RegionData.ColorType.Green
+  - RGBLineCoreLib.Data.StageData.RegionData.ColorType.Red
+  langs:
+  - csharp
+  - vb
+  name: StageData.RegionData.ColorType
+  nameWithType: StageData.RegionData.ColorType
+  fullName: RGBLineCoreLib.Data.StageData.RegionData.ColorType
+  type: Enum
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: ColorType
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 25
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: 세 가지 Mode를 구분하는 Flag
+  example: []
+  syntax:
+    content: 'public enum StageData.RegionData.ColorType : byte'
+    content.vb: Public Enum StageData.RegionData.ColorType As Byte
+- uid: RGBLineCoreLib.Data.StageData.RegionData.ColorType.Red
+  commentId: F:RGBLineCoreLib.Data.StageData.RegionData.ColorType.Red
+  id: Red
+  parent: RGBLineCoreLib.Data.StageData.RegionData.ColorType
+  langs:
+  - csharp
+  - vb
+  name: Red
+  nameWithType: StageData.RegionData.ColorType.Red
+  fullName: RGBLineCoreLib.Data.StageData.RegionData.ColorType.Red
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Red
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 27
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: Red = 0
+    return:
+      type: RGBLineCoreLib.Data.StageData.RegionData.ColorType
+- uid: RGBLineCoreLib.Data.StageData.RegionData.ColorType.Green
+  commentId: F:RGBLineCoreLib.Data.StageData.RegionData.ColorType.Green
+  id: Green
+  parent: RGBLineCoreLib.Data.StageData.RegionData.ColorType
+  langs:
+  - csharp
+  - vb
+  name: Green
+  nameWithType: StageData.RegionData.ColorType.Green
+  fullName: RGBLineCoreLib.Data.StageData.RegionData.ColorType.Green
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Green
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 27
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: Green = 1
+    return:
+      type: RGBLineCoreLib.Data.StageData.RegionData.ColorType
+- uid: RGBLineCoreLib.Data.StageData.RegionData.ColorType.Blue
+  commentId: F:RGBLineCoreLib.Data.StageData.RegionData.ColorType.Blue
+  id: Blue
+  parent: RGBLineCoreLib.Data.StageData.RegionData.ColorType
+  langs:
+  - csharp
+  - vb
+  name: Blue
+  nameWithType: StageData.RegionData.ColorType.Blue
+  fullName: RGBLineCoreLib.Data.StageData.RegionData.ColorType.Blue
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Blue
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 27
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: Blue = 2
+    return:
+      type: RGBLineCoreLib.Data.StageData.RegionData.ColorType
+references:
+- uid: RGBLineCoreLib.Data
+  commentId: N:RGBLineCoreLib.Data
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib.Data
+  nameWithType: RGBLineCoreLib.Data
+  fullName: RGBLineCoreLib.Data
+  spec.csharp:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+  spec.vb:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+- uid: RGBLineCoreLib.Data.StageData.RegionData.ColorType
+  commentId: T:RGBLineCoreLib.Data.StageData.RegionData.ColorType
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.StageData.html
+  name: StageData.RegionData.ColorType
+  nameWithType: StageData.RegionData.ColorType
+  fullName: RGBLineCoreLib.Data.StageData.RegionData.ColorType
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.RegionData
+    name: RegionData
+    href: RGBLineCoreLib.Data.StageData.RegionData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.RegionData.ColorType
+    name: ColorType
+    href: RGBLineCoreLib.Data.StageData.RegionData.ColorType.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.RegionData
+    name: RegionData
+    href: RGBLineCoreLib.Data.StageData.RegionData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.RegionData.ColorType
+    name: ColorType
+    href: RGBLineCoreLib.Data.StageData.RegionData.ColorType.html

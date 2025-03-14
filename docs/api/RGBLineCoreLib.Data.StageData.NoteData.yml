@@ -1,0 +1,551 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.Data.StageData.NoteData
+  commentId: T:RGBLineCoreLib.Data.StageData.NoteData
+  id: StageData.NoteData
+  parent: RGBLineCoreLib.Data
+  children:
+  - RGBLineCoreLib.Data.StageData.NoteData.AttachedLineID
+  - RGBLineCoreLib.Data.StageData.NoteData.CurNoteType
+  - RGBLineCoreLib.Data.StageData.NoteData.MinorOffsetTime
+  - RGBLineCoreLib.Data.StageData.NoteData.NoteLength
+  - RGBLineCoreLib.Data.StageData.NoteData.StartOffsetFrame
+  - RGBLineCoreLib.Data.StageData.NoteData.flipNoteDirection
+  langs:
+  - csharp
+  - vb
+  name: StageData.NoteData
+  nameWithType: StageData.NoteData
+  fullName: RGBLineCoreLib.Data.StageData.NoteData
+  type: Struct
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: NoteData
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 101
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: 각 Note의 데이터를 담는 구조체
+  example: []
+  syntax:
+    content: public struct StageData.NoteData
+    content.vb: Public Structure StageData.NoteData
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+- uid: RGBLineCoreLib.Data.StageData.NoteData.AttachedLineID
+  commentId: F:RGBLineCoreLib.Data.StageData.NoteData.AttachedLineID
+  id: AttachedLineID
+  parent: RGBLineCoreLib.Data.StageData.NoteData
+  langs:
+  - csharp
+  - vb
+  name: AttachedLineID
+  nameWithType: StageData.NoteData.AttachedLineID
+  fullName: RGBLineCoreLib.Data.StageData.NoteData.AttachedLineID
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: AttachedLineID
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 124
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: 해당 Note가 속한 Line의 ID
+  example: []
+  syntax:
+    content: public Guid AttachedLineID
+    return:
+      type: System.Guid
+    content.vb: Public AttachedLineID As Guid
+- uid: RGBLineCoreLib.Data.StageData.NoteData.StartOffsetFrame
+  commentId: F:RGBLineCoreLib.Data.StageData.NoteData.StartOffsetFrame
+  id: StartOffsetFrame
+  parent: RGBLineCoreLib.Data.StageData.NoteData
+  langs:
+  - csharp
+  - vb
+  name: StartOffsetFrame
+  nameWithType: StageData.NoteData.StartOffsetFrame
+  fullName: RGBLineCoreLib.Data.StageData.NoteData.StartOffsetFrame
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: StartOffsetFrame
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 132
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: 해당 Note가 시작하는 Frame 단위 위치를 의미
+  remarks: Y좌표는 해당 Note가 속한 Line의 첫 번쩨 CurvedLinePoints 요소의 Y좌표에 더해져 최종 위치를 결정
+  example: []
+  syntax:
+    content: public int StartOffsetFrame
+    return:
+      type: System.Int32
+    content.vb: Public StartOffsetFrame As Integer
+- uid: RGBLineCoreLib.Data.StageData.NoteData.MinorOffsetTime
+  commentId: F:RGBLineCoreLib.Data.StageData.NoteData.MinorOffsetTime
+  id: MinorOffsetTime
+  parent: RGBLineCoreLib.Data.StageData.NoteData
+  langs:
+  - csharp
+  - vb
+  name: MinorOffsetTime
+  nameWithType: StageData.NoteData.MinorOffsetTime
+  fullName: RGBLineCoreLib.Data.StageData.NoteData.MinorOffsetTime
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: MinorOffsetTime
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 139
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: NoteData.StartOffsetFrame을 기준으로 FrameUnitSize * MinorOffsetTime 만큼 이동한 위치를 의미. 즉, 세부 위치 조정을 담당
+  remarks: 허용 범위는 [-0.5, 0.5]
+  example: []
+  syntax:
+    content: public float MinorOffsetTime
+    return:
+      type: System.Single
+    content.vb: Public MinorOffsetTime As Single
+- uid: RGBLineCoreLib.Data.StageData.NoteData.NoteLength
+  commentId: F:RGBLineCoreLib.Data.StageData.NoteData.NoteLength
+  id: NoteLength
+  parent: RGBLineCoreLib.Data.StageData.NoteData
+  langs:
+  - csharp
+  - vb
+  name: NoteLength
+  nameWithType: StageData.NoteData.NoteLength
+  fullName: RGBLineCoreLib.Data.StageData.NoteData.NoteLength
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: NoteLength
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 144
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: 해당 Nore가 Long Note일 때, Note의 길이를 의미
+  example: []
+  syntax:
+    content: public float NoteLength
+    return:
+      type: System.Single
+    content.vb: Public NoteLength As Single
+- uid: RGBLineCoreLib.Data.StageData.NoteData.flipNoteDirection
+  commentId: F:RGBLineCoreLib.Data.StageData.NoteData.flipNoteDirection
+  id: flipNoteDirection
+  parent: RGBLineCoreLib.Data.StageData.NoteData
+  langs:
+  - csharp
+  - vb
+  name: flipNoteDirection
+  nameWithType: StageData.NoteData.flipNoteDirection
+  fullName: RGBLineCoreLib.Data.StageData.NoteData.flipNoteDirection
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: flipNoteDirection
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 148
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: 해당 Note가 Flip Note일 때, Flip Note의 방향을 나타냄
+  example: []
+  syntax:
+    content: public StageData.NoteData.FlipNoteDirection flipNoteDirection
+    return:
+      type: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
+    content.vb: Public flipNoteDirection As StageData.NoteData.FlipNoteDirection
+- uid: RGBLineCoreLib.Data.StageData.NoteData.CurNoteType
+  commentId: F:RGBLineCoreLib.Data.StageData.NoteData.CurNoteType
+  id: CurNoteType
+  parent: RGBLineCoreLib.Data.StageData.NoteData
+  langs:
+  - csharp
+  - vb
+  name: CurNoteType
+  nameWithType: StageData.NoteData.CurNoteType
+  fullName: RGBLineCoreLib.Data.StageData.NoteData.CurNoteType
+  type: Field
+  source:
+    remote:
+      path: Public/Data/DataSpecs/StageDataSpec.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: CurNoteType
+    path: ../Public/Data/DataSpecs/StageDataSpec.cs
+    startLine: 153
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  summary: 해당 Note의 Type을 나타냄
+  example: []
+  syntax:
+    content: public StageData.NoteData.NoteType CurNoteType
+    return:
+      type: RGBLineCoreLib.Data.StageData.NoteData.NoteType
+    content.vb: Public CurNoteType As StageData.NoteData.NoteType
+references:
+- uid: RGBLineCoreLib.Data
+  commentId: N:RGBLineCoreLib.Data
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib.Data
+  nameWithType: RGBLineCoreLib.Data
+  fullName: RGBLineCoreLib.Data
+  spec.csharp:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+  spec.vb:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
+  commentId: T:RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.StageData.html
+  name: StageData.NoteData.FlipNoteDirection
+  nameWithType: StageData.NoteData.FlipNoteDirection
+  fullName: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.Data.StageData.NoteData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
+    name: FlipNoteDirection
+    href: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.Data.StageData.NoteData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
+    name: FlipNoteDirection
+    href: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection.html
+- uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType
+  commentId: T:RGBLineCoreLib.Data.StageData.NoteData.NoteType
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.StageData.html
+  name: StageData.NoteData.NoteType
+  nameWithType: StageData.NoteData.NoteType
+  fullName: RGBLineCoreLib.Data.StageData.NoteData.NoteType
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.Data.StageData.NoteData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType
+    name: NoteType
+    href: RGBLineCoreLib.Data.StageData.NoteData.NoteType.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.StageData
+    name: StageData
+    href: RGBLineCoreLib.Data.StageData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData
+    name: NoteData
+    href: RGBLineCoreLib.Data.StageData.NoteData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType
+    name: NoteType
+    href: RGBLineCoreLib.Data.StageData.NoteData.NoteType.html
