@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.Data.RenderStageType
+  commentId: T:RGBLineCoreLib.Data.RenderStageType
+  id: RenderStageType
+  parent: RGBLineCoreLib.Data
+  children:
+  - RGBLineCoreLib.Data.RenderStageType.Background
+  - RGBLineCoreLib.Data.RenderStageType.Grid
+  - RGBLineCoreLib.Data.RenderStageType.Line
+  - RGBLineCoreLib.Data.RenderStageType.Note
+  langs:
+  - csharp
+  - vb
+  name: RenderStageType
+  nameWithType: RenderStageType
+  fullName: RGBLineCoreLib.Data.RenderStageType
+  type: Enum
+  source:
+    remote:
+      path: Public/Data/RenderState/RenderStage.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: RenderStageType
+    path: ../Public/Data/RenderState/RenderStage.cs
+    startLine: 10
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum RenderStageType : byte
+    content.vb: >-
+      <Flags>
+
+      Public Enum RenderStageType As Byte
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: RGBLineCoreLib.Data.RenderStageType.Background
+  commentId: F:RGBLineCoreLib.Data.RenderStageType.Background
+  id: Background
+  parent: RGBLineCoreLib.Data.RenderStageType
+  langs:
+  - csharp
+  - vb
+  name: Background
+  nameWithType: RenderStageType.Background
+  fullName: RGBLineCoreLib.Data.RenderStageType.Background
+  type: Field
+  source:
+    remote:
+      path: Public/Data/RenderState/RenderStage.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Background
+    path: ../Public/Data/RenderState/RenderStage.cs
+    startLine: 13
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: Background = 1
+    return:
+      type: RGBLineCoreLib.Data.RenderStageType
+- uid: RGBLineCoreLib.Data.RenderStageType.Line
+  commentId: F:RGBLineCoreLib.Data.RenderStageType.Line
+  id: Line
+  parent: RGBLineCoreLib.Data.RenderStageType
+  langs:
+  - csharp
+  - vb
+  name: Line
+  nameWithType: RenderStageType.Line
+  fullName: RGBLineCoreLib.Data.RenderStageType.Line
+  type: Field
+  source:
+    remote:
+      path: Public/Data/RenderState/RenderStage.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Line
+    path: ../Public/Data/RenderState/RenderStage.cs
+    startLine: 14
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: Line = 2
+    return:
+      type: RGBLineCoreLib.Data.RenderStageType
+- uid: RGBLineCoreLib.Data.RenderStageType.Note
+  commentId: F:RGBLineCoreLib.Data.RenderStageType.Note
+  id: Note
+  parent: RGBLineCoreLib.Data.RenderStageType
+  langs:
+  - csharp
+  - vb
+  name: Note
+  nameWithType: RenderStageType.Note
+  fullName: RGBLineCoreLib.Data.RenderStageType.Note
+  type: Field
+  source:
+    remote:
+      path: Public/Data/RenderState/RenderStage.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Note
+    path: ../Public/Data/RenderState/RenderStage.cs
+    startLine: 15
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: Note = 4
+    return:
+      type: RGBLineCoreLib.Data.RenderStageType
+- uid: RGBLineCoreLib.Data.RenderStageType.Grid
+  commentId: F:RGBLineCoreLib.Data.RenderStageType.Grid
+  id: Grid
+  parent: RGBLineCoreLib.Data.RenderStageType
+  langs:
+  - csharp
+  - vb
+  name: Grid
+  nameWithType: RenderStageType.Grid
+  fullName: RGBLineCoreLib.Data.RenderStageType.Grid
+  type: Field
+  source:
+    remote:
+      path: Public/Data/RenderState/RenderStage.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Grid
+    path: ../Public/Data/RenderState/RenderStage.cs
+    startLine: 16
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: Grid = 8
+    return:
+      type: RGBLineCoreLib.Data.RenderStageType
+references:
+- uid: RGBLineCoreLib.Data
+  commentId: N:RGBLineCoreLib.Data
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib.Data
+  nameWithType: RGBLineCoreLib.Data
+  fullName: RGBLineCoreLib.Data
+  spec.csharp:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+  spec.vb:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+- uid: RGBLineCoreLib.Data.RenderStageType
+  commentId: T:RGBLineCoreLib.Data.RenderStageType
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.RenderStageType.html
+  name: RenderStageType
+  nameWithType: RenderStageType
+  fullName: RGBLineCoreLib.Data.RenderStageType

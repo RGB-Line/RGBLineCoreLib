@@ -5,8 +5,10 @@ items:
   id: StageDataInterface.RegionDataInterface
   parent: RGBLineCoreLib.Functor
   children:
+  - RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID(System.Guid@)
   - RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetRegionData(System.Guid@)
   - RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetRegionIDs
+  - RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData(System.Guid@,RGBLineCoreLib.Data.StageData.RegionData@)
   langs:
   - csharp
   - vb
@@ -100,6 +102,76 @@ items:
       type: System.Guid[]
     content.vb: Public Shared Function GetRegionIDs() As Guid()
   overload: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetRegionIDs*
+- uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID(System.Guid@)
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID(System.Guid@)
+  id: GetNextRegionID(System.Guid@)
+  parent: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface
+  langs:
+  - csharp
+  - vb
+  name: GetNextRegionID(in Guid)
+  nameWithType: StageDataInterface.RegionDataInterface.GetNextRegionID(in Guid)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID(in System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Interfaces/StageDataInterface.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: GetNextRegionID
+    path: ../Public/Functor/Interfaces/StageDataInterface.cs
+    startLine: 27
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public static Guid GetNextRegionID(in Guid curRegionID)
+    parameters:
+    - id: curRegionID
+      type: System.Guid
+    return:
+      type: System.Guid
+    content.vb: Public Shared Function GetNextRegionID(curRegionID As Guid) As Guid
+  overload: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID*
+  nameWithType.vb: StageDataInterface.RegionDataInterface.GetNextRegionID(Guid)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID(System.Guid)
+  name.vb: GetNextRegionID(Guid)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData(System.Guid@,RGBLineCoreLib.Data.StageData.RegionData@)
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData(System.Guid@,RGBLineCoreLib.Data.StageData.RegionData@)
+  id: TryAddRegionData(System.Guid@,RGBLineCoreLib.Data.StageData.RegionData@)
+  parent: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface
+  langs:
+  - csharp
+  - vb
+  name: TryAddRegionData(in Guid, in RegionData)
+  nameWithType: StageDataInterface.RegionDataInterface.TryAddRegionData(in Guid, in StageData.RegionData)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData(in System.Guid, in RGBLineCoreLib.Data.StageData.RegionData)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Interfaces/StageDataInterface.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: TryAddRegionData
+    path: ../Public/Functor/Interfaces/StageDataInterface.cs
+    startLine: 87
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public static bool TryAddRegionData(in Guid targetRegionID, in StageData.RegionData targetRegionData)
+    parameters:
+    - id: targetRegionID
+      type: System.Guid
+    - id: targetRegionData
+      type: RGBLineCoreLib.Data.StageData.RegionData
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TryAddRegionData(targetRegionID As Guid, targetRegionData As StageData.RegionData) As Boolean
+  overload: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData*
+  nameWithType.vb: StageDataInterface.RegionDataInterface.TryAddRegionData(Guid, StageData.RegionData)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData(System.Guid, RGBLineCoreLib.Data.StageData.RegionData)
+  name.vb: TryAddRegionData(Guid, RegionData)
 references:
 - uid: RGBLineCoreLib.Functor
   commentId: N:RGBLineCoreLib.Functor
@@ -448,3 +520,26 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.guid
   - name: (
   - name: )
+- uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID*
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID
+  href: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_RegionDataInterface_GetNextRegionID_System_Guid__
+  name: GetNextRegionID
+  nameWithType: StageDataInterface.RegionDataInterface.GetNextRegionID
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID
+- uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData*
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData
+  href: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_RegionDataInterface_TryAddRegionData_System_Guid__RGBLineCoreLib_Data_StageData_RegionData__
+  name: TryAddRegionData
+  nameWithType: StageDataInterface.RegionDataInterface.TryAddRegionData
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
