@@ -9,21 +9,40 @@ using RGBLineCoreLib.Data;
 
 namespace RGBLineCoreLib.Functor
 {
+    /// <summary>
+    /// StageData의 내용에 접근하기 위해 제공되는 Interface
+    /// </summary>
     public static class StageDataInterface
     {
+        /// <summary>
+        /// 현재 StageData의 RegionData에 접근하기 위한 Interface
+        /// </summary>
         public static class RegionDataInterface
         {
             #region Getter
+            /// <summary>
+            /// 주어진 targetRegionID에 해당하는 RegionData를 반환한다
+            /// </summary>
+            /// <remarks>
+            /// 만약 해당하는 RegionData가 없을 경우 KeyNotFoundException을 발생시킨다
+            /// </remarks>
+            /// <exception cref="KeyNotFoundException"></exception>
             public static StageData.RegionData GetRegionData(in Guid targetRegionID)
             {
                 return StageDataBuffer.Instance.StageData.RegionDataTable[targetRegionID];
             }
 
+            /// <summary>
+            /// 현재 StageData에 존재하는 모든 RegionData의 RegionID를 반환한다
+            /// </summary>
             public static Guid[] GetRegionIDs()
             {
                 return StageDataBuffer.Instance.StageData.RegionDataTable.Keys.ToArray();
             }
 
+            /// <summary>
+            /// curRegionID 기준으로 바로 다음에 위치하는, 즉, curRegionID에 해당하는 Region보다 위쪽에 위치하는 RegionData의 RegionID를 반환한다
+            /// </summary>
 #if FOR_EDITOR
             public
 #else
@@ -103,23 +122,50 @@ namespace RGBLineCoreLib.Functor
             #endregion
 #endif
         }
+        /// <summary>
+        /// 현재 StageData의 LineData에 접근하기 위한 Interface
+        /// </summary>
         public static class LineDataInterface
         {
             #region Getter
+            /// <summary>
+            /// 주어진 targetLineID에 해당하는 Line이 속한 Region의 RegionID를 반환한다
+            /// </summary>
+            /// <remarks>
+            /// 만약 해당하는 LineID가 없을 경우 KeyNotFoundException을 발생시킨다
+            /// </remarks>
+            /// <exception cref="KeyNotFoundException"></exception>
             public static Guid GetAttachedRegionID(in Guid targetLineID)
             {
                 return StageDataBuffer.Instance.StageData.LineDataTable[targetLineID].AttachedRegionID;
             }
+            /// <summary>
+            /// 주어진 targetLineID에 해당하는 Line이 속한 Region의 RegionData를 반환한다
+            /// </summary>
+            /// <remarks>
+            /// 만약 해당하는 LineID가 없을 경우 KeyNotFoundException을 발생시킨다
+            /// </remarks>
+            /// <exception cref="KeyNotFoundException"></exception>
             public static StageData.RegionData GetAttachedRegionData(in Guid targetLineID)
             {
                 return StageDataBuffer.Instance.StageData.RegionDataTable[StageDataBuffer.Instance.StageData.LineDataTable[targetLineID].AttachedRegionID];
             }
 
+            /// <summary>
+            /// 주어진 targetLineID에 해당하는 LineData를 반환한다
+            /// </summary>
+            /// <remarks>
+            /// 만약 해당하는 LineID가 없을 경우 KeyNotFoundException을 발생시킨다
+            /// </remarks>
+            /// <exception cref="KeyNotFoundException"></exception>
             public static StageData.LineData GetLineData(in Guid targetLineID)
             {
                 return StageDataBuffer.Instance.StageData.LineDataTable[targetLineID];
             }
 
+            /// <summary>
+            /// 현재 StageData에 존재하는 모든 LineData의 LineID를 반환한다
+            /// </summary>
             public static Guid[] GetLineIDs()
             {
                 return StageDataBuffer.Instance.StageData.LineDataTable.Keys.ToArray();
@@ -181,36 +227,98 @@ namespace RGBLineCoreLib.Functor
             }
             #endregion
         }
+        /// <summary>
+        /// 현재 StageData의 NoteData에 접근하기 위한 Interface
+        /// </summary>
         public static class NoteDataInterface
         {
             #region Getter
+            /// <summary>
+            /// 주어진 targetNoteID에 해당하는 Note가 속한 Region의 RegionID를 반환한다
+            /// </summary>
+            /// <remarks>
+            /// 만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다
+            /// </remarks>
+            /// <exception cref="KeyNotFoundException"></exception>
+            public static Guid GetAttachedRegionID(in Guid targetNoteID)
+            {
+                return StageDataBuffer.Instance.StageData.LineDataTable[StageDataBuffer.Instance.StageData.NoteDataTable[targetNoteID].AttachedLineID].AttachedRegionID;
+            }
+            /// <summary>
+            /// 주어진 targetNoteID에 해당하는 Note가 속한 Region의 RegionData를 반환한다
+            /// </summary>
+            /// <remarks>
+            /// 만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다
+            /// </remarks>
+            /// <exception cref="KeyNotFoundException"></exception>
             public static StageData.RegionData GetAttachedRegionData(in Guid targetNoteID)
             {
                 return StageDataBuffer.Instance.StageData.RegionDataTable[StageDataBuffer.Instance.StageData.LineDataTable[StageDataBuffer.Instance.StageData.NoteDataTable[targetNoteID].AttachedLineID].AttachedRegionID];
             }
+
+            /// <summary>
+            /// 주어진 targetNoteID에 해당하는 Note가 속한 Line의 LineID를 반환한다
+            /// </summary>
+            /// <remarks>
+            /// 만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다
+            /// </remarks>
+            /// <exception cref="KeyNotFoundException"></exception>
+            public static Guid GetAttachedLineID(in Guid targetNoteID)
+            {
+                return StageDataBuffer.Instance.StageData.NoteDataTable[targetNoteID].AttachedLineID;
+            }
+            /// <summary>
+            /// 주어진 targetNoteID에 해당하는 Note가 속한 Line의 LineData를 반환한다
+            /// </summary>
+            /// <remarks>
+            /// 만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다
+            /// </remarks>
+            /// <exception cref="KeyNotFoundException"></exception>
             public static StageData.LineData GetAttachedLineData(in Guid targetNoteID)
             {
                 return StageDataBuffer.Instance.StageData.LineDataTable[StageDataBuffer.Instance.StageData.NoteDataTable[targetNoteID].AttachedLineID];
             }
 
+            /// <summary>
+            /// 주어진 targetNoteID에 해당하는 Note가 존재하는지 확인한다
+            /// </summary>
+            /// <returns>
+            /// 존재한다면 true, 그렇지 않다면 false
+            /// </returns>
             public static bool BIsNoteIDValid(in Guid targetNoteID)
             {
                 return StageDataBuffer.Instance.StageData.NoteDataTable.ContainsKey(targetNoteID);
             }
+            /// <summary>
+            /// 주어진 targetLineID에 해당하는 NoteData를 반환한다
+            /// </summary>
+            /// <remarks>
+            /// 만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다
+            /// </remarks>
+            /// <exception cref="KeyNotFoundException"></exception>
             public static StageData.NoteData GetNoteData(in Guid targetNoteID)
             {
                 return StageDataBuffer.Instance.StageData.NoteDataTable[targetNoteID];
             }
 
+            /// <summary>
+            /// 현재 StageData에 존재하는 모든 NoteData의 NoteID를 반환한다
+            /// </summary>
             public static Guid[] GetNoteIDs()
             {
                 return StageDataBuffer.Instance.StageData.NoteDataTable.Keys.ToArray();
             }
             #endregion
         }
+        /// <summary>
+        /// 현재 StageData의 StageConfigData에 접근하기 위한 Interface
+        /// </summary>
         public static class StageConfigDataInterface
         {
             #region Getter
+            /// <summary>
+            /// 현재 StageData의 StageConfigData를 반환한다
+            /// </summary>
             public static StageData.StageConfigData GetStageConfigData()
             {
                 return StageDataBuffer.Instance.StageData.StageConfig;
@@ -219,15 +327,30 @@ namespace RGBLineCoreLib.Functor
         }
 
 
+        /// <summary>
+        /// DataPathTable의 내용을 바탕으로 Load를 시도한다
+        /// </summary>
+        /// <returns>
+        /// 만약 Load에 성공했을 경우 true, 실패했을 경우 false
+        /// </returns>
         public static bool TryLoadStageData(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty)
         {
             return StageDataBuffer.Instance.TryLoadStageData(targetStageName, majorDifficulty);
         }
+        /// <summary>
+        /// StageData를 Dispose한다
+        /// </summary>
         public static void DisposeStageData()
         {
             StageDataBuffer.Instance.Dispose();
         }
 
+        /// <summary>
+        /// StageData가 유효한지 확인한다
+        /// </summary>
+        /// <returns>
+        /// 유효하다면 true, 그렇지 않다면 false
+        /// </returns>
         public static bool BIsStageDataValid()
         {
             return StageDataBuffer.Instance.StageData.BIsValid();

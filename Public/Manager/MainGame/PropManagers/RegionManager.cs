@@ -14,6 +14,9 @@ using RGBLineCoreLib.Functor;
 
 namespace RGBLineCoreLib.Manager
 {
+    /// <summary>
+    /// 게임 내 Region을 관리하는 Manager Class
+    /// </summary>
     public sealed class RegionManager : SingleTonForGameObject<RegionManager>
     {
         [Serializable] public struct RegionSpawnAssets
@@ -32,10 +35,22 @@ namespace RGBLineCoreLib.Manager
             SetInstance(this);
         }
 
+        /// <summary>
+        /// 게임 내에 Region Item들을 생성할 때 호출하면 된다
+        /// </summary>
+        /// <remarks>
+        /// Editor에서 Region Item들을 다시 그릴 경우에는 필히 먼저 DespawnRegionProps()을 호출하고, 그 다음에 SpawnRegionProps()을 호출해야 한다
+        /// </remarks>
         public void SpawnRegionProps()
         {
 
         }
+        /// <summary>
+        /// 게임 내에 Region Item들을 제거할 때 호출하면 된다
+        /// </summary>
+        /// <remarks>
+        /// Scene Unload 전에 필히 DespawnRegionProps() + GC.Collect()를 호출해 Memory 관리에 유의한다
+        /// </remarks>
         public void DespawnRegionProps()
         {
 

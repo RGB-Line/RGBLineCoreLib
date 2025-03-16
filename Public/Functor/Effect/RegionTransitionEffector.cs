@@ -9,6 +9,9 @@ using UnityEngine;
 
 namespace RGBLineCoreLib.Functor
 {
+    /// <summary>
+    /// Region의 Red, Green, Blue의 색상 전환 효과를 담당하는 Class이다
+    /// </summary>
     public sealed class RegionTransitionEffector : MonoBehaviour
     {
         [SerializeField] private List<Material> m_mats;

@@ -12,6 +12,12 @@ using RGBLineCoreLib.Data;
 
 namespace RGBLineCoreLib.Functor
 {
+    /// <summary>
+    /// 기본적인 Red Line Corner Note를 그리기 위한 Class. Red Line Corner Note는 Red Line의 꼭지점에 위치하는 Note를 의미한다
+    /// </summary>
+    /// <remarks>
+    /// Editor에서는 해당 Class를 상속받아 사용하지만, Runtime에서는 해당 Class를 직접 사용함
+    /// </remarks>
     public class RedLineCornerNote : MonoBehaviour, IRedLineCornerNote
     {
         private Guid m_noteID = Guid.Empty;
@@ -39,7 +45,7 @@ namespace RGBLineCoreLib.Functor
             }
         }
 
-        public void Render()
+        public virtual void Render()
         {
             m_noteID = Guid.NewGuid();
 
@@ -57,7 +63,7 @@ namespace RGBLineCoreLib.Functor
             };
         }
 
-        public void Dispose()
+        public virtual void Dispose()
         {
             m_noteID = Guid.Empty;
             m_judgeBox.size = Vector2.one;

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class NoteManager ">
       
-      
+      <meta name="description" content="게임 내 Note를 관리하는 Manager Class">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="RGBLineCoreLib_Manager_NoteManager" data-uid="RGBLineCoreLib.Manager.NoteManager" class="text-break">
-Class NoteManager  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Manager/MainGame/PropManagers/NoteManager.cs/#L16"><i class="bi bi-code-slash"></i></a>
+Class NoteManager  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Manager/MainGame/PropManagers/NoteManager.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class NoteManager  <a class="header-action link-secondary" title="View source" h
   <dl><dt>Assembly</dt><dd>RGBLineCoreLib.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>게임 내 Note를 관리하는 Manager Class</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -506,7 +507,7 @@ Class NoteManager  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="RGBLineCoreLib_Manager_NoteManager_Awake" data-uid="RGBLineCoreLib.Manager.NoteManager.Awake">
   Awake()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Manager/MainGame/PropManagers/NoteManager.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Manager/MainGame/PropManagers/NoteManager.cs/#L27"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -532,10 +533,11 @@ Class NoteManager  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="RGBLineCoreLib_Manager_NoteManager_DespawnNoteProps" data-uid="RGBLineCoreLib.Manager.NoteManager.DespawnNoteProps">
   DespawnNoteProps()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Manager/MainGame/PropManagers/NoteManager.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Manager/MainGame/PropManagers/NoteManager.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>게임 내에 Note Item들을 제거할 때 호출하면 된다</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -550,6 +552,9 @@ Class NoteManager  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h4 class="section" id="RGBLineCoreLib_Manager_NoteManager_DespawnNoteProps_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Scene Unload 전에 필히 DespawnNoteProps() + GC.Collect()를 호출해 Memory 관리에 유의한다</p>
+</div>
 
 
 
@@ -558,7 +563,7 @@ Class NoteManager  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="RGBLineCoreLib_Manager_NoteManager_Dispose_System_Boolean_" data-uid="RGBLineCoreLib.Manager.NoteManager.Dispose(System.Boolean)">
   Dispose(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Manager/MainGame/PropManagers/NoteManager.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Manager/MainGame/PropManagers/NoteManager.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -589,10 +594,11 @@ Class NoteManager  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="RGBLineCoreLib_Manager_NoteManager_GetNoteItem_System_Guid__" data-uid="RGBLineCoreLib.Manager.NoteManager.GetNoteItem(System.Guid@)">
   GetNoteItem(in Guid)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Manager/MainGame/PropManagers/NoteManager.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Manager/MainGame/PropManagers/NoteManager.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>배치된 Note GameObject들 중에서 주어진 targetNoteID에 대응되는 INoteItem를 반환한다</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -625,10 +631,11 @@ Class NoteManager  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="RGBLineCoreLib_Manager_NoteManager_SpawnNoteProps" data-uid="RGBLineCoreLib.Manager.NoteManager.SpawnNoteProps">
   SpawnNoteProps()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Manager/MainGame/PropManagers/NoteManager.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Manager/MainGame/PropManagers/NoteManager.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>게임 내에 Note Item들을 생성할 때 호출하면 된다</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -643,6 +650,9 @@ Class NoteManager  <a class="header-action link-secondary" title="View source" h
 
 
 
+  <h4 class="section" id="RGBLineCoreLib_Manager_NoteManager_SpawnNoteProps_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Editor에서 Note Item들을 다시 그릴 경우에는 필히 먼저 DespawnNoteProps()을 호출하고, 그 다음에 SpawnNoteProps()을 호출해야 한다</p>
+</div>
 
 
 
@@ -651,7 +661,7 @@ Class NoteManager  <a class="header-action link-secondary" title="View source" h
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Manager/MainGame/PropManagers/NoteManager.cs/#L16" class="edit-link">Edit this page</a>
+          <a href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Manager/MainGame/PropManagers/NoteManager.cs/#L19" class="edit-link">Edit this page</a>
         </div>
 
 

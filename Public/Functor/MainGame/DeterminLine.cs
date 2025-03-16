@@ -14,6 +14,12 @@ using RGBLineCoreLib.Manager;
 
 namespace RGBLineCoreLib.Functor
 {
+    /// <summary>
+    /// 게임 내 판정선 Class
+    /// </summary>
+    /// <remarks>
+    /// Scene Load 시 DeterminLine GameObject의 경우 필히 StartCheck()를 호출해야 한다
+    /// </remarks>
     public sealed class DeterminLine : SingleTonForGameObject<DeterminLine>
     {
         private bool m_bisStartCheck = false;
@@ -36,6 +42,9 @@ namespace RGBLineCoreLib.Functor
             }
         }
 
+        /// <summary>
+        /// Scene Load 시 DeterminLine GameObject의 경우 필히 StartCheck()를 호출해야 한다
+        /// </summary>
         public void StartCheck()
         {
             m_bisStartCheck = true;

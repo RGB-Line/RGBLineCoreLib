@@ -21,10 +21,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: DataPathManager
     path: ../Public/Manager/Common/DataPathManager.cs
-    startLine: 15
+    startLine: 18
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
+  summary: DataPathTable Data를 관리하는 Manager
+  example: []
   syntax:
     content: 'public sealed class DataPathManager : SingleTonForGameObject<DataPathManager>, IDisposable'
     content.vb: Public NotInheritable Class DataPathManager Inherits SingleTonForGameObject(Of DataPathManager) Implements IDisposable
@@ -176,7 +178,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Awake
     path: ../Public/Manager/Common/DataPathManager.cs
-    startLine: 20
+    startLine: 23
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -202,7 +204,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Dispose
     path: ../Public/Manager/Common/DataPathManager.cs
-    startLine: 33
+    startLine: 36
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager

@@ -28,10 +28,13 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: LineItem
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 14
+    startLine: 20
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: 기본적인 Line을 그리기 위한 Class
+  remarks: Editor에서는 해당 Class를 상속받아 사용하지만, Runtime에서는 해당 Class를 직접 사용함
+  example: []
   syntax:
     content: >-
       [RequireComponent(typeof(CurvedLineRenderer))]
@@ -192,7 +195,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Awake
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 42
+    startLine: 48
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -218,7 +221,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: FixedUpdate
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 48
+    startLine: 54
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -244,13 +247,13 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: OnMouseEnter
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 55
+    startLine: 61
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
   syntax:
-    content: public void OnMouseEnter()
-    content.vb: Public Sub OnMouseEnter()
+    content: public virtual void OnMouseEnter()
+    content.vb: Public Overridable Sub OnMouseEnter()
   overload: RGBLineCoreLib.Functor.LineItem.OnMouseEnter*
 - uid: RGBLineCoreLib.Functor.LineItem.OnMouseExit
   commentId: M:RGBLineCoreLib.Functor.LineItem.OnMouseExit
@@ -270,13 +273,13 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: OnMouseExit
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 66
+    startLine: 72
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
   syntax:
-    content: public void OnMouseExit()
-    content.vb: Public Sub OnMouseExit()
+    content: public virtual void OnMouseExit()
+    content.vb: Public Overridable Sub OnMouseExit()
   overload: RGBLineCoreLib.Functor.LineItem.OnMouseExit*
 - uid: RGBLineCoreLib.Functor.LineItem.Transform
   commentId: P:RGBLineCoreLib.Functor.LineItem.Transform
@@ -296,7 +299,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Transform
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 71
+    startLine: 77
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -328,7 +331,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: LineRenderer
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 78
+    startLine: 84
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -360,7 +363,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: LineID
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 86
+    startLine: 92
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -392,17 +395,17 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Render
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 94
+    startLine: 100
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
-    content: public void Render(in Guid lineID = default)
+    content: public virtual void Render(in Guid lineID = default)
     parameters:
     - id: lineID
       type: System.Guid
-    content.vb: Public Sub Render(lineID As Guid = Nothing)
+    content.vb: Public Overridable Sub Render(lineID As Guid = Nothing)
   overload: RGBLineCoreLib.Functor.LineItem.Render*
   implements:
   - RGBLineCoreLib.Functor.ILineItem.Render(System.Guid@)
@@ -427,15 +430,15 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Dispose
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 203
+    startLine: 209
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
   summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
   example: []
   syntax:
-    content: public void Dispose()
-    content.vb: Public Sub Dispose()
+    content: public virtual void Dispose()
+    content.vb: Public Overridable Sub Dispose()
   overload: RGBLineCoreLib.Functor.LineItem.Dispose*
   implements:
   - System.IDisposable.Dispose

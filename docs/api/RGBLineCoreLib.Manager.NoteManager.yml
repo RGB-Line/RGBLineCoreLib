@@ -24,10 +24,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: NoteManager
     path: ../Public/Manager/MainGame/PropManagers/NoteManager.cs
-    startLine: 15
+    startLine: 18
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
+  summary: 게임 내 Note를 관리하는 Manager Class
+  example: []
   syntax:
     content: 'public sealed class NoteManager : SingleTonForGameObject<NoteManager>, IDisposable'
     content.vb: Public NotInheritable Class NoteManager Inherits SingleTonForGameObject(Of NoteManager) Implements IDisposable
@@ -179,7 +181,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Awake
     path: ../Public/Manager/MainGame/PropManagers/NoteManager.cs
-    startLine: 23
+    startLine: 26
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -205,10 +207,13 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: SpawnNoteProps
     path: ../Public/Manager/MainGame/PropManagers/NoteManager.cs
-    startLine: 36
+    startLine: 45
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
+  summary: 게임 내에 Note Item들을 생성할 때 호출하면 된다
+  remarks: Editor에서 Note Item들을 다시 그릴 경우에는 필히 먼저 DespawnNoteProps()을 호출하고, 그 다음에 SpawnNoteProps()을 호출해야 한다
+  example: []
   syntax:
     content: public void SpawnNoteProps()
     content.vb: Public Sub SpawnNoteProps()
@@ -231,10 +236,13 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: DespawnNoteProps
     path: ../Public/Manager/MainGame/PropManagers/NoteManager.cs
-    startLine: 58
+    startLine: 73
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
+  summary: 게임 내에 Note Item들을 제거할 때 호출하면 된다
+  remarks: Scene Unload 전에 필히 DespawnNoteProps() + GC.Collect()를 호출해 Memory 관리에 유의한다
+  example: []
   syntax:
     content: public void DespawnNoteProps()
     content.vb: Public Sub DespawnNoteProps()
@@ -257,10 +265,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetNoteItem
     path: ../Public/Manager/MainGame/PropManagers/NoteManager.cs
-    startLine: 77
+    startLine: 95
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
+  summary: 배치된 Note GameObject들 중에서 주어진 targetNoteID에 대응되는 INoteItem를 반환한다
+  example: []
   syntax:
     content: public INoteItem GetNoteItem(in Guid targetNoteID)
     parameters:
@@ -291,7 +301,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Dispose
     path: ../Public/Manager/MainGame/PropManagers/NoteManager.cs
-    startLine: 106
+    startLine: 124
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager

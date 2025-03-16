@@ -22,10 +22,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: RegionFadeoutEffect
     path: ../Public/Functor/Effect/RegionFadeoutEffect.cs
-    startLine: 11
+    startLine: 14
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: RegionFadeoutEffect는 Region 배경의 Fadeout 효과를 담당하는 Class이다
+  example: []
   syntax:
     content: 'public sealed class RegionFadeoutEffect : MonoBehaviour'
     content.vb: Public NotInheritable Class RegionFadeoutEffect Inherits MonoBehaviour
@@ -170,7 +172,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Awake
     path: ../Public/Functor/Effect/RegionFadeoutEffect.cs
-    startLine: 26
+    startLine: 29
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -196,7 +198,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Update
     path: ../Public/Functor/Effect/RegionFadeoutEffect.cs
-    startLine: 30
+    startLine: 33
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -222,7 +224,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: CalculateFadeout
     path: ../Public/Functor/Effect/RegionFadeoutEffect.cs
-    startLine: 59
+    startLine: 62
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor

@@ -10,6 +10,9 @@ using UnityEngine;
 
 namespace RGBLineCoreLib.Functor
 {
+	/// <summary>
+	/// Curved Line을 그리기 위한 Renderer
+	/// </summary>
 	[RequireComponent(typeof(LineRenderer))]
 	public class CurvedLineRenderer : MonoBehaviour
 	{
@@ -32,7 +35,7 @@ namespace RGBLineCoreLib.Functor
 			SetPointsToLine();
 		}
 
-		void GetPoints()
+		private void GetPoints()
 		{
 			//find curved points in children
 			linePoints = this.GetComponentsInChildren<CurvedLinePoint>();
@@ -45,7 +48,7 @@ namespace RGBLineCoreLib.Functor
 			}
 		}
 
-		void SetPointsToLine()
+		private void SetPointsToLine()
 		{
 			//create old positions if they dont match
 			if (linePositionsOld.Length != linePositions.Length)
@@ -80,12 +83,12 @@ namespace RGBLineCoreLib.Functor
 			}
 		}
 
-		void OnDrawGizmosSelected()
+		private void OnDrawGizmosSelected()
 		{
 			Update();
 		}
 
-		void OnDrawGizmos()
+		private void OnDrawGizmos()
 		{
 			if (linePoints.Length == 0)
 			{

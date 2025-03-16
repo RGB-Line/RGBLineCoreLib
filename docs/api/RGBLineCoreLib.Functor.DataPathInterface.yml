@@ -24,10 +24,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: DataPathInterface
     path: ../Public/Functor/Interfaces/DataPathInterface.cs
-    startLine: 15
+    startLine: 18
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: DataPathTable의 내용에 접근하기 위해 제공되는 Interface
+  example: []
   syntax:
     content: public static class DataPathInterface
     content.vb: Public Module DataPathInterface
@@ -59,10 +61,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetStageDataPath
     path: ../Public/Functor/Interfaces/DataPathInterface.cs
-    startLine: 17
+    startLine: 23
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: StageData File의 경로를 반환한다
+  example: []
   syntax:
     content: public static string GetStageDataPath(in string stageName, in StageMetadata.MajorDifficultyLevel majorDifficulty)
     parameters:
@@ -95,10 +99,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetStageMusicPath
     path: ../Public/Functor/Interfaces/DataPathInterface.cs
-    startLine: 40
+    startLine: 49
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: Stage의 Music File의 경로를 반환한다
+  example: []
   syntax:
     content: public static string GetStageMusicPath(in string stageName, in string musicExtention)
     parameters:
@@ -131,10 +137,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetStageMetadataPath
     path: ../Public/Functor/Interfaces/DataPathInterface.cs
-    startLine: 48
+    startLine: 60
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: StageMetadata File의 경로를 반환한다
+  example: []
   syntax:
     content: public static string GetStageMetadataPath(in string stageName, in StageMetadata.MajorDifficultyLevel majorDifficulty)
     parameters:
@@ -167,10 +175,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetStageNames
     path: ../Public/Functor/Interfaces/DataPathInterface.cs
-    startLine: 72
+    startLine: 87
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: 모든 Stage 이름의 목록을 반환한다
+  example: []
   syntax:
     content: public static string[] GetStageNames()
     return:
@@ -195,10 +205,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetConfigPath
     path: ../Public/Functor/Interfaces/DataPathInterface.cs
-    startLine: 83
+    startLine: 101
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: GameConfigData File의 경로를 반환한다
+  example: []
   syntax:
     content: public static string GetConfigPath()
     return:

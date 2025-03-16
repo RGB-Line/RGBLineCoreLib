@@ -23,10 +23,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: LobbyBackgroundManager
     path: ../Public/Manager/Lobby/LobbyBackgroundManager.cs
-    startLine: 13
+    startLine: 16
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
+  summary: Lobby Background를 관리하는 Manager Class
+  example: []
   syntax:
     content: 'public class LobbyBackgroundManager : SingleTonForGameObject<LobbyBackgroundManager>, IDisposable'
     content.vb: Public Class LobbyBackgroundManager Inherits SingleTonForGameObject(Of LobbyBackgroundManager) Implements IDisposable
@@ -179,7 +181,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Awake
     path: ../Public/Manager/Lobby/LobbyBackgroundManager.cs
-    startLine: 21
+    startLine: 24
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -205,7 +207,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: FixedUpdate
     path: ../Public/Manager/Lobby/LobbyBackgroundManager.cs
-    startLine: 29
+    startLine: 32
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -231,7 +233,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: RandomMatSelectIndex
     path: ../Public/Manager/Lobby/LobbyBackgroundManager.cs
-    startLine: 34
+    startLine: 37
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -260,7 +262,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Dispose
     path: ../Public/Manager/Lobby/LobbyBackgroundManager.cs
-    startLine: 46
+    startLine: 49
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class StageMetadataInterface ">
       
-      
+      <meta name="description" content="StageMetadata의 내용에 접근하기 위한 Interface">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="RGBLineCoreLib_Functor_StageMetadataInterface" data-uid="RGBLineCoreLib.Functor.StageMetadataInterface" class="text-break">
-Class StageMetadataInterface  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageMetadataInterface.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Class StageMetadataInterface  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageMetadataInterface.cs/#L15"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class StageMetadataInterface  <a class="header-action link-secondary" title="Vie
   <dl><dt>Assembly</dt><dd>RGBLineCoreLib.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>StageMetadata의 내용에 접근하기 위한 Interface</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -156,10 +157,11 @@ Class StageMetadataInterface  <a class="header-action link-secondary" title="Vie
 
   <h3 id="RGBLineCoreLib_Functor_StageMetadataInterface_GetStageMetadata" data-uid="RGBLineCoreLib.Functor.StageMetadataInterface.GetStageMetadata">
   GetStageMetadata()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageMetadataInterface.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageMetadataInterface.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>현재 Load된 StageMetadata를 반환한다</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -187,10 +189,11 @@ Class StageMetadataInterface  <a class="header-action link-secondary" title="Vie
 
   <h3 id="RGBLineCoreLib_Functor_StageMetadataInterface_TryLoadStageMetadata_System_String__RGBLineCoreLib_Data_StageMetadata_MajorDifficultyLevel__" data-uid="RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)">
   TryLoadStageMetadata(in string, in MajorDifficultyLevel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageMetadataInterface.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageMetadataInterface.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>DataPathTable의 내용을 바탕으로 Load를 시도한다</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -208,7 +211,8 @@ Class StageMetadataInterface  <a class="header-action link-secondary" title="Vie
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>Load에 성공했을 경우 true, 실패했을 경우 false</p>
+</dd>
   </dl>
 
 
@@ -217,6 +221,9 @@ Class StageMetadataInterface  <a class="header-action link-secondary" title="Vie
 
 
 
+  <h4 class="section" id="RGBLineCoreLib_Functor_StageMetadataInterface_TryLoadStageMetadata_System_String__RGBLineCoreLib_Data_StageMetadata_MajorDifficultyLevel___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>StageMetadataInterface.GetStageMetadata()를 호출하기 전에 필히 호출해야만 한다</p>
+</div>
 
 
 
@@ -225,7 +232,7 @@ Class StageMetadataInterface  <a class="header-action link-secondary" title="Vie
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageMetadataInterface.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageMetadataInterface.cs/#L15" class="edit-link">Edit this page</a>
         </div>
 
 

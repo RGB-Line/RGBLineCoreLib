@@ -55,7 +55,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: NoteHitJudgeStrandard
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 34
+    startLine: 39
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -82,10 +82,13 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: MusicVolume
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 36
+    startLine: 47
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
+  summary: 게임 전체 볼륨을 조절한다
+  remarks: 0.0f ~ 1.0f 사이의 값으로 지정한다
+  example: []
   syntax:
     content: public float MusicVolume
     return:
@@ -109,7 +112,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: MaxFrame
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 37
+    startLine: 48
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -136,10 +139,13 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: VSyncCount
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 38
+    startLine: 55
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
+  summary: 게임의 V Sync 수준을 조절한다
+  remarks: 0 ~ 4 사이의 값으로 지정한다
+  example: []
   syntax:
     content: public int VSyncCount
     return:

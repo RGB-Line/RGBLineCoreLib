@@ -13,8 +13,14 @@ using RGBLineCoreLib.Manager;
 
 namespace RGBLineCoreLib.Functor
 {
+    /// <summary>
+    /// DataPathTable의 내용에 접근하기 위해 제공되는 Interface
+    /// </summary>
     public static class DataPathInterface
     {
+        /// <summary>
+        /// StageData File의 경로를 반환한다
+        /// </summary>
         public static string GetStageDataPath(in string stageName, in StageMetadata.MajorDifficultyLevel majorDifficulty)
         {
             string path = Path.Combine(Application.streamingAssetsPath, DataPathManager.Instance.DataPathTable.StagesBasePath);
@@ -38,6 +44,9 @@ namespace RGBLineCoreLib.Functor
 
             return path;
         }
+        /// <summary>
+        /// Stage의 Music File의 경로를 반환한다
+        /// </summary>
         public static string GetStageMusicPath(in string stageName, in string musicExtention)
         {
             string path = Path.Combine(Application.streamingAssetsPath, DataPathManager.Instance.DataPathTable.StagesBasePath);
@@ -46,6 +55,9 @@ namespace RGBLineCoreLib.Functor
 
             return path;
         }
+        /// <summary>
+        /// StageMetadata File의 경로를 반환한다
+        /// </summary>
         public static string GetStageMetadataPath(in string stageName, in StageMetadata.MajorDifficultyLevel majorDifficulty)
         {
             string path = Path.Combine(Application.streamingAssetsPath, DataPathManager.Instance.DataPathTable.StagesBasePath);
@@ -70,6 +82,9 @@ namespace RGBLineCoreLib.Functor
             return path;
         }
 
+        /// <summary>
+        /// 모든 Stage 이름의 목록을 반환한다
+        /// </summary>
         public static string[] GetStageNames()
         {
             string[] stageNames = Directory.GetDirectories(Path.Combine(Application.streamingAssetsPath, DataPathManager.Instance.DataPathTable.StagesBasePath));
@@ -81,6 +96,9 @@ namespace RGBLineCoreLib.Functor
             return stageNames;
         }
 
+        /// <summary>
+        /// GameConfigData File의 경로를 반환한다
+        /// </summary>
         public static string GetConfigPath()
         {
             string path = Path.Combine(Application.streamingAssetsPath, DataPathManager.Instance.DataPathTable.ConfigBasePath);

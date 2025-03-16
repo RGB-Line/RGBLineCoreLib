@@ -13,6 +13,9 @@ using RGBLineCoreLib.Data;
 
 namespace RGBLineCoreLib.Manager
 {
+    /// <summary>
+    /// DataPathTable Data를 관리하는 Manager
+    /// </summary>
     public sealed class DataPathManager : SingleTonForGameObject<DataPathManager>
     {
         [SerializeField] private DataPathTable m_dataPathTable;

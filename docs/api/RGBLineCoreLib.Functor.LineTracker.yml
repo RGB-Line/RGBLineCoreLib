@@ -22,10 +22,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: LineTracker
     path: ../Public/Functor/MainGame/LineTracker.cs
-    startLine: 14
+    startLine: 17
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: 게임 내 Red, Green Line을 따라가는 Tracker Class
+  example: []
   syntax:
     content: 'public sealed class LineTracker : MonoBehaviour'
     content.vb: Public NotInheritable Class LineTracker Inherits MonoBehaviour
@@ -170,7 +172,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Update
     path: ../Public/Functor/MainGame/LineTracker.cs
-    startLine: 25
+    startLine: 28
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -196,7 +198,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: BIsInitialized
     path: ../Public/Functor/MainGame/LineTracker.cs
-    startLine: 103
+    startLine: 106
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -225,7 +227,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: CurRegionID
     path: ../Public/Functor/MainGame/LineTracker.cs
-    startLine: 110
+    startLine: 113
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor

@@ -9,6 +9,9 @@ using UnityEngine;
 
 namespace RGBLineCoreLib.Functor
 {
+    /// <summary>
+    /// RegionFadeoutEffect는 Region 배경의 Fadeout 효과를 담당하는 Class이다
+    /// </summary>
     public sealed class RegionFadeoutEffect : MonoBehaviour
     {
         private MeshRenderer m_meshRenderer;

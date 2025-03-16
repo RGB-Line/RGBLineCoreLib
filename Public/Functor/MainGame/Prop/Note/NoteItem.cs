@@ -12,6 +12,12 @@ using RGBLineCoreLib.Manager;
 
 namespace RGBLineCoreLib.Functor
 {
+    /// <summary>
+    /// 기본적인 Note를 그리기 위한 Class
+    /// </summary>
+    /// <remarks>
+    /// Editor에서는 해당 Class를 상속받아 사용하지만, Runtime에서는 해당 Class를 직접 사용함
+    /// </remarks>
     public class NoteItem : MonoBehaviour, INoteItem
     {
         [SerializeField] private Transform m_transform_RedAndBlueNote;
@@ -59,7 +65,7 @@ namespace RGBLineCoreLib.Functor
             }
         }
 
-        public void Render(in Guid noteID = default)
+        public virtual void Render(in Guid noteID = default)
         {
             if (m_noteID == default && noteID == default)
             {
@@ -164,7 +170,7 @@ namespace RGBLineCoreLib.Functor
                               (nearestLinePosGaps[0] / (nearestLinePosGaps[0] + nearestLinePosGaps[1])));
         }
 
-        public void Dispose()
+        public virtual void Dispose()
         {
             m_redAndBlueNote.Dispose();
             Destroy(m_redAndBlueNote.Transform.gameObject);

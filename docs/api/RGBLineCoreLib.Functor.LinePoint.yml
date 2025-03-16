@@ -22,10 +22,13 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: LinePoint
     path: ../Public/Functor/MainGame/Prop/Line/LinePoint.cs
-    startLine: 14
+    startLine: 20
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: 기본적인 Line을 그리기 위한 Class
+  remarks: Editor에서는 해당 Class를 상속받아 사용하지만, Runtime에서는 해당 Class를 직접 사용함
+  example: []
   syntax:
     content: >-
       [RequireComponent(typeof(CurvedLinePoint))]
@@ -186,7 +189,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Transform
     path: ../Public/Functor/MainGame/Prop/Line/LinePoint.cs
-    startLine: 23
+    startLine: 29
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -218,13 +221,13 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Render
     path: ../Public/Functor/MainGame/Prop/Line/LinePoint.cs
-    startLine: 31
+    startLine: 37
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
-    content: public void Render(in ILineItem parentLineItem, in Vector2 pos, in float minorOffsetTime, in int pointIndex)
+    content: public virtual void Render(in ILineItem parentLineItem, in Vector2 pos, in float minorOffsetTime, in int pointIndex)
     parameters:
     - id: parentLineItem
       type: RGBLineCoreLib.Functor.ILineItem
@@ -234,7 +237,7 @@ items:
       type: System.Single
     - id: pointIndex
       type: System.Int32
-    content.vb: Public Sub Render(parentLineItem As ILineItem, pos As Vector2, minorOffsetTime As Single, pointIndex As Integer)
+    content.vb: Public Overridable Sub Render(parentLineItem As ILineItem, pos As Vector2, minorOffsetTime As Single, pointIndex As Integer)
   overload: RGBLineCoreLib.Functor.LinePoint.Render*
   implements:
   - RGBLineCoreLib.Functor.ILinePoint.Render(RGBLineCoreLib.Functor.ILineItem@,UnityEngine.Vector2@,System.Single@,System.Int32@)
@@ -259,15 +262,15 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Dispose
     path: ../Public/Functor/MainGame/Prop/Line/LinePoint.cs
-    startLine: 67
+    startLine: 73
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
   summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
   example: []
   syntax:
-    content: public void Dispose()
-    content.vb: Public Sub Dispose()
+    content: public virtual void Dispose()
+    content.vb: Public Overridable Sub Dispose()
   overload: RGBLineCoreLib.Functor.LinePoint.Dispose*
   implements:
   - System.IDisposable.Dispose

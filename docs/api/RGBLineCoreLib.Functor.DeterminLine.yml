@@ -25,10 +25,13 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: DeterminLine
     path: ../Public/Functor/MainGame/DeterminLine.cs
-    startLine: 16
+    startLine: 22
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: 게임 내 판정선 Class
+  remarks: Scene Load 시 DeterminLine GameObject의 경우 필히 StartCheck()를 호출해야 한다
+  example: []
   syntax:
     content: 'public sealed class DeterminLine : SingleTonForGameObject<DeterminLine>, IDisposable'
     content.vb: Public NotInheritable Class DeterminLine Inherits SingleTonForGameObject(Of DeterminLine) Implements IDisposable
@@ -180,7 +183,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Awake
     path: ../Public/Functor/MainGame/DeterminLine.cs
-    startLine: 21
+    startLine: 27
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -206,7 +209,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: FixedUpdate
     path: ../Public/Functor/MainGame/DeterminLine.cs
-    startLine: 25
+    startLine: 31
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -232,10 +235,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: StartCheck
     path: ../Public/Functor/MainGame/DeterminLine.cs
-    startLine: 38
+    startLine: 47
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: Scene Load 시 DeterminLine GameObject의 경우 필히 StartCheck()를 호출해야 한다
+  example: []
   syntax:
     content: public void StartCheck()
     content.vb: Public Sub StartCheck()
@@ -258,7 +263,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: OnTriggerEnter2D
     path: ../Public/Functor/MainGame/DeterminLine.cs
-    startLine: 43
+    startLine: 52
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -287,7 +292,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: OnTriggerExit2D
     path: ../Public/Functor/MainGame/DeterminLine.cs
-    startLine: 63
+    startLine: 72
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -316,7 +321,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Dispose
     path: ../Public/Functor/MainGame/DeterminLine.cs
-    startLine: 84
+    startLine: 93
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor

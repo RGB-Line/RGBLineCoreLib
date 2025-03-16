@@ -22,10 +22,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: StageDataInterface
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 11
+    startLine: 14
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: StageData의 내용에 접근하기 위해 제공되는 Interface
+  example: []
   syntax:
     content: public static class StageDataInterface
     content.vb: Public Module StageDataInterface
@@ -57,10 +59,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: TryLoadStageData
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 221
+    startLine: 335
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: DataPathTable의 내용을 바탕으로 Load를 시도한다
+  example: []
   syntax:
     content: public static bool TryLoadStageData(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty)
     parameters:
@@ -70,6 +74,7 @@ items:
       type: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
     return:
       type: System.Boolean
+      description: 만약 Load에 성공했을 경우 true, 실패했을 경우 false
     content.vb: Public Shared Function TryLoadStageData(targetStageName As String, majorDifficulty As StageMetadata.MajorDifficultyLevel) As Boolean
   overload: RGBLineCoreLib.Functor.StageDataInterface.TryLoadStageData*
   nameWithType.vb: StageDataInterface.TryLoadStageData(String, StageMetadata.MajorDifficultyLevel)
@@ -93,10 +98,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: DisposeStageData
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 225
+    startLine: 342
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: StageData를 Dispose한다
+  example: []
   syntax:
     content: public static void DisposeStageData()
     content.vb: Public Shared Sub DisposeStageData()
@@ -119,14 +126,17 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: BIsStageDataValid
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 230
+    startLine: 353
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: StageData가 유효한지 확인한다
+  example: []
   syntax:
     content: public static bool BIsStageDataValid()
     return:
       type: System.Boolean
+      description: 유효하다면 true, 그렇지 않다면 false
     content.vb: Public Shared Function BIsStageDataValid() As Boolean
   overload: RGBLineCoreLib.Functor.StageDataInterface.BIsStageDataValid*
 references:

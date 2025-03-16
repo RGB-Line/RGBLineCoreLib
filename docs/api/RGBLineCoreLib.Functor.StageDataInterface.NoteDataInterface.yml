@@ -7,7 +7,9 @@ items:
   children:
   - RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.BIsNoteIDValid(System.Guid@)
   - RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineData(System.Guid@)
+  - RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID(System.Guid@)
   - RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionData(System.Guid@)
+  - RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID(System.Guid@)
   - RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetNoteData(System.Guid@)
   - RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetNoteIDs
   langs:
@@ -24,10 +26,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: NoteDataInterface
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 183
+    startLine: 232
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: 현재 StageData의 NoteData에 접근하기 위한 Interface
+  example: []
   syntax:
     content: public static class StageDataInterface.NoteDataInterface
     content.vb: Public Module StageDataInterface.NoteDataInterface
@@ -41,6 +45,47 @@ items:
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.MemberwiseClone
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID(System.Guid@)
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID(System.Guid@)
+  id: GetAttachedRegionID(System.Guid@)
+  parent: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface
+  langs:
+  - csharp
+  - vb
+  name: GetAttachedRegionID(in Guid)
+  nameWithType: StageDataInterface.NoteDataInterface.GetAttachedRegionID(in Guid)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID(in System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Interfaces/StageDataInterface.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: GetAttachedRegionID
+    path: ../Public/Functor/Interfaces/StageDataInterface.cs
+    startLine: 242
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  summary: 주어진 targetNoteID에 해당하는 Note가 속한 Region의 RegionID를 반환한다
+  remarks: 만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다
+  example: []
+  syntax:
+    content: public static Guid GetAttachedRegionID(in Guid targetNoteID)
+    parameters:
+    - id: targetNoteID
+      type: System.Guid
+    return:
+      type: System.Guid
+    content.vb: Public Shared Function GetAttachedRegionID(targetNoteID As Guid) As Guid
+  overload: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID*
+  exceptions:
+  - type: System.Collections.Generic.KeyNotFoundException
+    commentId: T:System.Collections.Generic.KeyNotFoundException
+    description: ''
+  nameWithType.vb: StageDataInterface.NoteDataInterface.GetAttachedRegionID(Guid)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID(System.Guid)
+  name.vb: GetAttachedRegionID(Guid)
 - uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionData(System.Guid@)
   commentId: M:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionData(System.Guid@)
   id: GetAttachedRegionData(System.Guid@)
@@ -59,10 +104,13 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetAttachedRegionData
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 186
+    startLine: 253
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: 주어진 targetNoteID에 해당하는 Note가 속한 Region의 RegionData를 반환한다
+  remarks: 만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다
+  example: []
   syntax:
     content: public static StageData.RegionData GetAttachedRegionData(in Guid targetNoteID)
     parameters:
@@ -72,9 +120,54 @@ items:
       type: RGBLineCoreLib.Data.StageData.RegionData
     content.vb: Public Shared Function GetAttachedRegionData(targetNoteID As Guid) As StageData.RegionData
   overload: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionData*
+  exceptions:
+  - type: System.Collections.Generic.KeyNotFoundException
+    commentId: T:System.Collections.Generic.KeyNotFoundException
+    description: ''
   nameWithType.vb: StageDataInterface.NoteDataInterface.GetAttachedRegionData(Guid)
   fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionData(System.Guid)
   name.vb: GetAttachedRegionData(Guid)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID(System.Guid@)
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID(System.Guid@)
+  id: GetAttachedLineID(System.Guid@)
+  parent: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface
+  langs:
+  - csharp
+  - vb
+  name: GetAttachedLineID(in Guid)
+  nameWithType: StageDataInterface.NoteDataInterface.GetAttachedLineID(in Guid)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID(in System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Interfaces/StageDataInterface.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: GetAttachedLineID
+    path: ../Public/Functor/Interfaces/StageDataInterface.cs
+    startLine: 265
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  summary: 주어진 targetNoteID에 해당하는 Note가 속한 Line의 LineID를 반환한다
+  remarks: 만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다
+  example: []
+  syntax:
+    content: public static Guid GetAttachedLineID(in Guid targetNoteID)
+    parameters:
+    - id: targetNoteID
+      type: System.Guid
+    return:
+      type: System.Guid
+    content.vb: Public Shared Function GetAttachedLineID(targetNoteID As Guid) As Guid
+  overload: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID*
+  exceptions:
+  - type: System.Collections.Generic.KeyNotFoundException
+    commentId: T:System.Collections.Generic.KeyNotFoundException
+    description: ''
+  nameWithType.vb: StageDataInterface.NoteDataInterface.GetAttachedLineID(Guid)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID(System.Guid)
+  name.vb: GetAttachedLineID(Guid)
 - uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineData(System.Guid@)
   commentId: M:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineData(System.Guid@)
   id: GetAttachedLineData(System.Guid@)
@@ -93,10 +186,13 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetAttachedLineData
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 190
+    startLine: 276
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: 주어진 targetNoteID에 해당하는 Note가 속한 Line의 LineData를 반환한다
+  remarks: 만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다
+  example: []
   syntax:
     content: public static StageData.LineData GetAttachedLineData(in Guid targetNoteID)
     parameters:
@@ -106,6 +202,10 @@ items:
       type: RGBLineCoreLib.Data.StageData.LineData
     content.vb: Public Shared Function GetAttachedLineData(targetNoteID As Guid) As StageData.LineData
   overload: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineData*
+  exceptions:
+  - type: System.Collections.Generic.KeyNotFoundException
+    commentId: T:System.Collections.Generic.KeyNotFoundException
+    description: ''
   nameWithType.vb: StageDataInterface.NoteDataInterface.GetAttachedLineData(Guid)
   fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineData(System.Guid)
   name.vb: GetAttachedLineData(Guid)
@@ -127,10 +227,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: BIsNoteIDValid
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 195
+    startLine: 287
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: 주어진 targetNoteID에 해당하는 Note가 존재하는지 확인한다
+  example: []
   syntax:
     content: public static bool BIsNoteIDValid(in Guid targetNoteID)
     parameters:
@@ -138,6 +240,7 @@ items:
       type: System.Guid
     return:
       type: System.Boolean
+      description: 존재한다면 true, 그렇지 않다면 false
     content.vb: Public Shared Function BIsNoteIDValid(targetNoteID As Guid) As Boolean
   overload: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.BIsNoteIDValid*
   nameWithType.vb: StageDataInterface.NoteDataInterface.BIsNoteIDValid(Guid)
@@ -161,10 +264,13 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetNoteData
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 199
+    startLine: 298
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: 주어진 targetLineID에 해당하는 NoteData를 반환한다
+  remarks: 만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다
+  example: []
   syntax:
     content: public static StageData.NoteData GetNoteData(in Guid targetNoteID)
     parameters:
@@ -174,6 +280,10 @@ items:
       type: RGBLineCoreLib.Data.StageData.NoteData
     content.vb: Public Shared Function GetNoteData(targetNoteID As Guid) As StageData.NoteData
   overload: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetNoteData*
+  exceptions:
+  - type: System.Collections.Generic.KeyNotFoundException
+    commentId: T:System.Collections.Generic.KeyNotFoundException
+    description: ''
   nameWithType.vb: StageDataInterface.NoteDataInterface.GetNoteData(Guid)
   fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetNoteData(System.Guid)
   name.vb: GetNoteData(Guid)
@@ -195,10 +305,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetNoteIDs
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 204
+    startLine: 306
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: 현재 StageData에 존재하는 모든 NoteData의 NoteID를 반환한다
+  example: []
   syntax:
     content: public static Guid[] GetNoteIDs()
     return:
@@ -465,12 +577,19 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionData*
-  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionData
-  href: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedRegionData_System_Guid__
-  name: GetAttachedRegionData
-  nameWithType: StageDataInterface.NoteDataInterface.GetAttachedRegionData
-  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionData
+- uid: System.Collections.Generic.KeyNotFoundException
+  commentId: T:System.Collections.Generic.KeyNotFoundException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception
+  name: KeyNotFoundException
+  nameWithType: KeyNotFoundException
+  fullName: System.Collections.Generic.KeyNotFoundException
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID*
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID
+  href: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedRegionID_System_Guid__
+  name: GetAttachedRegionID
+  nameWithType: StageDataInterface.NoteDataInterface.GetAttachedRegionID
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID
 - uid: System.Guid
   commentId: T:System.Guid
   parent: System
@@ -479,6 +598,12 @@ references:
   name: Guid
   nameWithType: Guid
   fullName: System.Guid
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionData*
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionData
+  href: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedRegionData_System_Guid__
+  name: GetAttachedRegionData
+  nameWithType: StageDataInterface.NoteDataInterface.GetAttachedRegionData
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionData
 - uid: RGBLineCoreLib.Data.StageData.RegionData
   commentId: T:RGBLineCoreLib.Data.StageData.RegionData
   parent: RGBLineCoreLib.Data
@@ -524,6 +649,12 @@ references:
   - uid: RGBLineCoreLib.Data
     name: Data
     href: RGBLineCoreLib.Data.html
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID*
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID
+  href: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedLineID_System_Guid__
+  name: GetAttachedLineID
+  nameWithType: StageDataInterface.NoteDataInterface.GetAttachedLineID
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID
 - uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineData*
   commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineData
   href: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedLineData_System_Guid__

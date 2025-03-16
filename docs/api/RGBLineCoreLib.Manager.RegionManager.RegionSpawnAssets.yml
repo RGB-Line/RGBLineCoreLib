@@ -20,7 +20,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: RegionSpawnAssets
     path: ../Public/Manager/MainGame/PropManagers/RegionManager.cs
-    startLine: 18
+    startLine: 21
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -62,7 +62,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: m_regionTransitionEffector
     path: ../Public/Manager/MainGame/PropManagers/RegionManager.cs
-    startLine: 20
+    startLine: 23
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager

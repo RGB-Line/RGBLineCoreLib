@@ -12,6 +12,12 @@ using RGBLineCoreLib.Manager;
 
 namespace RGBLineCoreLib.Functor
 {
+    /// <summary>
+    /// 기본적인 Green Note를 그리기 위한 Class
+    /// </summary>
+    /// <remarks>
+    /// Editor에서는 해당 Class를 상속받아 사용하지만, Runtime에서는 해당 Class를 직접 사용함
+    /// </remarks>
     public class GreenNote : MonoBehaviour, IGreenNote
     {
         private INoteItem m_noteItem;
@@ -50,14 +56,22 @@ namespace RGBLineCoreLib.Functor
             }
         }
 
-        public void Render(in INoteItem noteItem)
+        public virtual void Render(in INoteItem noteItem)
         {
             m_noteItem = noteItem;
 
             Invoke("DrawGreenNote", 0.5f);
         }
 
-        private void DrawGreenNote()
+        public virtual void Dispose()
+        {
+            m_noteItem = null;
+
+            m_startJudgeBox.size = Vector2.one;
+            m_endJudgeBox.size = Vector2.one;
+        }
+
+        protected virtual void DrawGreenNote()
         {
             List<Vector3> linePoses = new List<Vector3>();
 
@@ -116,14 +130,6 @@ namespace RGBLineCoreLib.Functor
                 x = 1.0f,
                 y = 0.1f
             };
-        }
-
-        public void Dispose()
-        {
-            m_noteItem = null;
-
-            m_startJudgeBox.size = Vector2.one;
-            m_endJudgeBox.size = Vector2.one;
         }
     }
 }

@@ -9,7 +9,10 @@ namespace RGBLineCoreLib.Data
 {
     public struct GameConfigData
     {
-        public enum MaxFrameRate
+        /// <summary>
+        /// 지원하는 FPS 빈도를 지정한다
+        /// </summary>
+        public enum MaxFrameRate : byte
         {
             Frame_30,
             Frame_60,
@@ -17,8 +20,10 @@ namespace RGBLineCoreLib.Data
             Frame_120
         }
 
-        [Serializable]
-        public struct NoteHitJudgingStrandard
+        /// <summary>
+        /// 각 판정마다의 히트 박스 크기를 지정한다
+        /// </summary>
+        [Serializable] public struct NoteHitJudgingStrandard
         {
             public enum HitJudgingType
             {
@@ -34,8 +39,20 @@ namespace RGBLineCoreLib.Data
 
         public NoteHitJudgingStrandard NoteHitJudgeStrandard;
 
+        /// <summary>
+        /// 게임 전체 볼륨을 조절한다
+        /// </summary>
+        /// <remarks>
+        /// 0.0f ~ 1.0f 사이의 값으로 지정한다
+        /// </remarks>
         public float MusicVolume;
         public MaxFrameRate MaxFrame;
+        /// <summary>
+        /// 게임의 V Sync 수준을 조절한다
+        /// </summary>
+        /// <remarks>
+        /// 0 ~ 4 사이의 값으로 지정한다
+        /// </remarks>
         public int VSyncCount;
     }
 }

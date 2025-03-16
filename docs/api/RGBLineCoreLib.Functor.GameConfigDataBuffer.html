@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class GameConfigDataBuffer ">
       
-      
+      <meta name="description" content="GameConfigData를 담은 SingleTon Buffer Class">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="RGBLineCoreLib_Functor_GameConfigDataBuffer" data-uid="RGBLineCoreLib.Functor.GameConfigDataBuffer" class="text-break">
-Class GameConfigDataBuffer  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Buffer/GameConfigDataBuffer.cs/#L17"><i class="bi bi-code-slash"></i></a>
+Class GameConfigDataBuffer  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Buffer/GameConfigDataBuffer.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class GameConfigDataBuffer  <a class="header-action link-secondary" title="View 
   <dl><dt>Assembly</dt><dd>RGBLineCoreLib.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>GameConfigData를 담은 SingleTon Buffer Class</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -166,10 +167,11 @@ Class GameConfigDataBuffer  <a class="header-action link-secondary" title="View 
 
   <h3 id="RGBLineCoreLib_Functor_GameConfigDataBuffer_ConfigData" data-uid="RGBLineCoreLib.Functor.GameConfigDataBuffer.ConfigData">
   ConfigData
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Buffer/GameConfigDataBuffer.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Buffer/GameConfigDataBuffer.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>GameConfigData를 받아온다</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -189,7 +191,15 @@ Class GameConfigDataBuffer  <a class="header-action link-secondary" title="View 
 
 
 
+  <h4 class="section" id="RGBLineCoreLib_Functor_GameConfigDataBuffer_ConfigData_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>만약 먼저 LoadGameConfigData()를 호출하지 않았거나, 혹은 호출했더라도 문제가 있어 올바르게 Load 되지 않았을 경우 예외를 던진다</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullreferenceexception">NullReferenceException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -201,7 +211,7 @@ Class GameConfigDataBuffer  <a class="header-action link-secondary" title="View 
 
   <h3 id="RGBLineCoreLib_Functor_GameConfigDataBuffer_Dispose_System_Boolean_" data-uid="RGBLineCoreLib.Functor.GameConfigDataBuffer.Dispose(System.Boolean)">
   Dispose(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Buffer/GameConfigDataBuffer.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Buffer/GameConfigDataBuffer.cs/#L94"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -232,10 +242,11 @@ Class GameConfigDataBuffer  <a class="header-action link-secondary" title="View 
 
   <h3 id="RGBLineCoreLib_Functor_GameConfigDataBuffer_LoadGameConfigData" data-uid="RGBLineCoreLib.Functor.GameConfigDataBuffer.LoadGameConfigData">
   LoadGameConfigData()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Buffer/GameConfigDataBuffer.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Buffer/GameConfigDataBuffer.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>DataPathTable의 내용을 바탕으로 Load를 시도하며, 만약 해당 경로에 GameConfigData File이 존재하지 않을 경우 새로운 GameConfigData를 생성하고 저장해준다</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -250,6 +261,9 @@ Class GameConfigDataBuffer  <a class="header-action link-secondary" title="View 
 
 
 
+  <h4 class="section" id="RGBLineCoreLib_Functor_GameConfigDataBuffer_LoadGameConfigData_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>GameConfigDataBuffer.Instance.ConfigData를 호출하기 전에 필히 호출해야만 한다</p>
+</div>
 
 
 
@@ -258,10 +272,11 @@ Class GameConfigDataBuffer  <a class="header-action link-secondary" title="View 
 
   <h3 id="RGBLineCoreLib_Functor_GameConfigDataBuffer_SaveGameConfigData" data-uid="RGBLineCoreLib.Functor.GameConfigDataBuffer.SaveGameConfigData">
   SaveGameConfigData()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Buffer/GameConfigDataBuffer.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Buffer/GameConfigDataBuffer.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>DataPathTable의 내용을 바탕으로 Save한다</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -284,7 +299,7 @@ Class GameConfigDataBuffer  <a class="header-action link-secondary" title="View 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Buffer/GameConfigDataBuffer.cs/#L17" class="edit-link">Edit this page</a>
+          <a href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Buffer/GameConfigDataBuffer.cs/#L20" class="edit-link">Edit this page</a>
         </div>
 
 

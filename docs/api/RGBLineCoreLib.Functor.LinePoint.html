@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class LinePoint ">
       
-      
+      <meta name="description" content="기본적인 Line을 그리기 위한 Class">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="RGBLineCoreLib_Functor_LinePoint" data-uid="RGBLineCoreLib.Functor.LinePoint" class="text-break">
-Class LinePoint  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/Prop/Line/LinePoint.cs/#L15"><i class="bi bi-code-slash"></i></a>
+Class LinePoint  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/Prop/Line/LinePoint.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class LinePoint  <a class="header-action link-secondary" title="View source" hre
   <dl><dt>Assembly</dt><dd>RGBLineCoreLib.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>기본적인 Line을 그리기 위한 Class</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -488,6 +489,9 @@ public class LinePoint : MonoBehaviour, ILinePoint, IDisposable</code></pre>
 
 
 
+  <h2 id="RGBLineCoreLib_Functor_LinePoint_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>Editor에서는 해당 Class를 상속받아 사용하지만, Runtime에서는 해당 Class를 직접 사용함</p>
+</div>
 
 
   <h2 class="section" id="properties">Properties
@@ -498,7 +502,7 @@ public class LinePoint : MonoBehaviour, ILinePoint, IDisposable</code></pre>
 
   <h3 id="RGBLineCoreLib_Functor_LinePoint_Transform" data-uid="RGBLineCoreLib.Functor.LinePoint.Transform">
   Transform
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/Prop/Line/LinePoint.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/Prop/Line/LinePoint.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -533,7 +537,7 @@ public class LinePoint : MonoBehaviour, ILinePoint, IDisposable</code></pre>
 
   <h3 id="RGBLineCoreLib_Functor_LinePoint_Dispose" data-uid="RGBLineCoreLib.Functor.LinePoint.Dispose">
   Dispose()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/Prop/Line/LinePoint.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/Prop/Line/LinePoint.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
@@ -541,7 +545,7 @@ public class LinePoint : MonoBehaviour, ILinePoint, IDisposable</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Dispose()</code></pre>
   </div>
 
 
@@ -560,14 +564,14 @@ public class LinePoint : MonoBehaviour, ILinePoint, IDisposable</code></pre>
 
   <h3 id="RGBLineCoreLib_Functor_LinePoint_Render_RGBLineCoreLib_Functor_ILineItem__UnityEngine_Vector2__System_Single__System_Int32__" data-uid="RGBLineCoreLib.Functor.LinePoint.Render(RGBLineCoreLib.Functor.ILineItem@,UnityEngine.Vector2@,System.Single@,System.Int32@)">
   Render(in ILineItem, in Vector2, in float, in int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/Prop/Line/LinePoint.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/Prop/Line/LinePoint.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Render(in ILineItem parentLineItem, in Vector2 pos, in float minorOffsetTime, in int pointIndex)</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual void Render(in ILineItem parentLineItem, in Vector2 pos, in float minorOffsetTime, in int pointIndex)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -597,7 +601,7 @@ public class LinePoint : MonoBehaviour, ILinePoint, IDisposable</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/Prop/Line/LinePoint.cs/#L15" class="edit-link">Edit this page</a>
+          <a href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/Prop/Line/LinePoint.cs/#L21" class="edit-link">Edit this page</a>
         </div>
 
 

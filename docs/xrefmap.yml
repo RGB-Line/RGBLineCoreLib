@@ -1002,6 +1002,19 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.GreenNote.Dispose
   nameWithType: GreenNote.Dispose
+- uid: RGBLineCoreLib.Functor.GreenNote.DrawGreenNote
+  name: DrawGreenNote()
+  href: api/RGBLineCoreLib.Functor.GreenNote.html#RGBLineCoreLib_Functor_GreenNote_DrawGreenNote
+  commentId: M:RGBLineCoreLib.Functor.GreenNote.DrawGreenNote
+  fullName: RGBLineCoreLib.Functor.GreenNote.DrawGreenNote()
+  nameWithType: GreenNote.DrawGreenNote()
+- uid: RGBLineCoreLib.Functor.GreenNote.DrawGreenNote*
+  name: DrawGreenNote
+  href: api/RGBLineCoreLib.Functor.GreenNote.html#RGBLineCoreLib_Functor_GreenNote_DrawGreenNote_
+  commentId: Overload:RGBLineCoreLib.Functor.GreenNote.DrawGreenNote
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.GreenNote.DrawGreenNote
+  nameWithType: GreenNote.DrawGreenNote
 - uid: RGBLineCoreLib.Functor.GreenNote.Render(RGBLineCoreLib.Functor.INoteItem@)
   name: Render(in INoteItem)
   href: api/RGBLineCoreLib.Functor.GreenNote.html#RGBLineCoreLib_Functor_GreenNote_Render_RGBLineCoreLib_Functor_INoteItem__
@@ -2155,6 +2168,22 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineData
   nameWithType: StageDataInterface.NoteDataInterface.GetAttachedLineData
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID(System.Guid@)
+  name: GetAttachedLineID(in Guid)
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedLineID_System_Guid__
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID(System.Guid@)
+  name.vb: GetAttachedLineID(Guid)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID(in System.Guid)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID(System.Guid)
+  nameWithType: StageDataInterface.NoteDataInterface.GetAttachedLineID(in Guid)
+  nameWithType.vb: StageDataInterface.NoteDataInterface.GetAttachedLineID(Guid)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID*
+  name: GetAttachedLineID
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedLineID_
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID
+  nameWithType: StageDataInterface.NoteDataInterface.GetAttachedLineID
 - uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionData(System.Guid@)
   name: GetAttachedRegionData(in Guid)
   href: api/RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedRegionData_System_Guid__
@@ -2171,6 +2200,22 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionData
   nameWithType: StageDataInterface.NoteDataInterface.GetAttachedRegionData
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID(System.Guid@)
+  name: GetAttachedRegionID(in Guid)
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedRegionID_System_Guid__
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID(System.Guid@)
+  name.vb: GetAttachedRegionID(Guid)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID(in System.Guid)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID(System.Guid)
+  nameWithType: StageDataInterface.NoteDataInterface.GetAttachedRegionID(in Guid)
+  nameWithType.vb: StageDataInterface.NoteDataInterface.GetAttachedRegionID(Guid)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID*
+  name: GetAttachedRegionID
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedRegionID_
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID
+  nameWithType: StageDataInterface.NoteDataInterface.GetAttachedRegionID
 - uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetNoteData(System.Guid@)
   name: GetNoteData(in Guid)
   href: api/RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetNoteData_System_Guid__

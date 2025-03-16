@@ -20,10 +20,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: NoteHitJudgingStrandard
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 19
+    startLine: 25
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
+  summary: 각 판정마다의 히트 박스 크기를 지정한다
+  example: []
   syntax:
     content: >-
       [Serializable]
@@ -62,7 +64,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: HitJudgingRanges
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 30
+    startLine: 35
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data

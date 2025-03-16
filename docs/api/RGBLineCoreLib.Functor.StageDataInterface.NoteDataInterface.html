@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class StageDataInterface.NoteDataInterface ">
       
-      
+      <meta name="description" content="현재 StageData의 NoteData에 접근하기 위한 Interface">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface" data-uid="RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface" class="text-break">
-Class StageDataInterface.NoteDataInterface  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L184"><i class="bi bi-code-slash"></i></a>
+Class StageDataInterface.NoteDataInterface  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L233"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class StageDataInterface.NoteDataInterface  <a class="header-action link-seconda
   <dl><dt>Assembly</dt><dd>RGBLineCoreLib.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>현재 StageData의 NoteData에 접근하기 위한 Interface</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -156,10 +157,11 @@ Class StageDataInterface.NoteDataInterface  <a class="header-action link-seconda
 
   <h3 id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_BIsNoteIDValid_System_Guid__" data-uid="RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.BIsNoteIDValid(System.Guid@)">
   BIsNoteIDValid(in Guid)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L288"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>주어진 targetNoteID에 해당하는 Note가 존재하는지 확인한다</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -175,7 +177,8 @@ Class StageDataInterface.NoteDataInterface  <a class="header-action link-seconda
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
+    <dd><p>존재한다면 true, 그렇지 않다면 false</p>
+</dd>
   </dl>
 
 
@@ -192,10 +195,11 @@ Class StageDataInterface.NoteDataInterface  <a class="header-action link-seconda
 
   <h3 id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedLineData_System_Guid__" data-uid="RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineData(System.Guid@)">
   GetAttachedLineData(in Guid)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L277"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>주어진 targetNoteID에 해당하는 Note가 속한 Line의 LineData를 반환한다</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -220,7 +224,60 @@ Class StageDataInterface.NoteDataInterface  <a class="header-action link-seconda
 
 
 
+  <h4 class="section" id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedLineData_System_Guid___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception">KeyNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedLineID_" data-uid="RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID*"></a>
+
+  <h3 id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedLineID_System_Guid__" data-uid="RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedLineID(System.Guid@)">
+  GetAttachedLineID(in Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>주어진 targetNoteID에 해당하는 Note가 속한 Line의 LineID를 반환한다</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Guid GetAttachedLineID(in Guid targetNoteID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetNoteID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedLineID_System_Guid___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception">KeyNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -228,10 +285,11 @@ Class StageDataInterface.NoteDataInterface  <a class="header-action link-seconda
 
   <h3 id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedRegionData_System_Guid__" data-uid="RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionData(System.Guid@)">
   GetAttachedRegionData(in Guid)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L254"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>주어진 targetNoteID에 해당하는 Note가 속한 Region의 RegionData를 반환한다</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -256,7 +314,60 @@ Class StageDataInterface.NoteDataInterface  <a class="header-action link-seconda
 
 
 
+  <h4 class="section" id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedRegionData_System_Guid___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception">KeyNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedRegionID_" data-uid="RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID*"></a>
+
+  <h3 id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedRegionID_System_Guid__" data-uid="RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID(System.Guid@)">
+  GetAttachedRegionID(in Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>주어진 targetNoteID에 해당하는 Note가 속한 Region의 RegionID를 반환한다</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Guid GetAttachedRegionID(in Guid targetNoteID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetNoteID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetAttachedRegionID_System_Guid___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception">KeyNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -264,10 +375,11 @@ Class StageDataInterface.NoteDataInterface  <a class="header-action link-seconda
 
   <h3 id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetNoteData_System_Guid__" data-uid="RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetNoteData(System.Guid@)">
   GetNoteData(in Guid)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L299"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>주어진 targetLineID에 해당하는 NoteData를 반환한다</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -292,7 +404,15 @@ Class StageDataInterface.NoteDataInterface  <a class="header-action link-seconda
 
 
 
+  <h4 class="section" id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetNoteData_System_Guid___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다</p>
+</div>
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception">KeyNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -300,10 +420,11 @@ Class StageDataInterface.NoteDataInterface  <a class="header-action link-seconda
 
   <h3 id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_GetNoteIDs" data-uid="RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetNoteIDs">
   GetNoteIDs()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L307"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>현재 StageData에 존재하는 모든 NoteData의 NoteID를 반환한다</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -331,7 +452,7 @@ Class StageDataInterface.NoteDataInterface  <a class="header-action link-seconda
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L184" class="edit-link">Edit this page</a>
+          <a href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L233" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -12,6 +12,12 @@ using RGBLineCoreLib.Manager;
 
 namespace RGBLineCoreLib.Functor
 {
+    /// <summary>
+    /// 기본적인 Line을 그리기 위한 Class
+    /// </summary>
+    /// <remarks>
+    /// Editor에서는 해당 Class를 상속받아 사용하지만, Runtime에서는 해당 Class를 직접 사용함
+    /// </remarks>
     [RequireComponent(typeof(CurvedLinePoint))]
     public class LinePoint : MonoBehaviour, ILinePoint
     {
@@ -29,7 +35,7 @@ namespace RGBLineCoreLib.Functor
             }
         }
 
-        public void Render(in ILineItem parentLineItem, in Vector2 pos, in float minorOffsetTime, in int pointIndex)
+        public virtual void Render(in ILineItem parentLineItem, in Vector2 pos, in float minorOffsetTime, in int pointIndex)
         {
             m_parentLineItem = parentLineItem;
             m_pointIndex = pointIndex;
@@ -65,7 +71,7 @@ namespace RGBLineCoreLib.Functor
             }
         }
 
-        public void Dispose()
+        public virtual void Dispose()
         {
 
         }

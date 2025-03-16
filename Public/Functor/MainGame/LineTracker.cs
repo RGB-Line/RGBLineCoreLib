@@ -12,6 +12,9 @@ using RGBLineCoreLib.Manager;
 
 namespace RGBLineCoreLib.Functor
 {
+    /// <summary>
+    /// 게임 내 Red, Green Line을 따라가는 Tracker Class
+    /// </summary>
     public sealed class LineTracker : MonoBehaviour
     {
         [SerializeField] private SpriteRenderer m_spriteRenderer;

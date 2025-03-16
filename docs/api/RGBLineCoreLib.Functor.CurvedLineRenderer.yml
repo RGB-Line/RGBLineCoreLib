@@ -25,10 +25,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: CurvedLineRenderer
     path: ../Public/Functor/CurvedLine/CurvedLineRenderer.cs
-    startLine: 12
+    startLine: 15
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: Curved Line을 그리기 위한 Renderer
+  example: []
   syntax:
     content: >-
       [RequireComponent(typeof(LineRenderer))]
@@ -186,7 +188,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: lineSegmentSize
     path: ../Public/Functor/CurvedLine/CurvedLineRenderer.cs
-    startLine: 16
+    startLine: 19
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -213,7 +215,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: lineWidth
     path: ../Public/Functor/CurvedLine/CurvedLineRenderer.cs
-    startLine: 17
+    startLine: 20
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -240,7 +242,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: showGizmos
     path: ../Public/Functor/CurvedLine/CurvedLineRenderer.cs
-    startLine: 19
+    startLine: 22
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -279,7 +281,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: gizmoSize
     path: ../Public/Functor/CurvedLine/CurvedLineRenderer.cs
-    startLine: 20
+    startLine: 23
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -306,7 +308,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: gizmoColor
     path: ../Public/Functor/CurvedLine/CurvedLineRenderer.cs
-    startLine: 21
+    startLine: 24
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -333,7 +335,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Update
     path: ../Public/Functor/CurvedLine/CurvedLineRenderer.cs
-    startLine: 28
+    startLine: 31
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor

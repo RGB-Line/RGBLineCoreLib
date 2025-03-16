@@ -14,6 +14,12 @@ using RGBLineCoreLib.Functor;
 
 namespace RGBLineCoreLib.Manager
 {
+    /// <summary>
+    /// 게임 내 점수를 관리하는 Manager Class
+    /// </summary>
+    /// <remarks>
+    /// Scene Load 시 ScoreManager GameObject의 경우 필히 StartScoring()를 호출해야 한다
+    /// </remarks>
     public sealed class ScoreManager : SingleTonForGameObject<ScoreManager>
     {
         private bool m_bisStartScoring = false;
@@ -192,6 +198,9 @@ namespace RGBLineCoreLib.Manager
             }
         }
 
+        /// <summary>
+        /// Scene Load 시 ScoreManager GameObject의 경우 필히 StartScoring()를 호출해야 한다
+        /// </summary>
         public void StartScoring()
         {
             m_bisStartScoring = true;

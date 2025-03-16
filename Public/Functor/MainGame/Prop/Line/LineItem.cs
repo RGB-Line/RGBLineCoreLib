@@ -12,6 +12,12 @@ using RGBLineCoreLib.Manager;
 
 namespace RGBLineCoreLib.Functor
 {
+    /// <summary>
+    /// 기본적인 Line을 그리기 위한 Class
+    /// </summary>
+    /// <remarks>
+    /// Editor에서는 해당 Class를 상속받아 사용하지만, Runtime에서는 해당 Class를 직접 사용함
+    /// </remarks>
     [RequireComponent(typeof(CurvedLineRenderer))]
     public class LineItem : MonoBehaviour, ILineItem
     {
@@ -53,7 +59,7 @@ namespace RGBLineCoreLib.Functor
                 UpdateMeshCollider();
             }
         }
-        public void OnMouseEnter()
+        public virtual void OnMouseEnter()
         {
             if (StageDataInterface.LineDataInterface.GetAttachedRegionData(m_lineID).CurColorType == StageData.RegionData.ColorType.Green)
             {
@@ -64,7 +70,7 @@ namespace RGBLineCoreLib.Functor
                 ScoreManager.Instance.BIsMouseOnGreenLine = false;
             }
         }
-        public void OnMouseExit()
+        public virtual void OnMouseExit()
         {
             ScoreManager.Instance.BIsMouseOnGreenLine = false;
         }
@@ -92,7 +98,7 @@ namespace RGBLineCoreLib.Functor
             }
         }
 
-        public void Render(in Guid lineID = default)
+        public virtual void Render(in Guid lineID = default)
         {
             if(m_lineID == default && lineID == default)
             {
@@ -201,7 +207,7 @@ namespace RGBLineCoreLib.Functor
                 Invoke("EnableMeshColliderUpdate", 0.5f);
             }
         }
-        public void Dispose()
+        public virtual void Dispose()
         {
             while (true)
             {

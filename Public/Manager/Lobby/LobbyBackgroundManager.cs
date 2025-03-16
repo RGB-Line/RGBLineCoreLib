@@ -11,6 +11,9 @@ using CommonUtilLib.ThreadSafe;
 
 namespace RGBLineCoreLib.Manager
 {
+    /// <summary>
+    /// Lobby Background를 관리하는 Manager Class
+    /// </summary>
     public class LobbyBackgroundManager : SingleTonForGameObject<LobbyBackgroundManager>
     {
         [SerializeField] private List<Material> m_mats;

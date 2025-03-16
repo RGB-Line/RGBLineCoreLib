@@ -21,10 +21,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: RegionDataInterface
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 13
+    startLine: 19
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: 현재 StageData의 RegionData에 접근하기 위한 Interface
+  example: []
   syntax:
     content: public static class StageDataInterface.RegionDataInterface
     content.vb: Public Module StageDataInterface.RegionDataInterface
@@ -56,10 +58,13 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetRegionData
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 16
+    startLine: 29
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: 주어진 targetRegionID에 해당하는 RegionData를 반환한다
+  remarks: 만약 해당하는 RegionData가 없을 경우 KeyNotFoundException을 발생시킨다
+  example: []
   syntax:
     content: public static StageData.RegionData GetRegionData(in Guid targetRegionID)
     parameters:
@@ -69,6 +74,10 @@ items:
       type: RGBLineCoreLib.Data.StageData.RegionData
     content.vb: Public Shared Function GetRegionData(targetRegionID As Guid) As StageData.RegionData
   overload: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetRegionData*
+  exceptions:
+  - type: System.Collections.Generic.KeyNotFoundException
+    commentId: T:System.Collections.Generic.KeyNotFoundException
+    description: ''
   nameWithType.vb: StageDataInterface.RegionDataInterface.GetRegionData(Guid)
   fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetRegionData(System.Guid)
   name.vb: GetRegionData(Guid)
@@ -90,10 +99,12 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetRegionIDs
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 21
+    startLine: 37
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
+  summary: 현재 StageData에 존재하는 모든 RegionData의 RegionID를 반환한다
+  example: []
   syntax:
     content: public static Guid[] GetRegionIDs()
     return:
@@ -360,6 +371,13 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.Collections.Generic.KeyNotFoundException
+  commentId: T:System.Collections.Generic.KeyNotFoundException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception
+  name: KeyNotFoundException
+  nameWithType: KeyNotFoundException
+  fullName: System.Collections.Generic.KeyNotFoundException
 - uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetRegionData*
   commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetRegionData
   href: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_RegionDataInterface_GetRegionData_System_Guid__

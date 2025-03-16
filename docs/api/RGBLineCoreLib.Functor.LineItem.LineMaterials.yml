@@ -24,7 +24,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: LineMaterials
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 17
+    startLine: 23
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -66,7 +66,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: m_material_RedLine
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 19
+    startLine: 25
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -93,7 +93,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: m_material_GreenLine
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 20
+    startLine: 26
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -120,7 +120,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: m_material_BlueLine
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 21
+    startLine: 27
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -147,7 +147,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: m_material_Outline
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 23
+    startLine: 29
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -174,7 +174,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: m_material_DashLine
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 24
+    startLine: 30
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor

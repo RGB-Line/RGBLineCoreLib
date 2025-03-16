@@ -12,6 +12,12 @@ using RGBLineCoreLib.Manager;
 
 namespace RGBLineCoreLib.Functor
 {
+    /// <summary>
+    /// 기본적인 Red and Blue Note를 그리기 위한 Class
+    /// </summary>
+    /// <remarks>
+    /// Editor에서는 해당 Class를 상속받아 사용하지만, Runtime에서는 해당 Class를 직접 사용함
+    /// </remarks>
     public class RedAndBlueNote : MonoBehaviour, IRedAndBlueNote
     {
         [SerializeField] private Sprite[] m_sprite_Notes;
@@ -43,7 +49,7 @@ namespace RGBLineCoreLib.Functor
             }
         }
 
-        public void Render(in INoteItem noteItem, in StageData.NoteData.NoteType noteType)
+        public virtual void Render(in INoteItem noteItem, in StageData.NoteData.NoteType noteType)
         {
             m_noteItem = noteItem;
 
@@ -92,7 +98,7 @@ namespace RGBLineCoreLib.Functor
             };
         }
 
-        public void Dispose()
+        public virtual void Dispose()
         {
             m_noteItem = null;
             m_spriteRenderer.sprite = null;
