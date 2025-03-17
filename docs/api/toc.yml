@@ -16,6 +16,9 @@ items:
   - uid: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
     name: GameConfigData.NoteHitJudgingStrandard.HitJudgingType
     type: Enum
+  - uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+    name: GameConfigData.SpecialKeySet
+    type: Struct
   - uid: RGBLineCoreLib.Data.HalfFloatVector2
     name: HalfFloatVector2
     type: Struct

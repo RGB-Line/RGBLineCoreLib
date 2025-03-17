@@ -6,10 +6,12 @@ items:
   parent: RGBLineCoreLib.Functor
   children:
   - RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_BlueLine
+  - RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_BlueOutline
   - RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_DashLine
   - RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_GreenLine
-  - RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_Outline
+  - RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_GreenOutline
   - RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_RedLine
+  - RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_RedOutline
   langs:
   - csharp
   - vb
@@ -129,33 +131,87 @@ items:
     return:
       type: UnityEngine.Material
     content.vb: Public m_material_BlueLine As Material
-- uid: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_Outline
-  commentId: F:RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_Outline
-  id: m_material_Outline
+- uid: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_RedOutline
+  commentId: F:RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_RedOutline
+  id: m_material_RedOutline
   parent: RGBLineCoreLib.Functor.LineItem.LineMaterials
   langs:
   - csharp
   - vb
-  name: m_material_Outline
-  nameWithType: LineItem.LineMaterials.m_material_Outline
-  fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_Outline
+  name: m_material_RedOutline
+  nameWithType: LineItem.LineMaterials.m_material_RedOutline
+  fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_RedOutline
   type: Field
   source:
     remote:
       path: Public/Functor/MainGame/Prop/Line/LineItem.cs
       branch: master
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: m_material_Outline
+    id: m_material_RedOutline
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 29
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
   syntax:
-    content: public Material m_material_Outline
+    content: public Material m_material_RedOutline
     return:
       type: UnityEngine.Material
-    content.vb: Public m_material_Outline As Material
+    content.vb: Public m_material_RedOutline As Material
+- uid: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_GreenOutline
+  commentId: F:RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_GreenOutline
+  id: m_material_GreenOutline
+  parent: RGBLineCoreLib.Functor.LineItem.LineMaterials
+  langs:
+  - csharp
+  - vb
+  name: m_material_GreenOutline
+  nameWithType: LineItem.LineMaterials.m_material_GreenOutline
+  fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_GreenOutline
+  type: Field
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Line/LineItem.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: m_material_GreenOutline
+    path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
+    startLine: 30
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public Material m_material_GreenOutline
+    return:
+      type: UnityEngine.Material
+    content.vb: Public m_material_GreenOutline As Material
+- uid: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_BlueOutline
+  commentId: F:RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_BlueOutline
+  id: m_material_BlueOutline
+  parent: RGBLineCoreLib.Functor.LineItem.LineMaterials
+  langs:
+  - csharp
+  - vb
+  name: m_material_BlueOutline
+  nameWithType: LineItem.LineMaterials.m_material_BlueOutline
+  fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_BlueOutline
+  type: Field
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Line/LineItem.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: m_material_BlueOutline
+    path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
+    startLine: 31
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public Material m_material_BlueOutline
+    return:
+      type: UnityEngine.Material
+    content.vb: Public m_material_BlueOutline As Material
 - uid: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_DashLine
   commentId: F:RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_DashLine
   id: m_material_DashLine
@@ -174,7 +230,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: m_material_DashLine
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 30
+    startLine: 34
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor

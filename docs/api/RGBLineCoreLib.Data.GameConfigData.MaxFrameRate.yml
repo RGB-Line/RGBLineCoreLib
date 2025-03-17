@@ -23,7 +23,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: MaxFrameRate
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 14
+    startLine: 16
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -50,7 +50,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Frame_30
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 16
+    startLine: 18
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -76,7 +76,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Frame_60
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -102,7 +102,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Frame_90
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 18
+    startLine: 20
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -128,7 +128,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Frame_120
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 19
+    startLine: 21
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data

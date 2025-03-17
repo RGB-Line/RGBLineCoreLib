@@ -195,7 +195,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Awake
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 48
+    startLine: 52
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -221,7 +221,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: FixedUpdate
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 54
+    startLine: 58
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -247,7 +247,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: OnMouseEnter
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 61
+    startLine: 65
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -273,7 +273,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: OnMouseExit
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 72
+    startLine: 76
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -299,7 +299,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Transform
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 77
+    startLine: 81
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -331,7 +331,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: LineRenderer
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 84
+    startLine: 88
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -363,7 +363,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: LineID
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 92
+    startLine: 96
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -395,7 +395,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Render
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 100
+    startLine: 104
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -430,7 +430,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Dispose
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 209
+    startLine: 213
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor

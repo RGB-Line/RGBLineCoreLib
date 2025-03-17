@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using UnityEngine;
+
 
 namespace RGBLineCoreLib.Data
 {
@@ -35,6 +37,15 @@ namespace RGBLineCoreLib.Data
 
             public List<float> HitJudgingRanges;
         }
+        [Serializable] public struct SpecialKeySet
+        {
+            public KeyCode[] BannedKeyCodes;
+
+            public KeyCode RedNoteKeyCode_Left;
+            public KeyCode RedNoteKeyCode_Right;
+
+            public KeyCode RedLineCornerNoteKeyCode;
+        }
 
 
         public NoteHitJudgingStrandard NoteHitJudgeStrandard;
@@ -46,6 +57,7 @@ namespace RGBLineCoreLib.Data
         /// 0.0f ~ 1.0f 사이의 값으로 지정한다
         /// </remarks>
         public float MusicVolume;
+        public float SyncAdjustment;
         public MaxFrameRate MaxFrame;
         /// <summary>
         /// 게임의 V Sync 수준을 조절한다
@@ -54,5 +66,6 @@ namespace RGBLineCoreLib.Data
         /// 0 ~ 4 사이의 값으로 지정한다
         /// </remarks>
         public int VSyncCount;
+        public SpecialKeySet SpecialKeySetting;
     }
 }

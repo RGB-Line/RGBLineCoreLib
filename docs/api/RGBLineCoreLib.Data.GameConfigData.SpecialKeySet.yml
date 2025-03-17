@@ -1,40 +1,41 @@
 ### YamlMime:ManagedReference
 items:
-- uid: RGBLineCoreLib.Data.StageMetadata
-  commentId: T:RGBLineCoreLib.Data.StageMetadata
-  id: StageMetadata
+- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+  commentId: T:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+  id: GameConfigData.SpecialKeySet
   parent: RGBLineCoreLib.Data
   children:
-  - RGBLineCoreLib.Data.StageMetadata.Artist
-  - RGBLineCoreLib.Data.StageMetadata.BestScore
-  - RGBLineCoreLib.Data.StageMetadata.LobbyMusicEndTime
-  - RGBLineCoreLib.Data.StageMetadata.LobbyMusicFadeOutTime
-  - RGBLineCoreLib.Data.StageMetadata.LobbyMusicStartTime
-  - RGBLineCoreLib.Data.StageMetadata.MajorDifficulty
-  - RGBLineCoreLib.Data.StageMetadata.MinorDifficulty
-  - RGBLineCoreLib.Data.StageMetadata.MusicLength
-  - RGBLineCoreLib.Data.StageMetadata.Title
+  - RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.BannedKeyCodes
+  - RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedLineCornerNoteKeyCode
+  - RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Left
+  - RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Right
   langs:
   - csharp
   - vb
-  name: StageMetadata
-  nameWithType: StageMetadata
-  fullName: RGBLineCoreLib.Data.StageMetadata
+  name: GameConfigData.SpecialKeySet
+  nameWithType: GameConfigData.SpecialKeySet
+  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
   type: Struct
   source:
     remote:
-      path: Public/Data/DataSpecs/StageMetadataSpec.cs
+      path: Public/Data/Configs/GameConfigData.cs
       branch: master
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: StageMetadata
-    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
-    startLine: 9
+    id: SpecialKeySet
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 39
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
   syntax:
-    content: public struct StageMetadata
-    content.vb: Public Structure StageMetadata
+    content: >-
+      [Serializable]
+
+      public struct GameConfigData.SpecialKeySet
+    content.vb: >-
+      <Serializable>
+
+      Public Structure GameConfigData.SpecialKeySet
   inheritedMembers:
   - System.ValueType.Equals(System.Object)
   - System.ValueType.GetHashCode
@@ -42,249 +43,118 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetType
-- uid: RGBLineCoreLib.Data.StageMetadata.Title
-  commentId: F:RGBLineCoreLib.Data.StageMetadata.Title
-  id: Title
-  parent: RGBLineCoreLib.Data.StageMetadata
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.BannedKeyCodes
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.BannedKeyCodes
+  id: BannedKeyCodes
+  parent: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
   langs:
   - csharp
   - vb
-  name: Title
-  nameWithType: StageMetadata.Title
-  fullName: RGBLineCoreLib.Data.StageMetadata.Title
+  name: BannedKeyCodes
+  nameWithType: GameConfigData.SpecialKeySet.BannedKeyCodes
+  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.BannedKeyCodes
   type: Field
   source:
     remote:
-      path: Public/Data/DataSpecs/StageMetadataSpec.cs
+      path: Public/Data/Configs/GameConfigData.cs
       branch: master
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: Title
-    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
-    startLine: 20
+    id: BannedKeyCodes
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 41
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
   syntax:
-    content: public string Title
+    content: public KeyCode[] BannedKeyCodes
     return:
-      type: System.String
-    content.vb: Public Title As String
-- uid: RGBLineCoreLib.Data.StageMetadata.Artist
-  commentId: F:RGBLineCoreLib.Data.StageMetadata.Artist
-  id: Artist
-  parent: RGBLineCoreLib.Data.StageMetadata
+      type: UnityEngine.KeyCode[]
+    content.vb: Public BannedKeyCodes As KeyCode()
+- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Left
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Left
+  id: RedNoteKeyCode_Left
+  parent: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
   langs:
   - csharp
   - vb
-  name: Artist
-  nameWithType: StageMetadata.Artist
-  fullName: RGBLineCoreLib.Data.StageMetadata.Artist
+  name: RedNoteKeyCode_Left
+  nameWithType: GameConfigData.SpecialKeySet.RedNoteKeyCode_Left
+  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Left
   type: Field
   source:
     remote:
-      path: Public/Data/DataSpecs/StageMetadataSpec.cs
+      path: Public/Data/Configs/GameConfigData.cs
       branch: master
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: Artist
-    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
-    startLine: 21
+    id: RedNoteKeyCode_Left
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 43
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
   syntax:
-    content: public string Artist
+    content: public KeyCode RedNoteKeyCode_Left
     return:
-      type: System.String
-    content.vb: Public Artist As String
-- uid: RGBLineCoreLib.Data.StageMetadata.MusicLength
-  commentId: F:RGBLineCoreLib.Data.StageMetadata.MusicLength
-  id: MusicLength
-  parent: RGBLineCoreLib.Data.StageMetadata
+      type: UnityEngine.KeyCode
+    content.vb: Public RedNoteKeyCode_Left As KeyCode
+- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Right
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Right
+  id: RedNoteKeyCode_Right
+  parent: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
   langs:
   - csharp
   - vb
-  name: MusicLength
-  nameWithType: StageMetadata.MusicLength
-  fullName: RGBLineCoreLib.Data.StageMetadata.MusicLength
+  name: RedNoteKeyCode_Right
+  nameWithType: GameConfigData.SpecialKeySet.RedNoteKeyCode_Right
+  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Right
   type: Field
   source:
     remote:
-      path: Public/Data/DataSpecs/StageMetadataSpec.cs
+      path: Public/Data/Configs/GameConfigData.cs
       branch: master
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: MusicLength
-    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
-    startLine: 22
+    id: RedNoteKeyCode_Right
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 44
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
   syntax:
-    content: public float MusicLength
+    content: public KeyCode RedNoteKeyCode_Right
     return:
-      type: System.Single
-    content.vb: Public MusicLength As Single
-- uid: RGBLineCoreLib.Data.StageMetadata.MajorDifficulty
-  commentId: F:RGBLineCoreLib.Data.StageMetadata.MajorDifficulty
-  id: MajorDifficulty
-  parent: RGBLineCoreLib.Data.StageMetadata
+      type: UnityEngine.KeyCode
+    content.vb: Public RedNoteKeyCode_Right As KeyCode
+- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedLineCornerNoteKeyCode
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedLineCornerNoteKeyCode
+  id: RedLineCornerNoteKeyCode
+  parent: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
   langs:
   - csharp
   - vb
-  name: MajorDifficulty
-  nameWithType: StageMetadata.MajorDifficulty
-  fullName: RGBLineCoreLib.Data.StageMetadata.MajorDifficulty
+  name: RedLineCornerNoteKeyCode
+  nameWithType: GameConfigData.SpecialKeySet.RedLineCornerNoteKeyCode
+  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedLineCornerNoteKeyCode
   type: Field
   source:
     remote:
-      path: Public/Data/DataSpecs/StageMetadataSpec.cs
+      path: Public/Data/Configs/GameConfigData.cs
       branch: master
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: MajorDifficulty
-    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
-    startLine: 24
+    id: RedLineCornerNoteKeyCode
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 46
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
   syntax:
-    content: public StageMetadata.MajorDifficultyLevel MajorDifficulty
+    content: public KeyCode RedLineCornerNoteKeyCode
     return:
-      type: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
-    content.vb: Public MajorDifficulty As StageMetadata.MajorDifficultyLevel
-- uid: RGBLineCoreLib.Data.StageMetadata.MinorDifficulty
-  commentId: F:RGBLineCoreLib.Data.StageMetadata.MinorDifficulty
-  id: MinorDifficulty
-  parent: RGBLineCoreLib.Data.StageMetadata
-  langs:
-  - csharp
-  - vb
-  name: MinorDifficulty
-  nameWithType: StageMetadata.MinorDifficulty
-  fullName: RGBLineCoreLib.Data.StageMetadata.MinorDifficulty
-  type: Field
-  source:
-    remote:
-      path: Public/Data/DataSpecs/StageMetadataSpec.cs
-      branch: master
-      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: MinorDifficulty
-    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
-    startLine: 25
-  assemblies:
-  - RGBLineCoreLib
-  namespace: RGBLineCoreLib.Data
-  syntax:
-    content: public int MinorDifficulty
-    return:
-      type: System.Int32
-    content.vb: Public MinorDifficulty As Integer
-- uid: RGBLineCoreLib.Data.StageMetadata.BestScore
-  commentId: F:RGBLineCoreLib.Data.StageMetadata.BestScore
-  id: BestScore
-  parent: RGBLineCoreLib.Data.StageMetadata
-  langs:
-  - csharp
-  - vb
-  name: BestScore
-  nameWithType: StageMetadata.BestScore
-  fullName: RGBLineCoreLib.Data.StageMetadata.BestScore
-  type: Field
-  source:
-    remote:
-      path: Public/Data/DataSpecs/StageMetadataSpec.cs
-      branch: master
-      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: BestScore
-    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
-    startLine: 27
-  assemblies:
-  - RGBLineCoreLib
-  namespace: RGBLineCoreLib.Data
-  syntax:
-    content: public int BestScore
-    return:
-      type: System.Int32
-    content.vb: Public BestScore As Integer
-- uid: RGBLineCoreLib.Data.StageMetadata.LobbyMusicStartTime
-  commentId: F:RGBLineCoreLib.Data.StageMetadata.LobbyMusicStartTime
-  id: LobbyMusicStartTime
-  parent: RGBLineCoreLib.Data.StageMetadata
-  langs:
-  - csharp
-  - vb
-  name: LobbyMusicStartTime
-  nameWithType: StageMetadata.LobbyMusicStartTime
-  fullName: RGBLineCoreLib.Data.StageMetadata.LobbyMusicStartTime
-  type: Field
-  source:
-    remote:
-      path: Public/Data/DataSpecs/StageMetadataSpec.cs
-      branch: master
-      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: LobbyMusicStartTime
-    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
-    startLine: 29
-  assemblies:
-  - RGBLineCoreLib
-  namespace: RGBLineCoreLib.Data
-  syntax:
-    content: public float LobbyMusicStartTime
-    return:
-      type: System.Single
-    content.vb: Public LobbyMusicStartTime As Single
-- uid: RGBLineCoreLib.Data.StageMetadata.LobbyMusicEndTime
-  commentId: F:RGBLineCoreLib.Data.StageMetadata.LobbyMusicEndTime
-  id: LobbyMusicEndTime
-  parent: RGBLineCoreLib.Data.StageMetadata
-  langs:
-  - csharp
-  - vb
-  name: LobbyMusicEndTime
-  nameWithType: StageMetadata.LobbyMusicEndTime
-  fullName: RGBLineCoreLib.Data.StageMetadata.LobbyMusicEndTime
-  type: Field
-  source:
-    remote:
-      path: Public/Data/DataSpecs/StageMetadataSpec.cs
-      branch: master
-      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: LobbyMusicEndTime
-    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
-    startLine: 30
-  assemblies:
-  - RGBLineCoreLib
-  namespace: RGBLineCoreLib.Data
-  syntax:
-    content: public float LobbyMusicEndTime
-    return:
-      type: System.Single
-    content.vb: Public LobbyMusicEndTime As Single
-- uid: RGBLineCoreLib.Data.StageMetadata.LobbyMusicFadeOutTime
-  commentId: F:RGBLineCoreLib.Data.StageMetadata.LobbyMusicFadeOutTime
-  id: LobbyMusicFadeOutTime
-  parent: RGBLineCoreLib.Data.StageMetadata
-  langs:
-  - csharp
-  - vb
-  name: LobbyMusicFadeOutTime
-  nameWithType: StageMetadata.LobbyMusicFadeOutTime
-  fullName: RGBLineCoreLib.Data.StageMetadata.LobbyMusicFadeOutTime
-  type: Field
-  source:
-    remote:
-      path: Public/Data/DataSpecs/StageMetadataSpec.cs
-      branch: master
-      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: LobbyMusicFadeOutTime
-    path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
-    startLine: 31
-  assemblies:
-  - RGBLineCoreLib
-  namespace: RGBLineCoreLib.Data
-  syntax:
-    content: public float LobbyMusicFadeOutTime
-    return:
-      type: System.Single
-    content.vb: Public LobbyMusicFadeOutTime As Single
+      type: UnityEngine.KeyCode
+    content.vb: Public RedLineCornerNoteKeyCode As KeyCode
 references:
 - uid: RGBLineCoreLib.Data
   commentId: N:RGBLineCoreLib.Data
@@ -525,59 +395,36 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.String
-  commentId: T:System.String
-  parent: System
+- uid: UnityEngine.KeyCode[]
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: System.Single
-  commentId: T:System.Single
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.single
-  name: float
-  nameWithType: float
-  fullName: float
-  nameWithType.vb: Single
-  fullName.vb: Single
-  name.vb: Single
-- uid: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
-  commentId: T:RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
-  parent: RGBLineCoreLib.Data
-  href: RGBLineCoreLib.Data.StageMetadata.html
-  name: StageMetadata.MajorDifficultyLevel
-  nameWithType: StageMetadata.MajorDifficultyLevel
-  fullName: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+  name: KeyCode[]
+  nameWithType: KeyCode[]
+  fullName: UnityEngine.KeyCode[]
+  nameWithType.vb: KeyCode()
+  fullName.vb: UnityEngine.KeyCode()
+  name.vb: KeyCode()
   spec.csharp:
-  - uid: RGBLineCoreLib.Data.StageMetadata
-    name: StageMetadata
-    href: RGBLineCoreLib.Data.StageMetadata.html
-  - name: .
-  - uid: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
-    name: MajorDifficultyLevel
-    href: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.html
+  - uid: UnityEngine.KeyCode
+    name: KeyCode
+    isExternal: true
+  - name: '['
+  - name: ']'
   spec.vb:
-  - uid: RGBLineCoreLib.Data.StageMetadata
-    name: StageMetadata
-    href: RGBLineCoreLib.Data.StageMetadata.html
-  - name: .
-  - uid: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
-    name: MajorDifficultyLevel
-    href: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.html
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
+  - uid: UnityEngine.KeyCode
+    name: KeyCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.KeyCode
+  commentId: T:UnityEngine.KeyCode
+  parent: UnityEngine
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: KeyCode
+  nameWithType: KeyCode
+  fullName: UnityEngine.KeyCode
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

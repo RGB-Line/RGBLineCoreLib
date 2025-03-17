@@ -8,6 +8,7 @@ items:
   - RGBLineCoreLib.Data.GameConfigData.MaxFrameRate
   - RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard
   - RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
+  - RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
   - RGBLineCoreLib.Data.HalfFloatVector2
   - RGBLineCoreLib.Data.StageData
   - RGBLineCoreLib.Data.StageData.LineData
@@ -121,6 +122,29 @@ references:
   - uid: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
     name: HitJudgingType
     href: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.html
+- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+  commentId: T:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.GameConfigData.html
+  name: GameConfigData.SpecialKeySet
+  nameWithType: GameConfigData.SpecialKeySet
+  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.Data.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+    name: SpecialKeySet
+    href: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.Data.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+    name: SpecialKeySet
+    href: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html
 - uid: RGBLineCoreLib.Data.HalfFloatVector2
   commentId: T:RGBLineCoreLib.Data.HalfFloatVector2
   href: RGBLineCoreLib.Data.HalfFloatVector2.html

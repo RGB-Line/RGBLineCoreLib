@@ -24,6 +24,8 @@ namespace RGBLineCoreLib.Functor
 
         private int m_curMatIndex;
 
+        private bool m_bisNowTransitioning = false;
+
 
         public void Awake()
         {
@@ -46,8 +48,21 @@ namespace RGBLineCoreLib.Functor
             }
         }
 
+        public bool BIsNowTransitioning
+        {
+            get
+            {
+                return m_bisNowTransitioning;
+            }
+        }
+
         public void StartTransition(in int matIndex, in Vector2 effectStartPos)
         {
+            if(m_bisNowTransitioning)
+            {
+                return;
+            }
+
             m_curMatIndex = matIndex;
 
             Color curBaseColor = m_mats[m_curMatIndex].GetColor("_BaseColor");
@@ -55,6 +70,7 @@ namespace RGBLineCoreLib.Functor
             m_fadeOut.CalculateFadeout(curBaseColor, effectStartPos);
             m_fadeOut.gameObject.SetActive(true);
 
+            m_bisNowTransitioning = true;
             Invoke("FadeIn", m_timeout);
         }
 
@@ -67,6 +83,7 @@ namespace RGBLineCoreLib.Functor
             }
 
             m_fadeOut.gameObject.SetActive(false);
+            m_bisNowTransitioning = false;
         }
     }
 }

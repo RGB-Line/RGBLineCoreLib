@@ -68,6 +68,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.GameConfigData.SpecialKeySet",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/RGBLineCoreLib.Data.GameConfigData.yml",
       "output": {
         ".html": {

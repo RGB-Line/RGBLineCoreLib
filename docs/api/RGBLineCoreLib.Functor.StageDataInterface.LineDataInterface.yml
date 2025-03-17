@@ -23,7 +23,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: LineDataInterface
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 127
+    startLine: 143
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -60,7 +60,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetAttachedRegionID
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 137
+    startLine: 153
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -101,7 +101,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetAttachedRegionData
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 148
+    startLine: 164
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -142,7 +142,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetLineData
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 160
+    startLine: 176
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -183,7 +183,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetLineIDs
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 168
+    startLine: 184
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor

@@ -27,7 +27,11 @@ namespace RGBLineCoreLib.Functor
             public Material m_material_GreenLine;
             public Material m_material_BlueLine;
 
-            public Material m_material_Outline;
+            public Material m_material_RedOutline;
+            public Material m_material_GreenOutline;
+            public Material m_material_BlueOutline;
+
+
             public Material m_material_DashLine;
         }
 
@@ -200,9 +204,9 @@ namespace RGBLineCoreLib.Functor
             }
 
             // Invoke Callbacks
-            if(StageDataInterface.LineDataInterface.GetAttachedRegionData(m_lineID).CurColorType == StageData.RegionData.ColorType.Green)
+            Invoke("RenderGreenOutline", 0.5f);
+            if (StageDataInterface.LineDataInterface.GetAttachedRegionData(m_lineID).CurColorType == StageData.RegionData.ColorType.Green)
             {
-                Invoke("RenderGreenOutline", 0.5f);
                 Invoke("RenderGreenCenterLine", 0.5f);
                 Invoke("EnableMeshColliderUpdate", 0.5f);
             }
@@ -235,9 +239,25 @@ namespace RGBLineCoreLib.Functor
             outline.transform.SetParent(LineManager.Instance.transform);
 
             LineRenderer outlineRenderer = outline.AddComponent<LineRenderer>();
-            outlineRenderer.material = m_lineMaterials.m_material_Outline;
+
+            Material outlineMaterial = null;
+            switch(StageDataInterface.LineDataInterface.GetAttachedRegionData(m_lineID).CurColorType)
+            {
+                case StageData.RegionData.ColorType.Red:
+                    outlineMaterial = m_lineMaterials.m_material_RedOutline;
+                    break;
+
+                case StageData.RegionData.ColorType.Green:
+                    outlineMaterial = m_lineMaterials.m_material_GreenOutline;
+                    break;
+
+                case StageData.RegionData.ColorType.Blue:
+                    outlineMaterial = m_lineMaterials.m_material_BlueOutline;
+                    break;
+            }
+            outlineRenderer.material = outlineMaterial;
             outlineRenderer.positionCount = m_lineRenderer.positionCount;
-            outlineRenderer.sortingOrder = 0;
+            outlineRenderer.sortingOrder = -10;
             outlineRenderer.numCapVertices = 90;
 
             Vector3[] positions = new Vector3[m_lineRenderer.positionCount];

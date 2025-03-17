@@ -138,6 +138,48 @@ references:
   commentId: F:RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Perfect
   fullName: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Perfect
   nameWithType: GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Perfect
+- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+  name: GameConfigData.SpecialKeySet
+  href: api/RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html
+  commentId: T:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+  nameWithType: GameConfigData.SpecialKeySet
+- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.BannedKeyCodes
+  name: BannedKeyCodes
+  href: api/RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html#RGBLineCoreLib_Data_GameConfigData_SpecialKeySet_BannedKeyCodes
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.BannedKeyCodes
+  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.BannedKeyCodes
+  nameWithType: GameConfigData.SpecialKeySet.BannedKeyCodes
+- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedLineCornerNoteKeyCode
+  name: RedLineCornerNoteKeyCode
+  href: api/RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html#RGBLineCoreLib_Data_GameConfigData_SpecialKeySet_RedLineCornerNoteKeyCode
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedLineCornerNoteKeyCode
+  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedLineCornerNoteKeyCode
+  nameWithType: GameConfigData.SpecialKeySet.RedLineCornerNoteKeyCode
+- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Left
+  name: RedNoteKeyCode_Left
+  href: api/RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html#RGBLineCoreLib_Data_GameConfigData_SpecialKeySet_RedNoteKeyCode_Left
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Left
+  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Left
+  nameWithType: GameConfigData.SpecialKeySet.RedNoteKeyCode_Left
+- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Right
+  name: RedNoteKeyCode_Right
+  href: api/RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html#RGBLineCoreLib_Data_GameConfigData_SpecialKeySet_RedNoteKeyCode_Right
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Right
+  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Right
+  nameWithType: GameConfigData.SpecialKeySet.RedNoteKeyCode_Right
+- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySetting
+  name: SpecialKeySetting
+  href: api/RGBLineCoreLib.Data.GameConfigData.html#RGBLineCoreLib_Data_GameConfigData_SpecialKeySetting
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.SpecialKeySetting
+  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySetting
+  nameWithType: GameConfigData.SpecialKeySetting
+- uid: RGBLineCoreLib.Data.GameConfigData.SyncAdjustment
+  name: SyncAdjustment
+  href: api/RGBLineCoreLib.Data.GameConfigData.html#RGBLineCoreLib_Data_GameConfigData_SyncAdjustment
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.SyncAdjustment
+  fullName: RGBLineCoreLib.Data.GameConfigData.SyncAdjustment
+  nameWithType: GameConfigData.SyncAdjustment
 - uid: RGBLineCoreLib.Data.GameConfigData.VSyncCount
   name: VSyncCount
   href: api/RGBLineCoreLib.Data.GameConfigData.html#RGBLineCoreLib_Data_GameConfigData_VSyncCount
@@ -474,6 +516,24 @@ references:
   commentId: F:RGBLineCoreLib.Data.StageMetadata.BestScore
   fullName: RGBLineCoreLib.Data.StageMetadata.BestScore
   nameWithType: StageMetadata.BestScore
+- uid: RGBLineCoreLib.Data.StageMetadata.LobbyMusicEndTime
+  name: LobbyMusicEndTime
+  href: api/RGBLineCoreLib.Data.StageMetadata.html#RGBLineCoreLib_Data_StageMetadata_LobbyMusicEndTime
+  commentId: F:RGBLineCoreLib.Data.StageMetadata.LobbyMusicEndTime
+  fullName: RGBLineCoreLib.Data.StageMetadata.LobbyMusicEndTime
+  nameWithType: StageMetadata.LobbyMusicEndTime
+- uid: RGBLineCoreLib.Data.StageMetadata.LobbyMusicFadeOutTime
+  name: LobbyMusicFadeOutTime
+  href: api/RGBLineCoreLib.Data.StageMetadata.html#RGBLineCoreLib_Data_StageMetadata_LobbyMusicFadeOutTime
+  commentId: F:RGBLineCoreLib.Data.StageMetadata.LobbyMusicFadeOutTime
+  fullName: RGBLineCoreLib.Data.StageMetadata.LobbyMusicFadeOutTime
+  nameWithType: StageMetadata.LobbyMusicFadeOutTime
+- uid: RGBLineCoreLib.Data.StageMetadata.LobbyMusicStartTime
+  name: LobbyMusicStartTime
+  href: api/RGBLineCoreLib.Data.StageMetadata.html#RGBLineCoreLib_Data_StageMetadata_LobbyMusicStartTime
+  commentId: F:RGBLineCoreLib.Data.StageMetadata.LobbyMusicStartTime
+  fullName: RGBLineCoreLib.Data.StageMetadata.LobbyMusicStartTime
+  nameWithType: StageMetadata.LobbyMusicStartTime
 - uid: RGBLineCoreLib.Data.StageMetadata.MajorDifficulty
   name: MajorDifficulty
   href: api/RGBLineCoreLib.Data.StageMetadata.html#RGBLineCoreLib_Data_StageMetadata_MajorDifficulty
@@ -1454,6 +1514,12 @@ references:
   commentId: F:RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_BlueLine
   fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_BlueLine
   nameWithType: LineItem.LineMaterials.m_material_BlueLine
+- uid: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_BlueOutline
+  name: m_material_BlueOutline
+  href: api/RGBLineCoreLib.Functor.LineItem.LineMaterials.html#RGBLineCoreLib_Functor_LineItem_LineMaterials_m_material_BlueOutline
+  commentId: F:RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_BlueOutline
+  fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_BlueOutline
+  nameWithType: LineItem.LineMaterials.m_material_BlueOutline
 - uid: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_DashLine
   name: m_material_DashLine
   href: api/RGBLineCoreLib.Functor.LineItem.LineMaterials.html#RGBLineCoreLib_Functor_LineItem_LineMaterials_m_material_DashLine
@@ -1466,18 +1532,24 @@ references:
   commentId: F:RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_GreenLine
   fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_GreenLine
   nameWithType: LineItem.LineMaterials.m_material_GreenLine
-- uid: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_Outline
-  name: m_material_Outline
-  href: api/RGBLineCoreLib.Functor.LineItem.LineMaterials.html#RGBLineCoreLib_Functor_LineItem_LineMaterials_m_material_Outline
-  commentId: F:RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_Outline
-  fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_Outline
-  nameWithType: LineItem.LineMaterials.m_material_Outline
+- uid: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_GreenOutline
+  name: m_material_GreenOutline
+  href: api/RGBLineCoreLib.Functor.LineItem.LineMaterials.html#RGBLineCoreLib_Functor_LineItem_LineMaterials_m_material_GreenOutline
+  commentId: F:RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_GreenOutline
+  fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_GreenOutline
+  nameWithType: LineItem.LineMaterials.m_material_GreenOutline
 - uid: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_RedLine
   name: m_material_RedLine
   href: api/RGBLineCoreLib.Functor.LineItem.LineMaterials.html#RGBLineCoreLib_Functor_LineItem_LineMaterials_m_material_RedLine
   commentId: F:RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_RedLine
   fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_RedLine
   nameWithType: LineItem.LineMaterials.m_material_RedLine
+- uid: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_RedOutline
+  name: m_material_RedOutline
+  href: api/RGBLineCoreLib.Functor.LineItem.LineMaterials.html#RGBLineCoreLib_Functor_LineItem_LineMaterials_m_material_RedOutline
+  commentId: F:RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_RedOutline
+  fullName: RGBLineCoreLib.Functor.LineItem.LineMaterials.m_material_RedOutline
+  nameWithType: LineItem.LineMaterials.m_material_RedOutline
 - uid: RGBLineCoreLib.Functor.LineItem.LineRenderer
   name: LineRenderer
   href: api/RGBLineCoreLib.Functor.LineItem.html#RGBLineCoreLib_Functor_LineItem_LineRenderer
@@ -1989,6 +2061,19 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.RegionTransitionEffector.Awake
   nameWithType: RegionTransitionEffector.Awake
+- uid: RGBLineCoreLib.Functor.RegionTransitionEffector.BIsNowTransitioning
+  name: BIsNowTransitioning
+  href: api/RGBLineCoreLib.Functor.RegionTransitionEffector.html#RGBLineCoreLib_Functor_RegionTransitionEffector_BIsNowTransitioning
+  commentId: P:RGBLineCoreLib.Functor.RegionTransitionEffector.BIsNowTransitioning
+  fullName: RGBLineCoreLib.Functor.RegionTransitionEffector.BIsNowTransitioning
+  nameWithType: RegionTransitionEffector.BIsNowTransitioning
+- uid: RGBLineCoreLib.Functor.RegionTransitionEffector.BIsNowTransitioning*
+  name: BIsNowTransitioning
+  href: api/RGBLineCoreLib.Functor.RegionTransitionEffector.html#RGBLineCoreLib_Functor_RegionTransitionEffector_BIsNowTransitioning_
+  commentId: Overload:RGBLineCoreLib.Functor.RegionTransitionEffector.BIsNowTransitioning
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.RegionTransitionEffector.BIsNowTransitioning
+  nameWithType: RegionTransitionEffector.BIsNowTransitioning
 - uid: RGBLineCoreLib.Functor.RegionTransitionEffector.Materials
   name: Materials
   href: api/RGBLineCoreLib.Functor.RegionTransitionEffector.html#RGBLineCoreLib_Functor_RegionTransitionEffector_Materials

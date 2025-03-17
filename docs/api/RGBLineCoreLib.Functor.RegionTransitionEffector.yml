@@ -6,6 +6,7 @@ items:
   parent: RGBLineCoreLib.Functor
   children:
   - RGBLineCoreLib.Functor.RegionTransitionEffector.Awake
+  - RGBLineCoreLib.Functor.RegionTransitionEffector.BIsNowTransitioning
   - RGBLineCoreLib.Functor.RegionTransitionEffector.Materials
   - RGBLineCoreLib.Functor.RegionTransitionEffector.StartTransition(System.Int32@,UnityEngine.Vector2@)
   - RGBLineCoreLib.Functor.RegionTransitionEffector.Timeout
@@ -173,7 +174,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Awake
     path: ../Public/Functor/Effect/RegionTransitionEffector.cs
-    startLine: 27
+    startLine: 29
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -199,7 +200,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Materials
     path: ../Public/Functor/Effect/RegionTransitionEffector.cs
-    startLine: 33
+    startLine: 35
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -228,7 +229,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Timeout
     path: ../Public/Functor/Effect/RegionTransitionEffector.cs
-    startLine: 40
+    startLine: 42
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -239,6 +240,35 @@ items:
       type: System.Single
     content.vb: Public ReadOnly Property Timeout As Single
   overload: RGBLineCoreLib.Functor.RegionTransitionEffector.Timeout*
+- uid: RGBLineCoreLib.Functor.RegionTransitionEffector.BIsNowTransitioning
+  commentId: P:RGBLineCoreLib.Functor.RegionTransitionEffector.BIsNowTransitioning
+  id: BIsNowTransitioning
+  parent: RGBLineCoreLib.Functor.RegionTransitionEffector
+  langs:
+  - csharp
+  - vb
+  name: BIsNowTransitioning
+  nameWithType: RegionTransitionEffector.BIsNowTransitioning
+  fullName: RGBLineCoreLib.Functor.RegionTransitionEffector.BIsNowTransitioning
+  type: Property
+  source:
+    remote:
+      path: Public/Functor/Effect/RegionTransitionEffector.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: BIsNowTransitioning
+    path: ../Public/Functor/Effect/RegionTransitionEffector.cs
+    startLine: 50
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public bool BIsNowTransitioning { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property BIsNowTransitioning As Boolean
+  overload: RGBLineCoreLib.Functor.RegionTransitionEffector.BIsNowTransitioning*
 - uid: RGBLineCoreLib.Functor.RegionTransitionEffector.StartTransition(System.Int32@,UnityEngine.Vector2@)
   commentId: M:RGBLineCoreLib.Functor.RegionTransitionEffector.StartTransition(System.Int32@,UnityEngine.Vector2@)
   id: StartTransition(System.Int32@,UnityEngine.Vector2@)
@@ -257,7 +287,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: StartTransition
     path: ../Public/Functor/Effect/RegionTransitionEffector.cs
-    startLine: 48
+    startLine: 58
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -4708,6 +4738,23 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
+- uid: RGBLineCoreLib.Functor.RegionTransitionEffector.BIsNowTransitioning*
+  commentId: Overload:RGBLineCoreLib.Functor.RegionTransitionEffector.BIsNowTransitioning
+  href: RGBLineCoreLib.Functor.RegionTransitionEffector.html#RGBLineCoreLib_Functor_RegionTransitionEffector_BIsNowTransitioning
+  name: BIsNowTransitioning
+  nameWithType: RegionTransitionEffector.BIsNowTransitioning
+  fullName: RGBLineCoreLib.Functor.RegionTransitionEffector.BIsNowTransitioning
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: RGBLineCoreLib.Functor.RegionTransitionEffector.StartTransition*
   commentId: Overload:RGBLineCoreLib.Functor.RegionTransitionEffector.StartTransition
   href: RGBLineCoreLib.Functor.RegionTransitionEffector.html#RGBLineCoreLib_Functor_RegionTransitionEffector_StartTransition_System_Int32__UnityEngine_Vector2__

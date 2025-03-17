@@ -26,5 +26,9 @@ namespace RGBLineCoreLib.Data
         public int MinorDifficulty;
 
         public int BestScore;
+
+        public float LobbyMusicStartTime;
+        public float LobbyMusicEndTime;
+        public float LobbyMusicFadeOutTime;
     }
 }

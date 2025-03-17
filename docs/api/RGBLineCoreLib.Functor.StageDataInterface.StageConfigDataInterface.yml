@@ -20,7 +20,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: StageConfigDataInterface
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 315
+    startLine: 403
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -57,7 +57,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetStageConfigData
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 321
+    startLine: 409
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor

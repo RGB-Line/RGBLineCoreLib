@@ -27,7 +27,7 @@ namespace RGBLineCoreLib.Manager
         private Stack<Guid> m_noteCandidates = new Stack<Guid>();
         private Dictionary<Guid, Tuple<float, float>> m_longNoteTable = new Dictionary<Guid, Tuple<float, float>>();
 
-        [SerializeField] private List<KeyCode> m_bannedNoteKeyCode;
+        //[SerializeField] private List<KeyCode> m_bannedNoteKeyCode;
 
         private float m_curAudioSourceTime = 0.0f;
 
@@ -108,7 +108,7 @@ namespace RGBLineCoreLib.Manager
                     {
                         case StageData.NoteData.NoteType.Common:
                             {
-                                if(!(Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Mouse1)))
+                                if(!(Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Mouse1) || Input.GetKeyDown(KeyCode.Space)))
                                 {
                                     INoteItem targetNoteItem = NoteManager.Instance.GetNoteItem(targetNoteID);
                                     m_curScore += GetSingleNoteScore(GetYPos2Time(targetNoteItem.RedAndBlueNote.Transform.position.y), m_curAudioSourceTime);
@@ -148,7 +148,7 @@ namespace RGBLineCoreLib.Manager
 
                         case StageData.NoteData.NoteType.Long:
                             {
-                                if (!(Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Mouse1)))
+                                if (!(Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Mouse1) || Input.GetKeyDown(KeyCode.Space)))
                                 {
                                     INoteItem targetNoteItem = NoteManager.Instance.GetNoteItem(targetNoteID);
                                     m_longNoteTable.Add(targetNoteID, new Tuple<float, float>(GetYPos2Time(targetNoteItem.GreenNote.CurveStartYPos), m_curAudioSourceTime));
@@ -249,7 +249,8 @@ namespace RGBLineCoreLib.Manager
             IEnumerable<KeyCode> keyCodes = Enum.GetValues(typeof(KeyCode)).Cast<KeyCode>();
 
             List<KeyCode> keyCodeBuffer = keyCodes.ToList();
-            foreach (KeyCode keyCode in m_bannedNoteKeyCode)
+            KeyCode[] bannedNoteKeyCodes = GameConfigDataBuffer.Instance.ConfigData.SpecialKeySetting.BannedKeyCodes;
+            foreach (KeyCode keyCode in bannedNoteKeyCodes)
             {
                 if (keyCodeBuffer.Contains(keyCode))
                 {
@@ -268,7 +269,8 @@ namespace RGBLineCoreLib.Manager
             IEnumerable<KeyCode> keyCodes = Enum.GetValues(typeof(KeyCode)).Cast<KeyCode>();
 
             List<KeyCode> keyCodeBuffer = keyCodes.ToList();
-            foreach (KeyCode keyCode in m_bannedNoteKeyCode)
+            KeyCode[] bannedNoteKeyCodes = GameConfigDataBuffer.Instance.ConfigData.SpecialKeySetting.BannedKeyCodes;
+            foreach (KeyCode keyCode in bannedNoteKeyCodes)
             {
                 if (keyCodeBuffer.Contains(keyCode))
                 {

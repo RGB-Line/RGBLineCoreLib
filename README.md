@@ -21,40 +21,21 @@ Plugin은 ```RGBLineCoreLib.dll```과 ```RGBLineCoreLib_ForEditor.dll```의 두 
 > [!IMPORTANT]\
 > Editor의 경우 필히 ```RGBLineCoreLib_ForEditor.dll```를 사용할 것
 
-## Common Dependency
+## Dependency
 ```
 UnityEngine.dll
 CommonUtilLib.dll
 Newtonsoft.Json.dll
 ```
 
-
-
 ## Features
-- Common Utils
-- Resource Management
-- Map Generation
-- Tool
-- In-Game Management
-    - Map Streaming Management
-    - PC/NPC Movement
+- 
 
 ## Module Tree
 ```
-Fogotten
-├── Common Util
-│   └── <Repo> CommonUtilLib
-├── Resource Management
-│   ├── <Repo> ResourcePathManagementLib
-│   └── <Repo> ResourceDataManagementLib
-├── Map Generation
-│   ├── <Repo> ChiefMapGenerationLib
-│   └── <Repo> MapGenerationAgent
-├── Tool
-│   └── <Repo> MapGenerationInputTool
-└── In-Game Management
-    └── PC/NPC Movement
-        └── <Repo> PcNpcMovementLib
+
 ```
 
-## Hands-On Manual
+## <a href="https://github.com/RGB-Line/RGBLineCoreLib/releases">Release</a>
+
+## <a href="https://rgb-line.github.io/RGBLineCoreLib/">Docs</a>

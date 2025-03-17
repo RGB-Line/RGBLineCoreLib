@@ -8,6 +8,8 @@ items:
   - RGBLineCoreLib.Data.GameConfigData.MaxFrame
   - RGBLineCoreLib.Data.GameConfigData.MusicVolume
   - RGBLineCoreLib.Data.GameConfigData.NoteHitJudgeStrandard
+  - RGBLineCoreLib.Data.GameConfigData.SpecialKeySetting
+  - RGBLineCoreLib.Data.GameConfigData.SyncAdjustment
   - RGBLineCoreLib.Data.GameConfigData.VSyncCount
   langs:
   - csharp
@@ -23,7 +25,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GameConfigData
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 9
+    startLine: 11
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -55,7 +57,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: NoteHitJudgeStrandard
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 39
+    startLine: 50
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -82,7 +84,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: MusicVolume
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 47
+    startLine: 58
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -94,6 +96,33 @@ items:
     return:
       type: System.Single
     content.vb: Public MusicVolume As Single
+- uid: RGBLineCoreLib.Data.GameConfigData.SyncAdjustment
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.SyncAdjustment
+  id: SyncAdjustment
+  parent: RGBLineCoreLib.Data.GameConfigData
+  langs:
+  - csharp
+  - vb
+  name: SyncAdjustment
+  nameWithType: GameConfigData.SyncAdjustment
+  fullName: RGBLineCoreLib.Data.GameConfigData.SyncAdjustment
+  type: Field
+  source:
+    remote:
+      path: Public/Data/Configs/GameConfigData.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: SyncAdjustment
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 59
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: public float SyncAdjustment
+    return:
+      type: System.Single
+    content.vb: Public SyncAdjustment As Single
 - uid: RGBLineCoreLib.Data.GameConfigData.MaxFrame
   commentId: F:RGBLineCoreLib.Data.GameConfigData.MaxFrame
   id: MaxFrame
@@ -112,7 +141,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: MaxFrame
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 48
+    startLine: 60
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -139,7 +168,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: VSyncCount
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 55
+    startLine: 67
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -151,6 +180,33 @@ items:
     return:
       type: System.Int32
     content.vb: Public VSyncCount As Integer
+- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySetting
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.SpecialKeySetting
+  id: SpecialKeySetting
+  parent: RGBLineCoreLib.Data.GameConfigData
+  langs:
+  - csharp
+  - vb
+  name: SpecialKeySetting
+  nameWithType: GameConfigData.SpecialKeySetting
+  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySetting
+  type: Field
+  source:
+    remote:
+      path: Public/Data/Configs/GameConfigData.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: SpecialKeySetting
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 68
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: public GameConfigData.SpecialKeySet SpecialKeySetting
+    return:
+      type: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+    content.vb: Public SpecialKeySetting As GameConfigData.SpecialKeySet
 references:
 - uid: RGBLineCoreLib.Data
   commentId: N:RGBLineCoreLib.Data
@@ -459,3 +515,26 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+  commentId: T:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.GameConfigData.html
+  name: GameConfigData.SpecialKeySet
+  nameWithType: GameConfigData.SpecialKeySet
+  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.Data.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+    name: SpecialKeySet
+    href: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.Data.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+    name: SpecialKeySet
+    href: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html

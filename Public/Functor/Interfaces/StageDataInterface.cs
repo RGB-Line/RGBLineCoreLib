@@ -106,17 +106,33 @@ namespace RGBLineCoreLib.Functor
             #region Setter
             public static bool TryAddRegionData(in Guid targetRegionID, in StageData.RegionData targetRegionData)
             {
-                //if(!BIsRegionDataValid(new Tuple<Guid, StageData.RegionData>(targetRegionID, targetRegionData)))
-                //{
-                //    return false;
-                //}
-
                 if (StageDataBuffer.Instance.StageData.RegionDataTable.ContainsKey(targetRegionID))
                 {
                     return false;
                 }
 
                 StageDataBuffer.Instance.StageData.RegionDataTable.Add(targetRegionID, targetRegionData);
+                return true;
+            }
+            public static bool TryRemoveRegionData(in Guid targetRegionID)
+            {
+                if (!StageDataBuffer.Instance.StageData.RegionDataTable.ContainsKey(targetRegionID))
+                {
+                    return false;
+                }
+
+                StageDataBuffer.Instance.StageData.RegionDataTable.Remove(targetRegionID);
+                return true;
+            }
+
+            public static bool TrySetRegionData(in Guid targetRegionID, in StageData.RegionData targetRegionData)
+            {
+                if (!StageDataBuffer.Instance.StageData.RegionDataTable.ContainsKey(targetRegionID))
+                {
+                    return false;
+                }
+
+                StageDataBuffer.Instance.StageData.RegionDataTable[targetRegionID] = targetRegionData;
                 return true;
             }
             #endregion
@@ -226,6 +242,42 @@ namespace RGBLineCoreLib.Functor
                 return true;
             }
             #endregion
+
+#if FOR_EDITOR
+            #region Setter
+            public static bool TryAddLineData(in Guid targetLineID, in StageData.LineData targetLineData)
+            {
+                if (StageDataBuffer.Instance.StageData.LineDataTable.ContainsKey(targetLineID))
+                {
+                    return false;
+                }
+
+                StageDataBuffer.Instance.StageData.LineDataTable.Add(targetLineID, targetLineData);
+                return true;
+            }
+            public static bool TryRemoveLineData(in Guid targetLineID)
+            {
+                if (!StageDataBuffer.Instance.StageData.LineDataTable.ContainsKey(targetLineID))
+                {
+                    return false;
+                }
+
+                StageDataBuffer.Instance.StageData.LineDataTable.Remove(targetLineID);
+                return true;
+            }
+
+            public static bool TrySetLineData(in Guid targetLineID, in StageData.LineData targetLineData)
+            {
+                if (!StageDataBuffer.Instance.StageData.LineDataTable.ContainsKey(targetLineID))
+                {
+                    return false;
+                }
+
+                StageDataBuffer.Instance.StageData.LineDataTable[targetLineID] = targetLineData;
+                return true;
+            }
+            #endregion
+#endif
         }
         /// <summary>
         /// 현재 StageData의 NoteData에 접근하기 위한 Interface
@@ -309,6 +361,42 @@ namespace RGBLineCoreLib.Functor
                 return StageDataBuffer.Instance.StageData.NoteDataTable.Keys.ToArray();
             }
             #endregion
+
+#if FOR_EDITOR
+            #region Setter
+            public static bool TryAddNoteData(in Guid targetNoteID, in StageData.NoteData targetNoteData)
+            {
+                if (StageDataBuffer.Instance.StageData.NoteDataTable.ContainsKey(targetNoteID))
+                {
+                    return false;
+                }
+
+                StageDataBuffer.Instance.StageData.NoteDataTable.Add(targetNoteID, targetNoteData);
+                return true;
+            }
+            public static bool TryRemoveNoteData(in Guid targetNoteID)
+            {
+                if (!StageDataBuffer.Instance.StageData.NoteDataTable.ContainsKey(targetNoteID))
+                {
+                    return false;
+                }
+
+                StageDataBuffer.Instance.StageData.NoteDataTable.Remove(targetNoteID);
+                return true;
+            }
+
+            public static bool TrySetNoteData(in Guid targetNoteID, in StageData.NoteData targetNoteData)
+            {
+                if (!StageDataBuffer.Instance.StageData.NoteDataTable.ContainsKey(targetNoteID))
+                {
+                    return false;
+                }
+
+                StageDataBuffer.Instance.StageData.NoteDataTable[targetNoteID] = targetNoteData;
+                return true;
+            }
+            #endregion
+#endif
         }
         /// <summary>
         /// 현재 StageData의 StageConfigData에 접근하기 위한 Interface
@@ -324,6 +412,21 @@ namespace RGBLineCoreLib.Functor
                 return StageDataBuffer.Instance.StageData.StageConfig;
             }
             #endregion
+
+#if FOR_EDITOR
+            #region Setter
+            public static void SetStageConfigData(in StageData.StageConfigData targetStageConfigData)
+            {
+                StageDataBuffer.Instance.StageData = new StageData()
+                {
+                    RegionDataTable = StageDataBuffer.Instance.StageData.RegionDataTable,
+                    LineDataTable = StageDataBuffer.Instance.StageData.LineDataTable,
+                    NoteDataTable = StageDataBuffer.Instance.StageData.NoteDataTable,
+                    StageConfig = targetStageConfigData
+                };
+            }
+            #endregion
+#endif
         }
 
 

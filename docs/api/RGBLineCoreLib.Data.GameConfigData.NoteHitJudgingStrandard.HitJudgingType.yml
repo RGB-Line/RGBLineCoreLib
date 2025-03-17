@@ -22,7 +22,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: HitJudgingType
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 27
+    startLine: 29
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -47,7 +47,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Perfect
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 29
+    startLine: 31
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -73,7 +73,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Good
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 30
+    startLine: 32
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -99,7 +99,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Miss
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 31
+    startLine: 33
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
