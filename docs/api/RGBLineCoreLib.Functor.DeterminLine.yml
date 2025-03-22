@@ -7,10 +7,10 @@ items:
   children:
   - RGBLineCoreLib.Functor.DeterminLine.Awake
   - RGBLineCoreLib.Functor.DeterminLine.Dispose(System.Boolean)
-  - RGBLineCoreLib.Functor.DeterminLine.FixedUpdate
   - RGBLineCoreLib.Functor.DeterminLine.OnTriggerEnter2D(UnityEngine.Collider2D)
   - RGBLineCoreLib.Functor.DeterminLine.OnTriggerExit2D(UnityEngine.Collider2D)
   - RGBLineCoreLib.Functor.DeterminLine.StartCheck
+  - RGBLineCoreLib.Functor.DeterminLine.Update
   langs:
   - csharp
   - vb
@@ -191,32 +191,32 @@ items:
     content: public void Awake()
     content.vb: Public Sub Awake()
   overload: RGBLineCoreLib.Functor.DeterminLine.Awake*
-- uid: RGBLineCoreLib.Functor.DeterminLine.FixedUpdate
-  commentId: M:RGBLineCoreLib.Functor.DeterminLine.FixedUpdate
-  id: FixedUpdate
+- uid: RGBLineCoreLib.Functor.DeterminLine.Update
+  commentId: M:RGBLineCoreLib.Functor.DeterminLine.Update
+  id: Update
   parent: RGBLineCoreLib.Functor.DeterminLine
   langs:
   - csharp
   - vb
-  name: FixedUpdate()
-  nameWithType: DeterminLine.FixedUpdate()
-  fullName: RGBLineCoreLib.Functor.DeterminLine.FixedUpdate()
+  name: Update()
+  nameWithType: DeterminLine.Update()
+  fullName: RGBLineCoreLib.Functor.DeterminLine.Update()
   type: Method
   source:
     remote:
       path: Public/Functor/MainGame/DeterminLine.cs
       branch: master
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: FixedUpdate
+    id: Update
     path: ../Public/Functor/MainGame/DeterminLine.cs
     startLine: 31
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
   syntax:
-    content: public void FixedUpdate()
-    content.vb: Public Sub FixedUpdate()
-  overload: RGBLineCoreLib.Functor.DeterminLine.FixedUpdate*
+    content: public void Update()
+    content.vb: Public Sub Update()
+  overload: RGBLineCoreLib.Functor.DeterminLine.Update*
 - uid: RGBLineCoreLib.Functor.DeterminLine.StartCheck
   commentId: M:RGBLineCoreLib.Functor.DeterminLine.StartCheck
   id: StartCheck
@@ -235,7 +235,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: StartCheck
     path: ../Public/Functor/MainGame/DeterminLine.cs
-    startLine: 47
+    startLine: 52
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -263,7 +263,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: OnTriggerEnter2D
     path: ../Public/Functor/MainGame/DeterminLine.cs
-    startLine: 52
+    startLine: 57
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -292,7 +292,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: OnTriggerExit2D
     path: ../Public/Functor/MainGame/DeterminLine.cs
-    startLine: 72
+    startLine: 77
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -321,7 +321,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Dispose
     path: ../Public/Functor/MainGame/DeterminLine.cs
-    startLine: 93
+    startLine: 98
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -4946,12 +4946,12 @@ references:
   name: Awake
   nameWithType: DeterminLine.Awake
   fullName: RGBLineCoreLib.Functor.DeterminLine.Awake
-- uid: RGBLineCoreLib.Functor.DeterminLine.FixedUpdate*
-  commentId: Overload:RGBLineCoreLib.Functor.DeterminLine.FixedUpdate
-  href: RGBLineCoreLib.Functor.DeterminLine.html#RGBLineCoreLib_Functor_DeterminLine_FixedUpdate
-  name: FixedUpdate
-  nameWithType: DeterminLine.FixedUpdate
-  fullName: RGBLineCoreLib.Functor.DeterminLine.FixedUpdate
+- uid: RGBLineCoreLib.Functor.DeterminLine.Update*
+  commentId: Overload:RGBLineCoreLib.Functor.DeterminLine.Update
+  href: RGBLineCoreLib.Functor.DeterminLine.html#RGBLineCoreLib_Functor_DeterminLine_Update
+  name: Update
+  nameWithType: DeterminLine.Update
+  fullName: RGBLineCoreLib.Functor.DeterminLine.Update
 - uid: RGBLineCoreLib.Functor.DeterminLine.StartCheck*
   commentId: Overload:RGBLineCoreLib.Functor.DeterminLine.StartCheck
   href: RGBLineCoreLib.Functor.DeterminLine.html#RGBLineCoreLib_Functor_DeterminLine_StartCheck

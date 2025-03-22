@@ -147,6 +147,7 @@ references:
     href: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html
 - uid: RGBLineCoreLib.Data.HalfFloatVector2
   commentId: T:RGBLineCoreLib.Data.HalfFloatVector2
+  parent: RGBLineCoreLib.Data
   href: RGBLineCoreLib.Data.HalfFloatVector2.html
   name: HalfFloatVector2
   nameWithType: HalfFloatVector2

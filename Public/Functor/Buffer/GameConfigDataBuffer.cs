@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using UnityEngine;
+
 using CommonUtilLib.ThreadSafe;
 
 using Newtonsoft.Json;
@@ -65,7 +67,13 @@ namespace RGBLineCoreLib.Functor
                     },
                     MusicVolume = 0.8f,
                     MaxFrame = GameConfigData.MaxFrameRate.Frame_60,
-                    VSyncCount = 0
+                    VSyncCount = 0,
+                    SpecialKeySetting = new GameConfigData.SpecialKeySet()
+                    {
+                        RedNoteKeyCode_Left = KeyCode.Mouse0,
+                        RedNoteKeyCode_Right = KeyCode.Mouse1,
+                        RedLineCornerNoteKeyCode = KeyCode.Space
+                    }
                 };
                 SaveGameConfigData();
 

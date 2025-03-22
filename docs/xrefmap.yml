@@ -144,12 +144,6 @@ references:
   commentId: T:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
   fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
   nameWithType: GameConfigData.SpecialKeySet
-- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.BannedKeyCodes
-  name: BannedKeyCodes
-  href: api/RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html#RGBLineCoreLib_Data_GameConfigData_SpecialKeySet_BannedKeyCodes
-  commentId: F:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.BannedKeyCodes
-  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.BannedKeyCodes
-  nameWithType: GameConfigData.SpecialKeySet.BannedKeyCodes
 - uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedLineCornerNoteKeyCode
   name: RedLineCornerNoteKeyCode
   href: api/RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html#RGBLineCoreLib_Data_GameConfigData_SpecialKeySet_RedLineCornerNoteKeyCode
@@ -204,6 +198,165 @@ references:
   commentId: F:RGBLineCoreLib.Data.HalfFloatVector2.Y
   fullName: RGBLineCoreLib.Data.HalfFloatVector2.Y
   nameWithType: HalfFloatVector2.Y
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.one
+  name: one
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_one
+  commentId: P:RGBLineCoreLib.Data.HalfFloatVector2.one
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.one
+  nameWithType: HalfFloatVector2.one
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.one*
+  name: one
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_one_
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.one
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.one
+  nameWithType: HalfFloatVector2.one
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Addition(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  name: operator +(HalfFloatVector2, HalfFloatVector2)
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Addition_RGBLineCoreLib_Data_HalfFloatVector2_RGBLineCoreLib_Data_HalfFloatVector2_
+  commentId: M:RGBLineCoreLib.Data.HalfFloatVector2.op_Addition(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  name.vb: +(HalfFloatVector2, HalfFloatVector2)
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator +(RGBLineCoreLib.Data.HalfFloatVector2, RGBLineCoreLib.Data.HalfFloatVector2)
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.+(RGBLineCoreLib.Data.HalfFloatVector2, RGBLineCoreLib.Data.HalfFloatVector2)
+  nameWithType: HalfFloatVector2.operator +(HalfFloatVector2, HalfFloatVector2)
+  nameWithType.vb: HalfFloatVector2.+(HalfFloatVector2, HalfFloatVector2)
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Addition*
+  name: operator +
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Addition_
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.op_Addition
+  isSpec: "True"
+  name.vb: +
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator +
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.+
+  nameWithType: HalfFloatVector2.operator +
+  nameWithType.vb: HalfFloatVector2.+
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Division(RGBLineCoreLib.Data.HalfFloatVector2,System.Single)
+  name: operator /(HalfFloatVector2, float)
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Division_RGBLineCoreLib_Data_HalfFloatVector2_System_Single_
+  commentId: M:RGBLineCoreLib.Data.HalfFloatVector2.op_Division(RGBLineCoreLib.Data.HalfFloatVector2,System.Single)
+  name.vb: /(HalfFloatVector2, Single)
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator /(RGBLineCoreLib.Data.HalfFloatVector2, float)
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2./(RGBLineCoreLib.Data.HalfFloatVector2, Single)
+  nameWithType: HalfFloatVector2.operator /(HalfFloatVector2, float)
+  nameWithType.vb: HalfFloatVector2./(HalfFloatVector2, Single)
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Division*
+  name: operator /
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Division_
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.op_Division
+  isSpec: "True"
+  name.vb: /
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator /
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2./
+  nameWithType: HalfFloatVector2.operator /
+  nameWithType.vb: HalfFloatVector2./
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Equality(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  name: operator ==(HalfFloatVector2, HalfFloatVector2)
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Equality_RGBLineCoreLib_Data_HalfFloatVector2_RGBLineCoreLib_Data_HalfFloatVector2_
+  commentId: M:RGBLineCoreLib.Data.HalfFloatVector2.op_Equality(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  name.vb: =(HalfFloatVector2, HalfFloatVector2)
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator ==(RGBLineCoreLib.Data.HalfFloatVector2, RGBLineCoreLib.Data.HalfFloatVector2)
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.=(RGBLineCoreLib.Data.HalfFloatVector2, RGBLineCoreLib.Data.HalfFloatVector2)
+  nameWithType: HalfFloatVector2.operator ==(HalfFloatVector2, HalfFloatVector2)
+  nameWithType.vb: HalfFloatVector2.=(HalfFloatVector2, HalfFloatVector2)
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Equality*
+  name: operator ==
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Equality_
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.op_Equality
+  isSpec: "True"
+  name.vb: =
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator ==
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.=
+  nameWithType: HalfFloatVector2.operator ==
+  nameWithType.vb: HalfFloatVector2.=
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Inequality(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  name: operator !=(HalfFloatVector2, HalfFloatVector2)
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Inequality_RGBLineCoreLib_Data_HalfFloatVector2_RGBLineCoreLib_Data_HalfFloatVector2_
+  commentId: M:RGBLineCoreLib.Data.HalfFloatVector2.op_Inequality(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  name.vb: <>(HalfFloatVector2, HalfFloatVector2)
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator !=(RGBLineCoreLib.Data.HalfFloatVector2, RGBLineCoreLib.Data.HalfFloatVector2)
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.<>(RGBLineCoreLib.Data.HalfFloatVector2, RGBLineCoreLib.Data.HalfFloatVector2)
+  nameWithType: HalfFloatVector2.operator !=(HalfFloatVector2, HalfFloatVector2)
+  nameWithType.vb: HalfFloatVector2.<>(HalfFloatVector2, HalfFloatVector2)
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Inequality*
+  name: operator !=
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Inequality_
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.op_Inequality
+  isSpec: "True"
+  name.vb: <>
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator !=
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.<>
+  nameWithType: HalfFloatVector2.operator !=
+  nameWithType.vb: HalfFloatVector2.<>
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Multiply(RGBLineCoreLib.Data.HalfFloatVector2,System.Single)
+  name: operator *(HalfFloatVector2, float)
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Multiply_RGBLineCoreLib_Data_HalfFloatVector2_System_Single_
+  commentId: M:RGBLineCoreLib.Data.HalfFloatVector2.op_Multiply(RGBLineCoreLib.Data.HalfFloatVector2,System.Single)
+  name.vb: '*(HalfFloatVector2, Single)'
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator *(RGBLineCoreLib.Data.HalfFloatVector2, float)
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.*(RGBLineCoreLib.Data.HalfFloatVector2, Single)
+  nameWithType: HalfFloatVector2.operator *(HalfFloatVector2, float)
+  nameWithType.vb: HalfFloatVector2.*(HalfFloatVector2, Single)
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Multiply*
+  name: operator *
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Multiply_
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.op_Multiply
+  isSpec: "True"
+  name.vb: '*'
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator *
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.*
+  nameWithType: HalfFloatVector2.operator *
+  nameWithType.vb: HalfFloatVector2.*
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Subtraction(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  name: operator -(HalfFloatVector2, HalfFloatVector2)
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Subtraction_RGBLineCoreLib_Data_HalfFloatVector2_RGBLineCoreLib_Data_HalfFloatVector2_
+  commentId: M:RGBLineCoreLib.Data.HalfFloatVector2.op_Subtraction(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  name.vb: -(HalfFloatVector2, HalfFloatVector2)
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator -(RGBLineCoreLib.Data.HalfFloatVector2, RGBLineCoreLib.Data.HalfFloatVector2)
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.-(RGBLineCoreLib.Data.HalfFloatVector2, RGBLineCoreLib.Data.HalfFloatVector2)
+  nameWithType: HalfFloatVector2.operator -(HalfFloatVector2, HalfFloatVector2)
+  nameWithType.vb: HalfFloatVector2.-(HalfFloatVector2, HalfFloatVector2)
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Subtraction*
+  name: operator -
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Subtraction_
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.op_Subtraction
+  isSpec: "True"
+  name.vb: '-'
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator -
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.-
+  nameWithType: HalfFloatVector2.operator -
+  nameWithType.vb: HalfFloatVector2.-
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_UnaryNegation(RGBLineCoreLib.Data.HalfFloatVector2)
+  name: operator -(HalfFloatVector2)
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_UnaryNegation_RGBLineCoreLib_Data_HalfFloatVector2_
+  commentId: M:RGBLineCoreLib.Data.HalfFloatVector2.op_UnaryNegation(RGBLineCoreLib.Data.HalfFloatVector2)
+  name.vb: -(HalfFloatVector2)
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator -(RGBLineCoreLib.Data.HalfFloatVector2)
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.-(RGBLineCoreLib.Data.HalfFloatVector2)
+  nameWithType: HalfFloatVector2.operator -(HalfFloatVector2)
+  nameWithType.vb: HalfFloatVector2.-(HalfFloatVector2)
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_UnaryNegation*
+  name: operator -
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_UnaryNegation_
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.op_UnaryNegation
+  isSpec: "True"
+  name.vb: '-'
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator -
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.-
+  nameWithType: HalfFloatVector2.operator -
+  nameWithType.vb: HalfFloatVector2.-
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.zero
+  name: zero
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_zero
+  commentId: P:RGBLineCoreLib.Data.HalfFloatVector2.zero
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.zero
+  nameWithType: HalfFloatVector2.zero
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.zero*
+  name: zero
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_zero_
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.zero
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.zero
+  nameWithType: HalfFloatVector2.zero
 - uid: RGBLineCoreLib.Data.RenderStageType
   name: RenderStageType
   href: api/RGBLineCoreLib.Data.RenderStageType.html
@@ -891,19 +1044,6 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.DeterminLine.Dispose
   nameWithType: DeterminLine.Dispose
-- uid: RGBLineCoreLib.Functor.DeterminLine.FixedUpdate
-  name: FixedUpdate()
-  href: api/RGBLineCoreLib.Functor.DeterminLine.html#RGBLineCoreLib_Functor_DeterminLine_FixedUpdate
-  commentId: M:RGBLineCoreLib.Functor.DeterminLine.FixedUpdate
-  fullName: RGBLineCoreLib.Functor.DeterminLine.FixedUpdate()
-  nameWithType: DeterminLine.FixedUpdate()
-- uid: RGBLineCoreLib.Functor.DeterminLine.FixedUpdate*
-  name: FixedUpdate
-  href: api/RGBLineCoreLib.Functor.DeterminLine.html#RGBLineCoreLib_Functor_DeterminLine_FixedUpdate_
-  commentId: Overload:RGBLineCoreLib.Functor.DeterminLine.FixedUpdate
-  isSpec: "True"
-  fullName: RGBLineCoreLib.Functor.DeterminLine.FixedUpdate
-  nameWithType: DeterminLine.FixedUpdate
 - uid: RGBLineCoreLib.Functor.DeterminLine.OnTriggerEnter2D(UnityEngine.Collider2D)
   name: OnTriggerEnter2D(Collider2D)
   href: api/RGBLineCoreLib.Functor.DeterminLine.html#RGBLineCoreLib_Functor_DeterminLine_OnTriggerEnter2D_UnityEngine_Collider2D_
@@ -943,6 +1083,19 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.DeterminLine.StartCheck
   nameWithType: DeterminLine.StartCheck
+- uid: RGBLineCoreLib.Functor.DeterminLine.Update
+  name: Update()
+  href: api/RGBLineCoreLib.Functor.DeterminLine.html#RGBLineCoreLib_Functor_DeterminLine_Update
+  commentId: M:RGBLineCoreLib.Functor.DeterminLine.Update
+  fullName: RGBLineCoreLib.Functor.DeterminLine.Update()
+  nameWithType: DeterminLine.Update()
+- uid: RGBLineCoreLib.Functor.DeterminLine.Update*
+  name: Update
+  href: api/RGBLineCoreLib.Functor.DeterminLine.html#RGBLineCoreLib_Functor_DeterminLine_Update_
+  commentId: Overload:RGBLineCoreLib.Functor.DeterminLine.Update
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.DeterminLine.Update
+  nameWithType: DeterminLine.Update
 - uid: RGBLineCoreLib.Functor.GameConfigDataBuffer
   name: GameConfigDataBuffer
   href: api/RGBLineCoreLib.Functor.GameConfigDataBuffer.html
@@ -3147,6 +3300,32 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Manager.ScoreManager.Awake
   nameWithType: ScoreManager.Awake
+- uid: RGBLineCoreLib.Manager.ScoreManager.BIsGameOver
+  name: BIsGameOver
+  href: api/RGBLineCoreLib.Manager.ScoreManager.html#RGBLineCoreLib_Manager_ScoreManager_BIsGameOver
+  commentId: P:RGBLineCoreLib.Manager.ScoreManager.BIsGameOver
+  fullName: RGBLineCoreLib.Manager.ScoreManager.BIsGameOver
+  nameWithType: ScoreManager.BIsGameOver
+- uid: RGBLineCoreLib.Manager.ScoreManager.BIsGameOver*
+  name: BIsGameOver
+  href: api/RGBLineCoreLib.Manager.ScoreManager.html#RGBLineCoreLib_Manager_ScoreManager_BIsGameOver_
+  commentId: Overload:RGBLineCoreLib.Manager.ScoreManager.BIsGameOver
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Manager.ScoreManager.BIsGameOver
+  nameWithType: ScoreManager.BIsGameOver
+- uid: RGBLineCoreLib.Manager.ScoreManager.Combo
+  name: Combo
+  href: api/RGBLineCoreLib.Manager.ScoreManager.html#RGBLineCoreLib_Manager_ScoreManager_Combo
+  commentId: P:RGBLineCoreLib.Manager.ScoreManager.Combo
+  fullName: RGBLineCoreLib.Manager.ScoreManager.Combo
+  nameWithType: ScoreManager.Combo
+- uid: RGBLineCoreLib.Manager.ScoreManager.Combo*
+  name: Combo
+  href: api/RGBLineCoreLib.Manager.ScoreManager.html#RGBLineCoreLib_Manager_ScoreManager_Combo_
+  commentId: Overload:RGBLineCoreLib.Manager.ScoreManager.Combo
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Manager.ScoreManager.Combo
+  nameWithType: ScoreManager.Combo
 - uid: RGBLineCoreLib.Manager.ScoreManager.CurAudioSourceTime
   name: CurAudioSourceTime
   href: api/RGBLineCoreLib.Manager.ScoreManager.html#RGBLineCoreLib_Manager_ScoreManager_CurAudioSourceTime

@@ -57,7 +57,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: NoteHitJudgeStrandard
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 50
+    startLine: 48
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -84,7 +84,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: MusicVolume
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 58
+    startLine: 56
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -114,7 +114,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: SyncAdjustment
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 59
+    startLine: 57
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -141,7 +141,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: MaxFrame
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 60
+    startLine: 58
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -168,7 +168,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: VSyncCount
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 67
+    startLine: 65
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -198,7 +198,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: SpecialKeySetting
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 68
+    startLine: 66
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data

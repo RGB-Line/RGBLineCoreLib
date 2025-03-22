@@ -27,7 +27,7 @@ namespace RGBLineCoreLib.Manager
         private Stack<Guid> m_noteCandidates = new Stack<Guid>();
         private Dictionary<Guid, Tuple<float, float>> m_longNoteTable = new Dictionary<Guid, Tuple<float, float>>();
 
-        //[SerializeField] private List<KeyCode> m_bannedNoteKeyCode;
+        [SerializeField] private List<KeyCode> m_bannedNoteKeyCode;
 
         private float m_curAudioSourceTime = 0.0f;
 
@@ -35,6 +35,8 @@ namespace RGBLineCoreLib.Manager
 
         private float m_curScore = 0.0f;
         private float m_HP = 1.0f;
+
+        private int m_combo = 0;
 
 
         public void Awake()
@@ -44,6 +46,11 @@ namespace RGBLineCoreLib.Manager
         public void Update()
         {
             if (!m_bisStartScoring)
+            {
+                return;
+            }
+
+            if(BIsGameOver)
             {
                 return;
             }
@@ -95,6 +102,7 @@ namespace RGBLineCoreLib.Manager
                 {
                     IRedLineCornerNote targetNoteItem = NoteManager.Instance.GetRedLineCornerNote(targetNoteID);
                     m_curScore += GetSingleNoteScore(GetYPos2Time(targetNoteItem.Transform.position.y), m_curAudioSourceTime);
+                    m_combo++;
 
                     m_HP += 0.1f;
 
@@ -112,6 +120,7 @@ namespace RGBLineCoreLib.Manager
                                 {
                                     INoteItem targetNoteItem = NoteManager.Instance.GetNoteItem(targetNoteID);
                                     m_curScore += GetSingleNoteScore(GetYPos2Time(targetNoteItem.RedAndBlueNote.Transform.position.y), m_curAudioSourceTime);
+                                    m_combo++;
 
                                     m_HP += 0.1f;
 
@@ -138,6 +147,7 @@ namespace RGBLineCoreLib.Manager
                                 {
                                     INoteItem targetNoteItem = NoteManager.Instance.GetNoteItem(targetNoteID);
                                     m_curScore += GetSingleNoteScore(GetYPos2Time(targetNoteItem.RedAndBlueNote.Transform.position.y), m_curAudioSourceTime);
+                                    m_combo++;
 
                                     m_HP += 0.1f;
 
@@ -183,6 +193,25 @@ namespace RGBLineCoreLib.Manager
             }
         }
 
+        public bool BIsGameOver
+        {
+            get
+            {
+                return m_HP <= 0.0f;
+            }
+        }
+
+        /// <summary>
+        /// 현재 시점에서 달성된 Combo
+        /// </summary>
+        public int Combo
+        {
+            get
+            {
+                return m_combo;
+            }
+        }
+
         internal bool BIsGreenRegion
         {
             set
@@ -217,6 +246,7 @@ namespace RGBLineCoreLib.Manager
             if (m_longNoteTable.ContainsKey(noteID))
             {
                 m_curScore += GetSingleNoteScore(m_longNoteTable[noteID].Item1, m_longNoteTable[noteID].Item2);
+                m_combo++;
 
                 m_HP += 0.1f;
 
@@ -228,6 +258,7 @@ namespace RGBLineCoreLib.Manager
                 if (noteCandidateBuffer.Contains(noteID))
                 {
                     m_HP -= 0.1f;
+                    m_combo = 0;
 
                     noteCandidateBuffer.Remove(noteID);
 
@@ -246,11 +277,13 @@ namespace RGBLineCoreLib.Manager
 
         private int GetCurPressedBasicNoteKeyCount()
         {
+            Debug.Log("GetCurPressedBasicNoteKeyCount()");
+
             IEnumerable<KeyCode> keyCodes = Enum.GetValues(typeof(KeyCode)).Cast<KeyCode>();
 
             List<KeyCode> keyCodeBuffer = keyCodes.ToList();
-            KeyCode[] bannedNoteKeyCodes = GameConfigDataBuffer.Instance.ConfigData.SpecialKeySetting.BannedKeyCodes;
-            foreach (KeyCode keyCode in bannedNoteKeyCodes)
+
+            foreach (KeyCode keyCode in m_bannedNoteKeyCode)
             {
                 if (keyCodeBuffer.Contains(keyCode))
                 {
@@ -261,7 +294,6 @@ namespace RGBLineCoreLib.Manager
             keyCodes = keyCodeBuffer.Cast<KeyCode>();
 
             int curPressedKeyCount = keyCodes.Count(keyCode => Input.GetKey(keyCode));
-
             return curPressedKeyCount;
         }
         private int GetFreshPressedBasicNoteKeyCount()
@@ -269,8 +301,7 @@ namespace RGBLineCoreLib.Manager
             IEnumerable<KeyCode> keyCodes = Enum.GetValues(typeof(KeyCode)).Cast<KeyCode>();
 
             List<KeyCode> keyCodeBuffer = keyCodes.ToList();
-            KeyCode[] bannedNoteKeyCodes = GameConfigDataBuffer.Instance.ConfigData.SpecialKeySetting.BannedKeyCodes;
-            foreach (KeyCode keyCode in bannedNoteKeyCodes)
+            foreach (KeyCode keyCode in m_bannedNoteKeyCode)
             {
                 if (keyCodeBuffer.Contains(keyCode))
                 {

@@ -5,7 +5,6 @@ items:
   id: GameConfigData.SpecialKeySet
   parent: RGBLineCoreLib.Data
   children:
-  - RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.BannedKeyCodes
   - RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedLineCornerNoteKeyCode
   - RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Left
   - RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Right
@@ -47,33 +46,6 @@ items:
   - type: System.SerializableAttribute
     ctor: System.SerializableAttribute.#ctor
     arguments: []
-- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.BannedKeyCodes
-  commentId: F:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.BannedKeyCodes
-  id: BannedKeyCodes
-  parent: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
-  langs:
-  - csharp
-  - vb
-  name: BannedKeyCodes
-  nameWithType: GameConfigData.SpecialKeySet.BannedKeyCodes
-  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.BannedKeyCodes
-  type: Field
-  source:
-    remote:
-      path: Public/Data/Configs/GameConfigData.cs
-      branch: master
-      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: BannedKeyCodes
-    path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 41
-  assemblies:
-  - RGBLineCoreLib
-  namespace: RGBLineCoreLib.Data
-  syntax:
-    content: public KeyCode[] BannedKeyCodes
-    return:
-      type: UnityEngine.KeyCode[]
-    content.vb: Public BannedKeyCodes As KeyCode()
 - uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Left
   commentId: F:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Left
   id: RedNoteKeyCode_Left
@@ -92,7 +64,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: RedNoteKeyCode_Left
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 43
+    startLine: 41
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -119,7 +91,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: RedNoteKeyCode_Right
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 44
+    startLine: 42
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -146,7 +118,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: RedLineCornerNoteKeyCode
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 46
+    startLine: 44
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -395,26 +367,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: UnityEngine.KeyCode[]
-  isExternal: true
-  name: KeyCode[]
-  nameWithType: KeyCode[]
-  fullName: UnityEngine.KeyCode[]
-  nameWithType.vb: KeyCode()
-  fullName.vb: UnityEngine.KeyCode()
-  name.vb: KeyCode()
-  spec.csharp:
-  - uid: UnityEngine.KeyCode
-    name: KeyCode
-    isExternal: true
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - uid: UnityEngine.KeyCode
-    name: KeyCode
-    isExternal: true
-  - name: (
-  - name: )
 - uid: UnityEngine.KeyCode
   commentId: T:UnityEngine.KeyCode
   parent: UnityEngine

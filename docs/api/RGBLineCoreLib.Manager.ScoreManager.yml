@@ -6,6 +6,8 @@ items:
   parent: RGBLineCoreLib.Manager
   children:
   - RGBLineCoreLib.Manager.ScoreManager.Awake
+  - RGBLineCoreLib.Manager.ScoreManager.BIsGameOver
+  - RGBLineCoreLib.Manager.ScoreManager.Combo
   - RGBLineCoreLib.Manager.ScoreManager.CurAudioSourceTime
   - RGBLineCoreLib.Manager.ScoreManager.CurScore
   - RGBLineCoreLib.Manager.ScoreManager.Dispose(System.Boolean)
@@ -184,7 +186,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Awake
     path: ../Public/Manager/MainGame/ScoreManager.cs
-    startLine: 39
+    startLine: 41
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -210,7 +212,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Update
     path: ../Public/Manager/MainGame/ScoreManager.cs
-    startLine: 43
+    startLine: 45
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -236,7 +238,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: CurAudioSourceTime
     path: ../Public/Manager/MainGame/ScoreManager.cs
-    startLine: 162
+    startLine: 172
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -265,7 +267,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: CurScore
     path: ../Public/Manager/MainGame/ScoreManager.cs
-    startLine: 170
+    startLine: 180
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -294,7 +296,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: HP
     path: ../Public/Manager/MainGame/ScoreManager.cs
-    startLine: 177
+    startLine: 187
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -305,6 +307,66 @@ items:
       type: System.Single
     content.vb: Public ReadOnly Property HP As Single
   overload: RGBLineCoreLib.Manager.ScoreManager.HP*
+- uid: RGBLineCoreLib.Manager.ScoreManager.BIsGameOver
+  commentId: P:RGBLineCoreLib.Manager.ScoreManager.BIsGameOver
+  id: BIsGameOver
+  parent: RGBLineCoreLib.Manager.ScoreManager
+  langs:
+  - csharp
+  - vb
+  name: BIsGameOver
+  nameWithType: ScoreManager.BIsGameOver
+  fullName: RGBLineCoreLib.Manager.ScoreManager.BIsGameOver
+  type: Property
+  source:
+    remote:
+      path: Public/Manager/MainGame/ScoreManager.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: BIsGameOver
+    path: ../Public/Manager/MainGame/ScoreManager.cs
+    startLine: 195
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Manager
+  syntax:
+    content: public bool BIsGameOver { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property BIsGameOver As Boolean
+  overload: RGBLineCoreLib.Manager.ScoreManager.BIsGameOver*
+- uid: RGBLineCoreLib.Manager.ScoreManager.Combo
+  commentId: P:RGBLineCoreLib.Manager.ScoreManager.Combo
+  id: Combo
+  parent: RGBLineCoreLib.Manager.ScoreManager
+  langs:
+  - csharp
+  - vb
+  name: Combo
+  nameWithType: ScoreManager.Combo
+  fullName: RGBLineCoreLib.Manager.ScoreManager.Combo
+  type: Property
+  source:
+    remote:
+      path: Public/Manager/MainGame/ScoreManager.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Combo
+    path: ../Public/Manager/MainGame/ScoreManager.cs
+    startLine: 206
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Manager
+  summary: 현재 시점에서 달성된 Combo
+  example: []
+  syntax:
+    content: public int Combo { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Combo As Integer
+  overload: RGBLineCoreLib.Manager.ScoreManager.Combo*
 - uid: RGBLineCoreLib.Manager.ScoreManager.StartScoring
   commentId: M:RGBLineCoreLib.Manager.ScoreManager.StartScoring
   id: StartScoring
@@ -323,7 +385,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: StartScoring
     path: ../Public/Manager/MainGame/ScoreManager.cs
-    startLine: 203
+    startLine: 232
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -351,7 +413,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Dispose
     path: ../Public/Manager/MainGame/ScoreManager.cs
-    startLine: 406
+    startLine: 437
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -5011,6 +5073,40 @@ references:
   name: HP
   nameWithType: ScoreManager.HP
   fullName: RGBLineCoreLib.Manager.ScoreManager.HP
+- uid: RGBLineCoreLib.Manager.ScoreManager.BIsGameOver*
+  commentId: Overload:RGBLineCoreLib.Manager.ScoreManager.BIsGameOver
+  href: RGBLineCoreLib.Manager.ScoreManager.html#RGBLineCoreLib_Manager_ScoreManager_BIsGameOver
+  name: BIsGameOver
+  nameWithType: ScoreManager.BIsGameOver
+  fullName: RGBLineCoreLib.Manager.ScoreManager.BIsGameOver
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: RGBLineCoreLib.Manager.ScoreManager.Combo*
+  commentId: Overload:RGBLineCoreLib.Manager.ScoreManager.Combo
+  href: RGBLineCoreLib.Manager.ScoreManager.html#RGBLineCoreLib_Manager_ScoreManager_Combo
+  name: Combo
+  nameWithType: ScoreManager.Combo
+  fullName: RGBLineCoreLib.Manager.ScoreManager.Combo
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
 - uid: RGBLineCoreLib.Manager.ScoreManager.StartScoring*
   commentId: Overload:RGBLineCoreLib.Manager.ScoreManager.StartScoring
   href: RGBLineCoreLib.Manager.ScoreManager.html#RGBLineCoreLib_Manager_ScoreManager_StartScoring
@@ -5054,17 +5150,6 @@ references:
   name: Dispose
   nameWithType: ScoreManager.Dispose
   fullName: RGBLineCoreLib.Manager.ScoreManager.Dispose
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
 - uid: CommonUtilLib.ThreadSafe.SingleTonForGameObject`1.Dispose(System.Boolean)
   commentId: M:CommonUtilLib.ThreadSafe.SingleTonForGameObject`1.Dispose(System.Boolean)
   isExternal: true

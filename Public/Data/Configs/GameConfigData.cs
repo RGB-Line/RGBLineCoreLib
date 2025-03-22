@@ -39,8 +39,6 @@ namespace RGBLineCoreLib.Data
         }
         [Serializable] public struct SpecialKeySet
         {
-            public KeyCode[] BannedKeyCodes;
-
             public KeyCode RedNoteKeyCode_Left;
             public KeyCode RedNoteKeyCode_Right;
 

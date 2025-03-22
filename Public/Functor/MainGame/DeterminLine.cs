@@ -29,8 +29,13 @@ namespace RGBLineCoreLib.Functor
         {
             SetInstance(this);
         }
-        public void FixedUpdate()
+        public void Update()
         {
+            if(!m_bisStartCheck)
+            {
+                return;
+            }
+
             Guid curRegionID = RegionManager.Instance.GetRegionIDFromYPos(transform.position.y);
             if (curRegionID != Guid.Empty && StageDataInterface.RegionDataInterface.GetRegionData(curRegionID).CurColorType == StageData.RegionData.ColorType.Green)
             {

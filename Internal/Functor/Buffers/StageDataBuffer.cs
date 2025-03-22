@@ -31,10 +31,7 @@ namespace RGBLineCoreLib.Functor
             }
             set
             {
-                if(value.BIsValid())
-                {
-                    m_stageData = value;
-                }
+                m_stageData = value;
             }
         }
 
@@ -44,11 +41,19 @@ namespace RGBLineCoreLib.Functor
 
             if(!File.Exists(path))
             {
+                UnityEngine.Debug.LogError("StageDataBuffer::TryLoadStageData - File not found");
                 return false;
             }
 
-            string jsonData = File.ReadAllText(path);
-            StageData = JsonConvert.DeserializeObject<StageData>(jsonData);
+            try
+            {
+                string jsonData = File.ReadAllText(path);
+                StageData = JsonConvert.DeserializeObject<StageData>(jsonData);
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
 
             return true;
         }

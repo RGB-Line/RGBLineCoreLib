@@ -31,10 +31,7 @@ namespace RGBLineCoreLib.Functor
             }
             set
             {
-                if (value.BIsValid())
-                {
-                    m_stageMetadata = value;
-                }
+                m_stageMetadata = value;
             }
         }
 

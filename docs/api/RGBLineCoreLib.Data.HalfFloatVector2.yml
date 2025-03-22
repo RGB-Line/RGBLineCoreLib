@@ -7,6 +7,15 @@ items:
   children:
   - RGBLineCoreLib.Data.HalfFloatVector2.X
   - RGBLineCoreLib.Data.HalfFloatVector2.Y
+  - RGBLineCoreLib.Data.HalfFloatVector2.one
+  - RGBLineCoreLib.Data.HalfFloatVector2.op_Addition(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  - RGBLineCoreLib.Data.HalfFloatVector2.op_Division(RGBLineCoreLib.Data.HalfFloatVector2,System.Single)
+  - RGBLineCoreLib.Data.HalfFloatVector2.op_Equality(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  - RGBLineCoreLib.Data.HalfFloatVector2.op_Inequality(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  - RGBLineCoreLib.Data.HalfFloatVector2.op_Multiply(RGBLineCoreLib.Data.HalfFloatVector2,System.Single)
+  - RGBLineCoreLib.Data.HalfFloatVector2.op_Subtraction(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  - RGBLineCoreLib.Data.HalfFloatVector2.op_UnaryNegation(RGBLineCoreLib.Data.HalfFloatVector2)
+  - RGBLineCoreLib.Data.HalfFloatVector2.zero
   langs:
   - csharp
   - vb
@@ -21,7 +30,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: HalfFloatVector2
     path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -53,7 +62,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: X
     path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -80,7 +89,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Y
     path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -89,6 +98,314 @@ items:
     return:
       type: System.Int32
     content.vb: Public Y As Integer
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.one
+  commentId: P:RGBLineCoreLib.Data.HalfFloatVector2.one
+  id: one
+  parent: RGBLineCoreLib.Data.HalfFloatVector2
+  langs:
+  - csharp
+  - vb
+  name: one
+  nameWithType: HalfFloatVector2.one
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.one
+  type: Property
+  source:
+    remote:
+      path: Public/Data/DataSpecs/HalfFloatVector2.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: one
+    path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
+    startLine: 16
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: public static HalfFloatVector2 one { get; }
+    parameters: []
+    return:
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    content.vb: Public Shared ReadOnly Property one As HalfFloatVector2
+  overload: RGBLineCoreLib.Data.HalfFloatVector2.one*
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.zero
+  commentId: P:RGBLineCoreLib.Data.HalfFloatVector2.zero
+  id: zero
+  parent: RGBLineCoreLib.Data.HalfFloatVector2
+  langs:
+  - csharp
+  - vb
+  name: zero
+  nameWithType: HalfFloatVector2.zero
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.zero
+  type: Property
+  source:
+    remote:
+      path: Public/Data/DataSpecs/HalfFloatVector2.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: zero
+    path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
+    startLine: 27
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: public static HalfFloatVector2 zero { get; }
+    parameters: []
+    return:
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    content.vb: Public Shared ReadOnly Property zero As HalfFloatVector2
+  overload: RGBLineCoreLib.Data.HalfFloatVector2.zero*
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Equality(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  commentId: M:RGBLineCoreLib.Data.HalfFloatVector2.op_Equality(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  id: op_Equality(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  parent: RGBLineCoreLib.Data.HalfFloatVector2
+  langs:
+  - csharp
+  - vb
+  name: operator ==(HalfFloatVector2, HalfFloatVector2)
+  nameWithType: HalfFloatVector2.operator ==(HalfFloatVector2, HalfFloatVector2)
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator ==(RGBLineCoreLib.Data.HalfFloatVector2, RGBLineCoreLib.Data.HalfFloatVector2)
+  type: Operator
+  source:
+    remote:
+      path: Public/Data/DataSpecs/HalfFloatVector2.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: op_Equality
+    path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
+    startLine: 39
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: public static bool operator ==(HalfFloatVector2 vector1, HalfFloatVector2 vector2)
+    parameters:
+    - id: vector1
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    - id: vector2
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(vector1 As HalfFloatVector2, vector2 As HalfFloatVector2) As Boolean
+  overload: RGBLineCoreLib.Data.HalfFloatVector2.op_Equality*
+  nameWithType.vb: HalfFloatVector2.=(HalfFloatVector2, HalfFloatVector2)
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.=(RGBLineCoreLib.Data.HalfFloatVector2, RGBLineCoreLib.Data.HalfFloatVector2)
+  name.vb: =(HalfFloatVector2, HalfFloatVector2)
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Inequality(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  commentId: M:RGBLineCoreLib.Data.HalfFloatVector2.op_Inequality(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  id: op_Inequality(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  parent: RGBLineCoreLib.Data.HalfFloatVector2
+  langs:
+  - csharp
+  - vb
+  name: operator !=(HalfFloatVector2, HalfFloatVector2)
+  nameWithType: HalfFloatVector2.operator !=(HalfFloatVector2, HalfFloatVector2)
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator !=(RGBLineCoreLib.Data.HalfFloatVector2, RGBLineCoreLib.Data.HalfFloatVector2)
+  type: Operator
+  source:
+    remote:
+      path: Public/Data/DataSpecs/HalfFloatVector2.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: op_Inequality
+    path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
+    startLine: 43
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: public static bool operator !=(HalfFloatVector2 vector1, HalfFloatVector2 vector2)
+    parameters:
+    - id: vector1
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    - id: vector2
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(vector1 As HalfFloatVector2, vector2 As HalfFloatVector2) As Boolean
+  overload: RGBLineCoreLib.Data.HalfFloatVector2.op_Inequality*
+  nameWithType.vb: HalfFloatVector2.<>(HalfFloatVector2, HalfFloatVector2)
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.<>(RGBLineCoreLib.Data.HalfFloatVector2, RGBLineCoreLib.Data.HalfFloatVector2)
+  name.vb: <>(HalfFloatVector2, HalfFloatVector2)
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_UnaryNegation(RGBLineCoreLib.Data.HalfFloatVector2)
+  commentId: M:RGBLineCoreLib.Data.HalfFloatVector2.op_UnaryNegation(RGBLineCoreLib.Data.HalfFloatVector2)
+  id: op_UnaryNegation(RGBLineCoreLib.Data.HalfFloatVector2)
+  parent: RGBLineCoreLib.Data.HalfFloatVector2
+  langs:
+  - csharp
+  - vb
+  name: operator -(HalfFloatVector2)
+  nameWithType: HalfFloatVector2.operator -(HalfFloatVector2)
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator -(RGBLineCoreLib.Data.HalfFloatVector2)
+  type: Operator
+  source:
+    remote:
+      path: Public/Data/DataSpecs/HalfFloatVector2.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: op_UnaryNegation
+    path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
+    startLine: 48
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: public static HalfFloatVector2 operator -(HalfFloatVector2 vector)
+    parameters:
+    - id: vector
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    return:
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    content.vb: Public Shared Operator -(vector As HalfFloatVector2) As HalfFloatVector2
+  overload: RGBLineCoreLib.Data.HalfFloatVector2.op_UnaryNegation*
+  nameWithType.vb: HalfFloatVector2.-(HalfFloatVector2)
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.-(RGBLineCoreLib.Data.HalfFloatVector2)
+  name.vb: -(HalfFloatVector2)
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Addition(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  commentId: M:RGBLineCoreLib.Data.HalfFloatVector2.op_Addition(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  id: op_Addition(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  parent: RGBLineCoreLib.Data.HalfFloatVector2
+  langs:
+  - csharp
+  - vb
+  name: operator +(HalfFloatVector2, HalfFloatVector2)
+  nameWithType: HalfFloatVector2.operator +(HalfFloatVector2, HalfFloatVector2)
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator +(RGBLineCoreLib.Data.HalfFloatVector2, RGBLineCoreLib.Data.HalfFloatVector2)
+  type: Operator
+  source:
+    remote:
+      path: Public/Data/DataSpecs/HalfFloatVector2.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: op_Addition
+    path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
+    startLine: 57
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: public static HalfFloatVector2 operator +(HalfFloatVector2 vector1, HalfFloatVector2 vector2)
+    parameters:
+    - id: vector1
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    - id: vector2
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    return:
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    content.vb: Public Shared Operator +(vector1 As HalfFloatVector2, vector2 As HalfFloatVector2) As HalfFloatVector2
+  overload: RGBLineCoreLib.Data.HalfFloatVector2.op_Addition*
+  nameWithType.vb: HalfFloatVector2.+(HalfFloatVector2, HalfFloatVector2)
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.+(RGBLineCoreLib.Data.HalfFloatVector2, RGBLineCoreLib.Data.HalfFloatVector2)
+  name.vb: +(HalfFloatVector2, HalfFloatVector2)
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Subtraction(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  commentId: M:RGBLineCoreLib.Data.HalfFloatVector2.op_Subtraction(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  id: op_Subtraction(RGBLineCoreLib.Data.HalfFloatVector2,RGBLineCoreLib.Data.HalfFloatVector2)
+  parent: RGBLineCoreLib.Data.HalfFloatVector2
+  langs:
+  - csharp
+  - vb
+  name: operator -(HalfFloatVector2, HalfFloatVector2)
+  nameWithType: HalfFloatVector2.operator -(HalfFloatVector2, HalfFloatVector2)
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator -(RGBLineCoreLib.Data.HalfFloatVector2, RGBLineCoreLib.Data.HalfFloatVector2)
+  type: Operator
+  source:
+    remote:
+      path: Public/Data/DataSpecs/HalfFloatVector2.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: op_Subtraction
+    path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
+    startLine: 65
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: public static HalfFloatVector2 operator -(HalfFloatVector2 vector1, HalfFloatVector2 vector2)
+    parameters:
+    - id: vector1
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    - id: vector2
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    return:
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    content.vb: Public Shared Operator -(vector1 As HalfFloatVector2, vector2 As HalfFloatVector2) As HalfFloatVector2
+  overload: RGBLineCoreLib.Data.HalfFloatVector2.op_Subtraction*
+  nameWithType.vb: HalfFloatVector2.-(HalfFloatVector2, HalfFloatVector2)
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.-(RGBLineCoreLib.Data.HalfFloatVector2, RGBLineCoreLib.Data.HalfFloatVector2)
+  name.vb: -(HalfFloatVector2, HalfFloatVector2)
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Multiply(RGBLineCoreLib.Data.HalfFloatVector2,System.Single)
+  commentId: M:RGBLineCoreLib.Data.HalfFloatVector2.op_Multiply(RGBLineCoreLib.Data.HalfFloatVector2,System.Single)
+  id: op_Multiply(RGBLineCoreLib.Data.HalfFloatVector2,System.Single)
+  parent: RGBLineCoreLib.Data.HalfFloatVector2
+  langs:
+  - csharp
+  - vb
+  name: operator *(HalfFloatVector2, float)
+  nameWithType: HalfFloatVector2.operator *(HalfFloatVector2, float)
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator *(RGBLineCoreLib.Data.HalfFloatVector2, float)
+  type: Operator
+  source:
+    remote:
+      path: Public/Data/DataSpecs/HalfFloatVector2.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: op_Multiply
+    path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
+    startLine: 73
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: public static HalfFloatVector2 operator *(HalfFloatVector2 vector, float scalar)
+    parameters:
+    - id: vector
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    - id: scalar
+      type: System.Single
+    return:
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    content.vb: Public Shared Operator *(vector As HalfFloatVector2, scalar As Single) As HalfFloatVector2
+  overload: RGBLineCoreLib.Data.HalfFloatVector2.op_Multiply*
+  nameWithType.vb: HalfFloatVector2.*(HalfFloatVector2, Single)
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.*(RGBLineCoreLib.Data.HalfFloatVector2, Single)
+  name.vb: '*(HalfFloatVector2, Single)'
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Division(RGBLineCoreLib.Data.HalfFloatVector2,System.Single)
+  commentId: M:RGBLineCoreLib.Data.HalfFloatVector2.op_Division(RGBLineCoreLib.Data.HalfFloatVector2,System.Single)
+  id: op_Division(RGBLineCoreLib.Data.HalfFloatVector2,System.Single)
+  parent: RGBLineCoreLib.Data.HalfFloatVector2
+  langs:
+  - csharp
+  - vb
+  name: operator /(HalfFloatVector2, float)
+  nameWithType: HalfFloatVector2.operator /(HalfFloatVector2, float)
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator /(RGBLineCoreLib.Data.HalfFloatVector2, float)
+  type: Operator
+  source:
+    remote:
+      path: Public/Data/DataSpecs/HalfFloatVector2.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: op_Division
+    path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
+    startLine: 81
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: public static HalfFloatVector2 operator /(HalfFloatVector2 vector, float scalar)
+    parameters:
+    - id: vector
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    - id: scalar
+      type: System.Single
+    return:
+      type: RGBLineCoreLib.Data.HalfFloatVector2
+    content.vb: Public Shared Operator /(vector As HalfFloatVector2, scalar As Single) As HalfFloatVector2
+  overload: RGBLineCoreLib.Data.HalfFloatVector2.op_Division*
+  nameWithType.vb: HalfFloatVector2./(HalfFloatVector2, Single)
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2./(RGBLineCoreLib.Data.HalfFloatVector2, Single)
+  name.vb: /(HalfFloatVector2, Single)
 references:
 - uid: RGBLineCoreLib.Data
   commentId: N:RGBLineCoreLib.Data
@@ -351,3 +668,138 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.one*
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.one
+  href: RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_one
+  name: one
+  nameWithType: HalfFloatVector2.one
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.one
+- uid: RGBLineCoreLib.Data.HalfFloatVector2
+  commentId: T:RGBLineCoreLib.Data.HalfFloatVector2
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.HalfFloatVector2.html
+  name: HalfFloatVector2
+  nameWithType: HalfFloatVector2
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.zero*
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.zero
+  href: RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_zero
+  name: zero
+  nameWithType: HalfFloatVector2.zero
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.zero
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Equality*
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.op_Equality
+  href: RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Equality_RGBLineCoreLib_Data_HalfFloatVector2_RGBLineCoreLib_Data_HalfFloatVector2_
+  name: operator ==
+  nameWithType: HalfFloatVector2.operator ==
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator ==
+  nameWithType.vb: HalfFloatVector2.=
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Equality*
+    name: ==
+    href: RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Equality_RGBLineCoreLib_Data_HalfFloatVector2_RGBLineCoreLib_Data_HalfFloatVector2_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Inequality*
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.op_Inequality
+  href: RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Inequality_RGBLineCoreLib_Data_HalfFloatVector2_RGBLineCoreLib_Data_HalfFloatVector2_
+  name: operator !=
+  nameWithType: HalfFloatVector2.operator !=
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator !=
+  nameWithType.vb: HalfFloatVector2.<>
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Inequality*
+    name: '!='
+    href: RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Inequality_RGBLineCoreLib_Data_HalfFloatVector2_RGBLineCoreLib_Data_HalfFloatVector2_
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_UnaryNegation*
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.op_UnaryNegation
+  href: RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_UnaryNegation_RGBLineCoreLib_Data_HalfFloatVector2_
+  name: operator -
+  nameWithType: HalfFloatVector2.operator -
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator -
+  nameWithType.vb: HalfFloatVector2.-
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: RGBLineCoreLib.Data.HalfFloatVector2.op_UnaryNegation*
+    name: '-'
+    href: RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_UnaryNegation_RGBLineCoreLib_Data_HalfFloatVector2_
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Addition*
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.op_Addition
+  href: RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Addition_RGBLineCoreLib_Data_HalfFloatVector2_RGBLineCoreLib_Data_HalfFloatVector2_
+  name: operator +
+  nameWithType: HalfFloatVector2.operator +
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator +
+  nameWithType.vb: HalfFloatVector2.+
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.+
+  name.vb: +
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Addition*
+    name: +
+    href: RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Addition_RGBLineCoreLib_Data_HalfFloatVector2_RGBLineCoreLib_Data_HalfFloatVector2_
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Subtraction*
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.op_Subtraction
+  href: RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Subtraction_RGBLineCoreLib_Data_HalfFloatVector2_RGBLineCoreLib_Data_HalfFloatVector2_
+  name: operator -
+  nameWithType: HalfFloatVector2.operator -
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator -
+  nameWithType.vb: HalfFloatVector2.-
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.-
+  name.vb: '-'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Subtraction*
+    name: '-'
+    href: RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Subtraction_RGBLineCoreLib_Data_HalfFloatVector2_RGBLineCoreLib_Data_HalfFloatVector2_
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Multiply*
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.op_Multiply
+  href: RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Multiply_RGBLineCoreLib_Data_HalfFloatVector2_System_Single_
+  name: operator *
+  nameWithType: HalfFloatVector2.operator *
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator *
+  nameWithType.vb: HalfFloatVector2.*
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.*
+  name.vb: '*'
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Multiply*
+    name: '*'
+    href: RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Multiply_RGBLineCoreLib_Data_HalfFloatVector2_System_Single_
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Division*
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.op_Division
+  href: RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Division_RGBLineCoreLib_Data_HalfFloatVector2_System_Single_
+  name: operator /
+  nameWithType: HalfFloatVector2.operator /
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.operator /
+  nameWithType.vb: HalfFloatVector2./
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2./
+  name.vb: /
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: RGBLineCoreLib.Data.HalfFloatVector2.op_Division*
+    name: /
+    href: RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_op_Division_RGBLineCoreLib_Data_HalfFloatVector2_System_Single_
