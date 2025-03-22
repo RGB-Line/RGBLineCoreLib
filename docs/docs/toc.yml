@@ -1,4 +1,8 @@
-- name: Introduction
-  href: introduction.md
 - name: Getting Started
   href: getting-started.md
+- name: Main Game, Editor Common Dev Manual
+  href: MainGame_Editor_CommonDevManual.md
+- name: Main Game Dev Manual
+  href: MainGameDevManual.md
+- name: Editor Dev Manual
+  href: EditorDevManual.md

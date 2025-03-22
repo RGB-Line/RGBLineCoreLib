@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Getting Started </title>
+      <title>Main Game Dev Manual </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Getting Started ">
+      <meta name="title" content="Main Game Dev Manual ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/docs/docs/getting-started.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/docs/docs/MainGameDevManual.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,27 +85,20 @@
         </div>
 
         <article data-uid="">
-<h1 id="getting-started">Getting Started</h1>
+<h1 id="main-game-dev-manual">Main Game Dev Manual</h1>
 
-<p>본 라이브러리를 활용하기 위해서는 다음의 단계를 따르는 것이 좋다</p>
-<ol>
-<li>Dependency에 해당하는 dll을 구해 Unity Project에 Import한다</li>
-<li><code>RGBLineCoreLib.dll</code>을 Unity Project에 Import한다</li>
-</ol>
-<p>dll을 plugin으로서 Unity Project에 Import할 때에는 <a href="https://docs.unity3d.com/6000.0/Documentation/Manual/plug-ins.html">Unity의 &quot;Integrating third-party code libraries (plug-ins)&quot; 문서</a>에 따라 Assets 폴더 아래에 Plugins 폴더를 만든 뒤, Pligins 아래에 모든 dll을 두는 것이 좋다</p>
-<p>RGBLineCoreLib의 Dependency 목록은 다음과 같다</p>
-<pre><code>UnityEngine.dll
-CommonUtilLib.dll
-Newtonsoft.Json.dll
-</code></pre>
-<p>이 중, <code>UnityEngine.dll</code>은 따로 Import할 필요 없으며, <code>CommonUtilLib.dll</code>은 다음의 <a href="https://github.com/GameProj-Forgotten/CommonUtilLib/releases">CommonUtilLib Github Repo Release Page</a>에서 구할 수 있는 최신의 것을 사용하면 된다</p>
-<p><code>Newtonsoft.Json.dll</code>은 <a href="https://www.newtonsoft.com/json">Newtonsofe Homepage</a>에서 다운로드 받으면 될 것이다</p>
-<p><code>RGBLineCoreLib.dll</code>과 <code>RGBLineCoreLib_ForEditor.dll</code>은 <a href="https://github.com/RGB-Line/RGBLineCoreLib/releases">RGBLineCoreLib Github Repo Release Page</a>에서 구할 수 있는 최신의 것을 사용하면 된다</p>
+<p>Main Game의 경우 Lobby에서는 <code>StageMetadata</code>, 주 Game Screen에서는 <code>StageData</code>를 주로 사용하게 된다</p>
+<h2 id="lobby에서">Lobby에서</h2>
+<p>Lobby에서는 음악을 바꾸고, 같은 음악 내에서도 난이도를 바꿀 때 모두 새로운 <code>StageMetadata</code>를 Load하고 기존의 것을 Release해줘야만 한다</p>
+<p><code>StageMetadata</code>의 Load/Release 방법과 바람직한 Coding Style을 <u><em><strong>Main Game, Editor Common Dev Manual</strong></em></u>에서 확인하길 바란다</p>
+<h2 id="주-game-screen에서">주 Game Screen에서</h2>
+<p>주 Game Screen의 경우 Lobby로부터 <code>StageLoadInfoDTO</code>를 전달받아 이를 바탕으로 <code>StageData</code>를 Load하고 Region, Line, Note의 Prop들을 Spawn하게 된다. 그리고 모종의 이유로 Game Over/Game End가 될 경우 Prop들을 Despawn하고 그 다음으로 <code>StageData</code>를 Release하게 될 것이다</p>
+<p><code>StageData</code>의 Load/Release 그리고 Region, Line, Note Prop들의 Spawn/Despawn 방법과 바람직한 Coding Style을 <u><em><strong>Main Game, Editor Common Dev Manual</strong></em></u>에서 확인하길 바란다</p>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/docs/docs/getting-started.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/docs/docs/MainGameDevManual.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
