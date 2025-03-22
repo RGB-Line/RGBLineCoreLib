@@ -2572,6 +2572,19 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.StageMetadataInterface.BIsStageMetadataValid
   nameWithType: StageMetadataInterface.BIsStageMetadataValid
+- uid: RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata
+  name: DisposeStageMetadata()
+  href: api/RGBLineCoreLib.Functor.StageMetadataInterface.html#RGBLineCoreLib_Functor_StageMetadataInterface_DisposeStageMetadata
+  commentId: M:RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata
+  fullName: RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata()
+  nameWithType: StageMetadataInterface.DisposeStageMetadata()
+- uid: RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata*
+  name: DisposeStageMetadata
+  href: api/RGBLineCoreLib.Functor.StageMetadataInterface.html#RGBLineCoreLib_Functor_StageMetadataInterface_DisposeStageMetadata_
+  commentId: Overload:RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata
+  nameWithType: StageMetadataInterface.DisposeStageMetadata
 - uid: RGBLineCoreLib.Functor.StageMetadataInterface.GetStageMetadata
   name: GetStageMetadata()
   href: api/RGBLineCoreLib.Functor.StageMetadataInterface.html#RGBLineCoreLib_Functor_StageMetadataInterface_GetStageMetadata

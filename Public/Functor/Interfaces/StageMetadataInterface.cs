@@ -35,6 +35,11 @@ namespace RGBLineCoreLib.Functor
         {
             return StageMetadataBuffer.Instance.TryLoadStageMetadata(targetStageName, majorDifficulty);
         }
+        public static void DisposeStageMetadata()
+        {
+            StageMetadataBuffer.Instance.Dispose();
+        }
+
         public static bool BIsStageMetadataValid()
         {
             return StageMetadataBuffer.Instance.StageMetadata.BIsValid();

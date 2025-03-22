@@ -6,6 +6,7 @@ items:
   parent: RGBLineCoreLib.Functor
   children:
   - RGBLineCoreLib.Functor.StageMetadataInterface.BIsStageMetadataValid
+  - RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata
   - RGBLineCoreLib.Functor.StageMetadataInterface.GetStageMetadata
   - RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)
   langs:
@@ -111,6 +112,32 @@ items:
   nameWithType.vb: StageMetadataInterface.TryLoadStageMetadata(String, StageMetadata.MajorDifficultyLevel)
   fullName.vb: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(String, RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel)
   name.vb: TryLoadStageMetadata(String, MajorDifficultyLevel)
+- uid: RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata
+  commentId: M:RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata
+  id: DisposeStageMetadata
+  parent: RGBLineCoreLib.Functor.StageMetadataInterface
+  langs:
+  - csharp
+  - vb
+  name: DisposeStageMetadata()
+  nameWithType: StageMetadataInterface.DisposeStageMetadata()
+  fullName: RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata()
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Interfaces/StageMetadataInterface.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: DisposeStageMetadata
+    path: ../Public/Functor/Interfaces/StageMetadataInterface.cs
+    startLine: 37
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public static void DisposeStageMetadata()
+    content.vb: Public Shared Sub DisposeStageMetadata()
+  overload: RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata*
 - uid: RGBLineCoreLib.Functor.StageMetadataInterface.BIsStageMetadataValid
   commentId: M:RGBLineCoreLib.Functor.StageMetadataInterface.BIsStageMetadataValid
   id: BIsStageMetadataValid
@@ -129,7 +156,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: BIsStageMetadataValid
     path: ../Public/Functor/Interfaces/StageMetadataInterface.cs
-    startLine: 37
+    startLine: 42
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -485,6 +512,12 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata*
+  commentId: Overload:RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata
+  href: RGBLineCoreLib.Functor.StageMetadataInterface.html#RGBLineCoreLib_Functor_StageMetadataInterface_DisposeStageMetadata
+  name: DisposeStageMetadata
+  nameWithType: StageMetadataInterface.DisposeStageMetadata
+  fullName: RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata
 - uid: RGBLineCoreLib.Functor.StageMetadataInterface.BIsStageMetadataValid*
   commentId: Overload:RGBLineCoreLib.Functor.StageMetadataInterface.BIsStageMetadataValid
   href: RGBLineCoreLib.Functor.StageMetadataInterface.html#RGBLineCoreLib_Functor_StageMetadataInterface_BIsStageMetadataValid
