@@ -240,6 +240,7 @@
   "RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.GetStageConfigData": "RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.yml",
   "RGBLineCoreLib.Functor.StageDataInterface.TryLoadStageData(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)": "RGBLineCoreLib.Functor.StageDataInterface.yml",
   "RGBLineCoreLib.Functor.StageMetadataInterface": "RGBLineCoreLib.Functor.StageMetadataInterface.yml",
+  "RGBLineCoreLib.Functor.StageMetadataInterface.BIsStageMetadataValid": "RGBLineCoreLib.Functor.StageMetadataInterface.yml",
   "RGBLineCoreLib.Functor.StageMetadataInterface.GetStageMetadata": "RGBLineCoreLib.Functor.StageMetadataInterface.yml",
   "RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)": "RGBLineCoreLib.Functor.StageMetadataInterface.yml",
   "RGBLineCoreLib.Manager": "RGBLineCoreLib.Manager.yml",

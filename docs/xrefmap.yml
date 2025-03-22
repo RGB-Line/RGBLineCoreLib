@@ -2559,6 +2559,19 @@ references:
   commentId: T:RGBLineCoreLib.Functor.StageMetadataInterface
   fullName: RGBLineCoreLib.Functor.StageMetadataInterface
   nameWithType: StageMetadataInterface
+- uid: RGBLineCoreLib.Functor.StageMetadataInterface.BIsStageMetadataValid
+  name: BIsStageMetadataValid()
+  href: api/RGBLineCoreLib.Functor.StageMetadataInterface.html#RGBLineCoreLib_Functor_StageMetadataInterface_BIsStageMetadataValid
+  commentId: M:RGBLineCoreLib.Functor.StageMetadataInterface.BIsStageMetadataValid
+  fullName: RGBLineCoreLib.Functor.StageMetadataInterface.BIsStageMetadataValid()
+  nameWithType: StageMetadataInterface.BIsStageMetadataValid()
+- uid: RGBLineCoreLib.Functor.StageMetadataInterface.BIsStageMetadataValid*
+  name: BIsStageMetadataValid
+  href: api/RGBLineCoreLib.Functor.StageMetadataInterface.html#RGBLineCoreLib_Functor_StageMetadataInterface_BIsStageMetadataValid_
+  commentId: Overload:RGBLineCoreLib.Functor.StageMetadataInterface.BIsStageMetadataValid
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.StageMetadataInterface.BIsStageMetadataValid
+  nameWithType: StageMetadataInterface.BIsStageMetadataValid
 - uid: RGBLineCoreLib.Functor.StageMetadataInterface.GetStageMetadata
   name: GetStageMetadata()
   href: api/RGBLineCoreLib.Functor.StageMetadataInterface.html#RGBLineCoreLib_Functor_StageMetadataInterface_GetStageMetadata
