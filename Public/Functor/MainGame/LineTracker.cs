@@ -17,15 +17,23 @@ namespace RGBLineCoreLib.Functor
     /// </summary>
     public sealed class LineTracker : MonoBehaviour
     {
-        [SerializeField] private SpriteRenderer m_spriteRenderer;
+        private SpriteRenderer m_spriteRenderer;
+
+        [SerializeField] private float m_speed = 1.0f;
 
         private Dictionary<Guid, float> m_regionTimeTable = new Dictionary<Guid, float>();
 
         private bool m_bisInitialized = false;
 
         private Guid m_curRegionID = Guid.Empty;
+        private Guid m_curLineID = Guid.Empty;
 
 
+        public void Awake()
+        {
+            m_spriteRenderer = GetComponent<SpriteRenderer>();
+            m_spriteRenderer.enabled = false;
+        }
         public void Update()
         {
             if (!m_bisInitialized)
@@ -40,6 +48,8 @@ namespace RGBLineCoreLib.Functor
                 {
                     case StageData.RegionData.ColorType.Red:
                         {
+                            m_curLineID = Guid.Empty;
+
                             Guid redLineID = Guid.Empty;
                             Guid[] lineIDs = StageDataInterface.LineDataInterface.GetLineIDs();
                             foreach (Guid lineID in lineIDs)
@@ -67,22 +77,13 @@ namespace RGBLineCoreLib.Functor
 
                     case StageData.RegionData.ColorType.Green:
                         {
-                            Guid greenLineID = Guid.Empty;
-                            Guid[] lineIDs = StageDataInterface.LineDataInterface.GetLineIDs();
-                            foreach (Guid lineID in lineIDs)
-                            {
-                                StageData.LineData lineData = StageDataInterface.LineDataInterface.GetLineData(lineID);
-                                if (lineData.AttachedRegionID == m_curRegionID)
-                                {
-                                    greenLineID = lineID;
-                                    break;
-                                }
-                            }
+                            m_curLineID = Guid.Empty;
 
-                            m_spriteRenderer.enabled = true;
+                            float horizontalMovement = Input.GetAxis("Horizontal");
+
                             transform.localPosition = new Vector3()
                             {
-                                x = GetCameraXPos(transform.position.y / GridManager.Instance.GetUnitFrameSize(), greenLineID),
+                                x = transform.localPosition.x + (horizontalMovement * 0.1f),
                                 y = -3.5f,
                                 z = 5.0f
                             };
@@ -91,10 +92,62 @@ namespace RGBLineCoreLib.Functor
 
                     case StageData.RegionData.ColorType.Blue:
                         {
-                            m_spriteRenderer.enabled = false;
+                            List<Guid> blueLineIDs = new List<Guid>();
+                            Guid[] lineIDs = StageDataInterface.LineDataInterface.GetLineIDs();
+                            foreach (Guid lineID in lineIDs)
+                            {
+                                StageData.LineData lineData = StageDataInterface.LineDataInterface.GetLineData(lineID);
+                                ILineItem lineItem = LineManager.Instance.GetLineItem(lineID);
+                                if (lineData.AttachedRegionID == m_curRegionID
+                                    && lineItem.LineRenderer.GetPosition(0).y <= transform.position.y && transform.position.y <= lineItem.LineRenderer.GetPosition(lineItem.LineRenderer.positionCount - 1).y)
+                                {
+                                    blueLineIDs.Add(lineID);
+                                }
+                            }
+
+                            blueLineIDs.Sort((Guid x, Guid y) =>
+                            {
+                                return StageDataInterface.LineDataInterface.GetLineData(x).CurvedLinePoints[0].X.CompareTo(StageDataInterface.LineDataInterface.GetLineData(y).CurvedLinePoints[0].X);
+                            });
+
+                            if(m_curLineID == Guid.Empty)
+                            {
+                                m_curLineID = blueLineIDs[blueLineIDs.Count / 2];
+                            }
+                            else if(!blueLineIDs.Contains(m_curLineID))
+                            {
+                                float prevLineXPos = StageDataInterface.LineDataInterface.GetLineData(m_curLineID).CurvedLinePoints[0].X;
+
+                                float minGap = float.MaxValue;
+                                foreach (Guid lineID in blueLineIDs)
+                                {
+                                    float curLineXPos = StageDataInterface.LineDataInterface.GetLineData(lineID).CurvedLinePoints[0].X;
+                                    if (Mathf.Abs(curLineXPos - prevLineXPos) < minGap)
+                                    {
+                                        minGap = Mathf.Abs(curLineXPos - prevLineXPos);
+                                        m_curLineID = lineID;
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                int prevLineIndex = blueLineIDs.IndexOf(m_curLineID);
+                                if (Input.GetKeyDown(KeyCode.LeftArrow) && prevLineIndex - 1 >= 0)
+                                {
+                                    m_curLineID = blueLineIDs[prevLineIndex - 1];
+                                }
+                                else if (Input.GetKeyDown(KeyCode.RightArrow) && prevLineIndex + 1 < blueLineIDs.Count)
+                                {
+                                    m_curLineID = blueLineIDs[prevLineIndex + 1];
+                                }
+                            }
+
+                            Debug.Log(blueLineIDs.Count + " / Current Blue Line ID: " + m_curLineID);
+
+                            m_spriteRenderer.enabled = true;
                             transform.localPosition = new Vector3()
                             {
-                                x = 0.0f,
+                                x = GetCameraXPos(transform.position.y / GridManager.Instance.GetUnitFrameSize(), blueLineIDs[blueLineIDs.IndexOf(m_curLineID)]),
                                 y = -3.5f,
                                 z = 5.0f
                             };
@@ -116,6 +169,13 @@ namespace RGBLineCoreLib.Functor
             set
             {
                 m_curRegionID = value;
+            }
+        }
+        public Guid CurLineID
+        {
+            get
+            {
+                return m_curLineID;
             }
         }
 

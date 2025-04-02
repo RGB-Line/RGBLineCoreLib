@@ -55,7 +55,11 @@ namespace RGBLineCoreLib.Functor
                     if (0 < m_pointIndex && m_pointIndex < StageDataInterface.LineDataInterface.GetLineData(m_parentLineItem.LineID).CurvedLinePoints.Count - 1)
                     {
                         IRedLineCornerNote redLineCornerNote = Instantiate(m_prefab_RedLineCornerNote, transform).GetComponent<IRedLineCornerNote>();
-                        redLineCornerNote.Render();
+
+                        // TODO - 레드 라인 특수키 변경 → 기존 레드 라인 꺾이는 부분 노트 클릭 키 변경
+                        bool bisToLeft = (StageDataInterface.LineDataInterface.GetLineData(m_parentLineItem.LineID).CurvedLinePoints[m_pointIndex + 1].X
+                                          - StageDataInterface.LineDataInterface.GetLineData(m_parentLineItem.LineID).CurvedLinePoints[m_pointIndex].X <= 0.0f ? true : false);
+                        redLineCornerNote.Render(bisToLeft);
                         redLineCornerNote.Transform.position = transform.position;
                     }
                     break;

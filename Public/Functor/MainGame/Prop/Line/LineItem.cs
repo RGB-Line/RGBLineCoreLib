@@ -63,21 +63,21 @@ namespace RGBLineCoreLib.Functor
                 UpdateMeshCollider();
             }
         }
-        public virtual void OnMouseEnter()
-        {
-            if (StageDataInterface.LineDataInterface.GetAttachedRegionData(m_lineID).CurColorType == StageData.RegionData.ColorType.Green)
-            {
-                ScoreManager.Instance.BIsMouseOnGreenLine = true;
-            }
-            else
-            {
-                ScoreManager.Instance.BIsMouseOnGreenLine = false;
-            }
-        }
-        public virtual void OnMouseExit()
-        {
-            ScoreManager.Instance.BIsMouseOnGreenLine = false;
-        }
+        //public virtual void OnMouseEnter()
+        //{
+        //    if (StageDataInterface.LineDataInterface.GetAttachedRegionData(m_lineID).CurColorType == StageData.RegionData.ColorType.Green)
+        //    {
+        //        ScoreManager.Instance.BIsMouseOnGreenLine = true;
+        //    }
+        //    else
+        //    {
+        //        ScoreManager.Instance.BIsMouseOnGreenLine = false;
+        //    }
+        //}
+        //public virtual void OnMouseExit()
+        //{
+        //    ScoreManager.Instance.BIsMouseOnGreenLine = false;
+        //}
 
         public Transform Transform
         {
@@ -91,6 +91,13 @@ namespace RGBLineCoreLib.Functor
             get
             {
                 return m_lineRenderer;
+            }
+        }
+        public CurvedLineRenderer CurvedLineRenderer
+        {
+            get
+            {
+                return m_curvedLineRenderer;
             }
         }
 

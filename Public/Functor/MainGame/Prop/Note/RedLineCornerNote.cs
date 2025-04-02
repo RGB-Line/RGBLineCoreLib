@@ -22,6 +22,8 @@ namespace RGBLineCoreLib.Functor
     {
         private Guid m_noteID = Guid.Empty;
 
+        private bool m_bisToLeft = false;
+
         private BoxCollider2D m_judgeBox = null;
 
 
@@ -44,10 +46,18 @@ namespace RGBLineCoreLib.Functor
                 return transform;
             }
         }
+        public bool BIsToLeft
+        {
+            get
+            {
+                return m_bisToLeft;
+            }
+        }
 
-        public virtual void Render()
+        public virtual void Render(in bool bisToLeft)
         {
             m_noteID = Guid.NewGuid();
+            m_bisToLeft = bisToLeft;
 
             NoteManager.Instance.AddRedLineCornerNoteItem(m_noteID, this);
 

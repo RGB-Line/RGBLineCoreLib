@@ -22,6 +22,8 @@ namespace RGBLineCoreLib.Manager
     /// </remarks>
     public sealed class ScoreManager : SingleTonForGameObject<ScoreManager>
     {
+        [SerializeField] private LineTracker m_lineTracker;
+
         private bool m_bisStartScoring = false;
 
         private Stack<Guid> m_noteCandidates = new Stack<Guid>();
@@ -32,6 +34,7 @@ namespace RGBLineCoreLib.Manager
         private float m_curAudioSourceTime = 0.0f;
 
         private bool m_bisGreenRegion, m_bisMouseOnGreenLine;
+        private bool m_bisBlueRegion;
 
         private float m_curScore = 0.0f;
         private float m_HP = 1.0f;
@@ -56,10 +59,10 @@ namespace RGBLineCoreLib.Manager
             }
 
             // For Green Region - Mouse Tracking
-            if (m_bisGreenRegion && !m_bisMouseOnGreenLine)
-            {
-                return;
-            }
+            //if (m_bisGreenRegion && !m_bisMouseOnGreenLine)
+            //{
+            //    return;
+            //}
 
             // For Long Notes
             int curPressedBasicNoteKeyCount = GetCurPressedBasicNoteKeyCount();
@@ -94,29 +97,47 @@ namespace RGBLineCoreLib.Manager
                 }
                 else
                 {
-                    targetNoteID = m_noteCandidates.Pop();
+                    targetNoteID = m_noteCandidates.Peek();
+                }
+
+                if (m_bisBlueRegion && StageDataInterface.NoteDataInterface.GetAttachedLineID(targetNoteID) != m_lineTracker.CurLineID)
+                {
+                    continue;
                 }
 
                 // Red Line Curved Note
-                if (NoteManager.Instance.GetRedLineCornerNote(targetNoteID) != null && Input.GetKeyDown(KeyCode.Space))
+                if (NoteManager.Instance.GetRedLineCornerNote(targetNoteID) != null/* && Input.GetKeyDown(KeyCode.Space)*/)
                 {
                     IRedLineCornerNote targetNoteItem = NoteManager.Instance.GetRedLineCornerNote(targetNoteID);
-                    m_curScore += GetSingleNoteScore(GetYPos2Time(targetNoteItem.Transform.position.y), m_curAudioSourceTime);
-                    m_combo++;
+                    bool bisHit = false;
+                    if (targetNoteItem.BIsToLeft && Input.GetKeyDown(KeyCode.LeftArrow))
+                    {
+                        bisHit = true;
+                    }
+                    else if (!targetNoteItem.BIsToLeft && Input.GetKeyDown(KeyCode.RightArrow))
+                    {
+                        bisHit = true;
+                    }
 
-                    m_HP += 0.1f;
+                    if (bisHit)
+                    {
+                        m_curScore += GetSingleNoteScore(GetYPos2Time(targetNoteItem.Transform.position.y), m_curAudioSourceTime);
+                        m_combo++;
 
-                    targetNoteItem.Transform.gameObject.SetActive(false);
+                        m_HP += 0.1f;
+
+                        targetNoteItem.Transform.gameObject.SetActive(false);
+                    }
                 }
                 // Red, Green, Blue Note
-                else if(StageDataInterface.NoteDataInterface.BIsNoteIDValid(targetNoteID))
+                else if (StageDataInterface.NoteDataInterface.BIsNoteIDValid(targetNoteID))
                 {
                     StageData.NoteData curNoteData = StageDataInterface.NoteDataInterface.GetNoteData(targetNoteID);
                     switch (curNoteData.CurNoteType)
                     {
                         case StageData.NoteData.NoteType.Common:
                             {
-                                if(!(Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Mouse1) || Input.GetKeyDown(KeyCode.Space)))
+                                if (!(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow)/* || Input.GetKeyDown(KeyCode.Space)*/))
                                 {
                                     INoteItem targetNoteItem = NoteManager.Instance.GetNoteItem(targetNoteID);
                                     m_curScore += GetSingleNoteScore(GetYPos2Time(targetNoteItem.RedAndBlueNote.Transform.position.y), m_curAudioSourceTime);
@@ -158,7 +179,7 @@ namespace RGBLineCoreLib.Manager
 
                         case StageData.NoteData.NoteType.Long:
                             {
-                                if (!(Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Mouse1) || Input.GetKeyDown(KeyCode.Space)))
+                                if (!(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow)/* || Input.GetKeyDown(KeyCode.Space)*/))
                                 {
                                     INoteItem targetNoteItem = NoteManager.Instance.GetNoteItem(targetNoteID);
                                     m_longNoteTable.Add(targetNoteID, new Tuple<float, float>(GetYPos2Time(targetNoteItem.GreenNote.CurveStartYPos), m_curAudioSourceTime));
@@ -227,6 +248,14 @@ namespace RGBLineCoreLib.Manager
             }
         }
 
+        internal bool BIsBlueRegion
+        {
+            set
+            {
+                m_bisBlueRegion = value;
+            }
+        }
+
         /// <summary>
         /// Scene Load 시 ScoreManager GameObject의 경우 필히 StartScoring()를 호출해야 한다
         /// </summary>
@@ -277,8 +306,6 @@ namespace RGBLineCoreLib.Manager
 
         private int GetCurPressedBasicNoteKeyCount()
         {
-            Debug.Log("GetCurPressedBasicNoteKeyCount()");
-
             IEnumerable<KeyCode> keyCodes = Enum.GetValues(typeof(KeyCode)).Cast<KeyCode>();
 
             List<KeyCode> keyCodeBuffer = keyCodes.ToList();

@@ -50,7 +50,7 @@ namespace RGBLineCoreLib.Functor
                 string jsonData = File.ReadAllText(path);
                 StageData = JsonConvert.DeserializeObject<StageData>(jsonData);
             }
-            catch (Exception e)
+            catch
             {
                 return false;
             }

@@ -45,6 +45,15 @@ namespace RGBLineCoreLib.Functor
             {
                 ScoreManager.Instance.BIsGreenRegion = false;
             }
+
+            if (curRegionID != Guid.Empty && StageDataInterface.RegionDataInterface.GetRegionData(curRegionID).CurColorType == StageData.RegionData.ColorType.Blue)
+            {
+                ScoreManager.Instance.BIsBlueRegion = true;
+            }
+            else
+            {
+                ScoreManager.Instance.BIsBlueRegion = false;
+            }
         }
 
         /// <summary>

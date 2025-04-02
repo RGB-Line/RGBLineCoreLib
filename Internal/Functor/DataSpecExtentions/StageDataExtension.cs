@@ -52,6 +52,7 @@ namespace RGBLineCoreLib.Functor
             {
                 if (lineID == Guid.Empty)
                 {
+                    UnityEngine.Debug.Log("1");
                     return false;
                 }
             }

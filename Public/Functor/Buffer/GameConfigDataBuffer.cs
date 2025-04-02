@@ -72,7 +72,9 @@ namespace RGBLineCoreLib.Functor
                     {
                         RedNoteKeyCode_Left = KeyCode.Mouse0,
                         RedNoteKeyCode_Right = KeyCode.Mouse1,
-                        RedLineCornerNoteKeyCode = KeyCode.Space
+                        //RedLineCornerNoteKeyCode = KeyCode.Space
+                        TrackerMovementKeyCode_ToLeft = KeyCode.LeftArrow,
+                        TrackerMovementKeyCode_ToRight = KeyCode.RightArrow
                     }
                 };
                 SaveGameConfigData();

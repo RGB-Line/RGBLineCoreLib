@@ -13,6 +13,7 @@ namespace RGBLineCoreLib.Functor
     {
         Transform Transform { get; }
         LineRenderer LineRenderer { get; }
+        CurvedLineRenderer CurvedLineRenderer { get; }
 
         Guid LineID { get; }
 

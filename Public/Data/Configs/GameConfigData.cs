@@ -42,7 +42,10 @@ namespace RGBLineCoreLib.Data
             public KeyCode RedNoteKeyCode_Left;
             public KeyCode RedNoteKeyCode_Right;
 
-            public KeyCode RedLineCornerNoteKeyCode;
+            //public KeyCode RedLineCornerNoteKeyCode;
+
+            public KeyCode TrackerMovementKeyCode_ToLeft;
+            public KeyCode TrackerMovementKeyCode_ToRight;
         }
 
 

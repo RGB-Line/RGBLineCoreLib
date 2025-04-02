@@ -13,7 +13,8 @@ namespace RGBLineCoreLib.Functor
     {
         Guid NoteID { get; }
         Transform Transform { get; }
+        bool BIsToLeft { get; }
 
-        void Render();
+        void Render(in bool bisToLeft);
     }
 }
