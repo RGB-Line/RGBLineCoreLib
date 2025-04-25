@@ -94,7 +94,7 @@ Class StageDataInterface.LineDataInterface  <a class="header-action link-seconda
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="RGBLineCoreLib.html">RGBLineCoreLib</a>.<a class="xref" href="RGBLineCoreLib.Functor.html">Functor</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>RGBLineCoreLib.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>RGBLineCoreLib_ForEditor.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>현재 StageData의 LineData에 접근하기 위한 Interface</p>
@@ -307,6 +307,118 @@ Class StageDataInterface.LineDataInterface  <a class="header-action link-seconda
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RGBLineCoreLib_Functor_StageDataInterface_LineDataInterface_TryAddLineData_" data-uid="RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData*"></a>
+
+  <h3 id="RGBLineCoreLib_Functor_StageDataInterface_LineDataInterface_TryAddLineData_System_Guid__RGBLineCoreLib_Data_StageData_LineData__" data-uid="RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData(System.Guid@,RGBLineCoreLib.Data.StageData.LineData@)">
+  TryAddLineData(in Guid, in LineData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryAddLineData(in Guid targetLineID, in StageData.LineData targetLineData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetLineID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>targetLineData</code> <a class="xref" href="RGBLineCoreLib.Data.StageData.html">StageData</a>.<a class="xref" href="RGBLineCoreLib.Data.StageData.LineData.html">LineData</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RGBLineCoreLib_Functor_StageDataInterface_LineDataInterface_TryRemoveLineData_" data-uid="RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData*"></a>
+
+  <h3 id="RGBLineCoreLib_Functor_StageDataInterface_LineDataInterface_TryRemoveLineData_System_Guid__" data-uid="RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData(System.Guid@)">
+  TryRemoveLineData(in Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryRemoveLineData(in Guid targetLineID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetLineID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RGBLineCoreLib_Functor_StageDataInterface_LineDataInterface_TrySetLineData_" data-uid="RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData*"></a>
+
+  <h3 id="RGBLineCoreLib_Functor_StageDataInterface_LineDataInterface_TrySetLineData_System_Guid__RGBLineCoreLib_Data_StageData_LineData__" data-uid="RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData(System.Guid@,RGBLineCoreLib.Data.StageData.LineData@)">
+  TrySetLineData(in Guid, in LineData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TrySetLineData(in Guid targetLineID, in StageData.LineData targetLineData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetLineID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>targetLineData</code> <a class="xref" href="RGBLineCoreLib.Data.StageData.html">StageData</a>.<a class="xref" href="RGBLineCoreLib.Data.StageData.LineData.html">LineData</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 

@@ -23,7 +23,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientEffectLight.cs
     startLine: 11
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-
@@ -185,7 +185,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientEffectLight.cs
     startLine: 28
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void Awake()
@@ -211,7 +211,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientEffectLight.cs
     startLine: 34
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void Update()

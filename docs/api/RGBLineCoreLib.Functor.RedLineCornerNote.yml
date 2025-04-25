@@ -27,7 +27,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/RedLineCornerNote.cs
     startLine: 20
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 기본적인 Red Line Corner Note를 그리기 위한 Class. Red Line Corner Note는 Red Line의 꼭지점에 위치하는 Note를 의미한다
   remarks: Editor에서는 해당 Class를 상속받아 사용하지만, Runtime에서는 해당 Class를 직접 사용함
@@ -182,7 +182,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/RedLineCornerNote.cs
     startLine: 29
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void Awake()
@@ -208,7 +208,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/RedLineCornerNote.cs
     startLine: 34
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -240,7 +240,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/RedLineCornerNote.cs
     startLine: 41
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -272,7 +272,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/RedLineCornerNote.cs
     startLine: 48
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -304,7 +304,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/RedLineCornerNote.cs
     startLine: 56
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -339,7 +339,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/RedLineCornerNote.cs
     startLine: 76
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
   example: []

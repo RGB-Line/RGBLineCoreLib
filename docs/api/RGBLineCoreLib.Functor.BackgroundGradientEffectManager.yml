@@ -27,7 +27,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientEffectManager.cs
     startLine: 11
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-
@@ -187,7 +187,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientEffectManager.cs
     startLine: 35
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void Awake()
@@ -213,7 +213,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientEffectManager.cs
     startLine: 51
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void Update()
@@ -239,7 +239,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientEffectManager.cs
     startLine: 101
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public Material[] Materials { get; }
@@ -268,7 +268,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientEffectManager.cs
     startLine: 108
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public float Timeout { get; }
@@ -297,7 +297,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientEffectManager.cs
     startLine: 116
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public bool BIsNowTransitioning { get; }
@@ -326,7 +326,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientEffectManager.cs
     startLine: 124
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void StartTransition(in int matIndex, in Vector2 effectStartPos)

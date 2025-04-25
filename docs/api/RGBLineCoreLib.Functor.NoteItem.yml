@@ -29,7 +29,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
     startLine: 20
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 기본적인 Note를 그리기 위한 Class
   remarks: Editor에서는 해당 Class를 상속받아 사용하지만, Runtime에서는 해당 Class를 직접 사용함
@@ -184,7 +184,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
     startLine: 31
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void Awake()
@@ -210,7 +210,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
     startLine: 37
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -242,7 +242,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
     startLine: 44
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -274,7 +274,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
     startLine: 52
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -306,7 +306,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
     startLine: 59
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -338,7 +338,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
     startLine: 67
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -373,7 +373,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
     startLine: 100
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -412,7 +412,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
     startLine: 172
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
   example: []

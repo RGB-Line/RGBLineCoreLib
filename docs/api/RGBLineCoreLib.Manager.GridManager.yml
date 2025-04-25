@@ -27,7 +27,7 @@ items:
     path: ../Public/Manager/MainGame/GridManager.cs
     startLine: 19
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Manager
   summary: 게임 내 Grid, 즉, Frame을 관리하는 Manager Class
   example: []
@@ -184,7 +184,7 @@ items:
     path: ../Public/Manager/MainGame/GridManager.cs
     startLine: 21
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Manager
   syntax:
     content: public void Awake()
@@ -210,7 +210,7 @@ items:
     path: ../Public/Manager/MainGame/GridManager.cs
     startLine: 29
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Manager
   summary: 해당 Stage에 존재하는 총 Frame 수를 반환한다
   example: []
@@ -240,7 +240,7 @@ items:
     path: ../Public/Manager/MainGame/GridManager.cs
     startLine: 40
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Manager
   summary: 해당 Frame에 해당하는 Y Position을 반환한다
   example: []
@@ -276,7 +276,7 @@ items:
     path: ../Public/Manager/MainGame/GridManager.cs
     startLine: 47
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Manager
   summary: 단일 Frame의 크기를 반환한다(Y Position 기준)
   example: []
@@ -306,7 +306,7 @@ items:
     path: ../Public/Manager/MainGame/GridManager.cs
     startLine: 56
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Manager
   summary: Y Position에 해당하는 Frame을 반환한다
   example: []
@@ -342,7 +342,7 @@ items:
     path: ../Public/Manager/MainGame/GridManager.cs
     startLine: 61
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Manager
   example: []
   syntax:

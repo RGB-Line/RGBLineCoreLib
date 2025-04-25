@@ -25,7 +25,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/IGreenNote.cs
     startLine: 11
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: 'public interface IGreenNote : IDisposable'
@@ -52,7 +52,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/IGreenNote.cs
     startLine: 13
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: Guid AttachedNoteID { get; }
@@ -81,7 +81,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/IGreenNote.cs
     startLine: 14
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: Transform Transform { get; }
@@ -110,7 +110,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/IGreenNote.cs
     startLine: 16
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: float CurveStartYPos { get; }
@@ -139,7 +139,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/IGreenNote.cs
     startLine: 18
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: void Render(in INoteItem noteItem)

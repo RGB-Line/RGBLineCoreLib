@@ -27,7 +27,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientFadeoutEffect.cs
     startLine: 14
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public struct BackgroundGradientFadeoutEffect.FadeoutInput
@@ -59,7 +59,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientFadeoutEffect.cs
     startLine: 16
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public Color TargetBaseColor
@@ -86,7 +86,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientFadeoutEffect.cs
     startLine: 17
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public Vector2 EffectStartPos
@@ -113,7 +113,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientFadeoutEffect.cs
     startLine: 19
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public float ColorSpread
@@ -140,7 +140,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientFadeoutEffect.cs
     startLine: 20
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public float ColorEdgySmoothness
@@ -167,7 +167,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientFadeoutEffect.cs
     startLine: 21
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public float LightColorHighlighting
@@ -194,7 +194,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientFadeoutEffect.cs
     startLine: 23
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public int LightCount

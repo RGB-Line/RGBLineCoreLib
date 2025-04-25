@@ -25,7 +25,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/IRedLineCornerNote.cs
     startLine: 11
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: 'public interface IRedLineCornerNote : IDisposable'
@@ -52,7 +52,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/IRedLineCornerNote.cs
     startLine: 13
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: Guid NoteID { get; }
@@ -81,7 +81,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/IRedLineCornerNote.cs
     startLine: 14
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: Transform Transform { get; }
@@ -110,7 +110,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/IRedLineCornerNote.cs
     startLine: 15
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: bool BIsToLeft { get; }
@@ -139,7 +139,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/IRedLineCornerNote.cs
     startLine: 17
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: void Render(in bool bisToLeft)

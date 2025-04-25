@@ -32,7 +32,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientSetting.cs
     startLine: 11
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-
@@ -132,7 +132,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientSetting.cs
     startLine: 15
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-
@@ -171,7 +171,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientSetting.cs
     startLine: 18
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-
@@ -210,7 +210,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientSetting.cs
     startLine: 21
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-
@@ -249,7 +249,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientSetting.cs
     startLine: 24
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-
@@ -288,7 +288,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientSetting.cs
     startLine: 27
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-
@@ -327,7 +327,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientSetting.cs
     startLine: 30
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-
@@ -366,7 +366,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientSetting.cs
     startLine: 33
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-
@@ -405,7 +405,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientSetting.cs
     startLine: 34
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public int MaxCurvedLinePointCount
@@ -432,7 +432,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientSetting.cs
     startLine: 37
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-
@@ -471,7 +471,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientSetting.cs
     startLine: 38
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public float VerticalLineRange
@@ -498,7 +498,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientSetting.cs
     startLine: 41
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-

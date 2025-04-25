@@ -28,7 +28,7 @@ items:
     path: ../Public/Functor/MainGame/DeterminLine.cs
     startLine: 22
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 게임 내 판정선 Class
   remarks: Scene Load 시 DeterminLine GameObject의 경우 필히 StartCheck()를 호출해야 한다
@@ -186,7 +186,7 @@ items:
     path: ../Public/Functor/MainGame/DeterminLine.cs
     startLine: 27
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void Awake()
@@ -212,7 +212,7 @@ items:
     path: ../Public/Functor/MainGame/DeterminLine.cs
     startLine: 31
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void Update()
@@ -238,7 +238,7 @@ items:
     path: ../Public/Functor/MainGame/DeterminLine.cs
     startLine: 61
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: Scene Load 시 DeterminLine GameObject의 경우 필히 StartCheck()를 호출해야 한다
   example: []
@@ -266,7 +266,7 @@ items:
     path: ../Public/Functor/MainGame/DeterminLine.cs
     startLine: 65
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void StopCheck()
@@ -292,7 +292,7 @@ items:
     path: ../Public/Functor/MainGame/DeterminLine.cs
     startLine: 70
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void OnTriggerEnter2D(Collider2D collision)
@@ -321,7 +321,7 @@ items:
     path: ../Public/Functor/MainGame/DeterminLine.cs
     startLine: 91
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void OnTriggerExit2D(Collider2D collision)
@@ -350,7 +350,7 @@ items:
     path: ../Public/Functor/MainGame/DeterminLine.cs
     startLine: 112
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:

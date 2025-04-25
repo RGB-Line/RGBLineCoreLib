@@ -26,7 +26,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 51
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 각 Line의 데이터를 담는 구조체
   example: []
@@ -60,7 +60,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 72
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 해당 Line이 속한 Region의 ID
   example: []
@@ -89,7 +89,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 80
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: X - 좌우 위치, Y - 해당 Line Point가 위치하는 Frame 단위 위치
   remarks: 기본 가정으로 CurvedLinePoints는 Y 좌표 기준으로 정렬되어 있으며, Y좌표는 헤당 Line이 속한 Region의 StartOffsetFrame에 더해져 최종 위치를 결정
@@ -119,7 +119,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 87
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: LineData.CurvedLinePoints에 보조적으로, Line Point의 Y축 위치 세부 조정을 의미
   remarks: 기본 가정으로 MinorOffsetTimes의 모든 요소는 CurvedLinePoints의 요소와 1:1 대응하며, MinorOffsetTimes의 각 요소의 하용 범위는 [-0.5, 0.5]
@@ -149,7 +149,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 91
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 해당 Line의 두께를 의미
   example: []
@@ -178,7 +178,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 96
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 해당 Line이 직선적인지, 곡선적인지를 묘사
   example: []

@@ -26,7 +26,7 @@ items:
     path: ../Public/Functor/Effect/RegionTransitionEffector.cs
     startLine: 14
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: Region의 Red, Green, Blue의 색상 전환 효과를 담당하는 Class이다
   example: []
@@ -176,7 +176,7 @@ items:
     path: ../Public/Functor/Effect/RegionTransitionEffector.cs
     startLine: 29
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void Awake()
@@ -202,7 +202,7 @@ items:
     path: ../Public/Functor/Effect/RegionTransitionEffector.cs
     startLine: 35
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public Material[] Materials { get; }
@@ -231,7 +231,7 @@ items:
     path: ../Public/Functor/Effect/RegionTransitionEffector.cs
     startLine: 42
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public float Timeout { get; }
@@ -260,7 +260,7 @@ items:
     path: ../Public/Functor/Effect/RegionTransitionEffector.cs
     startLine: 50
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public bool BIsNowTransitioning { get; }
@@ -289,7 +289,7 @@ items:
     path: ../Public/Functor/Effect/RegionTransitionEffector.cs
     startLine: 58
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void StartTransition(in int matIndex, in Vector2 effectStartPos)

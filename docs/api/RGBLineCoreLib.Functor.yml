@@ -45,7 +45,7 @@ items:
   fullName: RGBLineCoreLib.Functor
   type: Namespace
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
 references:
 - uid: RGBLineCoreLib.Functor.GameConfigDataBuffer
   commentId: T:RGBLineCoreLib.Functor.GameConfigDataBuffer

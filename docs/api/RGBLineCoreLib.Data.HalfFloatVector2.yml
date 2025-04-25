@@ -34,7 +34,7 @@ items:
     path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
     startLine: 10
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public struct HalfFloatVector2
@@ -64,7 +64,7 @@ items:
     path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
     startLine: 12
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public float X
@@ -91,7 +91,7 @@ items:
     path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
     startLine: 13
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public int Y
@@ -118,7 +118,7 @@ items:
     path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
     startLine: 16
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public static HalfFloatVector2 one { get; }
@@ -147,7 +147,7 @@ items:
     path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
     startLine: 27
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public static HalfFloatVector2 zero { get; }
@@ -176,7 +176,7 @@ items:
     path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
     startLine: 39
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public static bool operator ==(HalfFloatVector2 vector1, HalfFloatVector2 vector2)
@@ -212,7 +212,7 @@ items:
     path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
     startLine: 43
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public static bool operator !=(HalfFloatVector2 vector1, HalfFloatVector2 vector2)
@@ -248,7 +248,7 @@ items:
     path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
     startLine: 47
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: Indicates whether this instance and a specified object are equal.
   example: []
@@ -287,7 +287,7 @@ items:
     path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
     startLine: 51
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: Returns the hash code for this instance.
   example: []
@@ -319,7 +319,7 @@ items:
     path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
     startLine: 56
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public static HalfFloatVector2 operator -(HalfFloatVector2 vector)
@@ -353,7 +353,7 @@ items:
     path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
     startLine: 65
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public static HalfFloatVector2 operator +(HalfFloatVector2 vector1, HalfFloatVector2 vector2)
@@ -389,7 +389,7 @@ items:
     path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
     startLine: 73
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public static HalfFloatVector2 operator -(HalfFloatVector2 vector1, HalfFloatVector2 vector2)
@@ -425,7 +425,7 @@ items:
     path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
     startLine: 81
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public static HalfFloatVector2 operator *(HalfFloatVector2 vector, float scalar)
@@ -461,7 +461,7 @@ items:
     path: ../Public/Data/DataSpecs/HalfFloatVector2.cs
     startLine: 89
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public static HalfFloatVector2 operator /(HalfFloatVector2 vector, float scalar)

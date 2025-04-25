@@ -24,7 +24,7 @@ items:
     path: ../Public/Data/Configs/GameConfigData.cs
     startLine: 23
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: 'public enum GameConfigData.ScreenResolution : byte'
@@ -49,7 +49,7 @@ items:
     path: ../Public/Data/Configs/GameConfigData.cs
     startLine: 25
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: FHD_1920x1080 = 0
@@ -75,7 +75,7 @@ items:
     path: ../Public/Data/Configs/GameConfigData.cs
     startLine: 26
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: QHD_2560x1440 = 1
@@ -101,7 +101,7 @@ items:
     path: ../Public/Data/Configs/GameConfigData.cs
     startLine: 27
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: UHD_3840x2160 = 2

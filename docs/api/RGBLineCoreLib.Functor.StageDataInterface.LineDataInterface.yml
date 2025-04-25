@@ -9,6 +9,9 @@ items:
   - RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.GetAttachedRegionID(System.Guid@)
   - RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.GetLineData(System.Guid@)
   - RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.GetLineIDs
+  - RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData(System.Guid@,RGBLineCoreLib.Data.StageData.LineData@)
+  - RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData(System.Guid@)
+  - RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData(System.Guid@,RGBLineCoreLib.Data.StageData.LineData@)
   langs:
   - csharp
   - vb
@@ -25,7 +28,7 @@ items:
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
     startLine: 143
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 현재 StageData의 LineData에 접근하기 위한 Interface
   example: []
@@ -62,7 +65,7 @@ items:
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
     startLine: 153
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 주어진 targetLineID에 해당하는 Line이 속한 Region의 RegionID를 반환한다
   remarks: 만약 해당하는 LineID가 없을 경우 KeyNotFoundException을 발생시킨다
@@ -103,7 +106,7 @@ items:
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
     startLine: 164
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 주어진 targetLineID에 해당하는 Line이 속한 Region의 RegionData를 반환한다
   remarks: 만약 해당하는 LineID가 없을 경우 KeyNotFoundException을 발생시킨다
@@ -144,7 +147,7 @@ items:
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
     startLine: 176
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 주어진 targetLineID에 해당하는 LineData를 반환한다
   remarks: 만약 해당하는 LineID가 없을 경우 KeyNotFoundException을 발생시킨다
@@ -185,7 +188,7 @@ items:
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
     startLine: 184
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 현재 StageData에 존재하는 모든 LineData의 LineID를 반환한다
   example: []
@@ -195,6 +198,112 @@ items:
       type: System.Guid[]
     content.vb: Public Shared Function GetLineIDs() As Guid()
   overload: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.GetLineIDs*
+- uid: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData(System.Guid@,RGBLineCoreLib.Data.StageData.LineData@)
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData(System.Guid@,RGBLineCoreLib.Data.StageData.LineData@)
+  id: TryAddLineData(System.Guid@,RGBLineCoreLib.Data.StageData.LineData@)
+  parent: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface
+  langs:
+  - csharp
+  - vb
+  name: TryAddLineData(in Guid, in LineData)
+  nameWithType: StageDataInterface.LineDataInterface.TryAddLineData(in Guid, in StageData.LineData)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData(in System.Guid, in RGBLineCoreLib.Data.StageData.LineData)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Interfaces/StageDataInterface.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: TryAddLineData
+    path: ../Public/Functor/Interfaces/StageDataInterface.cs
+    startLine: 247
+  assemblies:
+  - RGBLineCoreLib_ForEditor
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public static bool TryAddLineData(in Guid targetLineID, in StageData.LineData targetLineData)
+    parameters:
+    - id: targetLineID
+      type: System.Guid
+    - id: targetLineData
+      type: RGBLineCoreLib.Data.StageData.LineData
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TryAddLineData(targetLineID As Guid, targetLineData As StageData.LineData) As Boolean
+  overload: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData*
+  nameWithType.vb: StageDataInterface.LineDataInterface.TryAddLineData(Guid, StageData.LineData)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData(System.Guid, RGBLineCoreLib.Data.StageData.LineData)
+  name.vb: TryAddLineData(Guid, LineData)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData(System.Guid@)
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData(System.Guid@)
+  id: TryRemoveLineData(System.Guid@)
+  parent: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface
+  langs:
+  - csharp
+  - vb
+  name: TryRemoveLineData(in Guid)
+  nameWithType: StageDataInterface.LineDataInterface.TryRemoveLineData(in Guid)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData(in System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Interfaces/StageDataInterface.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: TryRemoveLineData
+    path: ../Public/Functor/Interfaces/StageDataInterface.cs
+    startLine: 257
+  assemblies:
+  - RGBLineCoreLib_ForEditor
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public static bool TryRemoveLineData(in Guid targetLineID)
+    parameters:
+    - id: targetLineID
+      type: System.Guid
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TryRemoveLineData(targetLineID As Guid) As Boolean
+  overload: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData*
+  nameWithType.vb: StageDataInterface.LineDataInterface.TryRemoveLineData(Guid)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData(System.Guid)
+  name.vb: TryRemoveLineData(Guid)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData(System.Guid@,RGBLineCoreLib.Data.StageData.LineData@)
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData(System.Guid@,RGBLineCoreLib.Data.StageData.LineData@)
+  id: TrySetLineData(System.Guid@,RGBLineCoreLib.Data.StageData.LineData@)
+  parent: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface
+  langs:
+  - csharp
+  - vb
+  name: TrySetLineData(in Guid, in LineData)
+  nameWithType: StageDataInterface.LineDataInterface.TrySetLineData(in Guid, in StageData.LineData)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData(in System.Guid, in RGBLineCoreLib.Data.StageData.LineData)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Interfaces/StageDataInterface.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: TrySetLineData
+    path: ../Public/Functor/Interfaces/StageDataInterface.cs
+    startLine: 268
+  assemblies:
+  - RGBLineCoreLib_ForEditor
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public static bool TrySetLineData(in Guid targetLineID, in StageData.LineData targetLineData)
+    parameters:
+    - id: targetLineID
+      type: System.Guid
+    - id: targetLineData
+      type: RGBLineCoreLib.Data.StageData.LineData
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TrySetLineData(targetLineID As Guid, targetLineData As StageData.LineData) As Boolean
+  overload: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData*
+  nameWithType.vb: StageDataInterface.LineDataInterface.TrySetLineData(Guid, StageData.LineData)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData(System.Guid, RGBLineCoreLib.Data.StageData.LineData)
+  name.vb: TrySetLineData(Guid, LineData)
 references:
 - uid: RGBLineCoreLib.Functor
   commentId: N:RGBLineCoreLib.Functor
@@ -585,3 +694,32 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.guid
   - name: (
   - name: )
+- uid: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData*
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData
+  href: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_LineDataInterface_TryAddLineData_System_Guid__RGBLineCoreLib_Data_StageData_LineData__
+  name: TryAddLineData
+  nameWithType: StageDataInterface.LineDataInterface.TryAddLineData
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData*
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData
+  href: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_LineDataInterface_TryRemoveLineData_System_Guid__
+  name: TryRemoveLineData
+  nameWithType: StageDataInterface.LineDataInterface.TryRemoveLineData
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData
+- uid: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData*
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData
+  href: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_LineDataInterface_TrySetLineData_System_Guid__RGBLineCoreLib_Data_StageData_LineData__
+  name: TrySetLineData
+  nameWithType: StageDataInterface.LineDataInterface.TrySetLineData
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData

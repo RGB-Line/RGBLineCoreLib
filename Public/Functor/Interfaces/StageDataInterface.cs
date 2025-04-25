@@ -442,9 +442,9 @@ namespace RGBLineCoreLib.Functor
         /// <returns>
         /// 만약 Load에 성공했을 경우 true, 실패했을 경우 false
         /// </returns>
-        public static bool TryLoadStageData(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty)
+        public static bool TryLoadStageData(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty, in bool bisNewData = false)
         {
-            return StageDataBuffer.Instance.TryLoadStageData(targetStageName, majorDifficulty);
+            return StageDataBuffer.Instance.TryLoadStageData(targetStageName, majorDifficulty, bisNewData);
         }
         /// <summary>
         /// StageData를 Dispose한다

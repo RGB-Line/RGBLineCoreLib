@@ -23,7 +23,7 @@ items:
     path: ../Public/Data/DTOs/StageLoadInfoDTO.cs
     startLine: 11
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: 'public sealed class StageLoadInfoDTO : MonoBehaviour'
@@ -171,7 +171,7 @@ items:
     path: ../Public/Data/DTOs/StageLoadInfoDTO.cs
     startLine: 13
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public string StageName
@@ -198,7 +198,7 @@ items:
     path: ../Public/Data/DTOs/StageLoadInfoDTO.cs
     startLine: 14
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public StageMetadata.MajorDifficultyLevel MajorDifficulty

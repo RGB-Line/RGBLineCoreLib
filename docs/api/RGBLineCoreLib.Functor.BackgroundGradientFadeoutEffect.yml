@@ -23,7 +23,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientFadeoutEffect.cs
     startLine: 11
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-
@@ -183,7 +183,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientFadeoutEffect.cs
     startLine: 48
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void Update()
@@ -209,7 +209,7 @@ items:
     path: ../Public/Functor/Effect/BackgroundGradientFadeoutEffect.cs
     startLine: 76
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void CalculateFadeout(in BackgroundGradientFadeoutEffect.FadeoutInput input)

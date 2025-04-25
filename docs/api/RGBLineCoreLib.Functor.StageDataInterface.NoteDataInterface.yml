@@ -12,6 +12,9 @@ items:
   - RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetAttachedRegionID(System.Guid@)
   - RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetNoteData(System.Guid@)
   - RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetNoteIDs
+  - RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData(System.Guid@,RGBLineCoreLib.Data.StageData.NoteData@)
+  - RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData(System.Guid@)
+  - RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData(System.Guid@,RGBLineCoreLib.Data.StageData.NoteData@)
   langs:
   - csharp
   - vb
@@ -28,7 +31,7 @@ items:
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
     startLine: 284
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 현재 StageData의 NoteData에 접근하기 위한 Interface
   example: []
@@ -65,7 +68,7 @@ items:
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
     startLine: 294
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 주어진 targetNoteID에 해당하는 Note가 속한 Region의 RegionID를 반환한다
   remarks: 만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다
@@ -106,7 +109,7 @@ items:
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
     startLine: 305
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 주어진 targetNoteID에 해당하는 Note가 속한 Region의 RegionData를 반환한다
   remarks: 만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다
@@ -147,7 +150,7 @@ items:
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
     startLine: 317
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 주어진 targetNoteID에 해당하는 Note가 속한 Line의 LineID를 반환한다
   remarks: 만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다
@@ -188,7 +191,7 @@ items:
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
     startLine: 328
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 주어진 targetNoteID에 해당하는 Note가 속한 Line의 LineData를 반환한다
   remarks: 만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다
@@ -229,7 +232,7 @@ items:
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
     startLine: 339
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 주어진 targetNoteID에 해당하는 Note가 존재하는지 확인한다
   example: []
@@ -266,7 +269,7 @@ items:
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
     startLine: 350
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 주어진 targetLineID에 해당하는 NoteData를 반환한다
   remarks: 만약 해당하는 NoteID가 없을 경우 KeyNotFoundException을 발생시킨다
@@ -307,7 +310,7 @@ items:
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
     startLine: 358
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 현재 StageData에 존재하는 모든 NoteData의 NoteID를 반환한다
   example: []
@@ -317,6 +320,112 @@ items:
       type: System.Guid[]
     content.vb: Public Shared Function GetNoteIDs() As Guid()
   overload: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetNoteIDs*
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData(System.Guid@,RGBLineCoreLib.Data.StageData.NoteData@)
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData(System.Guid@,RGBLineCoreLib.Data.StageData.NoteData@)
+  id: TryAddNoteData(System.Guid@,RGBLineCoreLib.Data.StageData.NoteData@)
+  parent: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface
+  langs:
+  - csharp
+  - vb
+  name: TryAddNoteData(in Guid, in NoteData)
+  nameWithType: StageDataInterface.NoteDataInterface.TryAddNoteData(in Guid, in StageData.NoteData)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData(in System.Guid, in RGBLineCoreLib.Data.StageData.NoteData)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Interfaces/StageDataInterface.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: TryAddNoteData
+    path: ../Public/Functor/Interfaces/StageDataInterface.cs
+    startLine: 366
+  assemblies:
+  - RGBLineCoreLib_ForEditor
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public static bool TryAddNoteData(in Guid targetNoteID, in StageData.NoteData targetNoteData)
+    parameters:
+    - id: targetNoteID
+      type: System.Guid
+    - id: targetNoteData
+      type: RGBLineCoreLib.Data.StageData.NoteData
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TryAddNoteData(targetNoteID As Guid, targetNoteData As StageData.NoteData) As Boolean
+  overload: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData*
+  nameWithType.vb: StageDataInterface.NoteDataInterface.TryAddNoteData(Guid, StageData.NoteData)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData(System.Guid, RGBLineCoreLib.Data.StageData.NoteData)
+  name.vb: TryAddNoteData(Guid, NoteData)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData(System.Guid@)
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData(System.Guid@)
+  id: TryRemoveNoteData(System.Guid@)
+  parent: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface
+  langs:
+  - csharp
+  - vb
+  name: TryRemoveNoteData(in Guid)
+  nameWithType: StageDataInterface.NoteDataInterface.TryRemoveNoteData(in Guid)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData(in System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Interfaces/StageDataInterface.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: TryRemoveNoteData
+    path: ../Public/Functor/Interfaces/StageDataInterface.cs
+    startLine: 376
+  assemblies:
+  - RGBLineCoreLib_ForEditor
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public static bool TryRemoveNoteData(in Guid targetNoteID)
+    parameters:
+    - id: targetNoteID
+      type: System.Guid
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TryRemoveNoteData(targetNoteID As Guid) As Boolean
+  overload: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData*
+  nameWithType.vb: StageDataInterface.NoteDataInterface.TryRemoveNoteData(Guid)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData(System.Guid)
+  name.vb: TryRemoveNoteData(Guid)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData(System.Guid@,RGBLineCoreLib.Data.StageData.NoteData@)
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData(System.Guid@,RGBLineCoreLib.Data.StageData.NoteData@)
+  id: TrySetNoteData(System.Guid@,RGBLineCoreLib.Data.StageData.NoteData@)
+  parent: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface
+  langs:
+  - csharp
+  - vb
+  name: TrySetNoteData(in Guid, in NoteData)
+  nameWithType: StageDataInterface.NoteDataInterface.TrySetNoteData(in Guid, in StageData.NoteData)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData(in System.Guid, in RGBLineCoreLib.Data.StageData.NoteData)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Interfaces/StageDataInterface.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: TrySetNoteData
+    path: ../Public/Functor/Interfaces/StageDataInterface.cs
+    startLine: 387
+  assemblies:
+  - RGBLineCoreLib_ForEditor
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public static bool TrySetNoteData(in Guid targetNoteID, in StageData.NoteData targetNoteData)
+    parameters:
+    - id: targetNoteID
+      type: System.Guid
+    - id: targetNoteData
+      type: RGBLineCoreLib.Data.StageData.NoteData
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TrySetNoteData(targetNoteID As Guid, targetNoteData As StageData.NoteData) As Boolean
+  overload: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData*
+  nameWithType.vb: StageDataInterface.NoteDataInterface.TrySetNoteData(Guid, StageData.NoteData)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData(System.Guid, RGBLineCoreLib.Data.StageData.NoteData)
+  name.vb: TrySetNoteData(Guid, NoteData)
 references:
 - uid: RGBLineCoreLib.Functor
   commentId: N:RGBLineCoreLib.Functor
@@ -759,3 +868,21 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.guid
   - name: (
   - name: )
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData*
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData
+  href: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_TryAddNoteData_System_Guid__RGBLineCoreLib_Data_StageData_NoteData__
+  name: TryAddNoteData
+  nameWithType: StageDataInterface.NoteDataInterface.TryAddNoteData
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData*
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData
+  href: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_TryRemoveNoteData_System_Guid__
+  name: TryRemoveNoteData
+  nameWithType: StageDataInterface.NoteDataInterface.TryRemoveNoteData
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData*
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData
+  href: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_TrySetNoteData_System_Guid__RGBLineCoreLib_Data_StageData_NoteData__
+  name: TrySetNoteData
+  nameWithType: StageDataInterface.NoteDataInterface.TrySetNoteData
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData

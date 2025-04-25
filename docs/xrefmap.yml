@@ -2767,6 +2767,54 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.GetLineIDs
   nameWithType: StageDataInterface.LineDataInterface.GetLineIDs
+- uid: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData(System.Guid@,RGBLineCoreLib.Data.StageData.LineData@)
+  name: TryAddLineData(in Guid, in LineData)
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_LineDataInterface_TryAddLineData_System_Guid__RGBLineCoreLib_Data_StageData_LineData__
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData(System.Guid@,RGBLineCoreLib.Data.StageData.LineData@)
+  name.vb: TryAddLineData(Guid, LineData)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData(in System.Guid, in RGBLineCoreLib.Data.StageData.LineData)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData(System.Guid, RGBLineCoreLib.Data.StageData.LineData)
+  nameWithType: StageDataInterface.LineDataInterface.TryAddLineData(in Guid, in StageData.LineData)
+  nameWithType.vb: StageDataInterface.LineDataInterface.TryAddLineData(Guid, StageData.LineData)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData*
+  name: TryAddLineData
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_LineDataInterface_TryAddLineData_
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryAddLineData
+  nameWithType: StageDataInterface.LineDataInterface.TryAddLineData
+- uid: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData(System.Guid@)
+  name: TryRemoveLineData(in Guid)
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_LineDataInterface_TryRemoveLineData_System_Guid__
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData(System.Guid@)
+  name.vb: TryRemoveLineData(Guid)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData(in System.Guid)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData(System.Guid)
+  nameWithType: StageDataInterface.LineDataInterface.TryRemoveLineData(in Guid)
+  nameWithType.vb: StageDataInterface.LineDataInterface.TryRemoveLineData(Guid)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData*
+  name: TryRemoveLineData
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_LineDataInterface_TryRemoveLineData_
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TryRemoveLineData
+  nameWithType: StageDataInterface.LineDataInterface.TryRemoveLineData
+- uid: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData(System.Guid@,RGBLineCoreLib.Data.StageData.LineData@)
+  name: TrySetLineData(in Guid, in LineData)
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_LineDataInterface_TrySetLineData_System_Guid__RGBLineCoreLib_Data_StageData_LineData__
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData(System.Guid@,RGBLineCoreLib.Data.StageData.LineData@)
+  name.vb: TrySetLineData(Guid, LineData)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData(in System.Guid, in RGBLineCoreLib.Data.StageData.LineData)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData(System.Guid, RGBLineCoreLib.Data.StageData.LineData)
+  nameWithType: StageDataInterface.LineDataInterface.TrySetLineData(in Guid, in StageData.LineData)
+  nameWithType.vb: StageDataInterface.LineDataInterface.TrySetLineData(Guid, StageData.LineData)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData*
+  name: TrySetLineData
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_LineDataInterface_TrySetLineData_
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.LineDataInterface.TrySetLineData
+  nameWithType: StageDataInterface.LineDataInterface.TrySetLineData
 - uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface
   name: StageDataInterface.NoteDataInterface
   href: api/RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html
@@ -2882,12 +2930,76 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.GetNoteIDs
   nameWithType: StageDataInterface.NoteDataInterface.GetNoteIDs
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData(System.Guid@,RGBLineCoreLib.Data.StageData.NoteData@)
+  name: TryAddNoteData(in Guid, in NoteData)
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_TryAddNoteData_System_Guid__RGBLineCoreLib_Data_StageData_NoteData__
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData(System.Guid@,RGBLineCoreLib.Data.StageData.NoteData@)
+  name.vb: TryAddNoteData(Guid, NoteData)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData(in System.Guid, in RGBLineCoreLib.Data.StageData.NoteData)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData(System.Guid, RGBLineCoreLib.Data.StageData.NoteData)
+  nameWithType: StageDataInterface.NoteDataInterface.TryAddNoteData(in Guid, in StageData.NoteData)
+  nameWithType.vb: StageDataInterface.NoteDataInterface.TryAddNoteData(Guid, StageData.NoteData)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData*
+  name: TryAddNoteData
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_TryAddNoteData_
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData
+  nameWithType: StageDataInterface.NoteDataInterface.TryAddNoteData
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData(System.Guid@)
+  name: TryRemoveNoteData(in Guid)
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_TryRemoveNoteData_System_Guid__
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData(System.Guid@)
+  name.vb: TryRemoveNoteData(Guid)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData(in System.Guid)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData(System.Guid)
+  nameWithType: StageDataInterface.NoteDataInterface.TryRemoveNoteData(in Guid)
+  nameWithType.vb: StageDataInterface.NoteDataInterface.TryRemoveNoteData(Guid)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData*
+  name: TryRemoveNoteData
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_TryRemoveNoteData_
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData
+  nameWithType: StageDataInterface.NoteDataInterface.TryRemoveNoteData
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData(System.Guid@,RGBLineCoreLib.Data.StageData.NoteData@)
+  name: TrySetNoteData(in Guid, in NoteData)
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_TrySetNoteData_System_Guid__RGBLineCoreLib_Data_StageData_NoteData__
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData(System.Guid@,RGBLineCoreLib.Data.StageData.NoteData@)
+  name.vb: TrySetNoteData(Guid, NoteData)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData(in System.Guid, in RGBLineCoreLib.Data.StageData.NoteData)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData(System.Guid, RGBLineCoreLib.Data.StageData.NoteData)
+  nameWithType: StageDataInterface.NoteDataInterface.TrySetNoteData(in Guid, in StageData.NoteData)
+  nameWithType.vb: StageDataInterface.NoteDataInterface.TrySetNoteData(Guid, StageData.NoteData)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData*
+  name: TrySetNoteData
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_TrySetNoteData_
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData
+  nameWithType: StageDataInterface.NoteDataInterface.TrySetNoteData
 - uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface
   name: StageDataInterface.RegionDataInterface
   href: api/RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html
   commentId: T:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface
   fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface
   nameWithType: StageDataInterface.RegionDataInterface
+- uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID(System.Guid@)
+  name: GetNextRegionID(in Guid)
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_RegionDataInterface_GetNextRegionID_System_Guid__
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID(System.Guid@)
+  name.vb: GetNextRegionID(Guid)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID(in System.Guid)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID(System.Guid)
+  nameWithType: StageDataInterface.RegionDataInterface.GetNextRegionID(in Guid)
+  nameWithType.vb: StageDataInterface.RegionDataInterface.GetNextRegionID(Guid)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID*
+  name: GetNextRegionID
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_RegionDataInterface_GetNextRegionID_
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetNextRegionID
+  nameWithType: StageDataInterface.RegionDataInterface.GetNextRegionID
 - uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetRegionData(System.Guid@)
   name: GetRegionData(in Guid)
   href: api/RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_RegionDataInterface_GetRegionData_System_Guid__
@@ -2917,6 +3029,54 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.GetRegionIDs
   nameWithType: StageDataInterface.RegionDataInterface.GetRegionIDs
+- uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData(System.Guid@,RGBLineCoreLib.Data.StageData.RegionData@)
+  name: TryAddRegionData(in Guid, in RegionData)
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_RegionDataInterface_TryAddRegionData_System_Guid__RGBLineCoreLib_Data_StageData_RegionData__
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData(System.Guid@,RGBLineCoreLib.Data.StageData.RegionData@)
+  name.vb: TryAddRegionData(Guid, RegionData)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData(in System.Guid, in RGBLineCoreLib.Data.StageData.RegionData)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData(System.Guid, RGBLineCoreLib.Data.StageData.RegionData)
+  nameWithType: StageDataInterface.RegionDataInterface.TryAddRegionData(in Guid, in StageData.RegionData)
+  nameWithType.vb: StageDataInterface.RegionDataInterface.TryAddRegionData(Guid, StageData.RegionData)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData*
+  name: TryAddRegionData
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_RegionDataInterface_TryAddRegionData_
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryAddRegionData
+  nameWithType: StageDataInterface.RegionDataInterface.TryAddRegionData
+- uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryRemoveRegionData(System.Guid@)
+  name: TryRemoveRegionData(in Guid)
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_RegionDataInterface_TryRemoveRegionData_System_Guid__
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryRemoveRegionData(System.Guid@)
+  name.vb: TryRemoveRegionData(Guid)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryRemoveRegionData(in System.Guid)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryRemoveRegionData(System.Guid)
+  nameWithType: StageDataInterface.RegionDataInterface.TryRemoveRegionData(in Guid)
+  nameWithType.vb: StageDataInterface.RegionDataInterface.TryRemoveRegionData(Guid)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryRemoveRegionData*
+  name: TryRemoveRegionData
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_RegionDataInterface_TryRemoveRegionData_
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryRemoveRegionData
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TryRemoveRegionData
+  nameWithType: StageDataInterface.RegionDataInterface.TryRemoveRegionData
+- uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TrySetRegionData(System.Guid@,RGBLineCoreLib.Data.StageData.RegionData@)
+  name: TrySetRegionData(in Guid, in RegionData)
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_RegionDataInterface_TrySetRegionData_System_Guid__RGBLineCoreLib_Data_StageData_RegionData__
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TrySetRegionData(System.Guid@,RGBLineCoreLib.Data.StageData.RegionData@)
+  name.vb: TrySetRegionData(Guid, RegionData)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TrySetRegionData(in System.Guid, in RGBLineCoreLib.Data.StageData.RegionData)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TrySetRegionData(System.Guid, RGBLineCoreLib.Data.StageData.RegionData)
+  nameWithType: StageDataInterface.RegionDataInterface.TrySetRegionData(in Guid, in StageData.RegionData)
+  nameWithType.vb: StageDataInterface.RegionDataInterface.TrySetRegionData(Guid, StageData.RegionData)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TrySetRegionData*
+  name: TrySetRegionData
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_RegionDataInterface_TrySetRegionData_
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TrySetRegionData
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.RegionDataInterface.TrySetRegionData
+  nameWithType: StageDataInterface.RegionDataInterface.TrySetRegionData
 - uid: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface
   name: StageDataInterface.StageConfigDataInterface
   href: api/RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.html
@@ -2936,15 +3096,31 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.GetStageConfigData
   nameWithType: StageDataInterface.StageConfigDataInterface.GetStageConfigData
-- uid: RGBLineCoreLib.Functor.StageDataInterface.TryLoadStageData(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)
-  name: TryLoadStageData(in string, in MajorDifficultyLevel)
-  href: api/RGBLineCoreLib.Functor.StageDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_TryLoadStageData_System_String__RGBLineCoreLib_Data_StageMetadata_MajorDifficultyLevel__
-  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.TryLoadStageData(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)
-  name.vb: TryLoadStageData(String, MajorDifficultyLevel)
-  fullName: RGBLineCoreLib.Functor.StageDataInterface.TryLoadStageData(in string, in RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel)
-  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.TryLoadStageData(String, RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel)
-  nameWithType: StageDataInterface.TryLoadStageData(in string, in StageMetadata.MajorDifficultyLevel)
-  nameWithType.vb: StageDataInterface.TryLoadStageData(String, StageMetadata.MajorDifficultyLevel)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.SetStageConfigData(RGBLineCoreLib.Data.StageData.StageConfigData@)
+  name: SetStageConfigData(in StageConfigData)
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_StageConfigDataInterface_SetStageConfigData_RGBLineCoreLib_Data_StageData_StageConfigData__
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.SetStageConfigData(RGBLineCoreLib.Data.StageData.StageConfigData@)
+  name.vb: SetStageConfigData(StageConfigData)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.SetStageConfigData(in RGBLineCoreLib.Data.StageData.StageConfigData)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.SetStageConfigData(RGBLineCoreLib.Data.StageData.StageConfigData)
+  nameWithType: StageDataInterface.StageConfigDataInterface.SetStageConfigData(in StageData.StageConfigData)
+  nameWithType.vb: StageDataInterface.StageConfigDataInterface.SetStageConfigData(StageData.StageConfigData)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.SetStageConfigData*
+  name: SetStageConfigData
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_StageConfigDataInterface_SetStageConfigData_
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.SetStageConfigData
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.SetStageConfigData
+  nameWithType: StageDataInterface.StageConfigDataInterface.SetStageConfigData
+- uid: RGBLineCoreLib.Functor.StageDataInterface.TryLoadStageData(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@,System.Boolean@)
+  name: TryLoadStageData(in string, in MajorDifficultyLevel, in bool)
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_TryLoadStageData_System_String__RGBLineCoreLib_Data_StageMetadata_MajorDifficultyLevel__System_Boolean__
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.TryLoadStageData(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@,System.Boolean@)
+  name.vb: TryLoadStageData(String, MajorDifficultyLevel, Boolean)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.TryLoadStageData(in string, in RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel, in bool)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.TryLoadStageData(String, RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel, Boolean)
+  nameWithType: StageDataInterface.TryLoadStageData(in string, in StageMetadata.MajorDifficultyLevel, in bool)
+  nameWithType.vb: StageDataInterface.TryLoadStageData(String, StageMetadata.MajorDifficultyLevel, Boolean)
 - uid: RGBLineCoreLib.Functor.StageDataInterface.TryLoadStageData*
   name: TryLoadStageData
   href: api/RGBLineCoreLib.Functor.StageDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_TryLoadStageData_
@@ -2952,6 +3128,22 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.StageDataInterface.TryLoadStageData
   nameWithType: StageDataInterface.TryLoadStageData
+- uid: RGBLineCoreLib.Functor.StageDataInterface.TrySaveStageData(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)
+  name: TrySaveStageData(in string, in MajorDifficultyLevel)
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_TrySaveStageData_System_String__RGBLineCoreLib_Data_StageMetadata_MajorDifficultyLevel__
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.TrySaveStageData(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)
+  name.vb: TrySaveStageData(String, MajorDifficultyLevel)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.TrySaveStageData(in string, in RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.TrySaveStageData(String, RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel)
+  nameWithType: StageDataInterface.TrySaveStageData(in string, in StageMetadata.MajorDifficultyLevel)
+  nameWithType.vb: StageDataInterface.TrySaveStageData(String, StageMetadata.MajorDifficultyLevel)
+- uid: RGBLineCoreLib.Functor.StageDataInterface.TrySaveStageData*
+  name: TrySaveStageData
+  href: api/RGBLineCoreLib.Functor.StageDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_TrySaveStageData_
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.TrySaveStageData
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.TrySaveStageData
+  nameWithType: StageDataInterface.TrySaveStageData
 - uid: RGBLineCoreLib.Functor.StageMetadataInterface
   name: StageMetadataInterface
   href: api/RGBLineCoreLib.Functor.StageMetadataInterface.html
@@ -2997,15 +3189,15 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.StageMetadataInterface.GetStageMetadata
   nameWithType: StageMetadataInterface.GetStageMetadata
-- uid: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)
-  name: TryLoadStageMetadata(in string, in MajorDifficultyLevel)
-  href: api/RGBLineCoreLib.Functor.StageMetadataInterface.html#RGBLineCoreLib_Functor_StageMetadataInterface_TryLoadStageMetadata_System_String__RGBLineCoreLib_Data_StageMetadata_MajorDifficultyLevel__
-  commentId: M:RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)
-  name.vb: TryLoadStageMetadata(String, MajorDifficultyLevel)
-  fullName: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(in string, in RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel)
-  fullName.vb: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(String, RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel)
-  nameWithType: StageMetadataInterface.TryLoadStageMetadata(in string, in StageMetadata.MajorDifficultyLevel)
-  nameWithType.vb: StageMetadataInterface.TryLoadStageMetadata(String, StageMetadata.MajorDifficultyLevel)
+- uid: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@,System.Boolean@,System.Single@)
+  name: TryLoadStageMetadata(in string, in MajorDifficultyLevel, in bool, in float)
+  href: api/RGBLineCoreLib.Functor.StageMetadataInterface.html#RGBLineCoreLib_Functor_StageMetadataInterface_TryLoadStageMetadata_System_String__RGBLineCoreLib_Data_StageMetadata_MajorDifficultyLevel__System_Boolean__System_Single__
+  commentId: M:RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@,System.Boolean@,System.Single@)
+  name.vb: TryLoadStageMetadata(String, MajorDifficultyLevel, Boolean, Single)
+  fullName: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(in string, in RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel, in bool, in float)
+  fullName.vb: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(String, RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel, Boolean, Single)
+  nameWithType: StageMetadataInterface.TryLoadStageMetadata(in string, in StageMetadata.MajorDifficultyLevel, in bool, in float)
+  nameWithType.vb: StageMetadataInterface.TryLoadStageMetadata(String, StageMetadata.MajorDifficultyLevel, Boolean, Single)
 - uid: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata*
   name: TryLoadStageMetadata
   href: api/RGBLineCoreLib.Functor.StageMetadataInterface.html#RGBLineCoreLib_Functor_StageMetadataInterface_TryLoadStageMetadata_
@@ -3013,6 +3205,22 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata
   nameWithType: StageMetadataInterface.TryLoadStageMetadata
+- uid: RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)
+  name: TrySaveStageMetadata(in string, in MajorDifficultyLevel)
+  href: api/RGBLineCoreLib.Functor.StageMetadataInterface.html#RGBLineCoreLib_Functor_StageMetadataInterface_TrySaveStageMetadata_System_String__RGBLineCoreLib_Data_StageMetadata_MajorDifficultyLevel__
+  commentId: M:RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)
+  name.vb: TrySaveStageMetadata(String, MajorDifficultyLevel)
+  fullName: RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata(in string, in RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel)
+  fullName.vb: RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata(String, RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel)
+  nameWithType: StageMetadataInterface.TrySaveStageMetadata(in string, in StageMetadata.MajorDifficultyLevel)
+  nameWithType.vb: StageMetadataInterface.TrySaveStageMetadata(String, StageMetadata.MajorDifficultyLevel)
+- uid: RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata*
+  name: TrySaveStageMetadata
+  href: api/RGBLineCoreLib.Functor.StageMetadataInterface.html#RGBLineCoreLib_Functor_StageMetadataInterface_TrySaveStageMetadata_
+  commentId: Overload:RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata
+  nameWithType: StageMetadataInterface.TrySaveStageMetadata
 - uid: RGBLineCoreLib.GameConfigData
   name: GameConfigData
   href: api/RGBLineCoreLib.GameConfigData.html

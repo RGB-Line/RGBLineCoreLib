@@ -38,9 +38,9 @@ namespace RGBLineCoreLib.Functor
         /// <returns>
         /// Load에 성공했을 경우 true, 실패했을 경우 false
         /// </returns>
-        public static bool TryLoadStageMetadata(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty)
+        public static bool TryLoadStageMetadata(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty, in bool bisNewData = false, in float musicLength = 0.0f)
         {
-            return StageMetadataBuffer.Instance.TryLoadStageMetadata(targetStageName, majorDifficulty);
+            return StageMetadataBuffer.Instance.TryLoadStageMetadata(targetStageName, majorDifficulty, bisNewData, musicLength);
         }
         public static void DisposeStageMetadata()
         {

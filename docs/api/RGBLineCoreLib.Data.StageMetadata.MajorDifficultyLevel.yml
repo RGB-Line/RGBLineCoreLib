@@ -24,7 +24,7 @@ items:
     path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
     startLine: 14
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 해당 Stage의 Major Difficulty를 나타내는 Flag
   example: []
@@ -51,7 +51,7 @@ items:
     path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
     startLine: 16
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: Easy = 0
@@ -77,7 +77,7 @@ items:
     path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
     startLine: 16
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: Normal = 1
@@ -103,7 +103,7 @@ items:
     path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
     startLine: 16
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: Hard = 2

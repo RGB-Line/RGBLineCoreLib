@@ -27,7 +27,7 @@ items:
     path: ../Public/Functor/CurvedLine/CurvedLineRenderer.cs
     startLine: 15
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: Curved Line을 그리기 위한 Renderer
   example: []
@@ -190,7 +190,7 @@ items:
     path: ../Public/Functor/CurvedLine/CurvedLineRenderer.cs
     startLine: 19
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public float lineSegmentSize
@@ -217,7 +217,7 @@ items:
     path: ../Public/Functor/CurvedLine/CurvedLineRenderer.cs
     startLine: 20
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public float lineWidth
@@ -244,7 +244,7 @@ items:
     path: ../Public/Functor/CurvedLine/CurvedLineRenderer.cs
     startLine: 22
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-
@@ -283,7 +283,7 @@ items:
     path: ../Public/Functor/CurvedLine/CurvedLineRenderer.cs
     startLine: 23
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public float gizmoSize
@@ -310,7 +310,7 @@ items:
     path: ../Public/Functor/CurvedLine/CurvedLineRenderer.cs
     startLine: 24
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public Color gizmoColor
@@ -337,7 +337,7 @@ items:
     path: ../Public/Functor/CurvedLine/CurvedLineRenderer.cs
     startLine: 31
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void Update()

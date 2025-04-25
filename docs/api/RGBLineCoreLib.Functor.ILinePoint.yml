@@ -23,7 +23,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/ILinePoint.cs
     startLine: 11
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: 'public interface ILinePoint : IDisposable'
@@ -50,7 +50,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/ILinePoint.cs
     startLine: 13
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: Transform Transform { get; }
@@ -79,7 +79,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/ILinePoint.cs
     startLine: 15
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: void Render(in ILineItem parentLineItem, in Vector2 pos, in float minorOffsetTime, in int pointIndex)

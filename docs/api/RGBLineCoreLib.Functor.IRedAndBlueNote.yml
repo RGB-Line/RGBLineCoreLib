@@ -24,7 +24,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/IRedAndBlueNote.cs
     startLine: 13
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: 'public interface IRedAndBlueNote : IDisposable'
@@ -51,7 +51,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/IRedAndBlueNote.cs
     startLine: 15
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: Guid AttachedNoteID { get; }
@@ -80,7 +80,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/IRedAndBlueNote.cs
     startLine: 16
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: Transform Transform { get; }
@@ -109,7 +109,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/IRedAndBlueNote.cs
     startLine: 18
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: void Render(in INoteItem noteItem, in StageData.NoteData.NoteType noteType)

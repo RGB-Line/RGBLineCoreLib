@@ -24,7 +24,7 @@ items:
     path: ../Public/Data/Configs/GameConfigData.cs
     startLine: 35
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public enum GameConfigData.NoteHitJudgingStrandard.HitJudgingType
@@ -49,7 +49,7 @@ items:
     path: ../Public/Data/Configs/GameConfigData.cs
     startLine: 37
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: Perfect = 0
@@ -75,7 +75,7 @@ items:
     path: ../Public/Data/Configs/GameConfigData.cs
     startLine: 38
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: Good = 1
@@ -101,7 +101,7 @@ items:
     path: ../Public/Data/Configs/GameConfigData.cs
     startLine: 39
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: Miss = 2

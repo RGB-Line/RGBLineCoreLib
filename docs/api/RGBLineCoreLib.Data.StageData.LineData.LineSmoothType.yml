@@ -23,7 +23,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 56
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 해당 Line의 부드러운 정도를 나타내는 Flag
   example: []
@@ -50,7 +50,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 61
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 딱딱하게 꺽이는 선분들의 형태로 표현
   example: []
@@ -78,7 +78,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 65
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 부드럽게 꺽이는 곡선의 형태로 표현
   example: []

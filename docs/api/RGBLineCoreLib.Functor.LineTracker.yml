@@ -27,7 +27,7 @@ items:
     path: ../Public/Functor/MainGame/LineTracker.cs
     startLine: 17
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 게임 내 Red, Green Line을 따라가는 Tracker Class
   example: []
@@ -177,7 +177,7 @@ items:
     path: ../Public/Functor/MainGame/LineTracker.cs
     startLine: 31
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void Awake()
@@ -203,7 +203,7 @@ items:
     path: ../Public/Functor/MainGame/LineTracker.cs
     startLine: 36
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void Update()
@@ -229,7 +229,7 @@ items:
     path: ../Public/Functor/MainGame/LineTracker.cs
     startLine: 200
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public Guid CurRegionID { set; }
@@ -258,7 +258,7 @@ items:
     path: ../Public/Functor/MainGame/LineTracker.cs
     startLine: 207
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public Guid CurLineID { get; }
@@ -287,7 +287,7 @@ items:
     path: ../Public/Functor/MainGame/LineTracker.cs
     startLine: 215
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void StartTracking()
@@ -313,7 +313,7 @@ items:
     path: ../Public/Functor/MainGame/LineTracker.cs
     startLine: 219
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void StopTracking()

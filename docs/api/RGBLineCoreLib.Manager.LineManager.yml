@@ -26,7 +26,7 @@ items:
     path: ../Public/Manager/MainGame/PropManagers/LineManager.cs
     startLine: 18
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Manager
   summary: 게임 내 Line을 관리하는 Manager Class
   example: []
@@ -183,7 +183,7 @@ items:
     path: ../Public/Manager/MainGame/PropManagers/LineManager.cs
     startLine: 25
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Manager
   syntax:
     content: public void Awake()
@@ -209,7 +209,7 @@ items:
     path: ../Public/Manager/MainGame/PropManagers/LineManager.cs
     startLine: 36
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Manager
   summary: 게임 내에 Line Item들을 생성할 때 호출하면 된다
   remarks: Editor에서 Line Item들을 다시 그릴 경우에는 필히 먼저 DespawnLineProps()을 호출하고, 그 다음에 SpawnLineProps()을 호출해야 한다
@@ -238,7 +238,7 @@ items:
     path: ../Public/Manager/MainGame/PropManagers/LineManager.cs
     startLine: 66
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Manager
   summary: 게임 내에 Line Item들을 제거할 때 호출하면 된다
   remarks: Scene Unload 전에 필히 DespawnLineProps() + GC.Collect()를 호출해 Memory 관리에 유의한다
@@ -267,7 +267,7 @@ items:
     path: ../Public/Manager/MainGame/PropManagers/LineManager.cs
     startLine: 78
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Manager
   summary: 배치된 Line GameObject들 중에서 주어진 targetLineID에 대응되는 ILineItem를 반환한다
   example: []
@@ -303,7 +303,7 @@ items:
     path: ../Public/Manager/MainGame/PropManagers/LineManager.cs
     startLine: 83
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Manager
   example: []
   syntax:

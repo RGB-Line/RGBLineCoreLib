@@ -29,7 +29,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 20
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 기본적인 Line을 그리기 위한 Class
   remarks: Editor에서는 해당 Class를 상속받아 사용하지만, Runtime에서는 해당 Class를 직접 사용함
@@ -196,7 +196,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 51
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void Awake()
@@ -222,7 +222,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 57
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void FixedUpdate()
@@ -248,7 +248,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 65
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -280,7 +280,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 72
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -312,7 +312,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 79
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -344,7 +344,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 87
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -376,7 +376,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 95
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -411,7 +411,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 205
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
   example: []

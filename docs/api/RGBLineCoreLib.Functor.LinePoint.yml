@@ -24,7 +24,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LinePoint.cs
     startLine: 20
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 기본적인 Line을 그리기 위한 Class
   remarks: Editor에서는 해당 Class를 상속받아 사용하지만, Runtime에서는 해당 Class를 직접 사용함
@@ -191,7 +191,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LinePoint.cs
     startLine: 29
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -223,7 +223,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LinePoint.cs
     startLine: 37
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -264,7 +264,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LinePoint.cs
     startLine: 76
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
   example: []

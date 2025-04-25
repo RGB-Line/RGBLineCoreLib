@@ -22,7 +22,7 @@ items:
     path: ../Public/Manager/MainGame/PropManagers/RegionManager.cs
     startLine: 21
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Manager
   syntax:
     content: >-
@@ -64,7 +64,7 @@ items:
     path: ../Public/Manager/MainGame/PropManagers/RegionManager.cs
     startLine: 23
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Manager
   syntax:
     content: public RegionTransitionEffector m_regionTransitionEffector

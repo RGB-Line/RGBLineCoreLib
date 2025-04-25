@@ -94,7 +94,7 @@ Class StageDataInterface.NoteDataInterface  <a class="header-action link-seconda
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="RGBLineCoreLib.html">RGBLineCoreLib</a>.<a class="xref" href="RGBLineCoreLib.Functor.html">Functor</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>RGBLineCoreLib.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>RGBLineCoreLib_ForEditor.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>현재 StageData의 NoteData에 접근하기 위한 Interface</p>
@@ -435,6 +435,118 @@ Class StageDataInterface.NoteDataInterface  <a class="header-action link-seconda
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_TryAddNoteData_" data-uid="RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData*"></a>
+
+  <h3 id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_TryAddNoteData_System_Guid__RGBLineCoreLib_Data_StageData_NoteData__" data-uid="RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryAddNoteData(System.Guid@,RGBLineCoreLib.Data.StageData.NoteData@)">
+  TryAddNoteData(in Guid, in NoteData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryAddNoteData(in Guid targetNoteID, in StageData.NoteData targetNoteData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetNoteID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>targetNoteData</code> <a class="xref" href="RGBLineCoreLib.Data.StageData.html">StageData</a>.<a class="xref" href="RGBLineCoreLib.Data.StageData.NoteData.html">NoteData</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_TryRemoveNoteData_" data-uid="RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData*"></a>
+
+  <h3 id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_TryRemoveNoteData_System_Guid__" data-uid="RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TryRemoveNoteData(System.Guid@)">
+  TryRemoveNoteData(in Guid)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L377"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryRemoveNoteData(in Guid targetNoteID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetNoteID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_TrySetNoteData_" data-uid="RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData*"></a>
+
+  <h3 id="RGBLineCoreLib_Functor_StageDataInterface_NoteDataInterface_TrySetNoteData_System_Guid__RGBLineCoreLib_Data_StageData_NoteData__" data-uid="RGBLineCoreLib.Functor.StageDataInterface.NoteDataInterface.TrySetNoteData(System.Guid@,RGBLineCoreLib.Data.StageData.NoteData@)">
+  TrySetNoteData(in Guid, in NoteData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageDataInterface.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TrySetNoteData(in Guid targetNoteID, in StageData.NoteData targetNoteData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetNoteID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+    <dt><code>targetNoteData</code> <a class="xref" href="RGBLineCoreLib.Data.StageData.html">StageData</a>.<a class="xref" href="RGBLineCoreLib.Data.StageData.NoteData.html">NoteData</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 

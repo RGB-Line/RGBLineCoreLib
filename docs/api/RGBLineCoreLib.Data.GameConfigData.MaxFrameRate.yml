@@ -25,7 +25,7 @@ items:
     path: ../Public/Data/Configs/GameConfigData.cs
     startLine: 16
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 지원하는 FPS 빈도를 지정한다
   example: []
@@ -52,7 +52,7 @@ items:
     path: ../Public/Data/Configs/GameConfigData.cs
     startLine: 18
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: Frame_30 = 0
@@ -78,7 +78,7 @@ items:
     path: ../Public/Data/Configs/GameConfigData.cs
     startLine: 19
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: Frame_60 = 1
@@ -104,7 +104,7 @@ items:
     path: ../Public/Data/Configs/GameConfigData.cs
     startLine: 20
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: Frame_90 = 2
@@ -130,7 +130,7 @@ items:
     path: ../Public/Data/Configs/GameConfigData.cs
     startLine: 21
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: Frame_120 = 3

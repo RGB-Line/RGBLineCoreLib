@@ -25,7 +25,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 15
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 각 Stage의 내부 구성 데이터를 담는 구조체
   remarks: DTO로서만 사용되며, 별도의 Interface를 거치지 않은 접근은 권장하지 않음
@@ -60,7 +60,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 191
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: RegionData와 그에 대응하는 ID를 담은 Table
   remarks: 기본 가정으로 RegionDataTable는 StartOffsetFrame 기준으로 정렬되어 있음
@@ -90,7 +90,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 198
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: LineData와 그에 대응하는 ID를 담은 Table
   remarks: 기본 가정으로 LineDataTable는 정렬되지 않은 상태
@@ -120,7 +120,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 205
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: NoteData와 그에 대응하는 ID를 담은 Table
   remarks: 기본 가정으로 NoteDataTable은 정렬되지 않은 상태
@@ -150,7 +150,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 207
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public StageData.StageConfigData StageConfig

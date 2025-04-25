@@ -28,7 +28,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/GreenNote.cs
     startLine: 20
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 기본적인 Green Note를 그리기 위한 Class
   remarks: Editor에서는 해당 Class를 상속받아 사용하지만, Runtime에서는 해당 Class를 직접 사용함
@@ -183,7 +183,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/GreenNote.cs
     startLine: 30
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public void Awake()
@@ -209,7 +209,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/GreenNote.cs
     startLine: 35
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -241,7 +241,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/GreenNote.cs
     startLine: 42
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -273,7 +273,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/GreenNote.cs
     startLine: 50
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -305,7 +305,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/GreenNote.cs
     startLine: 58
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
@@ -340,7 +340,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/GreenNote.cs
     startLine: 65
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
   example: []
@@ -370,7 +370,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Note/GreenNote.cs
     startLine: 73
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: protected virtual void DrawGreenNote()

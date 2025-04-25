@@ -24,7 +24,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 106
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 세 가지 Note Type을 구분하는 Flag
   example: []
@@ -51,7 +51,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 108
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: Common = 0
@@ -77,7 +77,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 109
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: Double = 1
@@ -103,7 +103,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 110
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: Long = 2

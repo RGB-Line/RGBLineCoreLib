@@ -6,6 +6,7 @@ items:
   parent: RGBLineCoreLib.Functor
   children:
   - RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.GetStageConfigData
+  - RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.SetStageConfigData(RGBLineCoreLib.Data.StageData.StageConfigData@)
   langs:
   - csharp
   - vb
@@ -22,7 +23,7 @@ items:
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
     startLine: 403
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 현재 StageData의 StageConfigData에 접근하기 위한 Interface
   example: []
@@ -59,7 +60,7 @@ items:
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
     startLine: 409
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 현재 StageData의 StageConfigData를 반환한다
   example: []
@@ -69,6 +70,38 @@ items:
       type: RGBLineCoreLib.Data.StageData.StageConfigData
     content.vb: Public Shared Function GetStageConfigData() As StageData.StageConfigData
   overload: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.GetStageConfigData*
+- uid: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.SetStageConfigData(RGBLineCoreLib.Data.StageData.StageConfigData@)
+  commentId: M:RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.SetStageConfigData(RGBLineCoreLib.Data.StageData.StageConfigData@)
+  id: SetStageConfigData(RGBLineCoreLib.Data.StageData.StageConfigData@)
+  parent: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface
+  langs:
+  - csharp
+  - vb
+  name: SetStageConfigData(in StageConfigData)
+  nameWithType: StageDataInterface.StageConfigDataInterface.SetStageConfigData(in StageData.StageConfigData)
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.SetStageConfigData(in RGBLineCoreLib.Data.StageData.StageConfigData)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Interfaces/StageDataInterface.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: SetStageConfigData
+    path: ../Public/Functor/Interfaces/StageDataInterface.cs
+    startLine: 417
+  assemblies:
+  - RGBLineCoreLib_ForEditor
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public static void SetStageConfigData(in StageData.StageConfigData targetStageConfigData)
+    parameters:
+    - id: targetStageConfigData
+      type: RGBLineCoreLib.Data.StageData.StageConfigData
+    content.vb: Public Shared Sub SetStageConfigData(targetStageConfigData As StageData.StageConfigData)
+  overload: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.SetStageConfigData*
+  nameWithType.vb: StageDataInterface.StageConfigDataInterface.SetStageConfigData(StageData.StageConfigData)
+  fullName.vb: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.SetStageConfigData(RGBLineCoreLib.Data.StageData.StageConfigData)
+  name.vb: SetStageConfigData(StageConfigData)
 references:
 - uid: RGBLineCoreLib.Functor
   commentId: N:RGBLineCoreLib.Functor
@@ -380,3 +413,9 @@ references:
   - uid: RGBLineCoreLib.Data
     name: Data
     href: RGBLineCoreLib.Data.html
+- uid: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.SetStageConfigData*
+  commentId: Overload:RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.SetStageConfigData
+  href: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.html#RGBLineCoreLib_Functor_StageDataInterface_StageConfigDataInterface_SetStageConfigData_RGBLineCoreLib_Data_StageData_StageConfigData__
+  name: SetStageConfigData
+  nameWithType: StageDataInterface.StageConfigDataInterface.SetStageConfigData
+  fullName: RGBLineCoreLib.Functor.StageDataInterface.StageConfigDataInterface.SetStageConfigData

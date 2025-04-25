@@ -24,7 +24,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 20
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 각 Region의 데이터를 담는 구조체
   example: []
@@ -58,7 +58,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 34
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 해당 Region이 시작하는 Frame 단위 위치를 의미
   example: []
@@ -87,7 +87,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 41
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: RegionData.StartOffsetFrame을 기준으로 FrameUnitSize * MinorOffsetTime 만큼 이동한 위치를 의미. 즉, 세부 위치 조정을 담당
   remarks: 허용 범위는 [-0.5, 0.5]
@@ -117,7 +117,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 46
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 해당 Region의 Mode를 의미
   example: []

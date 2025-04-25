@@ -20,7 +20,7 @@ items:
   fullName: RGBLineCoreLib.Manager
   type: Namespace
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
 references:
 - uid: RGBLineCoreLib.Manager.LobbyBackgroundManager
   commentId: T:RGBLineCoreLib.Manager.LobbyBackgroundManager

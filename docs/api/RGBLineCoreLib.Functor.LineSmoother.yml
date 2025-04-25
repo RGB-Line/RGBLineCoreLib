@@ -22,7 +22,7 @@ items:
     path: ../Public/Functor/CurvedLine/LineSmoother.cs
     startLine: 12
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: 'public class LineSmoother : MonoBehaviour'
@@ -171,7 +171,7 @@ items:
     path: ../Public/Functor/CurvedLine/LineSmoother.cs
     startLine: 14
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public static Vector3[] SmoothLine(Vector3[] inputPoints, float segmentSize)

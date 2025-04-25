@@ -29,7 +29,7 @@ items:
   fullName: RGBLineCoreLib.Data
   type: Namespace
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
 references:
 - uid: RGBLineCoreLib.Data.StageLoadInfoDTO
   commentId: T:RGBLineCoreLib.Data.StageLoadInfoDTO

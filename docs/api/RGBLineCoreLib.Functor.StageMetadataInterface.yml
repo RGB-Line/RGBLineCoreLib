@@ -8,7 +8,8 @@ items:
   - RGBLineCoreLib.Functor.StageMetadataInterface.BIsStageMetadataValid
   - RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata
   - RGBLineCoreLib.Functor.StageMetadataInterface.GetStageMetadata
-  - RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)
+  - RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@,System.Boolean@,System.Single@)
+  - RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)
   langs:
   - csharp
   - vb
@@ -25,7 +26,7 @@ items:
     path: ../Public/Functor/Interfaces/StageMetadataInterface.cs
     startLine: 14
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: StageMetadata의 내용에 접근하기 위한 Interface
   example: []
@@ -62,7 +63,7 @@ items:
     path: ../Public/Functor/Interfaces/StageMetadataInterface.cs
     startLine: 19
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 현재 Load된 StageMetadata를 반환한다
   example: []
@@ -72,16 +73,52 @@ items:
       type: RGBLineCoreLib.Data.StageMetadata
     content.vb: Public Shared Function GetStageMetadata() As StageMetadata
   overload: RGBLineCoreLib.Functor.StageMetadataInterface.GetStageMetadata*
-- uid: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)
-  commentId: M:RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)
-  id: TryLoadStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)
+- uid: RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)
+  commentId: M:RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)
+  id: TrySaveStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)
   parent: RGBLineCoreLib.Functor.StageMetadataInterface
   langs:
   - csharp
   - vb
-  name: TryLoadStageMetadata(in string, in MajorDifficultyLevel)
-  nameWithType: StageMetadataInterface.TryLoadStageMetadata(in string, in StageMetadata.MajorDifficultyLevel)
-  fullName: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(in string, in RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel)
+  name: TrySaveStageMetadata(in string, in MajorDifficultyLevel)
+  nameWithType: StageMetadataInterface.TrySaveStageMetadata(in string, in StageMetadata.MajorDifficultyLevel)
+  fullName: RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata(in string, in RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/Interfaces/StageMetadataInterface.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: TrySaveStageMetadata
+    path: ../Public/Functor/Interfaces/StageMetadataInterface.cs
+    startLine: 25
+  assemblies:
+  - RGBLineCoreLib_ForEditor
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public static bool TrySaveStageMetadata(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty)
+    parameters:
+    - id: targetStageName
+      type: System.String
+    - id: majorDifficulty
+      type: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TrySaveStageMetadata(targetStageName As String, majorDifficulty As StageMetadata.MajorDifficultyLevel) As Boolean
+  overload: RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata*
+  nameWithType.vb: StageMetadataInterface.TrySaveStageMetadata(String, StageMetadata.MajorDifficultyLevel)
+  fullName.vb: RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata(String, RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel)
+  name.vb: TrySaveStageMetadata(String, MajorDifficultyLevel)
+- uid: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@,System.Boolean@,System.Single@)
+  commentId: M:RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@,System.Boolean@,System.Single@)
+  id: TryLoadStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@,System.Boolean@,System.Single@)
+  parent: RGBLineCoreLib.Functor.StageMetadataInterface
+  langs:
+  - csharp
+  - vb
+  name: TryLoadStageMetadata(in string, in MajorDifficultyLevel, in bool, in float)
+  nameWithType: StageMetadataInterface.TryLoadStageMetadata(in string, in StageMetadata.MajorDifficultyLevel, in bool, in float)
+  fullName: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(in string, in RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel, in bool, in float)
   type: Method
   source:
     remote:
@@ -92,26 +129,30 @@ items:
     path: ../Public/Functor/Interfaces/StageMetadataInterface.cs
     startLine: 40
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: DataPathTable의 내용을 바탕으로 Load를 시도한다
   remarks: StageMetadataInterface.GetStageMetadata()를 호출하기 전에 필히 호출해야만 한다
   example: []
   syntax:
-    content: public static bool TryLoadStageMetadata(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty)
+    content: public static bool TryLoadStageMetadata(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty, in bool bisNewData = false, in float musicLength = 0)
     parameters:
     - id: targetStageName
       type: System.String
     - id: majorDifficulty
       type: RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel
+    - id: bisNewData
+      type: System.Boolean
+    - id: musicLength
+      type: System.Single
     return:
       type: System.Boolean
       description: Load에 성공했을 경우 true, 실패했을 경우 false
-    content.vb: Public Shared Function TryLoadStageMetadata(targetStageName As String, majorDifficulty As StageMetadata.MajorDifficultyLevel) As Boolean
+    content.vb: Public Shared Function TryLoadStageMetadata(targetStageName As String, majorDifficulty As StageMetadata.MajorDifficultyLevel, bisNewData As Boolean = False, musicLength As Single = 0) As Boolean
   overload: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata*
-  nameWithType.vb: StageMetadataInterface.TryLoadStageMetadata(String, StageMetadata.MajorDifficultyLevel)
-  fullName.vb: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(String, RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel)
-  name.vb: TryLoadStageMetadata(String, MajorDifficultyLevel)
+  nameWithType.vb: StageMetadataInterface.TryLoadStageMetadata(String, StageMetadata.MajorDifficultyLevel, Boolean, Single)
+  fullName.vb: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(String, RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel, Boolean, Single)
+  name.vb: TryLoadStageMetadata(String, MajorDifficultyLevel, Boolean, Single)
 - uid: RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata
   commentId: M:RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata
   id: DisposeStageMetadata
@@ -132,7 +173,7 @@ items:
     path: ../Public/Functor/Interfaces/StageMetadataInterface.cs
     startLine: 44
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public static void DisposeStageMetadata()
@@ -158,7 +199,7 @@ items:
     path: ../Public/Functor/Interfaces/StageMetadataInterface.cs
     startLine: 49
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public static bool BIsStageMetadataValid()
@@ -461,12 +502,12 @@ references:
   - uid: RGBLineCoreLib.Data
     name: Data
     href: RGBLineCoreLib.Data.html
-- uid: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata*
-  commentId: Overload:RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata
-  href: RGBLineCoreLib.Functor.StageMetadataInterface.html#RGBLineCoreLib_Functor_StageMetadataInterface_TryLoadStageMetadata_System_String__RGBLineCoreLib_Data_StageMetadata_MajorDifficultyLevel__
-  name: TryLoadStageMetadata
-  nameWithType: StageMetadataInterface.TryLoadStageMetadata
-  fullName: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata
+- uid: RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata*
+  commentId: Overload:RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata
+  href: RGBLineCoreLib.Functor.StageMetadataInterface.html#RGBLineCoreLib_Functor_StageMetadataInterface_TrySaveStageMetadata_System_String__RGBLineCoreLib_Data_StageMetadata_MajorDifficultyLevel__
+  name: TrySaveStageMetadata
+  nameWithType: StageMetadataInterface.TrySaveStageMetadata
+  fullName: RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -512,6 +553,23 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata*
+  commentId: Overload:RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata
+  href: RGBLineCoreLib.Functor.StageMetadataInterface.html#RGBLineCoreLib_Functor_StageMetadataInterface_TryLoadStageMetadata_System_String__RGBLineCoreLib_Data_StageMetadata_MajorDifficultyLevel__System_Boolean__System_Single__
+  name: TryLoadStageMetadata
+  nameWithType: StageMetadataInterface.TryLoadStageMetadata
+  fullName: RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
 - uid: RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata*
   commentId: Overload:RGBLineCoreLib.Functor.StageMetadataInterface.DisposeStageMetadata
   href: RGBLineCoreLib.Functor.StageMetadataInterface.html#RGBLineCoreLib_Functor_StageMetadataInterface_DisposeStageMetadata

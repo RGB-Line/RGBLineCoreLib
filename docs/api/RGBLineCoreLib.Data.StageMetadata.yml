@@ -30,7 +30,7 @@ items:
     path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
     startLine: 9
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public struct StageMetadata
@@ -62,7 +62,7 @@ items:
     path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
     startLine: 20
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public string Title
@@ -89,7 +89,7 @@ items:
     path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
     startLine: 21
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public string Artist
@@ -116,7 +116,7 @@ items:
     path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
     startLine: 22
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public float MusicLength
@@ -143,7 +143,7 @@ items:
     path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
     startLine: 24
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public StageMetadata.MajorDifficultyLevel MajorDifficulty
@@ -170,7 +170,7 @@ items:
     path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
     startLine: 25
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public int MinorDifficulty
@@ -197,7 +197,7 @@ items:
     path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
     startLine: 27
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public int BestScore
@@ -224,7 +224,7 @@ items:
     path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
     startLine: 29
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public float LobbyMusicStartTime
@@ -251,7 +251,7 @@ items:
     path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
     startLine: 30
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public float LobbyMusicEndTime
@@ -278,7 +278,7 @@ items:
     path: ../Public/Data/DataSpecs/StageMetadataSpec.cs
     startLine: 31
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public float LobbyMusicFadeOutTime

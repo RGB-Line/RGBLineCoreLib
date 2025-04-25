@@ -26,7 +26,7 @@ items:
     path: ../Public/Functor/Interfaces/DataPathInterface.cs
     startLine: 18
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: DataPathTable의 내용에 접근하기 위해 제공되는 Interface
   example: []
@@ -63,7 +63,7 @@ items:
     path: ../Public/Functor/Interfaces/DataPathInterface.cs
     startLine: 23
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: StageData File의 경로를 반환한다
   example: []
@@ -101,7 +101,7 @@ items:
     path: ../Public/Functor/Interfaces/DataPathInterface.cs
     startLine: 49
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: Stage의 Music File의 경로를 반환한다
   example: []
@@ -139,7 +139,7 @@ items:
     path: ../Public/Functor/Interfaces/DataPathInterface.cs
     startLine: 60
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: StageMetadata File의 경로를 반환한다
   example: []
@@ -177,7 +177,7 @@ items:
     path: ../Public/Functor/Interfaces/DataPathInterface.cs
     startLine: 87
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: 모든 Stage 이름의 목록을 반환한다
   example: []
@@ -207,7 +207,7 @@ items:
     path: ../Public/Functor/Interfaces/DataPathInterface.cs
     startLine: 101
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: GameConfigData File의 경로를 반환한다
   example: []

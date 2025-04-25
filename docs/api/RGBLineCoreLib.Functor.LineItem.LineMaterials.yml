@@ -28,7 +28,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 23
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-
@@ -70,7 +70,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 25
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public Material m_material_RedLine
@@ -97,7 +97,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 26
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public Material m_material_GreenLine
@@ -124,7 +124,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 27
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public Material m_material_BlueLine
@@ -151,7 +151,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 29
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public Material m_material_RedOutline
@@ -178,7 +178,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 30
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public Material m_material_GreenOutline
@@ -205,7 +205,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 31
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public Material m_material_BlueOutline
@@ -232,7 +232,7 @@ items:
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
     startLine: 33
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: public Material m_material_DashLine

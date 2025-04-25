@@ -24,7 +24,7 @@ items:
     path: ../Public/Functor/CurvedLine/CurvedLinePoint.cs
     startLine: 18
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   summary: Curved Line을 그리기 위한 Point
   remarks: CurvedLineRenderer GameObject의 Child로 CurvedLinePoint를 가진 GameObject를 생성하여 사용한다
@@ -176,7 +176,7 @@ items:
     path: ../Public/Functor/CurvedLine/CurvedLinePoint.cs
     startLine: 20
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-
@@ -213,7 +213,7 @@ items:
     path: ../Public/Functor/CurvedLine/CurvedLinePoint.cs
     startLine: 21
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-
@@ -250,7 +250,7 @@ items:
     path: ../Public/Functor/CurvedLine/CurvedLinePoint.cs
     startLine: 22
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
   syntax:
     content: >-

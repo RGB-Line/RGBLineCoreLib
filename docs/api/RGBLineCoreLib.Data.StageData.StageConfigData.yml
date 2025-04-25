@@ -25,7 +25,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 158
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 각 Stage의 설정 데이터를 담는 구조체
   example: []
@@ -59,7 +59,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 166
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 해당 Stage의 BPM을 나타냄
   remarks: BPM이 크면 화면 진행 속도가 빨라지며, BPM이 작으면 화면 진행 속도가 느려짐
@@ -89,7 +89,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 170
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: BPM을 기준으로 한 Frame을 세부적으로 몇 번 더 나눌 것인지를 나타냄. 즉, 새로운 세부 Frame을 만들어내는 배율을 의미
   example: []
@@ -118,7 +118,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 177
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 각 Frame이 In-Game에서 어느 정도의 길이를 가지는지를 나타냄
   remarks: LengthPerBit가 크면 화면 진행 속도가 빨라지며, LengthPerBit가 작으면 화면 진행 속도가 느려짐
@@ -148,7 +148,7 @@ items:
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 181
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 해당 Stage의 Music이 시작하는 시간을 나타냄
   example: []

@@ -22,7 +22,7 @@ items:
     path: ../Public/Data/Configs/GameConfigData.cs
     startLine: 33
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   summary: 각 판정마다의 히트 박스 크기를 지정한다
   example: []
@@ -66,7 +66,7 @@ items:
     path: ../Public/Data/Configs/GameConfigData.cs
     startLine: 43
   assemblies:
-  - RGBLineCoreLib
+  - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Data
   syntax:
     content: public List<float> HitJudgingRanges

@@ -94,7 +94,7 @@ Class StageMetadataInterface  <a class="header-action link-secondary" title="Vie
 
   <div class="facts text-secondary">
     <dl><dt>Namespace</dt><dd><a class="xref" href="RGBLineCoreLib.html">RGBLineCoreLib</a>.<a class="xref" href="RGBLineCoreLib.Functor.html">Functor</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>RGBLineCoreLib.dll</dd></dl>
+  <dl><dt>Assembly</dt><dd>RGBLineCoreLib_ForEditor.dll</dd></dl>
   </div>
 
   <div class="markdown summary"><p>StageMetadata의 내용에 접근하기 위한 Interface</p>
@@ -244,8 +244,8 @@ Class StageMetadataInterface  <a class="header-action link-secondary" title="Vie
 
   <a id="RGBLineCoreLib_Functor_StageMetadataInterface_TryLoadStageMetadata_" data-uid="RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata*"></a>
 
-  <h3 id="RGBLineCoreLib_Functor_StageMetadataInterface_TryLoadStageMetadata_System_String__RGBLineCoreLib_Data_StageMetadata_MajorDifficultyLevel__" data-uid="RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)">
-  TryLoadStageMetadata(in string, in MajorDifficultyLevel)
+  <h3 id="RGBLineCoreLib_Functor_StageMetadataInterface_TryLoadStageMetadata_System_String__RGBLineCoreLib_Data_StageMetadata_MajorDifficultyLevel__System_Boolean__System_Single__" data-uid="RGBLineCoreLib.Functor.StageMetadataInterface.TryLoadStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@,System.Boolean@,System.Single@)">
+  TryLoadStageMetadata(in string, in MajorDifficultyLevel, in bool, in float)
   <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageMetadataInterface.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -254,7 +254,7 @@ Class StageMetadataInterface  <a class="header-action link-secondary" title="Vie
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryLoadStageMetadata(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryLoadStageMetadata(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty, in bool bisNewData = false, in float musicLength = 0)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -262,6 +262,10 @@ Class StageMetadataInterface  <a class="header-action link-secondary" title="Vie
     <dt><code>targetStageName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>majorDifficulty</code> <a class="xref" href="RGBLineCoreLib.Data.StageMetadata.html">StageMetadata</a>.<a class="xref" href="RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.html">MajorDifficultyLevel</a></dt>
+    <dd></dd>
+    <dt><code>bisNewData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>musicLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
     <dd></dd>
   </dl>
 
@@ -278,9 +282,47 @@ Class StageMetadataInterface  <a class="header-action link-secondary" title="Vie
 
 
 
-  <h4 class="section" id="RGBLineCoreLib_Functor_StageMetadataInterface_TryLoadStageMetadata_System_String__RGBLineCoreLib_Data_StageMetadata_MajorDifficultyLevel___remarks">Remarks</h4>
+  <h4 class="section" id="RGBLineCoreLib_Functor_StageMetadataInterface_TryLoadStageMetadata_System_String__RGBLineCoreLib_Data_StageMetadata_MajorDifficultyLevel__System_Boolean__System_Single___remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>StageMetadataInterface.GetStageMetadata()를 호출하기 전에 필히 호출해야만 한다</p>
 </div>
+
+
+
+
+  <a id="RGBLineCoreLib_Functor_StageMetadataInterface_TrySaveStageMetadata_" data-uid="RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata*"></a>
+
+  <h3 id="RGBLineCoreLib_Functor_StageMetadataInterface_TrySaveStageMetadata_System_String__RGBLineCoreLib_Data_StageMetadata_MajorDifficultyLevel__" data-uid="RGBLineCoreLib.Functor.StageMetadataInterface.TrySaveStageMetadata(System.String@,RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel@)">
+  TrySaveStageMetadata(in string, in MajorDifficultyLevel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/Interfaces/StageMetadataInterface.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TrySaveStageMetadata(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetStageName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>majorDifficulty</code> <a class="xref" href="RGBLineCoreLib.Data.StageMetadata.html">StageMetadata</a>.<a class="xref" href="RGBLineCoreLib.Data.StageMetadata.MajorDifficultyLevel.html">MajorDifficultyLevel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
 
 
 
