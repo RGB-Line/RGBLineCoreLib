@@ -259,8 +259,8 @@ namespace RGBLineCoreLib.Functor
                         }
                         break;
 
-                    case StageData.NoteData.NoteType.Flip:
-                        if (!Enum.IsDefined(typeof(StageData.NoteData.FlipNoteDirection), curNoteData.flipNoteDirection))
+                    case StageData.NoteData.NoteType.Double:
+                        if (curNoteData.NoteLength != 0)
                         {
                             return false;
                         }
@@ -315,7 +315,7 @@ namespace RGBLineCoreLib.Functor
                         switch (targetStageData.NoteDataTable[noteID].CurNoteType)
                         {
                             case StageData.NoteData.NoteType.Common:
-                            case StageData.NoteData.NoteType.Flip:
+                            case StageData.NoteData.NoteType.Double:
                                 if (curNoteFramePos == searchNoteFramePos)
                                 {
                                     return false;

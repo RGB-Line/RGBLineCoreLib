@@ -31,19 +31,18 @@ namespace RGBLineCoreLib.Functor
             public Material m_material_GreenOutline;
             public Material m_material_BlueOutline;
 
-
             public Material m_material_DashLine;
         }
 
 
-        [SerializeField] private GameObject m_prefab_LinePoint;
-        [SerializeField] private LineMaterials m_lineMaterials;
+        [SerializeField] private GameObject m_prefab_LinePoint = null;
+        [SerializeField] private LineMaterials m_lineMaterials = default;
 
         private LineRenderer m_lineRenderer = null;
         private CurvedLineRenderer m_curvedLineRenderer = null;
         private MeshCollider m_meshCollider = null;
 
-        private Stack<ILinePoint> m_linePoints = new Stack<ILinePoint>();
+        private readonly Stack<ILinePoint> m_linePoints = new Stack<ILinePoint>();
 
         private Guid m_lineID = Guid.Empty;
 
@@ -63,21 +62,6 @@ namespace RGBLineCoreLib.Functor
                 UpdateMeshCollider();
             }
         }
-        //public virtual void OnMouseEnter()
-        //{
-        //    if (StageDataInterface.LineDataInterface.GetAttachedRegionData(m_lineID).CurColorType == StageData.RegionData.ColorType.Green)
-        //    {
-        //        ScoreManager.Instance.BIsMouseOnGreenLine = true;
-        //    }
-        //    else
-        //    {
-        //        ScoreManager.Instance.BIsMouseOnGreenLine = false;
-        //    }
-        //}
-        //public virtual void OnMouseExit()
-        //{
-        //    ScoreManager.Instance.BIsMouseOnGreenLine = false;
-        //}
 
         public Transform Transform
         {
@@ -140,11 +124,12 @@ namespace RGBLineCoreLib.Functor
                 ILinePoint linePoint = Instantiate(m_prefab_LinePoint, transform).GetComponent<ILinePoint>();
 
                 Vector2 pointPos = new Vector2(points[index].X, points[index].Y);
-                if(StageDataInterface.LineDataInterface.GetAttachedRegionData(m_lineID).CurColorType == StageData.RegionData.ColorType.Green)
+                StageData.RegionData regionData = StageDataInterface.LineDataInterface.GetAttachedRegionData(m_lineID);
+                if (regionData.CurColorType == StageData.RegionData.ColorType.Green)
                 {
                     if (index == 0 || index == 1)
                     {
-                        pointPos.y += StageDataInterface.LineDataInterface.GetAttachedRegionData(m_lineID).MinorOffsetTime;
+                        pointPos.y += regionData.MinorOffsetTime;
                     }
                     else if (index == points.Count - 2 || index == points.Count - 1)
                     {
@@ -160,7 +145,7 @@ namespace RGBLineCoreLib.Functor
                 {
                     if(index == 0)
                     {
-                        pointPos.y += StageDataInterface.LineDataInterface.GetAttachedRegionData(m_lineID).MinorOffsetTime;
+                        pointPos.y += regionData.MinorOffsetTime;
                     }
                     else if(index == points.Count - 1)
                     {
@@ -271,8 +256,8 @@ namespace RGBLineCoreLib.Functor
             m_lineRenderer.GetPositions(positions);
             outlineRenderer.SetPositions(positions);
 
-            outlineRenderer.startWidth = m_lineRenderer.startWidth + 0.3f;
-            outlineRenderer.endWidth = m_lineRenderer.endWidth + 0.3f;
+            outlineRenderer.startWidth = m_lineRenderer.startWidth + 0.1f;
+            outlineRenderer.endWidth = m_lineRenderer.endWidth + 0.1f;
         }
         private void RenderGreenCenterLine()
         {
@@ -280,10 +265,18 @@ namespace RGBLineCoreLib.Functor
             centerLine.transform.SetParent(LineManager.Instance.transform);
 
             LineRenderer centerlineRenderer = centerLine.AddComponent<LineRenderer>();
+
             centerlineRenderer.material = m_lineMaterials.m_material_DashLine;
             centerlineRenderer.positionCount = m_lineRenderer.positionCount;
             centerlineRenderer.sortingOrder = 0;
             centerlineRenderer.numCapVertices = 90;
+
+            float lineLength = 0.0f;
+            for (int index = 0; index < m_lineRenderer.positionCount - 1; index++)
+            {
+                lineLength += Vector3.Distance(m_lineRenderer.GetPosition(index), m_lineRenderer.GetPosition(index + 1));
+            }
+            centerlineRenderer.material.SetFloat("_Length", lineLength);
 
             Vector3[] positions = new Vector3[m_lineRenderer.positionCount];
             m_lineRenderer.GetPositions(positions);

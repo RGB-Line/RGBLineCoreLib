@@ -59,7 +59,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: TryLoadStageData
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 438
+    startLine: 444
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -98,7 +98,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: DisposeStageData
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 445
+    startLine: 451
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -126,7 +126,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: BIsStageDataValid
     path: ../Public/Functor/Interfaces/StageDataInterface.cs
-    startLine: 456
+    startLine: 462
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor

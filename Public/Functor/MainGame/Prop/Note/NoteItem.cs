@@ -20,8 +20,8 @@ namespace RGBLineCoreLib.Functor
     /// </remarks>
     public class NoteItem : MonoBehaviour, INoteItem
     {
-        [SerializeField] private Transform m_transform_RedAndBlueNote;
-        [SerializeField] private Transform m_transform_GreenNote;
+        [SerializeField] private Transform m_transform_RedAndBlueNote = null;
+        [SerializeField] private Transform m_transform_GreenNote = null;
 
         private IRedAndBlueNote m_redAndBlueNote;
         private IGreenNote m_greenNote;
@@ -84,8 +84,8 @@ namespace RGBLineCoreLib.Functor
                     m_greenNote.Transform.gameObject.SetActive(false);
                     break;
 
-                case StageData.NoteData.NoteType.Flip:
-                    m_redAndBlueNote.Render(this, StageData.NoteData.NoteType.Flip);
+                case StageData.NoteData.NoteType.Double:
+                    m_redAndBlueNote.Render(this, StageData.NoteData.NoteType.Double);
 
                     m_greenNote.Transform.gameObject.SetActive(false);
                     break;

@@ -138,6 +138,36 @@ references:
   commentId: F:RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Perfect
   fullName: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Perfect
   nameWithType: GameConfigData.NoteHitJudgingStrandard.HitJudgingType.Perfect
+- uid: RGBLineCoreLib.Data.GameConfigData.Resolution
+  name: Resolution
+  href: api/RGBLineCoreLib.Data.GameConfigData.html#RGBLineCoreLib_Data_GameConfigData_Resolution
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.Resolution
+  fullName: RGBLineCoreLib.Data.GameConfigData.Resolution
+  nameWithType: GameConfigData.Resolution
+- uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+  name: GameConfigData.ScreenResolution
+  href: api/RGBLineCoreLib.Data.GameConfigData.ScreenResolution.html
+  commentId: T:RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+  fullName: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+  nameWithType: GameConfigData.ScreenResolution
+- uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.FHD_1920x1080
+  name: FHD_1920x1080
+  href: api/RGBLineCoreLib.Data.GameConfigData.ScreenResolution.html#RGBLineCoreLib_Data_GameConfigData_ScreenResolution_FHD_1920x1080
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.ScreenResolution.FHD_1920x1080
+  fullName: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.FHD_1920x1080
+  nameWithType: GameConfigData.ScreenResolution.FHD_1920x1080
+- uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.QHD_2560x1440
+  name: QHD_2560x1440
+  href: api/RGBLineCoreLib.Data.GameConfigData.ScreenResolution.html#RGBLineCoreLib_Data_GameConfigData_ScreenResolution_QHD_2560x1440
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.ScreenResolution.QHD_2560x1440
+  fullName: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.QHD_2560x1440
+  nameWithType: GameConfigData.ScreenResolution.QHD_2560x1440
+- uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.UHD_3840x2160
+  name: UHD_3840x2160
+  href: api/RGBLineCoreLib.Data.GameConfigData.ScreenResolution.html#RGBLineCoreLib_Data_GameConfigData_ScreenResolution_UHD_3840x2160
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.ScreenResolution.UHD_3840x2160
+  fullName: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.UHD_3840x2160
+  nameWithType: GameConfigData.ScreenResolution.UHD_3840x2160
 - uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
   name: GameConfigData.SpecialKeySet
   href: api/RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html
@@ -162,12 +192,6 @@ references:
   commentId: F:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Right
   fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.RedNoteKeyCode_Right
   nameWithType: GameConfigData.SpecialKeySet.RedNoteKeyCode_Right
-- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySetting
-  name: SpecialKeySetting
-  href: api/RGBLineCoreLib.Data.GameConfigData.html#RGBLineCoreLib_Data_GameConfigData_SpecialKeySetting
-  commentId: F:RGBLineCoreLib.Data.GameConfigData.SpecialKeySetting
-  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySetting
-  nameWithType: GameConfigData.SpecialKeySetting
 - uid: RGBLineCoreLib.Data.GameConfigData.SyncAdjustment
   name: SyncAdjustment
   href: api/RGBLineCoreLib.Data.GameConfigData.html#RGBLineCoreLib_Data_GameConfigData_SyncAdjustment
@@ -186,6 +210,35 @@ references:
   commentId: T:RGBLineCoreLib.Data.HalfFloatVector2
   fullName: RGBLineCoreLib.Data.HalfFloatVector2
   nameWithType: HalfFloatVector2
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.Equals(System.Object)
+  name: Equals(object)
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_Equals_System_Object_
+  commentId: M:RGBLineCoreLib.Data.HalfFloatVector2.Equals(System.Object)
+  name.vb: Equals(Object)
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.Equals(object)
+  fullName.vb: RGBLineCoreLib.Data.HalfFloatVector2.Equals(Object)
+  nameWithType: HalfFloatVector2.Equals(object)
+  nameWithType.vb: HalfFloatVector2.Equals(Object)
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.Equals*
+  name: Equals
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_Equals_
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.Equals
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.Equals
+  nameWithType: HalfFloatVector2.Equals
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.GetHashCode
+  name: GetHashCode()
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_GetHashCode
+  commentId: M:RGBLineCoreLib.Data.HalfFloatVector2.GetHashCode
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.GetHashCode()
+  nameWithType: HalfFloatVector2.GetHashCode()
+- uid: RGBLineCoreLib.Data.HalfFloatVector2.GetHashCode*
+  name: GetHashCode
+  href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_GetHashCode_
+  commentId: Overload:RGBLineCoreLib.Data.HalfFloatVector2.GetHashCode
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Data.HalfFloatVector2.GetHashCode
+  nameWithType: HalfFloatVector2.GetHashCode
 - uid: RGBLineCoreLib.Data.HalfFloatVector2.X
   name: X
   href: api/RGBLineCoreLib.Data.HalfFloatVector2.html#RGBLineCoreLib_Data_HalfFloatVector2_X
@@ -513,12 +566,12 @@ references:
   commentId: F:RGBLineCoreLib.Data.StageData.NoteData.NoteType.Common
   fullName: RGBLineCoreLib.Data.StageData.NoteData.NoteType.Common
   nameWithType: StageData.NoteData.NoteType.Common
-- uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType.Flip
-  name: Flip
-  href: api/RGBLineCoreLib.Data.StageData.NoteData.NoteType.html#RGBLineCoreLib_Data_StageData_NoteData_NoteType_Flip
-  commentId: F:RGBLineCoreLib.Data.StageData.NoteData.NoteType.Flip
-  fullName: RGBLineCoreLib.Data.StageData.NoteData.NoteType.Flip
-  nameWithType: StageData.NoteData.NoteType.Flip
+- uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType.Double
+  name: Double
+  href: api/RGBLineCoreLib.Data.StageData.NoteData.NoteType.html#RGBLineCoreLib_Data_StageData_NoteData_NoteType_Double
+  commentId: F:RGBLineCoreLib.Data.StageData.NoteData.NoteType.Double
+  fullName: RGBLineCoreLib.Data.StageData.NoteData.NoteType.Double
+  nameWithType: StageData.NoteData.NoteType.Double
 - uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType.Long
   name: Long
   href: api/RGBLineCoreLib.Data.StageData.NoteData.NoteType.html#RGBLineCoreLib_Data_StageData_NoteData_NoteType_Long
@@ -531,12 +584,6 @@ references:
   commentId: F:RGBLineCoreLib.Data.StageData.NoteData.StartOffsetFrame
   fullName: RGBLineCoreLib.Data.StageData.NoteData.StartOffsetFrame
   nameWithType: StageData.NoteData.StartOffsetFrame
-- uid: RGBLineCoreLib.Data.StageData.NoteData.flipNoteDirection
-  name: flipNoteDirection
-  href: api/RGBLineCoreLib.Data.StageData.NoteData.html#RGBLineCoreLib_Data_StageData_NoteData_flipNoteDirection
-  commentId: F:RGBLineCoreLib.Data.StageData.NoteData.flipNoteDirection
-  fullName: RGBLineCoreLib.Data.StageData.NoteData.flipNoteDirection
-  nameWithType: StageData.NoteData.flipNoteDirection
 - uid: RGBLineCoreLib.Data.StageData.NoteDataTable
   name: NoteDataTable
   href: api/RGBLineCoreLib.Data.StageData.html#RGBLineCoreLib_Data_StageData_NoteDataTable
@@ -856,6 +903,274 @@ references:
   commentId: N:RGBLineCoreLib.Functor
   fullName: RGBLineCoreLib.Functor
   nameWithType: RGBLineCoreLib.Functor
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath
+  name: BackgroundGradientEffectLightPath
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.html
+  commentId: T:RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath
+  nameWithType: BackgroundGradientEffectLightPath
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.Awake
+  name: Awake()
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.html#RGBLineCoreLib_Functor_BackgroundGradientEffectLightPath_Awake
+  commentId: M:RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.Awake
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.Awake()
+  nameWithType: BackgroundGradientEffectLightPath.Awake()
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.Awake*
+  name: Awake
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.html#RGBLineCoreLib_Functor_BackgroundGradientEffectLightPath_Awake_
+  commentId: Overload:RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.Awake
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.Awake
+  nameWithType: BackgroundGradientEffectLightPath.Awake
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.Update
+  name: Update()
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.html#RGBLineCoreLib_Functor_BackgroundGradientEffectLightPath_Update
+  commentId: M:RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.Update
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.Update()
+  nameWithType: BackgroundGradientEffectLightPath.Update()
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.Update*
+  name: Update
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.html#RGBLineCoreLib_Functor_BackgroundGradientEffectLightPath_Update_
+  commentId: Overload:RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.Update
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.Update
+  nameWithType: BackgroundGradientEffectLightPath.Update
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectManager
+  name: BackgroundGradientEffectManager
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectManager.html
+  commentId: T:RGBLineCoreLib.Functor.BackgroundGradientEffectManager
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectManager
+  nameWithType: BackgroundGradientEffectManager
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Awake
+  name: Awake()
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectManager.html#RGBLineCoreLib_Functor_BackgroundGradientEffectManager_Awake
+  commentId: M:RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Awake
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Awake()
+  nameWithType: BackgroundGradientEffectManager.Awake()
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Awake*
+  name: Awake
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectManager.html#RGBLineCoreLib_Functor_BackgroundGradientEffectManager_Awake_
+  commentId: Overload:RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Awake
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Awake
+  nameWithType: BackgroundGradientEffectManager.Awake
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.BIsNowTransitioning
+  name: BIsNowTransitioning
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectManager.html#RGBLineCoreLib_Functor_BackgroundGradientEffectManager_BIsNowTransitioning
+  commentId: P:RGBLineCoreLib.Functor.BackgroundGradientEffectManager.BIsNowTransitioning
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.BIsNowTransitioning
+  nameWithType: BackgroundGradientEffectManager.BIsNowTransitioning
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.BIsNowTransitioning*
+  name: BIsNowTransitioning
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectManager.html#RGBLineCoreLib_Functor_BackgroundGradientEffectManager_BIsNowTransitioning_
+  commentId: Overload:RGBLineCoreLib.Functor.BackgroundGradientEffectManager.BIsNowTransitioning
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.BIsNowTransitioning
+  nameWithType: BackgroundGradientEffectManager.BIsNowTransitioning
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Materials
+  name: Materials
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectManager.html#RGBLineCoreLib_Functor_BackgroundGradientEffectManager_Materials
+  commentId: P:RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Materials
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Materials
+  nameWithType: BackgroundGradientEffectManager.Materials
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Materials*
+  name: Materials
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectManager.html#RGBLineCoreLib_Functor_BackgroundGradientEffectManager_Materials_
+  commentId: Overload:RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Materials
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Materials
+  nameWithType: BackgroundGradientEffectManager.Materials
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.StartTransition(System.Int32@,UnityEngine.Vector2@)
+  name: StartTransition(in int, in Vector2)
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectManager.html#RGBLineCoreLib_Functor_BackgroundGradientEffectManager_StartTransition_System_Int32__UnityEngine_Vector2__
+  commentId: M:RGBLineCoreLib.Functor.BackgroundGradientEffectManager.StartTransition(System.Int32@,UnityEngine.Vector2@)
+  name.vb: StartTransition(Integer, Vector2)
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.StartTransition(in int, in UnityEngine.Vector2)
+  fullName.vb: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.StartTransition(Integer, UnityEngine.Vector2)
+  nameWithType: BackgroundGradientEffectManager.StartTransition(in int, in Vector2)
+  nameWithType.vb: BackgroundGradientEffectManager.StartTransition(Integer, Vector2)
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.StartTransition*
+  name: StartTransition
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectManager.html#RGBLineCoreLib_Functor_BackgroundGradientEffectManager_StartTransition_
+  commentId: Overload:RGBLineCoreLib.Functor.BackgroundGradientEffectManager.StartTransition
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.StartTransition
+  nameWithType: BackgroundGradientEffectManager.StartTransition
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Timeout
+  name: Timeout
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectManager.html#RGBLineCoreLib_Functor_BackgroundGradientEffectManager_Timeout
+  commentId: P:RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Timeout
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Timeout
+  nameWithType: BackgroundGradientEffectManager.Timeout
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Timeout*
+  name: Timeout
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectManager.html#RGBLineCoreLib_Functor_BackgroundGradientEffectManager_Timeout_
+  commentId: Overload:RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Timeout
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Timeout
+  nameWithType: BackgroundGradientEffectManager.Timeout
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Update
+  name: Update()
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectManager.html#RGBLineCoreLib_Functor_BackgroundGradientEffectManager_Update
+  commentId: M:RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Update
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Update()
+  nameWithType: BackgroundGradientEffectManager.Update()
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Update*
+  name: Update
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientEffectManager.html#RGBLineCoreLib_Functor_BackgroundGradientEffectManager_Update_
+  commentId: Overload:RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Update
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.Update
+  nameWithType: BackgroundGradientEffectManager.Update
+- uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect
+  name: BackgroundGradientFadeoutEffect
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.html
+  commentId: T:RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect
+  nameWithType: BackgroundGradientFadeoutEffect
+- uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.CalculateFadeout(RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput@)
+  name: CalculateFadeout(in FadeoutInput)
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.html#RGBLineCoreLib_Functor_BackgroundGradientFadeoutEffect_CalculateFadeout_RGBLineCoreLib_Functor_BackgroundGradientFadeoutEffect_FadeoutInput__
+  commentId: M:RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.CalculateFadeout(RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput@)
+  name.vb: CalculateFadeout(FadeoutInput)
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.CalculateFadeout(in RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput)
+  fullName.vb: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.CalculateFadeout(RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput)
+  nameWithType: BackgroundGradientFadeoutEffect.CalculateFadeout(in BackgroundGradientFadeoutEffect.FadeoutInput)
+  nameWithType.vb: BackgroundGradientFadeoutEffect.CalculateFadeout(BackgroundGradientFadeoutEffect.FadeoutInput)
+- uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.CalculateFadeout*
+  name: CalculateFadeout
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.html#RGBLineCoreLib_Functor_BackgroundGradientFadeoutEffect_CalculateFadeout_
+  commentId: Overload:RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.CalculateFadeout
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.CalculateFadeout
+  nameWithType: BackgroundGradientFadeoutEffect.CalculateFadeout
+- uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput
+  name: BackgroundGradientFadeoutEffect.FadeoutInput
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.html
+  commentId: T:RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput
+  nameWithType: BackgroundGradientFadeoutEffect.FadeoutInput
+- uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.ColorEdgySmoothness
+  name: ColorEdgySmoothness
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.html#RGBLineCoreLib_Functor_BackgroundGradientFadeoutEffect_FadeoutInput_ColorEdgySmoothness
+  commentId: F:RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.ColorEdgySmoothness
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.ColorEdgySmoothness
+  nameWithType: BackgroundGradientFadeoutEffect.FadeoutInput.ColorEdgySmoothness
+- uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.ColorSpread
+  name: ColorSpread
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.html#RGBLineCoreLib_Functor_BackgroundGradientFadeoutEffect_FadeoutInput_ColorSpread
+  commentId: F:RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.ColorSpread
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.ColorSpread
+  nameWithType: BackgroundGradientFadeoutEffect.FadeoutInput.ColorSpread
+- uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.EffectStartPos
+  name: EffectStartPos
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.html#RGBLineCoreLib_Functor_BackgroundGradientFadeoutEffect_FadeoutInput_EffectStartPos
+  commentId: F:RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.EffectStartPos
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.EffectStartPos
+  nameWithType: BackgroundGradientFadeoutEffect.FadeoutInput.EffectStartPos
+- uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.LightColorHighlighting
+  name: LightColorHighlighting
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.html#RGBLineCoreLib_Functor_BackgroundGradientFadeoutEffect_FadeoutInput_LightColorHighlighting
+  commentId: F:RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.LightColorHighlighting
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.LightColorHighlighting
+  nameWithType: BackgroundGradientFadeoutEffect.FadeoutInput.LightColorHighlighting
+- uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.LightCount
+  name: LightCount
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.html#RGBLineCoreLib_Functor_BackgroundGradientFadeoutEffect_FadeoutInput_LightCount
+  commentId: F:RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.LightCount
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.LightCount
+  nameWithType: BackgroundGradientFadeoutEffect.FadeoutInput.LightCount
+- uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.TargetBaseColor
+  name: TargetBaseColor
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.html#RGBLineCoreLib_Functor_BackgroundGradientFadeoutEffect_FadeoutInput_TargetBaseColor
+  commentId: F:RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.TargetBaseColor
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.TargetBaseColor
+  nameWithType: BackgroundGradientFadeoutEffect.FadeoutInput.TargetBaseColor
+- uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.Update
+  name: Update()
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.html#RGBLineCoreLib_Functor_BackgroundGradientFadeoutEffect_Update
+  commentId: M:RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.Update
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.Update()
+  nameWithType: BackgroundGradientFadeoutEffect.Update()
+- uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.Update*
+  name: Update
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.html#RGBLineCoreLib_Functor_BackgroundGradientFadeoutEffect_Update_
+  commentId: Overload:RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.Update
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.Update
+  nameWithType: BackgroundGradientFadeoutEffect.Update
+- uid: RGBLineCoreLib.Functor.BackgroundGradientSetting
+  name: BackgroundGradientSetting
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientSetting.html
+  commentId: T:RGBLineCoreLib.Functor.BackgroundGradientSetting
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientSetting
+  nameWithType: BackgroundGradientSetting
+- uid: RGBLineCoreLib.Functor.BackgroundGradientSetting.BlueLightColors
+  name: BlueLightColors
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientSetting.html#RGBLineCoreLib_Functor_BackgroundGradientSetting_BlueLightColors
+  commentId: F:RGBLineCoreLib.Functor.BackgroundGradientSetting.BlueLightColors
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientSetting.BlueLightColors
+  nameWithType: BackgroundGradientSetting.BlueLightColors
+- uid: RGBLineCoreLib.Functor.BackgroundGradientSetting.GreenLightColors
+  name: GreenLightColors
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientSetting.html#RGBLineCoreLib_Functor_BackgroundGradientSetting_GreenLightColors
+  commentId: F:RGBLineCoreLib.Functor.BackgroundGradientSetting.GreenLightColors
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientSetting.GreenLightColors
+  nameWithType: BackgroundGradientSetting.GreenLightColors
+- uid: RGBLineCoreLib.Functor.BackgroundGradientSetting.HorizontalLineRange
+  name: HorizontalLineRange
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientSetting.html#RGBLineCoreLib_Functor_BackgroundGradientSetting_HorizontalLineRange
+  commentId: F:RGBLineCoreLib.Functor.BackgroundGradientSetting.HorizontalLineRange
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientSetting.HorizontalLineRange
+  nameWithType: BackgroundGradientSetting.HorizontalLineRange
+- uid: RGBLineCoreLib.Functor.BackgroundGradientSetting.LightCount
+  name: LightCount
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientSetting.html#RGBLineCoreLib_Functor_BackgroundGradientSetting_LightCount
+  commentId: F:RGBLineCoreLib.Functor.BackgroundGradientSetting.LightCount
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientSetting.LightCount
+  nameWithType: BackgroundGradientSetting.LightCount
+- uid: RGBLineCoreLib.Functor.BackgroundGradientSetting.LightSpeed
+  name: LightSpeed
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientSetting.html#RGBLineCoreLib_Functor_BackgroundGradientSetting_LightSpeed
+  commentId: F:RGBLineCoreLib.Functor.BackgroundGradientSetting.LightSpeed
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientSetting.LightSpeed
+  nameWithType: BackgroundGradientSetting.LightSpeed
+- uid: RGBLineCoreLib.Functor.BackgroundGradientSetting.Mats
+  name: Mats
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientSetting.html#RGBLineCoreLib_Functor_BackgroundGradientSetting_Mats
+  commentId: F:RGBLineCoreLib.Functor.BackgroundGradientSetting.Mats
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientSetting.Mats
+  nameWithType: BackgroundGradientSetting.Mats
+- uid: RGBLineCoreLib.Functor.BackgroundGradientSetting.MaxCurvedLinePointCount
+  name: MaxCurvedLinePointCount
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientSetting.html#RGBLineCoreLib_Functor_BackgroundGradientSetting_MaxCurvedLinePointCount
+  commentId: F:RGBLineCoreLib.Functor.BackgroundGradientSetting.MaxCurvedLinePointCount
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientSetting.MaxCurvedLinePointCount
+  nameWithType: BackgroundGradientSetting.MaxCurvedLinePointCount
+- uid: RGBLineCoreLib.Functor.BackgroundGradientSetting.MinCurvedLinePointCount
+  name: MinCurvedLinePointCount
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientSetting.html#RGBLineCoreLib_Functor_BackgroundGradientSetting_MinCurvedLinePointCount
+  commentId: F:RGBLineCoreLib.Functor.BackgroundGradientSetting.MinCurvedLinePointCount
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientSetting.MinCurvedLinePointCount
+  nameWithType: BackgroundGradientSetting.MinCurvedLinePointCount
+- uid: RGBLineCoreLib.Functor.BackgroundGradientSetting.Prefab_BackgroundGradientLightPath
+  name: Prefab_BackgroundGradientLightPath
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientSetting.html#RGBLineCoreLib_Functor_BackgroundGradientSetting_Prefab_BackgroundGradientLightPath
+  commentId: F:RGBLineCoreLib.Functor.BackgroundGradientSetting.Prefab_BackgroundGradientLightPath
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientSetting.Prefab_BackgroundGradientLightPath
+  nameWithType: BackgroundGradientSetting.Prefab_BackgroundGradientLightPath
+- uid: RGBLineCoreLib.Functor.BackgroundGradientSetting.RedLightColors
+  name: RedLightColors
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientSetting.html#RGBLineCoreLib_Functor_BackgroundGradientSetting_RedLightColors
+  commentId: F:RGBLineCoreLib.Functor.BackgroundGradientSetting.RedLightColors
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientSetting.RedLightColors
+  nameWithType: BackgroundGradientSetting.RedLightColors
+- uid: RGBLineCoreLib.Functor.BackgroundGradientSetting.VerticalLineRange
+  name: VerticalLineRange
+  href: api/RGBLineCoreLib.Functor.BackgroundGradientSetting.html#RGBLineCoreLib_Functor_BackgroundGradientSetting_VerticalLineRange
+  commentId: F:RGBLineCoreLib.Functor.BackgroundGradientSetting.VerticalLineRange
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientSetting.VerticalLineRange
+  nameWithType: BackgroundGradientSetting.VerticalLineRange
 - uid: RGBLineCoreLib.Functor.CurvedLinePoint
   name: CurvedLinePoint
   href: api/RGBLineCoreLib.Functor.CurvedLinePoint.html
@@ -1083,6 +1398,19 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.DeterminLine.StartCheck
   nameWithType: DeterminLine.StartCheck
+- uid: RGBLineCoreLib.Functor.DeterminLine.StopCheck
+  name: StopCheck()
+  href: api/RGBLineCoreLib.Functor.DeterminLine.html#RGBLineCoreLib_Functor_DeterminLine_StopCheck
+  commentId: M:RGBLineCoreLib.Functor.DeterminLine.StopCheck
+  fullName: RGBLineCoreLib.Functor.DeterminLine.StopCheck()
+  nameWithType: DeterminLine.StopCheck()
+- uid: RGBLineCoreLib.Functor.DeterminLine.StopCheck*
+  name: StopCheck
+  href: api/RGBLineCoreLib.Functor.DeterminLine.html#RGBLineCoreLib_Functor_DeterminLine_StopCheck_
+  commentId: Overload:RGBLineCoreLib.Functor.DeterminLine.StopCheck
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.DeterminLine.StopCheck
+  nameWithType: DeterminLine.StopCheck
 - uid: RGBLineCoreLib.Functor.DeterminLine.Update
   name: Update()
   href: api/RGBLineCoreLib.Functor.DeterminLine.html#RGBLineCoreLib_Functor_DeterminLine_Update
@@ -1324,6 +1652,19 @@ references:
   commentId: T:RGBLineCoreLib.Functor.ILineItem
   fullName: RGBLineCoreLib.Functor.ILineItem
   nameWithType: ILineItem
+- uid: RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer
+  name: CurvedLineRenderer
+  href: api/RGBLineCoreLib.Functor.ILineItem.html#RGBLineCoreLib_Functor_ILineItem_CurvedLineRenderer
+  commentId: P:RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer
+  fullName: RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer
+  nameWithType: ILineItem.CurvedLineRenderer
+- uid: RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer*
+  name: CurvedLineRenderer
+  href: api/RGBLineCoreLib.Functor.ILineItem.html#RGBLineCoreLib_Functor_ILineItem_CurvedLineRenderer_
+  commentId: Overload:RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer
+  nameWithType: ILineItem.CurvedLineRenderer
 - uid: RGBLineCoreLib.Functor.ILineItem.LineID
   name: LineID
   href: api/RGBLineCoreLib.Functor.ILineItem.html#RGBLineCoreLib_Functor_ILineItem_LineID
@@ -1558,6 +1899,19 @@ references:
   commentId: T:RGBLineCoreLib.Functor.IRedLineCornerNote
   fullName: RGBLineCoreLib.Functor.IRedLineCornerNote
   nameWithType: IRedLineCornerNote
+- uid: RGBLineCoreLib.Functor.IRedLineCornerNote.BIsToLeft
+  name: BIsToLeft
+  href: api/RGBLineCoreLib.Functor.IRedLineCornerNote.html#RGBLineCoreLib_Functor_IRedLineCornerNote_BIsToLeft
+  commentId: P:RGBLineCoreLib.Functor.IRedLineCornerNote.BIsToLeft
+  fullName: RGBLineCoreLib.Functor.IRedLineCornerNote.BIsToLeft
+  nameWithType: IRedLineCornerNote.BIsToLeft
+- uid: RGBLineCoreLib.Functor.IRedLineCornerNote.BIsToLeft*
+  name: BIsToLeft
+  href: api/RGBLineCoreLib.Functor.IRedLineCornerNote.html#RGBLineCoreLib_Functor_IRedLineCornerNote_BIsToLeft_
+  commentId: Overload:RGBLineCoreLib.Functor.IRedLineCornerNote.BIsToLeft
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.IRedLineCornerNote.BIsToLeft
+  nameWithType: IRedLineCornerNote.BIsToLeft
 - uid: RGBLineCoreLib.Functor.IRedLineCornerNote.NoteID
   name: NoteID
   href: api/RGBLineCoreLib.Functor.IRedLineCornerNote.html#RGBLineCoreLib_Functor_IRedLineCornerNote_NoteID
@@ -1571,12 +1925,15 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.IRedLineCornerNote.NoteID
   nameWithType: IRedLineCornerNote.NoteID
-- uid: RGBLineCoreLib.Functor.IRedLineCornerNote.Render
-  name: Render()
-  href: api/RGBLineCoreLib.Functor.IRedLineCornerNote.html#RGBLineCoreLib_Functor_IRedLineCornerNote_Render
-  commentId: M:RGBLineCoreLib.Functor.IRedLineCornerNote.Render
-  fullName: RGBLineCoreLib.Functor.IRedLineCornerNote.Render()
-  nameWithType: IRedLineCornerNote.Render()
+- uid: RGBLineCoreLib.Functor.IRedLineCornerNote.Render(System.Boolean@)
+  name: Render(in bool)
+  href: api/RGBLineCoreLib.Functor.IRedLineCornerNote.html#RGBLineCoreLib_Functor_IRedLineCornerNote_Render_System_Boolean__
+  commentId: M:RGBLineCoreLib.Functor.IRedLineCornerNote.Render(System.Boolean@)
+  name.vb: Render(Boolean)
+  fullName: RGBLineCoreLib.Functor.IRedLineCornerNote.Render(in bool)
+  fullName.vb: RGBLineCoreLib.Functor.IRedLineCornerNote.Render(Boolean)
+  nameWithType: IRedLineCornerNote.Render(in bool)
+  nameWithType.vb: IRedLineCornerNote.Render(Boolean)
 - uid: RGBLineCoreLib.Functor.IRedLineCornerNote.Render*
   name: Render
   href: api/RGBLineCoreLib.Functor.IRedLineCornerNote.html#RGBLineCoreLib_Functor_IRedLineCornerNote_Render_
@@ -1616,6 +1973,19 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.LineItem.Awake
   nameWithType: LineItem.Awake
+- uid: RGBLineCoreLib.Functor.LineItem.CurvedLineRenderer
+  name: CurvedLineRenderer
+  href: api/RGBLineCoreLib.Functor.LineItem.html#RGBLineCoreLib_Functor_LineItem_CurvedLineRenderer
+  commentId: P:RGBLineCoreLib.Functor.LineItem.CurvedLineRenderer
+  fullName: RGBLineCoreLib.Functor.LineItem.CurvedLineRenderer
+  nameWithType: LineItem.CurvedLineRenderer
+- uid: RGBLineCoreLib.Functor.LineItem.CurvedLineRenderer*
+  name: CurvedLineRenderer
+  href: api/RGBLineCoreLib.Functor.LineItem.html#RGBLineCoreLib_Functor_LineItem_CurvedLineRenderer_
+  commentId: Overload:RGBLineCoreLib.Functor.LineItem.CurvedLineRenderer
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.LineItem.CurvedLineRenderer
+  nameWithType: LineItem.CurvedLineRenderer
 - uid: RGBLineCoreLib.Functor.LineItem.Dispose
   name: Dispose()
   href: api/RGBLineCoreLib.Functor.LineItem.html#RGBLineCoreLib_Functor_LineItem_Dispose
@@ -1716,32 +2086,6 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.LineItem.LineRenderer
   nameWithType: LineItem.LineRenderer
-- uid: RGBLineCoreLib.Functor.LineItem.OnMouseEnter
-  name: OnMouseEnter()
-  href: api/RGBLineCoreLib.Functor.LineItem.html#RGBLineCoreLib_Functor_LineItem_OnMouseEnter
-  commentId: M:RGBLineCoreLib.Functor.LineItem.OnMouseEnter
-  fullName: RGBLineCoreLib.Functor.LineItem.OnMouseEnter()
-  nameWithType: LineItem.OnMouseEnter()
-- uid: RGBLineCoreLib.Functor.LineItem.OnMouseEnter*
-  name: OnMouseEnter
-  href: api/RGBLineCoreLib.Functor.LineItem.html#RGBLineCoreLib_Functor_LineItem_OnMouseEnter_
-  commentId: Overload:RGBLineCoreLib.Functor.LineItem.OnMouseEnter
-  isSpec: "True"
-  fullName: RGBLineCoreLib.Functor.LineItem.OnMouseEnter
-  nameWithType: LineItem.OnMouseEnter
-- uid: RGBLineCoreLib.Functor.LineItem.OnMouseExit
-  name: OnMouseExit()
-  href: api/RGBLineCoreLib.Functor.LineItem.html#RGBLineCoreLib_Functor_LineItem_OnMouseExit
-  commentId: M:RGBLineCoreLib.Functor.LineItem.OnMouseExit
-  fullName: RGBLineCoreLib.Functor.LineItem.OnMouseExit()
-  nameWithType: LineItem.OnMouseExit()
-- uid: RGBLineCoreLib.Functor.LineItem.OnMouseExit*
-  name: OnMouseExit
-  href: api/RGBLineCoreLib.Functor.LineItem.html#RGBLineCoreLib_Functor_LineItem_OnMouseExit_
-  commentId: Overload:RGBLineCoreLib.Functor.LineItem.OnMouseExit
-  isSpec: "True"
-  fullName: RGBLineCoreLib.Functor.LineItem.OnMouseExit
-  nameWithType: LineItem.OnMouseExit
 - uid: RGBLineCoreLib.Functor.LineItem.Render(System.Guid@)
   name: Render(in Guid)
   href: api/RGBLineCoreLib.Functor.LineItem.html#RGBLineCoreLib_Functor_LineItem_Render_System_Guid__
@@ -1847,19 +2191,32 @@ references:
   commentId: T:RGBLineCoreLib.Functor.LineTracker
   fullName: RGBLineCoreLib.Functor.LineTracker
   nameWithType: LineTracker
-- uid: RGBLineCoreLib.Functor.LineTracker.BIsInitialized
-  name: BIsInitialized
-  href: api/RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_BIsInitialized
-  commentId: P:RGBLineCoreLib.Functor.LineTracker.BIsInitialized
-  fullName: RGBLineCoreLib.Functor.LineTracker.BIsInitialized
-  nameWithType: LineTracker.BIsInitialized
-- uid: RGBLineCoreLib.Functor.LineTracker.BIsInitialized*
-  name: BIsInitialized
-  href: api/RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_BIsInitialized_
-  commentId: Overload:RGBLineCoreLib.Functor.LineTracker.BIsInitialized
+- uid: RGBLineCoreLib.Functor.LineTracker.Awake
+  name: Awake()
+  href: api/RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_Awake
+  commentId: M:RGBLineCoreLib.Functor.LineTracker.Awake
+  fullName: RGBLineCoreLib.Functor.LineTracker.Awake()
+  nameWithType: LineTracker.Awake()
+- uid: RGBLineCoreLib.Functor.LineTracker.Awake*
+  name: Awake
+  href: api/RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_Awake_
+  commentId: Overload:RGBLineCoreLib.Functor.LineTracker.Awake
   isSpec: "True"
-  fullName: RGBLineCoreLib.Functor.LineTracker.BIsInitialized
-  nameWithType: LineTracker.BIsInitialized
+  fullName: RGBLineCoreLib.Functor.LineTracker.Awake
+  nameWithType: LineTracker.Awake
+- uid: RGBLineCoreLib.Functor.LineTracker.CurLineID
+  name: CurLineID
+  href: api/RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_CurLineID
+  commentId: P:RGBLineCoreLib.Functor.LineTracker.CurLineID
+  fullName: RGBLineCoreLib.Functor.LineTracker.CurLineID
+  nameWithType: LineTracker.CurLineID
+- uid: RGBLineCoreLib.Functor.LineTracker.CurLineID*
+  name: CurLineID
+  href: api/RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_CurLineID_
+  commentId: Overload:RGBLineCoreLib.Functor.LineTracker.CurLineID
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.LineTracker.CurLineID
+  nameWithType: LineTracker.CurLineID
 - uid: RGBLineCoreLib.Functor.LineTracker.CurRegionID
   name: CurRegionID
   href: api/RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_CurRegionID
@@ -1873,6 +2230,32 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.LineTracker.CurRegionID
   nameWithType: LineTracker.CurRegionID
+- uid: RGBLineCoreLib.Functor.LineTracker.StartTracking
+  name: StartTracking()
+  href: api/RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_StartTracking
+  commentId: M:RGBLineCoreLib.Functor.LineTracker.StartTracking
+  fullName: RGBLineCoreLib.Functor.LineTracker.StartTracking()
+  nameWithType: LineTracker.StartTracking()
+- uid: RGBLineCoreLib.Functor.LineTracker.StartTracking*
+  name: StartTracking
+  href: api/RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_StartTracking_
+  commentId: Overload:RGBLineCoreLib.Functor.LineTracker.StartTracking
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.LineTracker.StartTracking
+  nameWithType: LineTracker.StartTracking
+- uid: RGBLineCoreLib.Functor.LineTracker.StopTracking
+  name: StopTracking()
+  href: api/RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_StopTracking
+  commentId: M:RGBLineCoreLib.Functor.LineTracker.StopTracking
+  fullName: RGBLineCoreLib.Functor.LineTracker.StopTracking()
+  nameWithType: LineTracker.StopTracking()
+- uid: RGBLineCoreLib.Functor.LineTracker.StopTracking*
+  name: StopTracking
+  href: api/RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_StopTracking_
+  commentId: Overload:RGBLineCoreLib.Functor.LineTracker.StopTracking
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.LineTracker.StopTracking
+  nameWithType: LineTracker.StopTracking
 - uid: RGBLineCoreLib.Functor.LineTracker.Update
   name: Update()
   href: api/RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_Update
@@ -2095,6 +2478,19 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.RedLineCornerNote.Awake
   nameWithType: RedLineCornerNote.Awake
+- uid: RGBLineCoreLib.Functor.RedLineCornerNote.BIsToLeft
+  name: BIsToLeft
+  href: api/RGBLineCoreLib.Functor.RedLineCornerNote.html#RGBLineCoreLib_Functor_RedLineCornerNote_BIsToLeft
+  commentId: P:RGBLineCoreLib.Functor.RedLineCornerNote.BIsToLeft
+  fullName: RGBLineCoreLib.Functor.RedLineCornerNote.BIsToLeft
+  nameWithType: RedLineCornerNote.BIsToLeft
+- uid: RGBLineCoreLib.Functor.RedLineCornerNote.BIsToLeft*
+  name: BIsToLeft
+  href: api/RGBLineCoreLib.Functor.RedLineCornerNote.html#RGBLineCoreLib_Functor_RedLineCornerNote_BIsToLeft_
+  commentId: Overload:RGBLineCoreLib.Functor.RedLineCornerNote.BIsToLeft
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.RedLineCornerNote.BIsToLeft
+  nameWithType: RedLineCornerNote.BIsToLeft
 - uid: RGBLineCoreLib.Functor.RedLineCornerNote.Dispose
   name: Dispose()
   href: api/RGBLineCoreLib.Functor.RedLineCornerNote.html#RGBLineCoreLib_Functor_RedLineCornerNote_Dispose
@@ -2121,12 +2517,15 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.RedLineCornerNote.NoteID
   nameWithType: RedLineCornerNote.NoteID
-- uid: RGBLineCoreLib.Functor.RedLineCornerNote.Render
-  name: Render()
-  href: api/RGBLineCoreLib.Functor.RedLineCornerNote.html#RGBLineCoreLib_Functor_RedLineCornerNote_Render
-  commentId: M:RGBLineCoreLib.Functor.RedLineCornerNote.Render
-  fullName: RGBLineCoreLib.Functor.RedLineCornerNote.Render()
-  nameWithType: RedLineCornerNote.Render()
+- uid: RGBLineCoreLib.Functor.RedLineCornerNote.Render(System.Boolean@)
+  name: Render(in bool)
+  href: api/RGBLineCoreLib.Functor.RedLineCornerNote.html#RGBLineCoreLib_Functor_RedLineCornerNote_Render_System_Boolean__
+  commentId: M:RGBLineCoreLib.Functor.RedLineCornerNote.Render(System.Boolean@)
+  name.vb: Render(Boolean)
+  fullName: RGBLineCoreLib.Functor.RedLineCornerNote.Render(in bool)
+  fullName.vb: RGBLineCoreLib.Functor.RedLineCornerNote.Render(Boolean)
+  nameWithType: RedLineCornerNote.Render(in bool)
+  nameWithType.vb: RedLineCornerNote.Render(Boolean)
 - uid: RGBLineCoreLib.Functor.RedLineCornerNote.Render*
   name: Render
   href: api/RGBLineCoreLib.Functor.RedLineCornerNote.html#RGBLineCoreLib_Functor_RedLineCornerNote_Render_
@@ -3420,6 +3819,19 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Manager.ScoreManager.StartScoring
   nameWithType: ScoreManager.StartScoring
+- uid: RGBLineCoreLib.Manager.ScoreManager.StopScoring
+  name: StopScoring()
+  href: api/RGBLineCoreLib.Manager.ScoreManager.html#RGBLineCoreLib_Manager_ScoreManager_StopScoring
+  commentId: M:RGBLineCoreLib.Manager.ScoreManager.StopScoring
+  fullName: RGBLineCoreLib.Manager.ScoreManager.StopScoring()
+  nameWithType: ScoreManager.StopScoring()
+- uid: RGBLineCoreLib.Manager.ScoreManager.StopScoring*
+  name: StopScoring
+  href: api/RGBLineCoreLib.Manager.ScoreManager.html#RGBLineCoreLib_Manager_ScoreManager_StopScoring_
+  commentId: Overload:RGBLineCoreLib.Manager.ScoreManager.StopScoring
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Manager.ScoreManager.StopScoring
+  nameWithType: ScoreManager.StopScoring
 - uid: RGBLineCoreLib.Manager.ScoreManager.Update
   name: Update()
   href: api/RGBLineCoreLib.Manager.ScoreManager.html#RGBLineCoreLib_Manager_ScoreManager_Update

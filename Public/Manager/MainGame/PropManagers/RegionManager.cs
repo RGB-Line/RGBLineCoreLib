@@ -25,7 +25,7 @@ namespace RGBLineCoreLib.Manager
         }
 
 
-        [SerializeField] private RegionSpawnAssets m_regionSpawnAssets;
+        [SerializeField] private RegionSpawnAssets m_regionSpawnAssets = default;
 
         private Guid m_prevRegionID = Guid.Empty;
 

@@ -19,11 +19,11 @@ namespace RGBLineCoreLib.Functor
     {
         private SpriteRenderer m_spriteRenderer;
 
-        [SerializeField] private float m_speed = 1.0f;
+        [SerializeField] private float m_moveSpeed = 2.0f;
 
-        private Dictionary<Guid, float> m_regionTimeTable = new Dictionary<Guid, float>();
+        private readonly Dictionary<Guid, float> m_regionTimeTable = new Dictionary<Guid, float>();
 
-        private bool m_bisInitialized = false;
+        private bool m_bisStartTracking = false;
 
         private Guid m_curRegionID = Guid.Empty;
         private Guid m_curLineID = Guid.Empty;
@@ -36,134 +36,168 @@ namespace RGBLineCoreLib.Functor
         }
         public void Update()
         {
-            if (!m_bisInitialized)
+            if (!m_bisStartTracking)
             {
                 return;
             }
-            
-            if (m_curRegionID != Guid.Empty)
+
+            try
             {
-                StageData.RegionData curRegionData = StageDataInterface.RegionDataInterface.GetRegionData(m_curRegionID);
-                switch (curRegionData.CurColorType)
+                if (Physics.Raycast(transform.position + 5.0f * Vector3.forward, Vector3.forward, out RaycastHit hit, 100.0f))
                 {
-                    case StageData.RegionData.ColorType.Red:
-                        {
-                            m_curLineID = Guid.Empty;
+                    if (hit.collider.gameObject.GetComponent<ILineItem>() != null
+                        && StageDataInterface.LineDataInterface.GetAttachedRegionData(hit.collider.gameObject.GetComponent<ILineItem>().LineID).CurColorType == StageData.RegionData.ColorType.Green)
+                    {
+                        ScoreManager.Instance.BIsOnGreenLine = true;
+                    }
+                    else
+                    {
+                        ScoreManager.Instance.BIsOnGreenLine = false;
+                    }
+                }
+                else
+                {
+                    ScoreManager.Instance.BIsOnGreenLine = false;
+                }
 
-                            Guid redLineID = Guid.Empty;
-                            Guid[] lineIDs = StageDataInterface.LineDataInterface.GetLineIDs();
-                            foreach (Guid lineID in lineIDs)
+                if (m_curRegionID != Guid.Empty)
+                {
+                    StageData.RegionData curRegionData = StageDataInterface.RegionDataInterface.GetRegionData(m_curRegionID);
+                    switch (curRegionData.CurColorType)
+                    {
+                        case StageData.RegionData.ColorType.Red:
                             {
-                                StageData.LineData lineData = StageDataInterface.LineDataInterface.GetLineData(lineID);
-                                if (lineData.AttachedRegionID == m_curRegionID)
+                                m_curLineID = Guid.Empty;
+
+                                Guid redLineID = Guid.Empty;
+                                Guid[] lineIDs = StageDataInterface.LineDataInterface.GetLineIDs();
+                                foreach (Guid lineID in lineIDs)
                                 {
-                                    redLineID = lineID;
-                                    break;
-                                }
-                            }
-
-                            float xPos = GetCameraXPos(transform.position.y / GridManager.Instance.GetUnitFrameSize(), redLineID);
-                            Camera.main.transform.position = new Vector3(xPos, Camera.main.transform.position.y, -10);
-
-                            m_spriteRenderer.enabled = true;
-                            transform.localPosition = new Vector3()
-                            {
-                                x = 0.0f,
-                                y = -3.5f,
-                                z = 5.0f
-                            };
-                        }
-                        break;
-
-                    case StageData.RegionData.ColorType.Green:
-                        {
-                            m_curLineID = Guid.Empty;
-
-                            float horizontalMovement = Input.GetAxis("Horizontal");
-
-                            transform.localPosition = new Vector3()
-                            {
-                                x = transform.localPosition.x + (horizontalMovement * 0.1f),
-                                y = -3.5f,
-                                z = 5.0f
-                            };
-                        }
-                        break;
-
-                    case StageData.RegionData.ColorType.Blue:
-                        {
-                            List<Guid> blueLineIDs = new List<Guid>();
-                            Guid[] lineIDs = StageDataInterface.LineDataInterface.GetLineIDs();
-                            foreach (Guid lineID in lineIDs)
-                            {
-                                StageData.LineData lineData = StageDataInterface.LineDataInterface.GetLineData(lineID);
-                                ILineItem lineItem = LineManager.Instance.GetLineItem(lineID);
-                                if (lineData.AttachedRegionID == m_curRegionID
-                                    && lineItem.LineRenderer.GetPosition(0).y <= transform.position.y && transform.position.y <= lineItem.LineRenderer.GetPosition(lineItem.LineRenderer.positionCount - 1).y)
-                                {
-                                    blueLineIDs.Add(lineID);
-                                }
-                            }
-
-                            blueLineIDs.Sort((Guid x, Guid y) =>
-                            {
-                                return StageDataInterface.LineDataInterface.GetLineData(x).CurvedLinePoints[0].X.CompareTo(StageDataInterface.LineDataInterface.GetLineData(y).CurvedLinePoints[0].X);
-                            });
-
-                            if(m_curLineID == Guid.Empty)
-                            {
-                                m_curLineID = blueLineIDs[blueLineIDs.Count / 2];
-                            }
-                            else if(!blueLineIDs.Contains(m_curLineID))
-                            {
-                                float prevLineXPos = StageDataInterface.LineDataInterface.GetLineData(m_curLineID).CurvedLinePoints[0].X;
-
-                                float minGap = float.MaxValue;
-                                foreach (Guid lineID in blueLineIDs)
-                                {
-                                    float curLineXPos = StageDataInterface.LineDataInterface.GetLineData(lineID).CurvedLinePoints[0].X;
-                                    if (Mathf.Abs(curLineXPos - prevLineXPos) < minGap)
+                                    StageData.LineData lineData = StageDataInterface.LineDataInterface.GetLineData(lineID);
+                                    if (lineData.AttachedRegionID == m_curRegionID)
                                     {
-                                        minGap = Mathf.Abs(curLineXPos - prevLineXPos);
-                                        m_curLineID = lineID;
+                                        redLineID = lineID;
+                                        break;
                                     }
                                 }
-                            }
-                            else
-                            {
-                                int prevLineIndex = blueLineIDs.IndexOf(m_curLineID);
-                                if (Input.GetKeyDown(KeyCode.LeftArrow) && prevLineIndex - 1 >= 0)
-                                {
-                                    m_curLineID = blueLineIDs[prevLineIndex - 1];
-                                }
-                                else if (Input.GetKeyDown(KeyCode.RightArrow) && prevLineIndex + 1 < blueLineIDs.Count)
-                                {
-                                    m_curLineID = blueLineIDs[prevLineIndex + 1];
-                                }
-                            }
 
-                            Debug.Log(blueLineIDs.Count + " / Current Blue Line ID: " + m_curLineID);
+                                float xPos = GetCameraXPos(transform.position.y / GridManager.Instance.GetUnitFrameSize(), redLineID);
+                                Camera.main.transform.position = new Vector3(xPos, Camera.main.transform.position.y, -10);
 
-                            m_spriteRenderer.enabled = true;
-                            transform.localPosition = new Vector3()
+                                m_spriteRenderer.enabled = true;
+                                transform.localPosition = new Vector3()
+                                {
+                                    x = 0.0f,
+                                    y = -3.5f,
+                                    z = 1.0f
+                                };
+                            }
+                            break;
+
+                        case StageData.RegionData.ColorType.Green:
                             {
-                                x = GetCameraXPos(transform.position.y / GridManager.Instance.GetUnitFrameSize(), blueLineIDs[blueLineIDs.IndexOf(m_curLineID)]),
-                                y = -3.5f,
-                                z = 5.0f
-                            };
-                        }
-                        break;
+                                m_curLineID = Guid.Empty;
+
+                                //float horizontalMovement = Input.GetAxis("Horizontal");
+
+                                //transform.localPosition = new Vector3()
+                                //{
+                                //    x = transform.localPosition.x + (horizontalMovement * 0.1f),
+                                //    y = -3.5f,
+                                //    z = 5.0f
+                                //};
+
+                                if (Input.GetKey(KeyCode.LeftArrow))
+                                {
+                                    transform.localPosition = new Vector3()
+                                    {
+                                        x = transform.localPosition.x - (m_moveSpeed * Time.deltaTime),
+                                        y = -3.5f,
+                                        z = 1.0f
+                                    };
+                                }
+                                else if (Input.GetKey(KeyCode.RightArrow))
+                                {
+                                    transform.localPosition = new Vector3()
+                                    {
+                                        x = transform.localPosition.x + (m_moveSpeed * Time.deltaTime),
+                                        y = -3.5f,
+                                        z = 1.0f
+                                    };
+                                }
+                            }
+                            break;
+
+                        case StageData.RegionData.ColorType.Blue:
+                            {
+                                List<Guid> blueLineIDs = new List<Guid>();
+                                Guid[] lineIDs = StageDataInterface.LineDataInterface.GetLineIDs();
+                                foreach (Guid lineID in lineIDs)
+                                {
+                                    StageData.LineData lineData = StageDataInterface.LineDataInterface.GetLineData(lineID);
+                                    ILineItem lineItem = LineManager.Instance.GetLineItem(lineID);
+                                    if (lineData.AttachedRegionID == m_curRegionID
+                                        && lineItem.LineRenderer.GetPosition(0).y <= transform.position.y && transform.position.y <= lineItem.LineRenderer.GetPosition(lineItem.LineRenderer.positionCount - 1).y)
+                                    {
+                                        blueLineIDs.Add(lineID);
+                                    }
+                                }
+
+                                blueLineIDs.Sort((Guid x, Guid y) =>
+                                {
+                                    return StageDataInterface.LineDataInterface.GetLineData(x).CurvedLinePoints[0].X.CompareTo(StageDataInterface.LineDataInterface.GetLineData(y).CurvedLinePoints[0].X);
+                                });
+
+                                if (m_curLineID == Guid.Empty)
+                                {
+                                    m_curLineID = blueLineIDs[blueLineIDs.Count / 2];
+                                }
+                                else if (!blueLineIDs.Contains(m_curLineID))
+                                {
+                                    float prevLineXPos = StageDataInterface.LineDataInterface.GetLineData(m_curLineID).CurvedLinePoints[0].X;
+
+                                    float minGap = float.MaxValue;
+                                    foreach (Guid lineID in blueLineIDs)
+                                    {
+                                        float curLineXPos = StageDataInterface.LineDataInterface.GetLineData(lineID).CurvedLinePoints[0].X;
+                                        if (Mathf.Abs(curLineXPos - prevLineXPos) < minGap)
+                                        {
+                                            minGap = Mathf.Abs(curLineXPos - prevLineXPos);
+                                            m_curLineID = lineID;
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    int prevLineIndex = blueLineIDs.IndexOf(m_curLineID);
+                                    if (Input.GetKeyDown(KeyCode.LeftArrow) && prevLineIndex - 1 >= 0)
+                                    {
+                                        m_curLineID = blueLineIDs[prevLineIndex - 1];
+                                    }
+                                    else if (Input.GetKeyDown(KeyCode.RightArrow) && prevLineIndex + 1 < blueLineIDs.Count)
+                                    {
+                                        m_curLineID = blueLineIDs[prevLineIndex + 1];
+                                    }
+                                }
+
+                                m_spriteRenderer.enabled = true;
+                                transform.localPosition = new Vector3()
+                                {
+                                    x = GetCameraXPos(transform.position.y / GridManager.Instance.GetUnitFrameSize(), blueLineIDs[blueLineIDs.IndexOf(m_curLineID)]),
+                                    y = -3.5f,
+                                    z = 1.0f
+                                };
+                            }
+                            break;
+                    }
                 }
             }
-        }
-
-        public bool BIsInitialized
-        {
-            set
+            catch
             {
-                m_bisInitialized = value;
+                ScoreManager.Instance.BIsSomethingTroubled = true;
             }
         }
+
         public Guid CurRegionID
         {
             set
@@ -177,6 +211,15 @@ namespace RGBLineCoreLib.Functor
             {
                 return m_curLineID;
             }
+        }
+
+        public void StartTracking()
+        {
+            m_bisStartTracking = true;
+        }
+        public void StopTracking()
+        {
+            m_bisStartTracking = false;
         }
 
         private float GetCameraXPos(in float targetFrame, in Guid lineID)

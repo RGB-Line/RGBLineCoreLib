@@ -17,18 +17,18 @@ namespace RGBLineCoreLib.Data
     internal class DataPathTable : ScriptableObject
     {
         [Header("Stage")]
-        public string StagesBasePath;
+        public string StagesBasePath = null;
 
-        public string StageDataFilePathTemplate;
-        public string StageDataFileExtension;
+        public string StageDataFilePathTemplate = null;
+        public string StageDataFileExtension = null;
 
-        public string StageMetaDataFilePathTemplate;
-        public string StageMetaDataFileExtension;
+        public string StageMetaDataFilePathTemplate = null;
+        public string StageMetaDataFileExtension = null;
 
         [Header("Config")]
-        public string ConfigBasePath;
+        public string ConfigBasePath = null;
 
-        public string ConfigFileName;
-        public string ConfigFileExtension;
+        public string ConfigFileName = null;
+        public string ConfigFileExtension = null;
     }
 }

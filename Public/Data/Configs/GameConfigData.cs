@@ -21,6 +21,12 @@ namespace RGBLineCoreLib.Data
             Frame_90,
             Frame_120
         }
+        public enum ScreenResolution : byte
+        {
+            FHD_1920x1080,
+            QHD_2560x1440,
+            UHD_3840x2160
+        }
 
         /// <summary>
         /// 각 판정마다의 히트 박스 크기를 지정한다
@@ -37,16 +43,16 @@ namespace RGBLineCoreLib.Data
 
             public List<float> HitJudgingRanges;
         }
-        [Serializable] public struct SpecialKeySet
-        {
-            public KeyCode RedNoteKeyCode_Left;
-            public KeyCode RedNoteKeyCode_Right;
+        //[Serializable] public struct SpecialKeySet
+        //{
+        //    public KeyCode RedNoteKeyCode_Left;
+        //    public KeyCode RedNoteKeyCode_Right;
 
-            //public KeyCode RedLineCornerNoteKeyCode;
+        //    //public KeyCode RedLineCornerNoteKeyCode;
 
-            public KeyCode TrackerMovementKeyCode_ToLeft;
-            public KeyCode TrackerMovementKeyCode_ToRight;
-        }
+        //    public KeyCode TrackerMovementKeyCode_ToLeft;
+        //    public KeyCode TrackerMovementKeyCode_ToRight;
+        //}
 
 
         public NoteHitJudgingStrandard NoteHitJudgeStrandard;
@@ -67,6 +73,7 @@ namespace RGBLineCoreLib.Data
         /// 0 ~ 4 사이의 값으로 지정한다
         /// </remarks>
         public int VSyncCount;
-        public SpecialKeySet SpecialKeySetting;
+        //public SpecialKeySet SpecialKeySetting;
+        public ScreenResolution Resolution;
     }
 }

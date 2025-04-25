@@ -14,13 +14,13 @@ namespace RGBLineCoreLib.Functor
     /// </summary>
     public sealed class RegionTransitionEffector : MonoBehaviour
     {
-        [SerializeField] private List<Material> m_mats;
+        [SerializeField] private List<Material> m_mats = null;
 
-        [SerializeField] private MeshRenderer m_meshRenderer;
-        [SerializeField] private MeshRenderer m_BlurMeshRenderer;
+        [SerializeField] private MeshRenderer m_meshRenderer = null;
+        [SerializeField] private MeshRenderer m_BlurMeshRenderer = null;
 
-        [SerializeField] private RegionFadeoutEffect m_fadeOut;
-        [SerializeField] private float m_timeout;
+        [SerializeField] private RegionFadeoutEffect m_fadeOut = null;
+        [SerializeField] private float m_timeout = 0.5f;
 
         private int m_curMatIndex;
 

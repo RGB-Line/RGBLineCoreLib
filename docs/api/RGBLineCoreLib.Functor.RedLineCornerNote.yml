@@ -6,9 +6,10 @@ items:
   parent: RGBLineCoreLib.Functor
   children:
   - RGBLineCoreLib.Functor.RedLineCornerNote.Awake
+  - RGBLineCoreLib.Functor.RedLineCornerNote.BIsToLeft
   - RGBLineCoreLib.Functor.RedLineCornerNote.Dispose
   - RGBLineCoreLib.Functor.RedLineCornerNote.NoteID
-  - RGBLineCoreLib.Functor.RedLineCornerNote.Render
+  - RGBLineCoreLib.Functor.RedLineCornerNote.Render(System.Boolean@)
   - RGBLineCoreLib.Functor.RedLineCornerNote.Transform
   langs:
   - csharp
@@ -179,7 +180,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Awake
     path: ../Public/Functor/MainGame/Prop/Note/RedLineCornerNote.cs
-    startLine: 27
+    startLine: 29
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -205,7 +206,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: NoteID
     path: ../Public/Functor/MainGame/Prop/Note/RedLineCornerNote.cs
-    startLine: 32
+    startLine: 34
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -237,7 +238,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Transform
     path: ../Public/Functor/MainGame/Prop/Note/RedLineCornerNote.cs
-    startLine: 39
+    startLine: 41
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -251,16 +252,48 @@ items:
   overload: RGBLineCoreLib.Functor.RedLineCornerNote.Transform*
   implements:
   - RGBLineCoreLib.Functor.IRedLineCornerNote.Transform
-- uid: RGBLineCoreLib.Functor.RedLineCornerNote.Render
-  commentId: M:RGBLineCoreLib.Functor.RedLineCornerNote.Render
-  id: Render
+- uid: RGBLineCoreLib.Functor.RedLineCornerNote.BIsToLeft
+  commentId: P:RGBLineCoreLib.Functor.RedLineCornerNote.BIsToLeft
+  id: BIsToLeft
   parent: RGBLineCoreLib.Functor.RedLineCornerNote
   langs:
   - csharp
   - vb
-  name: Render()
-  nameWithType: RedLineCornerNote.Render()
-  fullName: RGBLineCoreLib.Functor.RedLineCornerNote.Render()
+  name: BIsToLeft
+  nameWithType: RedLineCornerNote.BIsToLeft
+  fullName: RGBLineCoreLib.Functor.RedLineCornerNote.BIsToLeft
+  type: Property
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Note/RedLineCornerNote.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: BIsToLeft
+    path: ../Public/Functor/MainGame/Prop/Note/RedLineCornerNote.cs
+    startLine: 48
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  example: []
+  syntax:
+    content: public bool BIsToLeft { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property BIsToLeft As Boolean
+  overload: RGBLineCoreLib.Functor.RedLineCornerNote.BIsToLeft*
+  implements:
+  - RGBLineCoreLib.Functor.IRedLineCornerNote.BIsToLeft
+- uid: RGBLineCoreLib.Functor.RedLineCornerNote.Render(System.Boolean@)
+  commentId: M:RGBLineCoreLib.Functor.RedLineCornerNote.Render(System.Boolean@)
+  id: Render(System.Boolean@)
+  parent: RGBLineCoreLib.Functor.RedLineCornerNote
+  langs:
+  - csharp
+  - vb
+  name: Render(in bool)
+  nameWithType: RedLineCornerNote.Render(in bool)
+  fullName: RGBLineCoreLib.Functor.RedLineCornerNote.Render(in bool)
   type: Method
   source:
     remote:
@@ -269,17 +302,23 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Render
     path: ../Public/Functor/MainGame/Prop/Note/RedLineCornerNote.cs
-    startLine: 47
+    startLine: 56
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
   example: []
   syntax:
-    content: public virtual void Render()
-    content.vb: Public Overridable Sub Render()
+    content: public virtual void Render(in bool bisToLeft)
+    parameters:
+    - id: bisToLeft
+      type: System.Boolean
+    content.vb: Public Overridable Sub Render(bisToLeft As Boolean)
   overload: RGBLineCoreLib.Functor.RedLineCornerNote.Render*
   implements:
-  - RGBLineCoreLib.Functor.IRedLineCornerNote.Render
+  - RGBLineCoreLib.Functor.IRedLineCornerNote.Render(System.Boolean@)
+  nameWithType.vb: RedLineCornerNote.Render(Boolean)
+  fullName.vb: RGBLineCoreLib.Functor.RedLineCornerNote.Render(Boolean)
+  name.vb: Render(Boolean)
 - uid: RGBLineCoreLib.Functor.RedLineCornerNote.Dispose
   commentId: M:RGBLineCoreLib.Functor.RedLineCornerNote.Dispose
   id: Dispose
@@ -298,7 +337,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Dispose
     path: ../Public/Functor/MainGame/Prop/Note/RedLineCornerNote.cs
-    startLine: 65
+    startLine: 76
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -4782,30 +4821,68 @@ references:
   name: Transform
   nameWithType: Transform
   fullName: UnityEngine.Transform
+- uid: RGBLineCoreLib.Functor.RedLineCornerNote.BIsToLeft*
+  commentId: Overload:RGBLineCoreLib.Functor.RedLineCornerNote.BIsToLeft
+  href: RGBLineCoreLib.Functor.RedLineCornerNote.html#RGBLineCoreLib_Functor_RedLineCornerNote_BIsToLeft
+  name: BIsToLeft
+  nameWithType: RedLineCornerNote.BIsToLeft
+  fullName: RGBLineCoreLib.Functor.RedLineCornerNote.BIsToLeft
+- uid: RGBLineCoreLib.Functor.IRedLineCornerNote.BIsToLeft
+  commentId: P:RGBLineCoreLib.Functor.IRedLineCornerNote.BIsToLeft
+  parent: RGBLineCoreLib.Functor.IRedLineCornerNote
+  href: RGBLineCoreLib.Functor.IRedLineCornerNote.html#RGBLineCoreLib_Functor_IRedLineCornerNote_BIsToLeft
+  name: BIsToLeft
+  nameWithType: IRedLineCornerNote.BIsToLeft
+  fullName: RGBLineCoreLib.Functor.IRedLineCornerNote.BIsToLeft
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: RGBLineCoreLib.Functor.RedLineCornerNote.Render*
   commentId: Overload:RGBLineCoreLib.Functor.RedLineCornerNote.Render
-  href: RGBLineCoreLib.Functor.RedLineCornerNote.html#RGBLineCoreLib_Functor_RedLineCornerNote_Render
+  href: RGBLineCoreLib.Functor.RedLineCornerNote.html#RGBLineCoreLib_Functor_RedLineCornerNote_Render_System_Boolean__
   name: Render
   nameWithType: RedLineCornerNote.Render
   fullName: RGBLineCoreLib.Functor.RedLineCornerNote.Render
-- uid: RGBLineCoreLib.Functor.IRedLineCornerNote.Render
-  commentId: M:RGBLineCoreLib.Functor.IRedLineCornerNote.Render
+- uid: RGBLineCoreLib.Functor.IRedLineCornerNote.Render(System.Boolean@)
+  commentId: M:RGBLineCoreLib.Functor.IRedLineCornerNote.Render(System.Boolean@)
   parent: RGBLineCoreLib.Functor.IRedLineCornerNote
-  href: RGBLineCoreLib.Functor.IRedLineCornerNote.html#RGBLineCoreLib_Functor_IRedLineCornerNote_Render
-  name: Render()
-  nameWithType: IRedLineCornerNote.Render()
-  fullName: RGBLineCoreLib.Functor.IRedLineCornerNote.Render()
+  isExternal: true
+  href: RGBLineCoreLib.Functor.IRedLineCornerNote.html#RGBLineCoreLib_Functor_IRedLineCornerNote_Render_System_Boolean__
+  name: Render(in bool)
+  nameWithType: IRedLineCornerNote.Render(in bool)
+  fullName: RGBLineCoreLib.Functor.IRedLineCornerNote.Render(in bool)
+  nameWithType.vb: IRedLineCornerNote.Render(Boolean)
+  fullName.vb: RGBLineCoreLib.Functor.IRedLineCornerNote.Render(Boolean)
+  name.vb: Render(Boolean)
   spec.csharp:
-  - uid: RGBLineCoreLib.Functor.IRedLineCornerNote.Render
+  - uid: RGBLineCoreLib.Functor.IRedLineCornerNote.Render(System.Boolean@)
     name: Render
-    href: RGBLineCoreLib.Functor.IRedLineCornerNote.html#RGBLineCoreLib_Functor_IRedLineCornerNote_Render
+    href: RGBLineCoreLib.Functor.IRedLineCornerNote.html#RGBLineCoreLib_Functor_IRedLineCornerNote_Render_System_Boolean__
   - name: (
+  - name: in
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
   spec.vb:
-  - uid: RGBLineCoreLib.Functor.IRedLineCornerNote.Render
+  - uid: RGBLineCoreLib.Functor.IRedLineCornerNote.Render(System.Boolean@)
     name: Render
-    href: RGBLineCoreLib.Functor.IRedLineCornerNote.html#RGBLineCoreLib_Functor_IRedLineCornerNote_Render
+    href: RGBLineCoreLib.Functor.IRedLineCornerNote.html#RGBLineCoreLib_Functor_IRedLineCornerNote_Render_System_Boolean__
   - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
 - uid: RGBLineCoreLib.Functor.RedLineCornerNote.Dispose*
   commentId: Overload:RGBLineCoreLib.Functor.RedLineCornerNote.Dispose

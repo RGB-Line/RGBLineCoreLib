@@ -306,7 +306,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Dispose
     path: ../Public/Functor/MainGame/Prop/Note/RedAndBlueNote.cs
-    startLine: 100
+    startLine: 101
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor

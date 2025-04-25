@@ -484,18 +484,18 @@ Class LineTracker  <a class="header-action link-secondary" title="View source" h
 </h2>
 
 
-  <a id="RGBLineCoreLib_Functor_LineTracker_BIsInitialized_" data-uid="RGBLineCoreLib.Functor.LineTracker.BIsInitialized*"></a>
+  <a id="RGBLineCoreLib_Functor_LineTracker_CurLineID_" data-uid="RGBLineCoreLib.Functor.LineTracker.CurLineID*"></a>
 
-  <h3 id="RGBLineCoreLib_Functor_LineTracker_BIsInitialized" data-uid="RGBLineCoreLib.Functor.LineTracker.BIsInitialized">
-  BIsInitialized
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/LineTracker.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <h3 id="RGBLineCoreLib_Functor_LineTracker_CurLineID" data-uid="RGBLineCoreLib.Functor.LineTracker.CurLineID">
+  CurLineID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/LineTracker.cs/#L208"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool BIsInitialized { set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Guid CurLineID { get; }</code></pre>
   </div>
 
 
@@ -504,7 +504,7 @@ Class LineTracker  <a class="header-action link-secondary" title="View source" h
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
     <dd></dd>
   </dl>
 
@@ -519,7 +519,7 @@ Class LineTracker  <a class="header-action link-secondary" title="View source" h
 
   <h3 id="RGBLineCoreLib_Functor_LineTracker_CurRegionID" data-uid="RGBLineCoreLib.Functor.LineTracker.CurRegionID">
   CurRegionID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/LineTracker.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/LineTracker.cs/#L201"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -550,11 +550,89 @@ Class LineTracker  <a class="header-action link-secondary" title="View source" h
 </h2>
 
 
+  <a id="RGBLineCoreLib_Functor_LineTracker_Awake_" data-uid="RGBLineCoreLib.Functor.LineTracker.Awake*"></a>
+
+  <h3 id="RGBLineCoreLib_Functor_LineTracker_Awake" data-uid="RGBLineCoreLib.Functor.LineTracker.Awake">
+  Awake()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/LineTracker.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RGBLineCoreLib_Functor_LineTracker_StartTracking_" data-uid="RGBLineCoreLib.Functor.LineTracker.StartTracking*"></a>
+
+  <h3 id="RGBLineCoreLib_Functor_LineTracker_StartTracking" data-uid="RGBLineCoreLib.Functor.LineTracker.StartTracking">
+  StartTracking()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/LineTracker.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartTracking()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="RGBLineCoreLib_Functor_LineTracker_StopTracking_" data-uid="RGBLineCoreLib.Functor.LineTracker.StopTracking*"></a>
+
+  <h3 id="RGBLineCoreLib_Functor_LineTracker_StopTracking" data-uid="RGBLineCoreLib.Functor.LineTracker.StopTracking">
+  StopTracking()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/LineTracker.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopTracking()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="RGBLineCoreLib_Functor_LineTracker_Update_" data-uid="RGBLineCoreLib.Functor.LineTracker.Update*"></a>
 
   <h3 id="RGBLineCoreLib_Functor_LineTracker_Update" data-uid="RGBLineCoreLib.Functor.LineTracker.Update">
   Update()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/LineTracker.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/RGB-Line/RGBLineCoreLib/blob/master/Public/Functor/MainGame/LineTracker.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>

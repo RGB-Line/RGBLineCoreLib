@@ -230,7 +230,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: m_material_DashLine
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 34
+    startLine: 33
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor

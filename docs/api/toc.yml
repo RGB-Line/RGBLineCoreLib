@@ -16,9 +16,9 @@ items:
   - uid: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
     name: GameConfigData.NoteHitJudgingStrandard.HitJudgingType
     type: Enum
-  - uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
-    name: GameConfigData.SpecialKeySet
-    type: Struct
+  - uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+    name: GameConfigData.ScreenResolution
+    type: Enum
   - uid: RGBLineCoreLib.Data.HalfFloatVector2
     name: HalfFloatVector2
     type: Struct
@@ -34,9 +34,6 @@ items:
   - uid: RGBLineCoreLib.Data.StageData.NoteData
     name: StageData.NoteData
     type: Struct
-  - uid: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
-    name: StageData.NoteData.FlipNoteDirection
-    type: Enum
   - uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType
     name: StageData.NoteData.NoteType
     type: Enum
@@ -62,6 +59,21 @@ items:
   name: RGBLineCoreLib.Functor
   type: Namespace
   items:
+  - uid: RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath
+    name: BackgroundGradientEffectLightPath
+    type: Class
+  - uid: RGBLineCoreLib.Functor.BackgroundGradientEffectManager
+    name: BackgroundGradientEffectManager
+    type: Class
+  - uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect
+    name: BackgroundGradientFadeoutEffect
+    type: Class
+  - uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput
+    name: BackgroundGradientFadeoutEffect.FadeoutInput
+    type: Struct
+  - uid: RGBLineCoreLib.Functor.BackgroundGradientSetting
+    name: BackgroundGradientSetting
+    type: Class
   - uid: RGBLineCoreLib.Functor.CurvedLinePoint
     name: CurvedLinePoint
     type: Class

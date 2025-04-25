@@ -20,7 +20,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: NoteHitJudgingStrandard
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 27
+    startLine: 33
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -64,7 +64,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: HitJudgingRanges
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 37
+    startLine: 43
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data

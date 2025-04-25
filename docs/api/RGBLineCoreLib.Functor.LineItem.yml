@@ -6,12 +6,11 @@ items:
   parent: RGBLineCoreLib.Functor
   children:
   - RGBLineCoreLib.Functor.LineItem.Awake
+  - RGBLineCoreLib.Functor.LineItem.CurvedLineRenderer
   - RGBLineCoreLib.Functor.LineItem.Dispose
   - RGBLineCoreLib.Functor.LineItem.FixedUpdate
   - RGBLineCoreLib.Functor.LineItem.LineID
   - RGBLineCoreLib.Functor.LineItem.LineRenderer
-  - RGBLineCoreLib.Functor.LineItem.OnMouseEnter
-  - RGBLineCoreLib.Functor.LineItem.OnMouseExit
   - RGBLineCoreLib.Functor.LineItem.Render(System.Guid@)
   - RGBLineCoreLib.Functor.LineItem.Transform
   langs:
@@ -195,7 +194,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Awake
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 52
+    startLine: 51
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -221,7 +220,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: FixedUpdate
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 58
+    startLine: 57
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -229,58 +228,6 @@ items:
     content: public void FixedUpdate()
     content.vb: Public Sub FixedUpdate()
   overload: RGBLineCoreLib.Functor.LineItem.FixedUpdate*
-- uid: RGBLineCoreLib.Functor.LineItem.OnMouseEnter
-  commentId: M:RGBLineCoreLib.Functor.LineItem.OnMouseEnter
-  id: OnMouseEnter
-  parent: RGBLineCoreLib.Functor.LineItem
-  langs:
-  - csharp
-  - vb
-  name: OnMouseEnter()
-  nameWithType: LineItem.OnMouseEnter()
-  fullName: RGBLineCoreLib.Functor.LineItem.OnMouseEnter()
-  type: Method
-  source:
-    remote:
-      path: Public/Functor/MainGame/Prop/Line/LineItem.cs
-      branch: master
-      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: OnMouseEnter
-    path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 65
-  assemblies:
-  - RGBLineCoreLib
-  namespace: RGBLineCoreLib.Functor
-  syntax:
-    content: public virtual void OnMouseEnter()
-    content.vb: Public Overridable Sub OnMouseEnter()
-  overload: RGBLineCoreLib.Functor.LineItem.OnMouseEnter*
-- uid: RGBLineCoreLib.Functor.LineItem.OnMouseExit
-  commentId: M:RGBLineCoreLib.Functor.LineItem.OnMouseExit
-  id: OnMouseExit
-  parent: RGBLineCoreLib.Functor.LineItem
-  langs:
-  - csharp
-  - vb
-  name: OnMouseExit()
-  nameWithType: LineItem.OnMouseExit()
-  fullName: RGBLineCoreLib.Functor.LineItem.OnMouseExit()
-  type: Method
-  source:
-    remote:
-      path: Public/Functor/MainGame/Prop/Line/LineItem.cs
-      branch: master
-      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: OnMouseExit
-    path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 76
-  assemblies:
-  - RGBLineCoreLib
-  namespace: RGBLineCoreLib.Functor
-  syntax:
-    content: public virtual void OnMouseExit()
-    content.vb: Public Overridable Sub OnMouseExit()
-  overload: RGBLineCoreLib.Functor.LineItem.OnMouseExit*
 - uid: RGBLineCoreLib.Functor.LineItem.Transform
   commentId: P:RGBLineCoreLib.Functor.LineItem.Transform
   id: Transform
@@ -299,7 +246,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Transform
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 81
+    startLine: 65
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -331,7 +278,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: LineRenderer
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 88
+    startLine: 72
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -345,6 +292,38 @@ items:
   overload: RGBLineCoreLib.Functor.LineItem.LineRenderer*
   implements:
   - RGBLineCoreLib.Functor.ILineItem.LineRenderer
+- uid: RGBLineCoreLib.Functor.LineItem.CurvedLineRenderer
+  commentId: P:RGBLineCoreLib.Functor.LineItem.CurvedLineRenderer
+  id: CurvedLineRenderer
+  parent: RGBLineCoreLib.Functor.LineItem
+  langs:
+  - csharp
+  - vb
+  name: CurvedLineRenderer
+  nameWithType: LineItem.CurvedLineRenderer
+  fullName: RGBLineCoreLib.Functor.LineItem.CurvedLineRenderer
+  type: Property
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Line/LineItem.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: CurvedLineRenderer
+    path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
+    startLine: 79
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  example: []
+  syntax:
+    content: public CurvedLineRenderer CurvedLineRenderer { get; }
+    parameters: []
+    return:
+      type: RGBLineCoreLib.Functor.CurvedLineRenderer
+    content.vb: Public ReadOnly Property CurvedLineRenderer As CurvedLineRenderer
+  overload: RGBLineCoreLib.Functor.LineItem.CurvedLineRenderer*
+  implements:
+  - RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer
 - uid: RGBLineCoreLib.Functor.LineItem.LineID
   commentId: P:RGBLineCoreLib.Functor.LineItem.LineID
   id: LineID
@@ -363,7 +342,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: LineID
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 96
+    startLine: 87
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -395,7 +374,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Render
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 104
+    startLine: 95
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -430,7 +409,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Dispose
     path: ../Public/Functor/MainGame/Prop/Line/LineItem.cs
-    startLine: 213
+    startLine: 205
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -4879,18 +4858,6 @@ references:
   name: FixedUpdate
   nameWithType: LineItem.FixedUpdate
   fullName: RGBLineCoreLib.Functor.LineItem.FixedUpdate
-- uid: RGBLineCoreLib.Functor.LineItem.OnMouseEnter*
-  commentId: Overload:RGBLineCoreLib.Functor.LineItem.OnMouseEnter
-  href: RGBLineCoreLib.Functor.LineItem.html#RGBLineCoreLib_Functor_LineItem_OnMouseEnter
-  name: OnMouseEnter
-  nameWithType: LineItem.OnMouseEnter
-  fullName: RGBLineCoreLib.Functor.LineItem.OnMouseEnter
-- uid: RGBLineCoreLib.Functor.LineItem.OnMouseExit*
-  commentId: Overload:RGBLineCoreLib.Functor.LineItem.OnMouseExit
-  href: RGBLineCoreLib.Functor.LineItem.html#RGBLineCoreLib_Functor_LineItem_OnMouseExit
-  name: OnMouseExit
-  nameWithType: LineItem.OnMouseExit
-  fullName: RGBLineCoreLib.Functor.LineItem.OnMouseExit
 - uid: RGBLineCoreLib.Functor.LineItem.Transform*
   commentId: Overload:RGBLineCoreLib.Functor.LineItem.Transform
   href: RGBLineCoreLib.Functor.LineItem.html#RGBLineCoreLib_Functor_LineItem_Transform
@@ -4931,6 +4898,26 @@ references:
   name: LineRenderer
   nameWithType: LineRenderer
   fullName: UnityEngine.LineRenderer
+- uid: RGBLineCoreLib.Functor.LineItem.CurvedLineRenderer*
+  commentId: Overload:RGBLineCoreLib.Functor.LineItem.CurvedLineRenderer
+  href: RGBLineCoreLib.Functor.LineItem.html#RGBLineCoreLib_Functor_LineItem_CurvedLineRenderer
+  name: CurvedLineRenderer
+  nameWithType: LineItem.CurvedLineRenderer
+  fullName: RGBLineCoreLib.Functor.LineItem.CurvedLineRenderer
+- uid: RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer
+  commentId: P:RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer
+  parent: RGBLineCoreLib.Functor.ILineItem
+  href: RGBLineCoreLib.Functor.ILineItem.html#RGBLineCoreLib_Functor_ILineItem_CurvedLineRenderer
+  name: CurvedLineRenderer
+  nameWithType: ILineItem.CurvedLineRenderer
+  fullName: RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer
+- uid: RGBLineCoreLib.Functor.CurvedLineRenderer
+  commentId: T:RGBLineCoreLib.Functor.CurvedLineRenderer
+  parent: RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.Functor.CurvedLineRenderer.html
+  name: CurvedLineRenderer
+  nameWithType: CurvedLineRenderer
+  fullName: RGBLineCoreLib.Functor.CurvedLineRenderer
 - uid: RGBLineCoreLib.Functor.LineItem.LineID*
   commentId: Overload:RGBLineCoreLib.Functor.LineItem.LineID
   href: RGBLineCoreLib.Functor.LineItem.html#RGBLineCoreLib_Functor_LineItem_LineID

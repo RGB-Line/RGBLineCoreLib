@@ -35,24 +35,59 @@ namespace RGBLineCoreLib.Functor
             }
         }
 
-        internal bool TryLoadStageData(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty)
+        public bool TrySaveStageData(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficultyLevel)
+        {
+            string path = DataPathInterface.GetStageDataPath(targetStageName, majorDifficultyLevel);
+
+            string directory = Path.GetDirectoryName(path);
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
+
+            string jsonData = JsonConvert.SerializeObject(StageData, Formatting.Indented);
+            File.WriteAllText(path, jsonData);
+
+            return true;
+        }
+
+        internal bool TryLoadStageData(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty, in bool bisNewData = false)
         {
             string path = DataPathInterface.GetStageDataPath(targetStageName, majorDifficulty);
 
-            if(!File.Exists(path))
+            if(bisNewData)
             {
-                UnityEngine.Debug.LogError("StageDataBuffer::TryLoadStageData - File not found");
-                return false;
+                StageData = new StageData()
+                {
+                    RegionDataTable = new Dictionary<Guid, StageData.RegionData>(),
+                    LineDataTable = new Dictionary<Guid, StageData.LineData>(),
+                    NoteDataTable = new Dictionary<Guid, StageData.NoteData>(),
+                    StageConfig = new StageData.StageConfigData()
+                    {
+                        BPM = 120,
+                        BitSubDivision = 1,
+                        LengthPerBit = 1.0f,
+                        MusicStartOffsetTime = 0.0f
+                    }
+                };
             }
+            else
+            {
+                if (!File.Exists(path))
+                {
+                    UnityEngine.Debug.LogError("StageDataBuffer::TryLoadStageData - File not found");
+                    return false;
+                }
 
-            try
-            {
-                string jsonData = File.ReadAllText(path);
-                StageData = JsonConvert.DeserializeObject<StageData>(jsonData);
-            }
-            catch
-            {
-                return false;
+                try
+                {
+                    string jsonData = File.ReadAllText(path);
+                    StageData = JsonConvert.DeserializeObject<StageData>(jsonData);
+                }
+                catch
+                {
+                    return false;
+                }
             }
 
             return true;

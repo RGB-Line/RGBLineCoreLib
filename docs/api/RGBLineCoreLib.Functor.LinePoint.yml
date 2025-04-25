@@ -262,7 +262,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Dispose
     path: ../Public/Functor/MainGame/Prop/Line/LinePoint.cs
-    startLine: 73
+    startLine: 76
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor

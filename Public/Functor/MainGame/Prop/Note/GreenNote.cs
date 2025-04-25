@@ -79,18 +79,18 @@ namespace RGBLineCoreLib.Functor
             Guid attachedLineID = curNoteData.AttachedLineID;
             Vector3 startPos = new Vector3()
             {
-                x = m_noteItem.GetNoteXPos(curNoteData.StartOffsetFrame, attachedLineID),
+                x = m_noteItem.GetNoteXPos(curNoteData.StartOffsetFrame + curNoteData.MinorOffsetTime, attachedLineID),
                 y = GridManager.Instance.GetYPosFromFrame(StageDataInterface.NoteDataInterface.GetAttachedRegionData(m_noteItem.NoteID).StartOffsetFrame) +
                     GridManager.Instance.GetYPosFromFrame(StageDataInterface.NoteDataInterface.GetAttachedLineData(m_noteItem.NoteID).CurvedLinePoints[0].Y) +
-                    GridManager.Instance.GetYPosFromFrame(curNoteData.StartOffsetFrame),
+                    GridManager.Instance.GetYPosFromFrame(curNoteData.StartOffsetFrame + curNoteData.MinorOffsetTime),
                 z = -6.0f
             };
             Vector3 endPos = new Vector3()
             {
-                x = m_noteItem.GetNoteXPos(curNoteData.StartOffsetFrame + curNoteData.NoteLength, attachedLineID),
+                x = m_noteItem.GetNoteXPos(curNoteData.StartOffsetFrame + curNoteData.MinorOffsetTime + curNoteData.NoteLength, attachedLineID),
                 y = GridManager.Instance.GetYPosFromFrame(StageDataInterface.NoteDataInterface.GetAttachedRegionData(m_noteItem.NoteID).StartOffsetFrame) +
                     GridManager.Instance.GetYPosFromFrame(StageDataInterface.NoteDataInterface.GetAttachedLineData(m_noteItem.NoteID).CurvedLinePoints[0].Y) +
-                    GridManager.Instance.GetYPosFromFrame(curNoteData.StartOffsetFrame + curNoteData.NoteLength),
+                    GridManager.Instance.GetYPosFromFrame(curNoteData.StartOffsetFrame + curNoteData.MinorOffsetTime + curNoteData.NoteLength),
                 z = -6.0f
             };
 
@@ -118,6 +118,7 @@ namespace RGBLineCoreLib.Functor
             StageData.StageConfigData curStageConfigData = StageDataInterface.StageConfigDataInterface.GetStageConfigData();
             StageMetadata stageMetadata = StageMetadataInterface.GetStageMetadata();
             float velocity = (GridManager.Instance.GetTotalFrameCount() * (curStageConfigData.LengthPerBit / curStageConfigData.BitSubDivision)) / stageMetadata.MusicLength;
+            //float velocity = GridManager.Instance.GetYPosFromFrame(GridManager.Instance.GetTotalFrameCount()) / GridManager.Instance.GetTotalFrameCount();
 
             GameConfigData gameConfigData = GameConfigDataBuffer.Instance.ConfigData;
             m_startJudgeBox.size = new Vector2()

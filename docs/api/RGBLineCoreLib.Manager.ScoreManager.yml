@@ -13,6 +13,7 @@ items:
   - RGBLineCoreLib.Manager.ScoreManager.Dispose(System.Boolean)
   - RGBLineCoreLib.Manager.ScoreManager.HP
   - RGBLineCoreLib.Manager.ScoreManager.StartScoring
+  - RGBLineCoreLib.Manager.ScoreManager.StopScoring
   - RGBLineCoreLib.Manager.ScoreManager.Update
   langs:
   - csharp
@@ -186,7 +187,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Awake
     path: ../Public/Manager/MainGame/ScoreManager.cs
-    startLine: 41
+    startLine: 63
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -212,7 +213,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Update
     path: ../Public/Manager/MainGame/ScoreManager.cs
-    startLine: 45
+    startLine: 72
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -238,7 +239,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: CurAudioSourceTime
     path: ../Public/Manager/MainGame/ScoreManager.cs
-    startLine: 172
+    startLine: 228
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -267,7 +268,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: CurScore
     path: ../Public/Manager/MainGame/ScoreManager.cs
-    startLine: 180
+    startLine: 236
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -296,7 +297,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: HP
     path: ../Public/Manager/MainGame/ScoreManager.cs
-    startLine: 187
+    startLine: 243
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -325,7 +326,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: BIsGameOver
     path: ../Public/Manager/MainGame/ScoreManager.cs
-    startLine: 195
+    startLine: 251
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -354,7 +355,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Combo
     path: ../Public/Manager/MainGame/ScoreManager.cs
-    startLine: 206
+    startLine: 262
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -385,7 +386,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: StartScoring
     path: ../Public/Manager/MainGame/ScoreManager.cs
-    startLine: 232
+    startLine: 304
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -395,6 +396,32 @@ items:
     content: public void StartScoring()
     content.vb: Public Sub StartScoring()
   overload: RGBLineCoreLib.Manager.ScoreManager.StartScoring*
+- uid: RGBLineCoreLib.Manager.ScoreManager.StopScoring
+  commentId: M:RGBLineCoreLib.Manager.ScoreManager.StopScoring
+  id: StopScoring
+  parent: RGBLineCoreLib.Manager.ScoreManager
+  langs:
+  - csharp
+  - vb
+  name: StopScoring()
+  nameWithType: ScoreManager.StopScoring()
+  fullName: RGBLineCoreLib.Manager.ScoreManager.StopScoring()
+  type: Method
+  source:
+    remote:
+      path: Public/Manager/MainGame/ScoreManager.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: StopScoring
+    path: ../Public/Manager/MainGame/ScoreManager.cs
+    startLine: 308
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Manager
+  syntax:
+    content: public void StopScoring()
+    content.vb: Public Sub StopScoring()
+  overload: RGBLineCoreLib.Manager.ScoreManager.StopScoring*
 - uid: RGBLineCoreLib.Manager.ScoreManager.Dispose(System.Boolean)
   commentId: M:RGBLineCoreLib.Manager.ScoreManager.Dispose(System.Boolean)
   id: Dispose(System.Boolean)
@@ -413,7 +440,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Dispose
     path: ../Public/Manager/MainGame/ScoreManager.cs
-    startLine: 437
+    startLine: 462
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Manager
@@ -5113,6 +5140,12 @@ references:
   name: StartScoring
   nameWithType: ScoreManager.StartScoring
   fullName: RGBLineCoreLib.Manager.ScoreManager.StartScoring
+- uid: RGBLineCoreLib.Manager.ScoreManager.StopScoring*
+  commentId: Overload:RGBLineCoreLib.Manager.ScoreManager.StopScoring
+  href: RGBLineCoreLib.Manager.ScoreManager.html#RGBLineCoreLib_Manager_ScoreManager_StopScoring
+  name: StopScoring
+  nameWithType: ScoreManager.StopScoring
+  fullName: RGBLineCoreLib.Manager.ScoreManager.StopScoring
 - uid: CommonUtilLib.ThreadSafe.SingleTonForGameObject{RGBLineCoreLib.Manager.ScoreManager}.Dispose(System.Boolean)
   commentId: M:CommonUtilLib.ThreadSafe.SingleTonForGameObject{RGBLineCoreLib.Manager.ScoreManager}.Dispose(System.Boolean)
   parent: CommonUtilLib.ThreadSafe.SingleTonForGameObject{RGBLineCoreLib.Manager.ScoreManager}

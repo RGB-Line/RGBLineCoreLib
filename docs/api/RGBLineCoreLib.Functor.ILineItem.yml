@@ -5,6 +5,7 @@ items:
   id: ILineItem
   parent: RGBLineCoreLib.Functor
   children:
+  - RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer
   - RGBLineCoreLib.Functor.ILineItem.LineID
   - RGBLineCoreLib.Functor.ILineItem.LineRenderer
   - RGBLineCoreLib.Functor.ILineItem.Render(System.Guid@)
@@ -90,6 +91,35 @@ items:
       type: UnityEngine.LineRenderer
     content.vb: ReadOnly Property LineRenderer As LineRenderer
   overload: RGBLineCoreLib.Functor.ILineItem.LineRenderer*
+- uid: RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer
+  commentId: P:RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer
+  id: CurvedLineRenderer
+  parent: RGBLineCoreLib.Functor.ILineItem
+  langs:
+  - csharp
+  - vb
+  name: CurvedLineRenderer
+  nameWithType: ILineItem.CurvedLineRenderer
+  fullName: RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer
+  type: Property
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Line/ILineItem.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: CurvedLineRenderer
+    path: ../Public/Functor/MainGame/Prop/Line/ILineItem.cs
+    startLine: 15
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: CurvedLineRenderer CurvedLineRenderer { get; }
+    parameters: []
+    return:
+      type: RGBLineCoreLib.Functor.CurvedLineRenderer
+    content.vb: ReadOnly Property CurvedLineRenderer As CurvedLineRenderer
+  overload: RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer*
 - uid: RGBLineCoreLib.Functor.ILineItem.LineID
   commentId: P:RGBLineCoreLib.Functor.ILineItem.LineID
   id: LineID
@@ -108,7 +138,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: LineID
     path: ../Public/Functor/MainGame/Prop/Line/ILineItem.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -137,7 +167,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Render
     path: ../Public/Functor/MainGame/Prop/Line/ILineItem.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -243,6 +273,19 @@ references:
   name: LineRenderer
   nameWithType: LineRenderer
   fullName: UnityEngine.LineRenderer
+- uid: RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer*
+  commentId: Overload:RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer
+  href: RGBLineCoreLib.Functor.ILineItem.html#RGBLineCoreLib_Functor_ILineItem_CurvedLineRenderer
+  name: CurvedLineRenderer
+  nameWithType: ILineItem.CurvedLineRenderer
+  fullName: RGBLineCoreLib.Functor.ILineItem.CurvedLineRenderer
+- uid: RGBLineCoreLib.Functor.CurvedLineRenderer
+  commentId: T:RGBLineCoreLib.Functor.CurvedLineRenderer
+  parent: RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.Functor.CurvedLineRenderer.html
+  name: CurvedLineRenderer
+  nameWithType: CurvedLineRenderer
+  fullName: RGBLineCoreLib.Functor.CurvedLineRenderer
 - uid: RGBLineCoreLib.Functor.ILineItem.LineID*
   commentId: Overload:RGBLineCoreLib.Functor.ILineItem.LineID
   href: RGBLineCoreLib.Functor.ILineItem.html#RGBLineCoreLib_Functor_ILineItem_LineID

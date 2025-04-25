@@ -107,16 +107,16 @@ namespace RGBLineCoreLib.Data
             public enum NoteType : byte
             {
                 Common,
-                Flip,
+                Double,
                 Long
             }
             /// <summary>
             /// 해당 Note가 Flip Note일 때, Flip Note의 방향을 나타내는 Flag
             /// </summary>
-            public enum FlipNoteDirection
-            {
-                Left, Right
-            }
+            //public enum FlipNoteDirection
+            //{
+            //    Left, Right
+            //}
 
 
             /// <summary>
@@ -143,10 +143,10 @@ namespace RGBLineCoreLib.Data
             /// 해당 Nore가 Long Note일 때, Note의 길이를 의미
             /// </summary>
             public float NoteLength;
-            /// <summary>
-            /// 해당 Note가 Flip Note일 때, Flip Note의 방향을 나타냄
-            /// </summary>
-            public FlipNoteDirection flipNoteDirection;
+            ///// <summary>
+            ///// 해당 Note가 Flip Note일 때, Flip Note의 방향을 나타냄
+            ///// </summary>
+            //public FlipNoteDirection flipNoteDirection;
 
             /// <summary>
             /// 해당 Note의 Type을 나타냄

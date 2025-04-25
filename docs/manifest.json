@@ -68,6 +68,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Data.GameConfigData.ScreenResolution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Data.GameConfigData.ScreenResolution.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Data.GameConfigData.ScreenResolution",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.yml",
       "output": {
         ".html": {
@@ -330,6 +344,76 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "RGBLineCoreLib.DataPathManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.BackgroundGradientEffectManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.BackgroundGradientEffectManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.BackgroundGradientEffectManager",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RGBLineCoreLib.Functor.BackgroundGradientSetting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RGBLineCoreLib.Functor.BackgroundGradientSetting.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "RGBLineCoreLib.Functor.BackgroundGradientSetting",
       "Summary": null
     },
     {

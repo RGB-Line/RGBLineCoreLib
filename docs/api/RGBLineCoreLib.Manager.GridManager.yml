@@ -215,10 +215,10 @@ items:
   summary: 해당 Stage에 존재하는 총 Frame 수를 반환한다
   example: []
   syntax:
-    content: public int GetTotalFrameCount()
+    content: public float GetTotalFrameCount()
     return:
-      type: System.Int32
-    content.vb: Public Function GetTotalFrameCount() As Integer
+      type: System.Single
+    content.vb: Public Function GetTotalFrameCount() As Single
   overload: RGBLineCoreLib.Manager.GridManager.GetTotalFrameCount*
 - uid: RGBLineCoreLib.Manager.GridManager.GetYPosFromFrame(System.Single@)
   commentId: M:RGBLineCoreLib.Manager.GridManager.GetYPosFromFrame(System.Single@)
@@ -4971,23 +4971,6 @@ references:
   name: GetTotalFrameCount
   nameWithType: GridManager.GetTotalFrameCount
   fullName: RGBLineCoreLib.Manager.GridManager.GetTotalFrameCount
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
-- uid: RGBLineCoreLib.Manager.GridManager.GetYPosFromFrame*
-  commentId: Overload:RGBLineCoreLib.Manager.GridManager.GetYPosFromFrame
-  href: RGBLineCoreLib.Manager.GridManager.html#RGBLineCoreLib_Manager_GridManager_GetYPosFromFrame_System_Single__
-  name: GetYPosFromFrame
-  nameWithType: GridManager.GetYPosFromFrame
-  fullName: RGBLineCoreLib.Manager.GridManager.GetYPosFromFrame
 - uid: System.Single
   commentId: T:System.Single
   parent: System
@@ -4999,6 +4982,12 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
+- uid: RGBLineCoreLib.Manager.GridManager.GetYPosFromFrame*
+  commentId: Overload:RGBLineCoreLib.Manager.GridManager.GetYPosFromFrame
+  href: RGBLineCoreLib.Manager.GridManager.html#RGBLineCoreLib_Manager_GridManager_GetYPosFromFrame_System_Single__
+  name: GetYPosFromFrame
+  nameWithType: GridManager.GetYPosFromFrame
+  fullName: RGBLineCoreLib.Manager.GridManager.GetYPosFromFrame
 - uid: RGBLineCoreLib.Manager.GridManager.GetUnitFrameSize*
   commentId: Overload:RGBLineCoreLib.Manager.GridManager.GetUnitFrameSize
   href: RGBLineCoreLib.Manager.GridManager.html#RGBLineCoreLib_Manager_GridManager_GetUnitFrameSize

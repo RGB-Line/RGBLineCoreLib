@@ -18,9 +18,9 @@ namespace RGBLineCoreLib.Manager
     /// </summary>
     public sealed class LineManager : SingleTonForGameObject<LineManager>
     {
-        [SerializeField] private GameObject m_prefab_LineItem;
+        [SerializeField] private GameObject m_prefab_LineItem = null;
 
-        private Dictionary<Guid, ILineItem> m_lineItemTable = new Dictionary<Guid, ILineItem>();
+        private readonly Dictionary<Guid, ILineItem> m_lineItemTable = new Dictionary<Guid, ILineItem>();
 
 
         public void Awake()

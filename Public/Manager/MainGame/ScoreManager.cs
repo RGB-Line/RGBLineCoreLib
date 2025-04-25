@@ -22,18 +22,35 @@ namespace RGBLineCoreLib.Manager
     /// </remarks>
     public sealed class ScoreManager : SingleTonForGameObject<ScoreManager>
     {
-        [SerializeField] private LineTracker m_lineTracker;
+        [Flags] private enum PressedKeyState : byte
+        {
+            None                = 0b0000_0000,
+            SingleClicked       = 0b0000_0001,
+            DoubleClicked       = 0b0000_0010,
+            LongClicked         = 0b0000_0100,
+            LeftArrowClicked    = 0b0000_1000,
+            RightArrowClicked   = 0b0001_0000,
+        }
+
+
+        [SerializeField] private LineTracker m_lineTracker = null;
 
         private bool m_bisStartScoring = false;
 
         private Stack<Guid> m_noteCandidates = new Stack<Guid>();
-        private Dictionary<Guid, Tuple<float, float>> m_longNoteTable = new Dictionary<Guid, Tuple<float, float>>();
 
-        [SerializeField] private List<KeyCode> m_bannedNoteKeyCode;
+        private readonly Dictionary<KeyCode, float> m_pressedKeyTable = new Dictionary<KeyCode, float>();
+
+        private readonly List<KeyCode> m_keyCodes = Enum.GetValues(typeof(KeyCode)).Cast<KeyCode>().ToList();
+        private readonly Dictionary<Guid, Tuple<float, float>> m_longNoteTable = new Dictionary<Guid, Tuple<float, float>>();
+
+        [SerializeField] private float m_doubleClickTerm = 0.5f;
+
+        [SerializeField] private List<KeyCode> m_bannedNoteKeyCode = null;
 
         private float m_curAudioSourceTime = 0.0f;
 
-        private bool m_bisGreenRegion, m_bisMouseOnGreenLine;
+        private bool m_bisGreenRegion, m_bisOnGreenLine;
         private bool m_bisBlueRegion;
 
         private float m_curScore = 0.0f;
@@ -41,10 +58,17 @@ namespace RGBLineCoreLib.Manager
 
         private int m_combo = 0;
 
+        private bool m_bisSomethingTroubled = false;
+
 
         public void Awake()
         {
             SetInstance(this);
+
+            foreach(KeyCode targetKeyCode in m_bannedNoteKeyCode)
+            {
+                m_keyCodes.Remove(targetKeyCode);
+            }
         }
         public void Update()
         {
@@ -53,68 +77,94 @@ namespace RGBLineCoreLib.Manager
                 return;
             }
 
-            if(BIsGameOver)
+            if (BIsGameOver)
             {
                 return;
             }
 
-            // For Green Region - Mouse Tracking
-            //if (m_bisGreenRegion && !m_bisMouseOnGreenLine)
-            //{
-            //    return;
-            //}
-
-            // For Long Notes
-            int curPressedBasicNoteKeyCount = GetCurPressedBasicNoteKeyCount();
-            if (curPressedBasicNoteKeyCount < m_longNoteTable.Count)
+            // Check and Remove Pressed Key from m_pressedKeyTable
+            List<KeyCode> removeKeyList = new List<KeyCode>();
+            foreach (KeyCode targetKeyCode in m_pressedKeyTable.Keys)
             {
-                int unmatchedPressedKeyCount = m_longNoteTable.Count - curPressedBasicNoteKeyCount;
-                for (int count = 0; count < unmatchedPressedKeyCount; count++)
+                if (m_curAudioSourceTime - m_pressedKeyTable[targetKeyCode] >= m_doubleClickTerm)
                 {
-                    float minTime = float.MaxValue;
-                    int minItemIndex = -1;
-                    for (int index = 0; index < m_longNoteTable.Values.Count; index++)
+                    removeKeyList.Add(targetKeyCode);
+                }
+            }
+            foreach (KeyCode targetKeyCode in removeKeyList)
+            {
+                m_pressedKeyTable.Remove(targetKeyCode);
+            }
+
+            // Get Input
+            PressedKeyState curPressedKeyState = PressedKeyState.None;
+            foreach (KeyCode targetKeyCode in m_keyCodes)
+            {
+                if (Input.GetKeyDown(targetKeyCode))
+                {
+                    // Single Click
+                    if (!m_pressedKeyTable.ContainsKey(targetKeyCode)
+                        && targetKeyCode != KeyCode.LeftArrow
+                        && targetKeyCode != KeyCode.RightArrow)
                     {
-                        if (m_longNoteTable.Values.ElementAt(index).Item1 < minTime)
-                        {
-                            minTime = m_longNoteTable.Values.ElementAt(index).Item1;
-                            minItemIndex = index;
-                        }
+                        m_pressedKeyTable.Add(targetKeyCode, m_curAudioSourceTime);
+                        curPressedKeyState |= PressedKeyState.SingleClicked;
+                    }
+                    // Double Click
+                    else if(m_pressedKeyTable.ContainsKey(targetKeyCode)
+                            && targetKeyCode != KeyCode.LeftArrow
+                            && targetKeyCode != KeyCode.RightArrow)
+                    {
+                        curPressedKeyState |= PressedKeyState.DoubleClicked;
                     }
 
-                    m_longNoteTable.Remove(m_longNoteTable.Keys.ElementAt(minItemIndex));
+                    // Arrow Click
+                    if (targetKeyCode == KeyCode.LeftArrow)
+                    {
+                        curPressedKeyState |= PressedKeyState.LeftArrowClicked;
+                    }
+                    else if (targetKeyCode == KeyCode.RightArrow)
+                    {
+                        curPressedKeyState |= PressedKeyState.RightArrowClicked;
+                    }
+                }
+                // Long Click
+                else if (targetKeyCode != KeyCode.LeftArrow && targetKeyCode != KeyCode.RightArrow && Input.GetKey(targetKeyCode))
+                {
+                    m_pressedKeyTable[targetKeyCode] = m_curAudioSourceTime;
+                    curPressedKeyState |= PressedKeyState.LongClicked;
                 }
             }
 
-            // For New Notes(Include Long Note)
-            int freshPressedBasicNoteKeyCount = GetFreshPressedBasicNoteKeyCount();
-            for (int count = 0; count < freshPressedBasicNoteKeyCount; count++)
+            // Process Notes
+            if (m_longNoteTable.Count > 0 && !curPressedKeyState.HasFlag(PressedKeyState.LongClicked))
             {
-                Guid targetNoteID = Guid.Empty;
-                if(m_noteCandidates.Count == 0)
-                {
-                    break;
-                }
-                else
-                {
-                    targetNoteID = m_noteCandidates.Peek();
-                }
+                m_longNoteTable.Clear();
+            }
 
-                if (m_bisBlueRegion && StageDataInterface.NoteDataInterface.GetAttachedLineID(targetNoteID) != m_lineTracker.CurLineID)
+            Guid[] noteCandidateIDs = m_noteCandidates.ToArray();
+            for (int index = 0; index < m_noteCandidates.Count; index++)
+            {
+                Guid curNoteCandidateID = noteCandidateIDs[index];
+
+                if (m_bisBlueRegion && NoteManager.Instance.GetRedLineCornerNote(curNoteCandidateID) == null && StageDataInterface.NoteDataInterface.GetAttachedLineID(curNoteCandidateID) != m_lineTracker.CurLineID)
+                {
+                    continue;
+                }
+                else if (m_bisGreenRegion && !m_bisOnGreenLine)
                 {
                     continue;
                 }
 
-                // Red Line Curved Note
-                if (NoteManager.Instance.GetRedLineCornerNote(targetNoteID) != null/* && Input.GetKeyDown(KeyCode.Space)*/)
+                if (NoteManager.Instance.GetRedLineCornerNote(curNoteCandidateID) != null)
                 {
-                    IRedLineCornerNote targetNoteItem = NoteManager.Instance.GetRedLineCornerNote(targetNoteID);
+                    IRedLineCornerNote targetNoteItem = NoteManager.Instance.GetRedLineCornerNote(curNoteCandidateID);
                     bool bisHit = false;
-                    if (targetNoteItem.BIsToLeft && Input.GetKeyDown(KeyCode.LeftArrow))
+                    if (targetNoteItem.BIsToLeft && curPressedKeyState.HasFlag(PressedKeyState.LeftArrowClicked))
                     {
                         bisHit = true;
                     }
-                    else if (!targetNoteItem.BIsToLeft && Input.GetKeyDown(KeyCode.RightArrow))
+                    else if (!targetNoteItem.BIsToLeft && curPressedKeyState.HasFlag(PressedKeyState.RightArrowClicked))
                     {
                         bisHit = true;
                     }
@@ -126,64 +176,49 @@ namespace RGBLineCoreLib.Manager
 
                         m_HP += 0.1f;
 
+                        // Effect
                         targetNoteItem.Transform.gameObject.SetActive(false);
                     }
                 }
-                // Red, Green, Blue Note
-                else if (StageDataInterface.NoteDataInterface.BIsNoteIDValid(targetNoteID))
+                else if (StageDataInterface.NoteDataInterface.BIsNoteIDValid(curNoteCandidateID))
                 {
-                    StageData.NoteData curNoteData = StageDataInterface.NoteDataInterface.GetNoteData(targetNoteID);
+                    StageData.NoteData curNoteData = StageDataInterface.NoteDataInterface.GetNoteData(curNoteCandidateID);
                     switch (curNoteData.CurNoteType)
                     {
                         case StageData.NoteData.NoteType.Common:
+                            if (curPressedKeyState.HasFlag(PressedKeyState.SingleClicked))
                             {
-                                if (!(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow)/* || Input.GetKeyDown(KeyCode.Space)*/))
-                                {
-                                    INoteItem targetNoteItem = NoteManager.Instance.GetNoteItem(targetNoteID);
-                                    m_curScore += GetSingleNoteScore(GetYPos2Time(targetNoteItem.RedAndBlueNote.Transform.position.y), m_curAudioSourceTime);
-                                    m_combo++;
+                                //Debug.Log("Common Note ID : " + curNoteCandidateID);
+                                INoteItem targetNoteItem = NoteManager.Instance.GetNoteItem(curNoteCandidateID);
+                                m_curScore += GetSingleNoteScore(GetYPos2Time(targetNoteItem.RedAndBlueNote.Transform.position.y), m_curAudioSourceTime);
+                                m_combo++;
 
-                                    m_HP += 0.1f;
+                                m_HP += 0.1f;
 
-                                    targetNoteItem.Transform.gameObject.SetActive(false);
-                                }
+                                // Effect
+                                targetNoteItem.Transform.gameObject.SetActive(false);
                             }
                             break;
 
-                        case StageData.NoteData.NoteType.Flip:
+                        case StageData.NoteData.NoteType.Double:
+                            if (curPressedKeyState.HasFlag(PressedKeyState.DoubleClicked))
                             {
-                                bool bisHit = false;
-                                if (curNoteData.flipNoteDirection == StageData.NoteData.FlipNoteDirection.Left &&
-                                    Input.GetKeyDown(KeyCode.Mouse0))
-                                {
-                                    bisHit = true;
-                                }
-                                else if (curNoteData.flipNoteDirection == StageData.NoteData.FlipNoteDirection.Right &&
-                                    Input.GetKeyDown(KeyCode.Mouse1))
-                                {
-                                    bisHit = true;
-                                }
+                                INoteItem targetNoteItem = NoteManager.Instance.GetNoteItem(curNoteCandidateID);
+                                m_curScore += GetSingleNoteScore(GetYPos2Time(targetNoteItem.RedAndBlueNote.Transform.position.y), m_curAudioSourceTime);
+                                m_combo++;
 
-                                if (bisHit)
-                                {
-                                    INoteItem targetNoteItem = NoteManager.Instance.GetNoteItem(targetNoteID);
-                                    m_curScore += GetSingleNoteScore(GetYPos2Time(targetNoteItem.RedAndBlueNote.Transform.position.y), m_curAudioSourceTime);
-                                    m_combo++;
+                                m_HP += 0.1f;
 
-                                    m_HP += 0.1f;
-
-                                    targetNoteItem.Transform.gameObject.SetActive(false);
-                                }
+                                // Effect
+                                targetNoteItem.Transform.gameObject.SetActive(false);
                             }
                             break;
 
                         case StageData.NoteData.NoteType.Long:
+                            if (curPressedKeyState.HasFlag(PressedKeyState.LongClicked) && !m_longNoteTable.ContainsKey(curNoteCandidateID))
                             {
-                                if (!(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow)/* || Input.GetKeyDown(KeyCode.Space)*/))
-                                {
-                                    INoteItem targetNoteItem = NoteManager.Instance.GetNoteItem(targetNoteID);
-                                    m_longNoteTable.Add(targetNoteID, new Tuple<float, float>(GetYPos2Time(targetNoteItem.GreenNote.CurveStartYPos), m_curAudioSourceTime));
-                                }
+                                INoteItem targetNoteItem = NoteManager.Instance.GetNoteItem(curNoteCandidateID);
+                                m_longNoteTable.Add(curNoteCandidateID, new Tuple<float, float>(GetYPos2Time(targetNoteItem.GreenNote.CurveStartYPos), m_curAudioSourceTime));
                             }
                             break;
                     }
@@ -218,7 +253,7 @@ namespace RGBLineCoreLib.Manager
         {
             get
             {
-                return m_HP <= 0.0f;
+                return m_HP <= 0.0f || m_bisSomethingTroubled;
             }
         }
 
@@ -240,11 +275,11 @@ namespace RGBLineCoreLib.Manager
                 m_bisGreenRegion = value;
             }
         }
-        internal bool BIsMouseOnGreenLine
+        internal bool BIsOnGreenLine
         {
             set
             {
-                m_bisMouseOnGreenLine = value;
+                m_bisOnGreenLine = value;
             }
         }
 
@@ -256,6 +291,14 @@ namespace RGBLineCoreLib.Manager
             }
         }
 
+        internal bool BIsSomethingTroubled
+        {
+            set
+            {
+                m_bisSomethingTroubled = value;
+            }
+        }
+
         /// <summary>
         /// Scene Load 시 ScoreManager GameObject의 경우 필히 StartScoring()를 호출해야 한다
         /// </summary>
@@ -263,101 +306,56 @@ namespace RGBLineCoreLib.Manager
         {
             m_bisStartScoring = true;
         }
-
-        internal void PushNoteCandidate(in Guid noteID)
+        public void StopScoring()
         {
-            m_noteCandidates.Push(noteID);
+            m_bisStartScoring = false;
+        }
+
+        internal void PushNoteCandidate(in Guid targetNoteID)
+        {
+            m_noteCandidates.Push(targetNoteID);
 
             SortNoteCandidates();
         }
-        internal void RemoveNoteCandidate(in Guid noteID)
+        internal void RemoveNoteCandidate(in Guid targetNoteID)
         {
-            if (m_longNoteTable.ContainsKey(noteID))
+            if (m_longNoteTable.ContainsKey(targetNoteID))
             {
-                m_curScore += GetSingleNoteScore(m_longNoteTable[noteID].Item1, m_longNoteTable[noteID].Item2);
+                m_curScore += GetSingleNoteScore(m_longNoteTable[targetNoteID].Item1, m_longNoteTable[targetNoteID].Item2);
                 m_combo++;
 
                 m_HP += 0.1f;
 
-                m_longNoteTable.Remove(noteID);
+                m_longNoteTable.Remove(targetNoteID);
+
+                // Effect
+                INoteItem targetNoteItem = NoteManager.Instance.GetNoteItem(targetNoteID);
+                targetNoteItem.Transform.gameObject.SetActive(false);
             }
-            else
+
+            List<Guid> noteCandidateBuffer = m_noteCandidates.ToList();
+            if (noteCandidateBuffer.Contains(targetNoteID))
             {
-                List<Guid> noteCandidateBuffer = m_noteCandidates.ToList();
-                if (noteCandidateBuffer.Contains(noteID))
+                m_HP -= 0.1f;
+                m_combo = 0;
+
+                noteCandidateBuffer.Remove(targetNoteID);
+
+                Stack<Guid> resultNoteCandidates = new Stack<Guid>();
+                foreach (Guid curNoteID in noteCandidateBuffer)
                 {
-                    m_HP -= 0.1f;
-                    m_combo = 0;
-
-                    noteCandidateBuffer.Remove(noteID);
-
-                    Stack<Guid> resultNoteCandidates = new Stack<Guid>();
-                    foreach (Guid curNoteID in noteCandidateBuffer)
-                    {
-                        resultNoteCandidates.Push(curNoteID);
-                    }
-
-                    m_noteCandidates = resultNoteCandidates;
-
-                    SortNoteCandidates();
+                    resultNoteCandidates.Push(curNoteID);
                 }
+
+                m_noteCandidates = resultNoteCandidates;
+
+                SortNoteCandidates();
             }
-        }
-
-        private int GetCurPressedBasicNoteKeyCount()
-        {
-            IEnumerable<KeyCode> keyCodes = Enum.GetValues(typeof(KeyCode)).Cast<KeyCode>();
-
-            List<KeyCode> keyCodeBuffer = keyCodes.ToList();
-
-            foreach (KeyCode keyCode in m_bannedNoteKeyCode)
-            {
-                if (keyCodeBuffer.Contains(keyCode))
-                {
-                    keyCodeBuffer.Remove(keyCode);
-                }
-            }
-
-            keyCodes = keyCodeBuffer.Cast<KeyCode>();
-
-            int curPressedKeyCount = keyCodes.Count(keyCode => Input.GetKey(keyCode));
-            return curPressedKeyCount;
-        }
-        private int GetFreshPressedBasicNoteKeyCount()
-        {
-            IEnumerable<KeyCode> keyCodes = Enum.GetValues(typeof(KeyCode)).Cast<KeyCode>();
-
-            List<KeyCode> keyCodeBuffer = keyCodes.ToList();
-            foreach (KeyCode keyCode in m_bannedNoteKeyCode)
-            {
-                if (keyCodeBuffer.Contains(keyCode))
-                {
-                    keyCodeBuffer.Remove(keyCode);
-                }
-            }
-
-            keyCodes = keyCodeBuffer.Cast<KeyCode>();
-
-            int curPressedKeyCount = keyCodes.Count(keyCode => Input.GetKeyDown(keyCode));
-
-            return curPressedKeyCount;
         }
 
         private float GetSingleNoteScore(in float noteAppearTime, in float keyPressedTime)
         {
-            //Debug.Log("noteAppearTime : " + noteAppearTime + " / keyPressedTime : " + keyPressedTime);
-
-            int greenRegionCount = 0;
-            Guid[] regionIDs = StageDataInterface.RegionDataInterface.GetRegionIDs();
-            foreach(Guid regionID in regionIDs)
-            {
-                if(StageDataInterface.RegionDataInterface.GetRegionData(regionID).CurColorType == StageData.RegionData.ColorType.Green)
-                {
-                    greenRegionCount++;
-                }
-            }
-
-            float resultScore = 1000000.0f / (StageDataInterface.NoteDataInterface.GetNoteIDs().Length + NoteManager.Instance.RedLineCornerNoteCount + greenRegionCount);
+            float resultScore = 1000000.0f / (StageDataInterface.NoteDataInterface.GetNoteIDs().Length + NoteManager.Instance.RedLineCornerNoteCount);
 
             float timeDistance = Mathf.Abs(noteAppearTime - keyPressedTime);
             if (0.1f <= timeDistance && timeDistance < 0.2f)

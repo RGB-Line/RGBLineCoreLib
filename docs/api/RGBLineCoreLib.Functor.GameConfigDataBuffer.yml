@@ -129,7 +129,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: SaveGameConfigData
     path: ../Public/Functor/Buffer/GameConfigDataBuffer.cs
-    startLine: 88
+    startLine: 90
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -157,7 +157,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Dispose
     path: ../Public/Functor/Buffer/GameConfigDataBuffer.cs
-    startLine: 101
+    startLine: 103
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor

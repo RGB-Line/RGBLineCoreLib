@@ -68,14 +68,14 @@ namespace RGBLineCoreLib.Functor
                     MusicVolume = 0.8f,
                     MaxFrame = GameConfigData.MaxFrameRate.Frame_60,
                     VSyncCount = 0,
-                    SpecialKeySetting = new GameConfigData.SpecialKeySet()
-                    {
-                        RedNoteKeyCode_Left = KeyCode.Mouse0,
-                        RedNoteKeyCode_Right = KeyCode.Mouse1,
-                        //RedLineCornerNoteKeyCode = KeyCode.Space
-                        TrackerMovementKeyCode_ToLeft = KeyCode.LeftArrow,
-                        TrackerMovementKeyCode_ToRight = KeyCode.RightArrow
-                    }
+                    //SpecialKeySetting = new GameConfigData.SpecialKeySet()
+                    //{
+                    //    RedNoteKeyCode_Left = KeyCode.Mouse0,
+                    //    RedNoteKeyCode_Right = KeyCode.Mouse1,
+                    //    //RedLineCornerNoteKeyCode = KeyCode.Space
+                    //    TrackerMovementKeyCode_ToLeft = KeyCode.LeftArrow,
+                    //    TrackerMovementKeyCode_ToRight = KeyCode.RightArrow
+                    //}
                 };
                 SaveGameConfigData();
 

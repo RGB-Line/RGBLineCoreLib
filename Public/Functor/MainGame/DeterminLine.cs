@@ -63,6 +63,10 @@ namespace RGBLineCoreLib.Functor
         {
             m_bisStartCheck = true;
         }
+        public void StopCheck()
+        {
+            m_bisStartCheck = false;
+        }
 
         public void OnTriggerEnter2D(Collider2D collision)
         {
@@ -75,7 +79,8 @@ namespace RGBLineCoreLib.Functor
             {
                 ScoreManager.Instance.PushNoteCandidate(collision.GetComponent<IRedAndBlueNote>().AttachedNoteID);
             }
-            if(collision.transform.parent.GetComponent<IGreenNote>() != null)
+            if(collision.transform.parent.GetComponent<IGreenNote>() != null
+                && collision.transform.parent.GetChild(0).transform == collision.transform)
             {
                 ScoreManager.Instance.PushNoteCandidate(collision.transform.parent.GetComponent<IGreenNote>().AttachedNoteID);
             }

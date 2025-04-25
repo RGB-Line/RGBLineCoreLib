@@ -6,7 +6,7 @@ items:
   parent: RGBLineCoreLib.Data
   children:
   - RGBLineCoreLib.Data.StageData.NoteData.NoteType.Common
-  - RGBLineCoreLib.Data.StageData.NoteData.NoteType.Flip
+  - RGBLineCoreLib.Data.StageData.NoteData.NoteType.Double
   - RGBLineCoreLib.Data.StageData.NoteData.NoteType.Long
   langs:
   - csharp
@@ -57,30 +57,30 @@ items:
     content: Common = 0
     return:
       type: RGBLineCoreLib.Data.StageData.NoteData.NoteType
-- uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType.Flip
-  commentId: F:RGBLineCoreLib.Data.StageData.NoteData.NoteType.Flip
-  id: Flip
+- uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType.Double
+  commentId: F:RGBLineCoreLib.Data.StageData.NoteData.NoteType.Double
+  id: Double
   parent: RGBLineCoreLib.Data.StageData.NoteData.NoteType
   langs:
   - csharp
   - vb
-  name: Flip
-  nameWithType: StageData.NoteData.NoteType.Flip
-  fullName: RGBLineCoreLib.Data.StageData.NoteData.NoteType.Flip
+  name: Double
+  nameWithType: StageData.NoteData.NoteType.Double
+  fullName: RGBLineCoreLib.Data.StageData.NoteData.NoteType.Double
   type: Field
   source:
     remote:
       path: Public/Data/DataSpecs/StageDataSpec.cs
       branch: master
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: Flip
+    id: Double
     path: ../Public/Data/DataSpecs/StageDataSpec.cs
     startLine: 109
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
   syntax:
-    content: Flip = 1
+    content: Double = 1
     return:
       type: RGBLineCoreLib.Data.StageData.NoteData.NoteType
 - uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType.Long

@@ -10,6 +10,7 @@ items:
   - RGBLineCoreLib.Functor.DeterminLine.OnTriggerEnter2D(UnityEngine.Collider2D)
   - RGBLineCoreLib.Functor.DeterminLine.OnTriggerExit2D(UnityEngine.Collider2D)
   - RGBLineCoreLib.Functor.DeterminLine.StartCheck
+  - RGBLineCoreLib.Functor.DeterminLine.StopCheck
   - RGBLineCoreLib.Functor.DeterminLine.Update
   langs:
   - csharp
@@ -235,7 +236,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: StartCheck
     path: ../Public/Functor/MainGame/DeterminLine.cs
-    startLine: 52
+    startLine: 61
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -245,6 +246,32 @@ items:
     content: public void StartCheck()
     content.vb: Public Sub StartCheck()
   overload: RGBLineCoreLib.Functor.DeterminLine.StartCheck*
+- uid: RGBLineCoreLib.Functor.DeterminLine.StopCheck
+  commentId: M:RGBLineCoreLib.Functor.DeterminLine.StopCheck
+  id: StopCheck
+  parent: RGBLineCoreLib.Functor.DeterminLine
+  langs:
+  - csharp
+  - vb
+  name: StopCheck()
+  nameWithType: DeterminLine.StopCheck()
+  fullName: RGBLineCoreLib.Functor.DeterminLine.StopCheck()
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/MainGame/DeterminLine.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: StopCheck
+    path: ../Public/Functor/MainGame/DeterminLine.cs
+    startLine: 65
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public void StopCheck()
+    content.vb: Public Sub StopCheck()
+  overload: RGBLineCoreLib.Functor.DeterminLine.StopCheck*
 - uid: RGBLineCoreLib.Functor.DeterminLine.OnTriggerEnter2D(UnityEngine.Collider2D)
   commentId: M:RGBLineCoreLib.Functor.DeterminLine.OnTriggerEnter2D(UnityEngine.Collider2D)
   id: OnTriggerEnter2D(UnityEngine.Collider2D)
@@ -263,7 +290,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: OnTriggerEnter2D
     path: ../Public/Functor/MainGame/DeterminLine.cs
-    startLine: 57
+    startLine: 70
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -292,7 +319,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: OnTriggerExit2D
     path: ../Public/Functor/MainGame/DeterminLine.cs
-    startLine: 77
+    startLine: 91
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -321,7 +348,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Dispose
     path: ../Public/Functor/MainGame/DeterminLine.cs
-    startLine: 98
+    startLine: 112
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -4958,6 +4985,12 @@ references:
   name: StartCheck
   nameWithType: DeterminLine.StartCheck
   fullName: RGBLineCoreLib.Functor.DeterminLine.StartCheck
+- uid: RGBLineCoreLib.Functor.DeterminLine.StopCheck*
+  commentId: Overload:RGBLineCoreLib.Functor.DeterminLine.StopCheck
+  href: RGBLineCoreLib.Functor.DeterminLine.html#RGBLineCoreLib_Functor_DeterminLine_StopCheck
+  name: StopCheck
+  nameWithType: DeterminLine.StopCheck
+  fullName: RGBLineCoreLib.Functor.DeterminLine.StopCheck
 - uid: RGBLineCoreLib.Functor.DeterminLine.OnTriggerEnter2D*
   commentId: Overload:RGBLineCoreLib.Functor.DeterminLine.OnTriggerEnter2D
   href: RGBLineCoreLib.Functor.DeterminLine.html#RGBLineCoreLib_Functor_DeterminLine_OnTriggerEnter2D_UnityEngine_Collider2D_

@@ -20,7 +20,7 @@ namespace RGBLineCoreLib.Functor
     /// </remarks>
     public class RedAndBlueNote : MonoBehaviour, IRedAndBlueNote
     {
-        [SerializeField] private Sprite[] m_sprite_Notes;
+        [SerializeField] private Sprite[] m_sprite_Notes = null;
 
         private INoteItem m_noteItem;
 
@@ -59,19 +59,19 @@ namespace RGBLineCoreLib.Functor
                     m_spriteRenderer.sprite = m_sprite_Notes[0];
                     break;
 
-                case StageData.NoteData.NoteType.Flip:
+                case StageData.NoteData.NoteType.Double:
                     m_spriteRenderer.sprite = m_sprite_Notes[1];
 
-                    switch (StageDataInterface.NoteDataInterface.GetNoteData(m_noteItem.NoteID).flipNoteDirection)
-                    {
-                        case StageData.NoteData.FlipNoteDirection.Left:
-                            m_spriteRenderer.flipX = false;
-                            break;
+                    //switch (StageDataInterface.NoteDataInterface.GetNoteData(m_noteItem.NoteID).flipNoteDirection)
+                    //{
+                    //    case StageData.NoteData.FlipNoteDirection.Left:
+                    //        m_spriteRenderer.flipX = false;
+                    //        break;
 
-                        case StageData.NoteData.FlipNoteDirection.Right:
-                            m_spriteRenderer.flipX = true;
-                            break;
-                    }
+                    //    case StageData.NoteData.FlipNoteDirection.Right:
+                    //        m_spriteRenderer.flipX = true;
+                    //        break;
+                    //}
                     break;
             }
 
@@ -89,6 +89,7 @@ namespace RGBLineCoreLib.Functor
             StageData.StageConfigData curStageConfigData = StageDataInterface.StageConfigDataInterface.GetStageConfigData();
             StageMetadata stageMetadata = StageMetadataInterface.GetStageMetadata();
             float velocity = (GridManager.Instance.GetTotalFrameCount() * (curStageConfigData.LengthPerBit / curStageConfigData.BitSubDivision)) / stageMetadata.MusicLength;
+            //float velocity = GridManager.Instance.GetYPosFromFrame(GridManager.Instance.GetTotalFrameCount()) / GridManager.Instance.GetTotalFrameCount();
 
             GameConfigData gameConfigData = GameConfigDataBuffer.Instance.ConfigData;
             m_judgeBox.size = new Vector2()

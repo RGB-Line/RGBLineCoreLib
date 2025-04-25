@@ -16,7 +16,7 @@ namespace RGBLineCoreLib.Manager
     /// </summary>
     public class LobbyBackgroundManager : SingleTonForGameObject<LobbyBackgroundManager>
     {
-        [SerializeField] private List<Material> m_mats;
+        [SerializeField] private List<Material> m_mats = null;
         private int m_randomMatSelectIndex;
 
         private MeshRenderer m_meshRenderer;

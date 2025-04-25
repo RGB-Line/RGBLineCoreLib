@@ -8,13 +8,12 @@ items:
   - RGBLineCoreLib.Data.GameConfigData.MaxFrameRate
   - RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard
   - RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
-  - RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+  - RGBLineCoreLib.Data.GameConfigData.ScreenResolution
   - RGBLineCoreLib.Data.HalfFloatVector2
   - RGBLineCoreLib.Data.StageData
   - RGBLineCoreLib.Data.StageData.LineData
   - RGBLineCoreLib.Data.StageData.LineData.LineSmoothType
   - RGBLineCoreLib.Data.StageData.NoteData
-  - RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
   - RGBLineCoreLib.Data.StageData.NoteData.NoteType
   - RGBLineCoreLib.Data.StageData.RegionData
   - RGBLineCoreLib.Data.StageData.RegionData.ColorType
@@ -68,6 +67,29 @@ references:
   - uid: RGBLineCoreLib.Data.GameConfigData.MaxFrameRate
     name: MaxFrameRate
     href: RGBLineCoreLib.Data.GameConfigData.MaxFrameRate.html
+- uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+  commentId: T:RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.GameConfigData.html
+  name: GameConfigData.ScreenResolution
+  nameWithType: GameConfigData.ScreenResolution
+  fullName: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.Data.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+    name: ScreenResolution
+    href: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.Data.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+    name: ScreenResolution
+    href: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.html
 - uid: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard
   commentId: T:RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard
   parent: RGBLineCoreLib.Data
@@ -122,29 +144,6 @@ references:
   - uid: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType
     name: HitJudgingType
     href: RGBLineCoreLib.Data.GameConfigData.NoteHitJudgingStrandard.HitJudgingType.html
-- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
-  commentId: T:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
-  parent: RGBLineCoreLib.Data
-  href: RGBLineCoreLib.Data.GameConfigData.html
-  name: GameConfigData.SpecialKeySet
-  nameWithType: GameConfigData.SpecialKeySet
-  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
-  spec.csharp:
-  - uid: RGBLineCoreLib.Data.GameConfigData
-    name: GameConfigData
-    href: RGBLineCoreLib.Data.GameConfigData.html
-  - name: .
-  - uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
-    name: SpecialKeySet
-    href: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html
-  spec.vb:
-  - uid: RGBLineCoreLib.Data.GameConfigData
-    name: GameConfigData
-    href: RGBLineCoreLib.Data.GameConfigData.html
-  - name: .
-  - uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
-    name: SpecialKeySet
-    href: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html
 - uid: RGBLineCoreLib.Data.HalfFloatVector2
   commentId: T:RGBLineCoreLib.Data.HalfFloatVector2
   parent: RGBLineCoreLib.Data
@@ -320,37 +319,6 @@ references:
   - uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType
     name: NoteType
     href: RGBLineCoreLib.Data.StageData.NoteData.NoteType.html
-- uid: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
-  commentId: T:RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
-  parent: RGBLineCoreLib.Data
-  href: RGBLineCoreLib.Data.StageData.html
-  name: StageData.NoteData.FlipNoteDirection
-  nameWithType: StageData.NoteData.FlipNoteDirection
-  fullName: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
-  spec.csharp:
-  - uid: RGBLineCoreLib.Data.StageData
-    name: StageData
-    href: RGBLineCoreLib.Data.StageData.html
-  - name: .
-  - uid: RGBLineCoreLib.Data.StageData.NoteData
-    name: NoteData
-    href: RGBLineCoreLib.Data.StageData.NoteData.html
-  - name: .
-  - uid: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
-    name: FlipNoteDirection
-    href: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection.html
-  spec.vb:
-  - uid: RGBLineCoreLib.Data.StageData
-    name: StageData
-    href: RGBLineCoreLib.Data.StageData.html
-  - name: .
-  - uid: RGBLineCoreLib.Data.StageData.NoteData
-    name: NoteData
-    href: RGBLineCoreLib.Data.StageData.NoteData.html
-  - name: .
-  - uid: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
-    name: FlipNoteDirection
-    href: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection.html
 - uid: RGBLineCoreLib.Data.StageData.StageConfigData
   commentId: T:RGBLineCoreLib.Data.StageData.StageConfigData
   parent: RGBLineCoreLib.Data

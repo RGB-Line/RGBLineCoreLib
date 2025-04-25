@@ -45,6 +45,14 @@ namespace RGBLineCoreLib.Data
         {
             return vector1.X != vector2.X || vector1.Y != vector2.Y;
         }
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
 
         public static HalfFloatVector2 operator -(HalfFloatVector2 vector)
         {

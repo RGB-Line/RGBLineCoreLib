@@ -8,7 +8,7 @@ items:
   - RGBLineCoreLib.Data.GameConfigData.MaxFrame
   - RGBLineCoreLib.Data.GameConfigData.MusicVolume
   - RGBLineCoreLib.Data.GameConfigData.NoteHitJudgeStrandard
-  - RGBLineCoreLib.Data.GameConfigData.SpecialKeySetting
+  - RGBLineCoreLib.Data.GameConfigData.Resolution
   - RGBLineCoreLib.Data.GameConfigData.SyncAdjustment
   - RGBLineCoreLib.Data.GameConfigData.VSyncCount
   langs:
@@ -57,7 +57,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: NoteHitJudgeStrandard
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 48
+    startLine: 57
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -84,7 +84,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: MusicVolume
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 56
+    startLine: 65
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -114,7 +114,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: SyncAdjustment
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 57
+    startLine: 66
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -141,7 +141,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: MaxFrame
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 58
+    startLine: 67
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -168,7 +168,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: VSyncCount
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 65
+    startLine: 74
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
@@ -180,33 +180,33 @@ items:
     return:
       type: System.Int32
     content.vb: Public VSyncCount As Integer
-- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySetting
-  commentId: F:RGBLineCoreLib.Data.GameConfigData.SpecialKeySetting
-  id: SpecialKeySetting
+- uid: RGBLineCoreLib.Data.GameConfigData.Resolution
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.Resolution
+  id: Resolution
   parent: RGBLineCoreLib.Data.GameConfigData
   langs:
   - csharp
   - vb
-  name: SpecialKeySetting
-  nameWithType: GameConfigData.SpecialKeySetting
-  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySetting
+  name: Resolution
+  nameWithType: GameConfigData.Resolution
+  fullName: RGBLineCoreLib.Data.GameConfigData.Resolution
   type: Field
   source:
     remote:
       path: Public/Data/Configs/GameConfigData.cs
       branch: master
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: SpecialKeySetting
+    id: Resolution
     path: ../Public/Data/Configs/GameConfigData.cs
-    startLine: 66
+    startLine: 76
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Data
   syntax:
-    content: public GameConfigData.SpecialKeySet SpecialKeySetting
+    content: public GameConfigData.ScreenResolution Resolution
     return:
-      type: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
-    content.vb: Public SpecialKeySetting As GameConfigData.SpecialKeySet
+      type: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+    content.vb: Public Resolution As GameConfigData.ScreenResolution
 references:
 - uid: RGBLineCoreLib.Data
   commentId: N:RGBLineCoreLib.Data
@@ -515,26 +515,26 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
-  commentId: T:RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+- uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+  commentId: T:RGBLineCoreLib.Data.GameConfigData.ScreenResolution
   parent: RGBLineCoreLib.Data
   href: RGBLineCoreLib.Data.GameConfigData.html
-  name: GameConfigData.SpecialKeySet
-  nameWithType: GameConfigData.SpecialKeySet
-  fullName: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
+  name: GameConfigData.ScreenResolution
+  nameWithType: GameConfigData.ScreenResolution
+  fullName: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
   spec.csharp:
   - uid: RGBLineCoreLib.Data.GameConfigData
     name: GameConfigData
     href: RGBLineCoreLib.Data.GameConfigData.html
   - name: .
-  - uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
-    name: SpecialKeySet
-    href: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html
+  - uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+    name: ScreenResolution
+    href: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.html
   spec.vb:
   - uid: RGBLineCoreLib.Data.GameConfigData
     name: GameConfigData
     href: RGBLineCoreLib.Data.GameConfigData.html
   - name: .
-  - uid: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet
-    name: SpecialKeySet
-    href: RGBLineCoreLib.Data.GameConfigData.SpecialKeySet.html
+  - uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+    name: ScreenResolution
+    href: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.html

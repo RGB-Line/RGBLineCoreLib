@@ -10,7 +10,6 @@ items:
   - RGBLineCoreLib.Data.StageData.NoteData.MinorOffsetTime
   - RGBLineCoreLib.Data.StageData.NoteData.NoteLength
   - RGBLineCoreLib.Data.StageData.NoteData.StartOffsetFrame
-  - RGBLineCoreLib.Data.StageData.NoteData.flipNoteDirection
   langs:
   - csharp
   - vb
@@ -159,35 +158,6 @@ items:
     return:
       type: System.Single
     content.vb: Public NoteLength As Single
-- uid: RGBLineCoreLib.Data.StageData.NoteData.flipNoteDirection
-  commentId: F:RGBLineCoreLib.Data.StageData.NoteData.flipNoteDirection
-  id: flipNoteDirection
-  parent: RGBLineCoreLib.Data.StageData.NoteData
-  langs:
-  - csharp
-  - vb
-  name: flipNoteDirection
-  nameWithType: StageData.NoteData.flipNoteDirection
-  fullName: RGBLineCoreLib.Data.StageData.NoteData.flipNoteDirection
-  type: Field
-  source:
-    remote:
-      path: Public/Data/DataSpecs/StageDataSpec.cs
-      branch: master
-      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: flipNoteDirection
-    path: ../Public/Data/DataSpecs/StageDataSpec.cs
-    startLine: 148
-  assemblies:
-  - RGBLineCoreLib
-  namespace: RGBLineCoreLib.Data
-  summary: 해당 Note가 Flip Note일 때, Flip Note의 방향을 나타냄
-  example: []
-  syntax:
-    content: public StageData.NoteData.FlipNoteDirection flipNoteDirection
-    return:
-      type: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
-    content.vb: Public flipNoteDirection As StageData.NoteData.FlipNoteDirection
 - uid: RGBLineCoreLib.Data.StageData.NoteData.CurNoteType
   commentId: F:RGBLineCoreLib.Data.StageData.NoteData.CurNoteType
   id: CurNoteType
@@ -487,37 +457,6 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
-- uid: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
-  commentId: T:RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
-  parent: RGBLineCoreLib.Data
-  href: RGBLineCoreLib.Data.StageData.html
-  name: StageData.NoteData.FlipNoteDirection
-  nameWithType: StageData.NoteData.FlipNoteDirection
-  fullName: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
-  spec.csharp:
-  - uid: RGBLineCoreLib.Data.StageData
-    name: StageData
-    href: RGBLineCoreLib.Data.StageData.html
-  - name: .
-  - uid: RGBLineCoreLib.Data.StageData.NoteData
-    name: NoteData
-    href: RGBLineCoreLib.Data.StageData.NoteData.html
-  - name: .
-  - uid: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
-    name: FlipNoteDirection
-    href: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection.html
-  spec.vb:
-  - uid: RGBLineCoreLib.Data.StageData
-    name: StageData
-    href: RGBLineCoreLib.Data.StageData.html
-  - name: .
-  - uid: RGBLineCoreLib.Data.StageData.NoteData
-    name: NoteData
-    href: RGBLineCoreLib.Data.StageData.NoteData.html
-  - name: .
-  - uid: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection
-    name: FlipNoteDirection
-    href: RGBLineCoreLib.Data.StageData.NoteData.FlipNoteDirection.html
 - uid: RGBLineCoreLib.Data.StageData.NoteData.NoteType
   commentId: T:RGBLineCoreLib.Data.StageData.NoteData.NoteType
   parent: RGBLineCoreLib.Data

@@ -35,17 +35,62 @@ namespace RGBLineCoreLib.Functor
             }
         }
 
-        internal bool TryLoadStageMetadata(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty)
+        public bool TrySaveStageMetadata(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficultyLevel)
+        {
+            string path = DataPathInterface.GetStageMetadataPath(targetStageName, majorDifficultyLevel);
+
+            string directory = Path.GetDirectoryName(path);
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
+
+            string jsonData = JsonConvert.SerializeObject(StageMetadata, Formatting.Indented);
+            File.WriteAllText(path, jsonData);
+
+            return true;
+        }
+
+        internal bool TryLoadStageMetadata(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty, in bool bisNewData = false, in float musicLength = 0.0f)
         {
             string path = DataPathInterface.GetStageMetadataPath(targetStageName, majorDifficulty);
 
-            if (!File.Exists(path))
+            if(bisNewData && musicLength > 0.0f)
             {
-                return false;
-            }
+                StageMetadata = new StageMetadata()
+                {
+                    Title = "New Stage",
+                    Artist = "New Artist",
+                    MusicLength = musicLength,
 
-            string jsonData = File.ReadAllText(path);
-            StageMetadata = JsonConvert.DeserializeObject<StageMetadata>(jsonData);
+                    MajorDifficulty = StageMetadata.MajorDifficultyLevel.Easy,
+                    MinorDifficulty = 1,
+
+                    BestScore = 0,
+
+                    LobbyMusicStartTime = 0.0f,
+                    LobbyMusicEndTime = musicLength,
+                    LobbyMusicFadeOutTime = 0.0f
+                };
+            }
+            else
+            {
+                if (!File.Exists(path))
+                {
+                    UnityEngine.Debug.LogError("StageMetadataBuffer::TryLoadStageMetadata - File not found");
+                    return false;
+                }
+
+                try
+                {
+                    string jsonData = File.ReadAllText(path);
+                    StageMetadata = JsonConvert.DeserializeObject<StageMetadata>(jsonData);
+                }
+                catch
+                {
+                    return false;
+                }
+            }
 
             return true;
         }

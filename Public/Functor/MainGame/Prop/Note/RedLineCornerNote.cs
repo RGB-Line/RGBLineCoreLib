@@ -64,6 +64,7 @@ namespace RGBLineCoreLib.Functor
             StageData.StageConfigData curStageConfigData = StageDataInterface.StageConfigDataInterface.GetStageConfigData();
             StageMetadata stageMetadata = StageMetadataInterface.GetStageMetadata();
             float velocity = (GridManager.Instance.GetTotalFrameCount() * (curStageConfigData.LengthPerBit / curStageConfigData.BitSubDivision)) / stageMetadata.MusicLength;
+            //float velocity = GridManager.Instance.GetYPosFromFrame(GridManager.Instance.GetTotalFrameCount()) / GridManager.Instance.GetTotalFrameCount();
 
             GameConfigData gameConfigData = GameConfigDataBuffer.Instance.ConfigData;
             m_judgeBox.size = new Vector2()

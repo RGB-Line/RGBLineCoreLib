@@ -4,6 +4,11 @@ items:
   commentId: N:RGBLineCoreLib.Functor
   id: RGBLineCoreLib.Functor
   children:
+  - RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath
+  - RGBLineCoreLib.Functor.BackgroundGradientEffectManager
+  - RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect
+  - RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput
+  - RGBLineCoreLib.Functor.BackgroundGradientSetting
   - RGBLineCoreLib.Functor.CurvedLinePoint
   - RGBLineCoreLib.Functor.CurvedLineRenderer
   - RGBLineCoreLib.Functor.DataPathInterface
@@ -68,6 +73,53 @@ references:
   name: LineSmoother
   nameWithType: LineSmoother
   fullName: RGBLineCoreLib.Functor.LineSmoother
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath
+  commentId: T:RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath
+  href: RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath.html
+  name: BackgroundGradientEffectLightPath
+  nameWithType: BackgroundGradientEffectLightPath
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectLightPath
+- uid: RGBLineCoreLib.Functor.BackgroundGradientEffectManager
+  commentId: T:RGBLineCoreLib.Functor.BackgroundGradientEffectManager
+  href: RGBLineCoreLib.Functor.BackgroundGradientEffectManager.html
+  name: BackgroundGradientEffectManager
+  nameWithType: BackgroundGradientEffectManager
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientEffectManager
+- uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect
+  commentId: T:RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect
+  href: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.html
+  name: BackgroundGradientFadeoutEffect
+  nameWithType: BackgroundGradientFadeoutEffect
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect
+- uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput
+  commentId: T:RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput
+  parent: RGBLineCoreLib.Functor
+  href: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.html
+  name: BackgroundGradientFadeoutEffect.FadeoutInput
+  nameWithType: BackgroundGradientFadeoutEffect.FadeoutInput
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput
+  spec.csharp:
+  - uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect
+    name: BackgroundGradientFadeoutEffect
+    href: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput
+    name: FadeoutInput
+    href: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect
+    name: BackgroundGradientFadeoutEffect
+    href: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.html
+  - name: .
+  - uid: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput
+    name: FadeoutInput
+    href: RGBLineCoreLib.Functor.BackgroundGradientFadeoutEffect.FadeoutInput.html
+- uid: RGBLineCoreLib.Functor.BackgroundGradientSetting
+  commentId: T:RGBLineCoreLib.Functor.BackgroundGradientSetting
+  href: RGBLineCoreLib.Functor.BackgroundGradientSetting.html
+  name: BackgroundGradientSetting
+  nameWithType: BackgroundGradientSetting
+  fullName: RGBLineCoreLib.Functor.BackgroundGradientSetting
 - uid: RGBLineCoreLib.Functor.DataPathInterface
   commentId: T:RGBLineCoreLib.Functor.DataPathInterface
   href: RGBLineCoreLib.Functor.DataPathInterface.html

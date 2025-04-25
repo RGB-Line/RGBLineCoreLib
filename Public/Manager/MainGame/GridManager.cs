@@ -27,12 +27,12 @@ namespace RGBLineCoreLib.Manager
         /// <summary>
         /// 해당 Stage에 존재하는 총 Frame 수를 반환한다
         /// </summary>
-        public int GetTotalFrameCount()
+        public float GetTotalFrameCount()
         {
             StageData.StageConfigData stageConfigData = StageDataInterface.StageConfigDataInterface.GetStageConfigData();
-            float BPS = (stageConfigData.BPM * stageConfigData.BitSubDivision) / 60f;
+            float BPS = (stageConfigData.BPM) / 60.0f;
 
-            return (int)(BPS * StageMetadataInterface.GetStageMetadata().MusicLength);
+            return BPS * StageMetadataInterface.GetStageMetadata().MusicLength;
         }
 
         /// <summary>

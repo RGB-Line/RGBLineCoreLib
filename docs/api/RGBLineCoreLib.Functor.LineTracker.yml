@@ -5,8 +5,11 @@ items:
   id: LineTracker
   parent: RGBLineCoreLib.Functor
   children:
-  - RGBLineCoreLib.Functor.LineTracker.BIsInitialized
+  - RGBLineCoreLib.Functor.LineTracker.Awake
+  - RGBLineCoreLib.Functor.LineTracker.CurLineID
   - RGBLineCoreLib.Functor.LineTracker.CurRegionID
+  - RGBLineCoreLib.Functor.LineTracker.StartTracking
+  - RGBLineCoreLib.Functor.LineTracker.StopTracking
   - RGBLineCoreLib.Functor.LineTracker.Update
   langs:
   - csharp
@@ -154,6 +157,32 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetType
+- uid: RGBLineCoreLib.Functor.LineTracker.Awake
+  commentId: M:RGBLineCoreLib.Functor.LineTracker.Awake
+  id: Awake
+  parent: RGBLineCoreLib.Functor.LineTracker
+  langs:
+  - csharp
+  - vb
+  name: Awake()
+  nameWithType: LineTracker.Awake()
+  fullName: RGBLineCoreLib.Functor.LineTracker.Awake()
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/MainGame/LineTracker.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: Awake
+    path: ../Public/Functor/MainGame/LineTracker.cs
+    startLine: 31
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public void Awake()
+    content.vb: Public Sub Awake()
+  overload: RGBLineCoreLib.Functor.LineTracker.Awake*
 - uid: RGBLineCoreLib.Functor.LineTracker.Update
   commentId: M:RGBLineCoreLib.Functor.LineTracker.Update
   id: Update
@@ -172,7 +201,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Update
     path: ../Public/Functor/MainGame/LineTracker.cs
-    startLine: 28
+    startLine: 36
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -180,35 +209,6 @@ items:
     content: public void Update()
     content.vb: Public Sub Update()
   overload: RGBLineCoreLib.Functor.LineTracker.Update*
-- uid: RGBLineCoreLib.Functor.LineTracker.BIsInitialized
-  commentId: P:RGBLineCoreLib.Functor.LineTracker.BIsInitialized
-  id: BIsInitialized
-  parent: RGBLineCoreLib.Functor.LineTracker
-  langs:
-  - csharp
-  - vb
-  name: BIsInitialized
-  nameWithType: LineTracker.BIsInitialized
-  fullName: RGBLineCoreLib.Functor.LineTracker.BIsInitialized
-  type: Property
-  source:
-    remote:
-      path: Public/Functor/MainGame/LineTracker.cs
-      branch: master
-      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
-    id: BIsInitialized
-    path: ../Public/Functor/MainGame/LineTracker.cs
-    startLine: 106
-  assemblies:
-  - RGBLineCoreLib
-  namespace: RGBLineCoreLib.Functor
-  syntax:
-    content: public bool BIsInitialized { set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public WriteOnly Property BIsInitialized As Boolean
-  overload: RGBLineCoreLib.Functor.LineTracker.BIsInitialized*
 - uid: RGBLineCoreLib.Functor.LineTracker.CurRegionID
   commentId: P:RGBLineCoreLib.Functor.LineTracker.CurRegionID
   id: CurRegionID
@@ -227,7 +227,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: CurRegionID
     path: ../Public/Functor/MainGame/LineTracker.cs
-    startLine: 113
+    startLine: 200
   assemblies:
   - RGBLineCoreLib
   namespace: RGBLineCoreLib.Functor
@@ -238,6 +238,87 @@ items:
       type: System.Guid
     content.vb: Public WriteOnly Property CurRegionID As Guid
   overload: RGBLineCoreLib.Functor.LineTracker.CurRegionID*
+- uid: RGBLineCoreLib.Functor.LineTracker.CurLineID
+  commentId: P:RGBLineCoreLib.Functor.LineTracker.CurLineID
+  id: CurLineID
+  parent: RGBLineCoreLib.Functor.LineTracker
+  langs:
+  - csharp
+  - vb
+  name: CurLineID
+  nameWithType: LineTracker.CurLineID
+  fullName: RGBLineCoreLib.Functor.LineTracker.CurLineID
+  type: Property
+  source:
+    remote:
+      path: Public/Functor/MainGame/LineTracker.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: CurLineID
+    path: ../Public/Functor/MainGame/LineTracker.cs
+    startLine: 207
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public Guid CurLineID { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public ReadOnly Property CurLineID As Guid
+  overload: RGBLineCoreLib.Functor.LineTracker.CurLineID*
+- uid: RGBLineCoreLib.Functor.LineTracker.StartTracking
+  commentId: M:RGBLineCoreLib.Functor.LineTracker.StartTracking
+  id: StartTracking
+  parent: RGBLineCoreLib.Functor.LineTracker
+  langs:
+  - csharp
+  - vb
+  name: StartTracking()
+  nameWithType: LineTracker.StartTracking()
+  fullName: RGBLineCoreLib.Functor.LineTracker.StartTracking()
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/MainGame/LineTracker.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: StartTracking
+    path: ../Public/Functor/MainGame/LineTracker.cs
+    startLine: 215
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public void StartTracking()
+    content.vb: Public Sub StartTracking()
+  overload: RGBLineCoreLib.Functor.LineTracker.StartTracking*
+- uid: RGBLineCoreLib.Functor.LineTracker.StopTracking
+  commentId: M:RGBLineCoreLib.Functor.LineTracker.StopTracking
+  id: StopTracking
+  parent: RGBLineCoreLib.Functor.LineTracker
+  langs:
+  - csharp
+  - vb
+  name: StopTracking()
+  nameWithType: LineTracker.StopTracking()
+  fullName: RGBLineCoreLib.Functor.LineTracker.StopTracking()
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/MainGame/LineTracker.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: StopTracking
+    path: ../Public/Functor/MainGame/LineTracker.cs
+    startLine: 219
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: public void StopTracking()
+    content.vb: Public Sub StopTracking()
+  overload: RGBLineCoreLib.Functor.LineTracker.StopTracking*
 references:
 - uid: RGBLineCoreLib.Functor
   commentId: N:RGBLineCoreLib.Functor
@@ -4624,29 +4705,18 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
+- uid: RGBLineCoreLib.Functor.LineTracker.Awake*
+  commentId: Overload:RGBLineCoreLib.Functor.LineTracker.Awake
+  href: RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_Awake
+  name: Awake
+  nameWithType: LineTracker.Awake
+  fullName: RGBLineCoreLib.Functor.LineTracker.Awake
 - uid: RGBLineCoreLib.Functor.LineTracker.Update*
   commentId: Overload:RGBLineCoreLib.Functor.LineTracker.Update
   href: RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_Update
   name: Update
   nameWithType: LineTracker.Update
   fullName: RGBLineCoreLib.Functor.LineTracker.Update
-- uid: RGBLineCoreLib.Functor.LineTracker.BIsInitialized*
-  commentId: Overload:RGBLineCoreLib.Functor.LineTracker.BIsInitialized
-  href: RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_BIsInitialized
-  name: BIsInitialized
-  nameWithType: LineTracker.BIsInitialized
-  fullName: RGBLineCoreLib.Functor.LineTracker.BIsInitialized
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
 - uid: RGBLineCoreLib.Functor.LineTracker.CurRegionID*
   commentId: Overload:RGBLineCoreLib.Functor.LineTracker.CurRegionID
   href: RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_CurRegionID
@@ -4661,3 +4731,21 @@ references:
   name: Guid
   nameWithType: Guid
   fullName: System.Guid
+- uid: RGBLineCoreLib.Functor.LineTracker.CurLineID*
+  commentId: Overload:RGBLineCoreLib.Functor.LineTracker.CurLineID
+  href: RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_CurLineID
+  name: CurLineID
+  nameWithType: LineTracker.CurLineID
+  fullName: RGBLineCoreLib.Functor.LineTracker.CurLineID
+- uid: RGBLineCoreLib.Functor.LineTracker.StartTracking*
+  commentId: Overload:RGBLineCoreLib.Functor.LineTracker.StartTracking
+  href: RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_StartTracking
+  name: StartTracking
+  nameWithType: LineTracker.StartTracking
+  fullName: RGBLineCoreLib.Functor.LineTracker.StartTracking
+- uid: RGBLineCoreLib.Functor.LineTracker.StopTracking*
+  commentId: Overload:RGBLineCoreLib.Functor.LineTracker.StopTracking
+  href: RGBLineCoreLib.Functor.LineTracker.html#RGBLineCoreLib_Functor_LineTracker_StopTracking
+  name: StopTracking
+  nameWithType: LineTracker.StopTracking
+  fullName: RGBLineCoreLib.Functor.LineTracker.StopTracking

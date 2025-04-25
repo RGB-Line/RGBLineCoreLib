@@ -18,10 +18,10 @@ namespace RGBLineCoreLib.Manager
     /// </summary>
     public sealed class NoteManager : SingleTonForGameObject<NoteManager>
     {
-        [SerializeField] private GameObject m_prefab_NoteItem;
+        [SerializeField] private GameObject m_prefab_NoteItem = null;
 
-        private Dictionary<Guid, INoteItem> m_noteItemTable = new Dictionary<Guid, INoteItem>();
-        private Dictionary<Guid, IRedLineCornerNote> m_redLineCornerNoteTable = new Dictionary<Guid, IRedLineCornerNote>();
+        private readonly Dictionary<Guid, INoteItem> m_noteItemTable = new Dictionary<Guid, INoteItem>();
+        private readonly Dictionary<Guid, IRedLineCornerNote> m_redLineCornerNoteTable = new Dictionary<Guid, IRedLineCornerNote>();
 
 
         public void Awake()

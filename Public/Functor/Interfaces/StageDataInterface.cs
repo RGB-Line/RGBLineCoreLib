@@ -430,6 +430,12 @@ namespace RGBLineCoreLib.Functor
         }
 
 
+#if FOR_EDITOR
+        public static bool TrySaveStageData(in string targetStageName, in StageMetadata.MajorDifficultyLevel majorDifficulty)
+        {
+            return StageDataBuffer.Instance.TrySaveStageData(targetStageName, majorDifficulty);
+        }
+#endif
         /// <summary>
         /// DataPathTable의 내용을 바탕으로 Load를 시도한다
         /// </summary>

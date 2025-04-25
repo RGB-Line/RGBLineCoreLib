@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+  commentId: T:RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+  id: GameConfigData.ScreenResolution
+  parent: RGBLineCoreLib.Data
+  children:
+  - RGBLineCoreLib.Data.GameConfigData.ScreenResolution.FHD_1920x1080
+  - RGBLineCoreLib.Data.GameConfigData.ScreenResolution.QHD_2560x1440
+  - RGBLineCoreLib.Data.GameConfigData.ScreenResolution.UHD_3840x2160
+  langs:
+  - csharp
+  - vb
+  name: GameConfigData.ScreenResolution
+  nameWithType: GameConfigData.ScreenResolution
+  fullName: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+  type: Enum
+  source:
+    remote:
+      path: Public/Data/Configs/GameConfigData.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: ScreenResolution
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 23
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: 'public enum GameConfigData.ScreenResolution : byte'
+    content.vb: Public Enum GameConfigData.ScreenResolution As Byte
+- uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.FHD_1920x1080
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.ScreenResolution.FHD_1920x1080
+  id: FHD_1920x1080
+  parent: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+  langs:
+  - csharp
+  - vb
+  name: FHD_1920x1080
+  nameWithType: GameConfigData.ScreenResolution.FHD_1920x1080
+  fullName: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.FHD_1920x1080
+  type: Field
+  source:
+    remote:
+      path: Public/Data/Configs/GameConfigData.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: FHD_1920x1080
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 25
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: FHD_1920x1080 = 0
+    return:
+      type: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+- uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.QHD_2560x1440
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.ScreenResolution.QHD_2560x1440
+  id: QHD_2560x1440
+  parent: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+  langs:
+  - csharp
+  - vb
+  name: QHD_2560x1440
+  nameWithType: GameConfigData.ScreenResolution.QHD_2560x1440
+  fullName: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.QHD_2560x1440
+  type: Field
+  source:
+    remote:
+      path: Public/Data/Configs/GameConfigData.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: QHD_2560x1440
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 26
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: QHD_2560x1440 = 1
+    return:
+      type: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+- uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.UHD_3840x2160
+  commentId: F:RGBLineCoreLib.Data.GameConfigData.ScreenResolution.UHD_3840x2160
+  id: UHD_3840x2160
+  parent: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+  langs:
+  - csharp
+  - vb
+  name: UHD_3840x2160
+  nameWithType: GameConfigData.ScreenResolution.UHD_3840x2160
+  fullName: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.UHD_3840x2160
+  type: Field
+  source:
+    remote:
+      path: Public/Data/Configs/GameConfigData.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: UHD_3840x2160
+    path: ../Public/Data/Configs/GameConfigData.cs
+    startLine: 27
+  assemblies:
+  - RGBLineCoreLib
+  namespace: RGBLineCoreLib.Data
+  syntax:
+    content: UHD_3840x2160 = 2
+    return:
+      type: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+references:
+- uid: RGBLineCoreLib.Data
+  commentId: N:RGBLineCoreLib.Data
+  href: RGBLineCoreLib.html
+  name: RGBLineCoreLib.Data
+  nameWithType: RGBLineCoreLib.Data
+  fullName: RGBLineCoreLib.Data
+  spec.csharp:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+  spec.vb:
+  - uid: RGBLineCoreLib
+    name: RGBLineCoreLib
+    href: RGBLineCoreLib.html
+  - name: .
+  - uid: RGBLineCoreLib.Data
+    name: Data
+    href: RGBLineCoreLib.Data.html
+- uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+  commentId: T:RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+  parent: RGBLineCoreLib.Data
+  href: RGBLineCoreLib.Data.GameConfigData.html
+  name: GameConfigData.ScreenResolution
+  nameWithType: GameConfigData.ScreenResolution
+  fullName: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+  spec.csharp:
+  - uid: RGBLineCoreLib.Data.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.Data.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+    name: ScreenResolution
+    href: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.html
+  spec.vb:
+  - uid: RGBLineCoreLib.Data.GameConfigData
+    name: GameConfigData
+    href: RGBLineCoreLib.Data.GameConfigData.html
+  - name: .
+  - uid: RGBLineCoreLib.Data.GameConfigData.ScreenResolution
+    name: ScreenResolution
+    href: RGBLineCoreLib.Data.GameConfigData.ScreenResolution.html
