@@ -18,6 +18,7 @@ namespace RGBLineCoreLib.Functor
             {
                 if (regionID == Guid.Empty)
                 {
+                    throw new Exception("Invalid Region ID - Some Region ID is equals with Guid.Empty");
                     return false;
                 }
             }
@@ -29,19 +30,23 @@ namespace RGBLineCoreLib.Functor
 
                 if (curRegionData.StartOffsetFrame < 0)
                 {
+                    throw new Exception("Invalid Region StartOffsetFrame - Region (" + regionIDs[regionIDIndex] + ")'s StartOffsetFrame is less than 0");
                     return false;
                 }
                 else if (regionIDIndex + 1 < regionIDs.Length && curRegionData.StartOffsetFrame >= targetStageData.RegionDataTable[regionIDs[regionIDIndex + 1]].StartOffsetFrame)
                 {
+                    throw new Exception("Invalid Region StartOffsetFrame - Region (" + regionIDs[regionIDIndex] + ")'s StartOffsetFrame is greater than or equals with next Region's StartOffsetFrame");
                     return false;
                 }
 
                 if (curRegionData.MinorOffsetTime < -0.5f || 0.5f < curRegionData.MinorOffsetTime)
                 {
+                    throw new Exception("Invalid Region MinorOffsetTime - Region (" + regionIDs[regionIDIndex] + ")'s MinorOffsetTime is not in [-0,5, 0,5] range");
                     return false;
                 }
                 else if (!Enum.IsDefined(typeof(StageData.RegionData.ColorType), curRegionData.CurColorType))
                 {
+                    throw new Exception("Invalid Region ColorType - Region (" + regionIDs[regionIDIndex] + ")'s ColorType is not defined");
                     return false;
                 }
             }
@@ -52,7 +57,7 @@ namespace RGBLineCoreLib.Functor
             {
                 if (lineID == Guid.Empty)
                 {
-                    UnityEngine.Debug.Log("1");
+                    throw new Exception("Invalid Line ID - Some Line ID is equals with Guid.Empty");
                     return false;
                 }
             }
@@ -64,20 +69,24 @@ namespace RGBLineCoreLib.Functor
 
                 if (curLineData.AttachedRegionID == Guid.Empty)
                 {
+                    throw new Exception("Invalid Line AttachedRegionID - Line (" + lineIDs[lineIDIndex] + ")'s AttachedRegionID is equals with Guid.Empty");
                     return false;
                 }
                 else if (!regionIDs.Contains(curLineData.AttachedRegionID))
                 {
+                    throw new Exception("Invalid Line AttachedRegionID - Line (" + lineIDs[lineIDIndex] + ")'s AttachedRegionID is not in Region ID list");
                     return false;
                 }
 
                 if (curLineData.CurvedLinePoints.Count < 2)
                 {
+                    throw new Exception("Invalid Line CurvedLinePoints - Line (" + lineIDs[lineIDIndex] + ")'s CurvedLinePoints count is less than 2");
                     return false;
                 }
 
                 if (!Enum.IsDefined(typeof(StageData.LineData.LineSmoothType), curLineData.CurLineSmoothType))
                 {
+                    throw new Exception("Invalid Line CurLineSmoothType - Line (" + lineIDs[lineIDIndex] + ")'s CurLineSmoothType is not defined");
                     return false;
                 }
                 switch (targetStageData.RegionDataTable[curLineData.AttachedRegionID].CurColorType)
@@ -85,6 +94,7 @@ namespace RGBLineCoreLib.Functor
                     case StageData.RegionData.ColorType.Green:
                         if (curLineData.CurLineSmoothType != StageData.LineData.LineSmoothType.Curved)
                         {
+                            throw new Exception("Invalid Line CurLineSmoothType - Line (" + lineIDs[lineIDIndex] + ")'s AttacgedRegion is green but cur line's CurLineSmoothType is not Curved");
                             return false;
                         }
                         break;
@@ -92,6 +102,7 @@ namespace RGBLineCoreLib.Functor
                     case StageData.RegionData.ColorType.Red:
                         if (curLineData.CurLineSmoothType != StageData.LineData.LineSmoothType.Linear)
                         {
+                            throw new Exception("Invalid Line CurLineSmoothType - Line (" + lineIDs[lineIDIndex] + ")'s AttacgedRegion is red but cur line's CurLineSmoothType is not Linear");
                             return false;
                         }
                         break;
@@ -99,10 +110,12 @@ namespace RGBLineCoreLib.Functor
                     case StageData.RegionData.ColorType.Blue:
                         if (curLineData.CurLineSmoothType != StageData.LineData.LineSmoothType.Linear)
                         {
+                            throw new Exception("Invalid Line CurLineSmoothType - Line (" + lineIDs[lineIDIndex] + ")'s AttacgedRegion is blue but cur line's CurLineSmoothType is not Linear");
                             return false;
                         }
                         else if (curLineData.CurvedLinePoints.Count != 2)
                         {
+                            throw new Exception("Invalid Line CurvedLinePoints - Line (" + lineIDs[lineIDIndex] + ")'s AttacgedRegion is blue but cur line's CurvedLinePoints count is not 2");
                             return false;
                         }
                         break;
@@ -113,6 +126,7 @@ namespace RGBLineCoreLib.Functor
                 {
                     if (point.Y < prevLinePointYPos)
                     {
+                        throw new Exception("Invalid Line CurvedLinePoints - Line (" + lineIDs[lineIDIndex] + ")'s CurvedLinePoints Y position is not in ascending order");
                         return false;
                     }
                     prevLinePointYPos = point.Y;
@@ -120,12 +134,14 @@ namespace RGBLineCoreLib.Functor
 
                 if (curLineData.CurvedLinePoints.Count != curLineData.MinorOffsetTimes.Count)
                 {
+                    throw new Exception("Invalid Line MinorOffsetTimes - Line (" + lineIDs[lineIDIndex] + ")'s CurvedLinePoints count is not equals with MinorOffsetTimes count");
                     return false;
                 }
                 foreach (float minorOffsetTime in curLineData.MinorOffsetTimes)
                 {
                     if (minorOffsetTime < -0.5f || 0.5f < minorOffsetTime)
                     {
+                        throw new Exception("Invalid Line MinorOffsetTimes - Line (" + lineIDs[lineIDIndex] + ")'s MinorOffsetTimes is not in [-0.5, 0.5] range");
                         return false;
                     }
                 }
@@ -145,6 +161,7 @@ namespace RGBLineCoreLib.Functor
                             {
                                 if (prevPoint.X == point.X)
                                 {
+                                    throw new Exception("Invalid Line CurvedLinePoints - Line (" + lineIDs[lineIDIndex] + ")'s CurvedLinePoints X position is not in ascending order");
                                     return false;
                                 }
                                 prevPoint = point;
@@ -163,6 +180,7 @@ namespace RGBLineCoreLib.Functor
                             {
                                 if (prevPoint.X != point.X)
                                 {
+                                    throw new Exception("Invalid Line CurvedLinePoints - Line (" + lineIDs[lineIDIndex] + ")'s CurvedLinePoints X position is not in ascending order");
                                     return false;
                                 }
                                 prevPoint = point;
@@ -173,6 +191,7 @@ namespace RGBLineCoreLib.Functor
 
                 if (curLineData.LineWidth < 0.0f)
                 {
+                    throw new Exception("Invalid Line LineWidth - Line (" + lineIDs[lineIDIndex] + ")'s LineWidth is less than 0");
                     return false;
                 }
             }
@@ -203,6 +222,7 @@ namespace RGBLineCoreLib.Functor
 
                             if (targetStageData.LineDataTable[attachedLineIDTable[regionID][mainLineIndex]].CurvedLinePoints[0].X == targetStageData.LineDataTable[attachedLineIDTable[regionID][subLineIndex]].CurvedLinePoints[0].X)
                             {
+                                throw new Exception("Invalid Line CurvedLinePoints - Line (" + attachedLineIDTable[regionID][mainLineIndex] + ")'s CurvedLinePoints X position is same with Line (" + attachedLineIDTable[regionID][subLineIndex] + ")");
                                 return false;
                             }
                         }
@@ -216,6 +236,7 @@ namespace RGBLineCoreLib.Functor
             {
                 if (noteID == Guid.Empty)
                 {
+                    throw new Exception("Invalid Note ID - Some Note ID is equals with Guid.Empty");
                     return false;
                 }
             }
@@ -227,19 +248,23 @@ namespace RGBLineCoreLib.Functor
 
                 if (curNoteData.AttachedLineID == Guid.Empty)
                 {
+                    throw new Exception("Invalid Note AttachedLineID - Note (" + noteIDs[noteIDIndex] + ")'s AttachedLineID is equals with Guid.Empty");
                     return false;
                 }
                 else if (!lineIDs.Contains(curNoteData.AttachedLineID))
                 {
+                    throw new Exception("Invalid Note AttachedLineID - Note (" + noteIDs[noteIDIndex] + ")'s AttachedLineID is not in Line ID list");
                     return false;
                 }
 
                 if (curNoteData.MinorOffsetTime < -0.5f || 0.5f < curNoteData.MinorOffsetTime)
                 {
+                    throw new Exception("Invalid Note MinorOffsetTime - Note (" + noteIDs[noteIDIndex] + ")'s MinorOffsetTime is not in [-0.5, 0.5] range");
                     return false;
                 }
                 else if (!Enum.IsDefined(typeof(StageData.NoteData.NoteType), curNoteData.CurNoteType))
                 {
+                    throw new Exception("Invalid Note CurNoteType - Note (" + noteIDs[noteIDIndex] + ")'s CurNoteType is not defined");
                     return false;
                 }
 
@@ -248,6 +273,7 @@ namespace RGBLineCoreLib.Functor
                     case StageData.NoteData.NoteType.Common:
                         if (curNoteData.NoteLength != 0)
                         {
+                            throw new Exception("Invalid Note NoteLength - Note (" + noteIDs[noteIDIndex] + ")'s CurNoteType is Common but NoteLength is not 0");
                             return false;
                         }
                         break;
@@ -255,6 +281,7 @@ namespace RGBLineCoreLib.Functor
                     case StageData.NoteData.NoteType.Long:
                         if (curNoteData.NoteLength <= 0)
                         {
+                            throw new Exception("Invalid Note NoteLength - Note (" + noteIDs[noteIDIndex] + ")'s CurNoteType is Long but NoteLength is less than or equals with 0");
                             return false;
                         }
                         break;
@@ -262,6 +289,7 @@ namespace RGBLineCoreLib.Functor
                     case StageData.NoteData.NoteType.Double:
                         if (curNoteData.NoteLength != 0)
                         {
+                            throw new Exception("Invalid Note NoteLength - Note (" + noteIDs[noteIDIndex] + ")'s CurNoteType is Double but NoteLength is not 0");
                             return false;
                         }
                         break;
@@ -318,6 +346,7 @@ namespace RGBLineCoreLib.Functor
                             case StageData.NoteData.NoteType.Double:
                                 if (curNoteFramePos == searchNoteFramePos)
                                 {
+                                    throw new Exception("Invalid Note - Note (" + noteID + ")'s CurNoteType is Common or Double but Note (" + searchNoteID + ")'s frame position is same with it");
                                     return false;
                                 }
                                 break;
@@ -325,6 +354,7 @@ namespace RGBLineCoreLib.Functor
                             case StageData.NoteData.NoteType.Long:
                                 if ((curNoteFramePos <= searchNoteFramePos) && (searchNoteFramePos <= curNoteFramePos + targetStageData.NoteDataTable[noteID].NoteLength))
                                 {
+                                    throw new Exception("Invalid Note - Note (" + noteID + ")(Long Note)'s CurNoteType is Long but Note (" + searchNoteID + ")'s CurNoteType is in range of it");
                                     return false;
                                 }
                                 break;
@@ -337,18 +367,22 @@ namespace RGBLineCoreLib.Functor
             #region Check Stage Config
             if (targetStageData.StageConfig.BPM <= 0)
             {
+                throw new Exception("Invalid StageConfig BPM - StageConfig's BPM is less than or equals with 0");
                 return false;
             }
             else if (targetStageData.StageConfig.BitSubDivision <= 0)
             {
+                throw new Exception("Invalid StageConfig BitSubDivision - StageConfig's BitSubDivision is less than or equals with 0");
                 return false;
             }
             else if (targetStageData.StageConfig.LengthPerBit <= 0.0f)
             {
+                throw new Exception("Invalid StageConfig LengthPerBit - StageConfig's LengthPerBit is less than or equals with 0");
                 return false;
             }
             else if (targetStageData.StageConfig.MusicStartOffsetTime < 0.0f)
             {
+                throw new Exception("Invalid StageConfig MusicStartOffsetTime - StageConfig's MusicStartOffsetTime is less than 0");
                 return false;
             }
             #endregion
