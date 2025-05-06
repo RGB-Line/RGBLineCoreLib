@@ -7,6 +7,7 @@ items:
   children:
   - RGBLineCoreLib.Functor.NoteItem.Awake
   - RGBLineCoreLib.Functor.NoteItem.Dispose
+  - RGBLineCoreLib.Functor.NoteItem.GetNoteRotation(System.Single@,System.Guid@)
   - RGBLineCoreLib.Functor.NoteItem.GetNoteXPos(System.Single@,System.Guid@)
   - RGBLineCoreLib.Functor.NoteItem.GreenNote
   - RGBLineCoreLib.Functor.NoteItem.NoteID
@@ -27,7 +28,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: NoteItem
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
@@ -182,7 +183,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Awake
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
-    startLine: 31
+    startLine: 32
   assemblies:
   - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
@@ -208,7 +209,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: NoteID
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
@@ -240,7 +241,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Transform
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
-    startLine: 44
+    startLine: 45
   assemblies:
   - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
@@ -272,7 +273,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: RedAndBlueNote
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
-    startLine: 52
+    startLine: 53
   assemblies:
   - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
@@ -304,7 +305,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GreenNote
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
-    startLine: 59
+    startLine: 60
   assemblies:
   - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
@@ -336,7 +337,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Render
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
-    startLine: 67
+    startLine: 68
   assemblies:
   - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
@@ -371,7 +372,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: GetNoteXPos
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
-    startLine: 100
+    startLine: 101
   assemblies:
   - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
@@ -392,6 +393,45 @@ items:
   nameWithType.vb: NoteItem.GetNoteXPos(Single, Guid)
   fullName.vb: RGBLineCoreLib.Functor.NoteItem.GetNoteXPos(Single, System.Guid)
   name.vb: GetNoteXPos(Single, Guid)
+- uid: RGBLineCoreLib.Functor.NoteItem.GetNoteRotation(System.Single@,System.Guid@)
+  commentId: M:RGBLineCoreLib.Functor.NoteItem.GetNoteRotation(System.Single@,System.Guid@)
+  id: GetNoteRotation(System.Single@,System.Guid@)
+  parent: RGBLineCoreLib.Functor.NoteItem
+  langs:
+  - csharp
+  - vb
+  name: GetNoteRotation(in float, in Guid)
+  nameWithType: NoteItem.GetNoteRotation(in float, in Guid)
+  fullName: RGBLineCoreLib.Functor.NoteItem.GetNoteRotation(in float, in System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Note/NoteItem.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: GetNoteRotation
+    path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
+    startLine: 172
+  assemblies:
+  - RGBLineCoreLib_ForEditor
+  namespace: RGBLineCoreLib.Functor
+  example: []
+  syntax:
+    content: public float GetNoteRotation(in float targetFrame, in Guid attachedLineID)
+    parameters:
+    - id: targetFrame
+      type: System.Single
+    - id: attachedLineID
+      type: System.Guid
+    return:
+      type: System.Single
+    content.vb: Public Function GetNoteRotation(targetFrame As Single, attachedLineID As Guid) As Single
+  overload: RGBLineCoreLib.Functor.NoteItem.GetNoteRotation*
+  implements:
+  - RGBLineCoreLib.Functor.INoteItem.GetNoteRotation(System.Single@,System.Guid@)
+  nameWithType.vb: NoteItem.GetNoteRotation(Single, Guid)
+  fullName.vb: RGBLineCoreLib.Functor.NoteItem.GetNoteRotation(Single, System.Guid)
+  name.vb: GetNoteRotation(Single, Guid)
 - uid: RGBLineCoreLib.Functor.NoteItem.Dispose
   commentId: M:RGBLineCoreLib.Functor.NoteItem.Dispose
   id: Dispose
@@ -410,7 +450,7 @@ items:
       repo: https://github.com/RGB-Line/RGBLineCoreLib.git
     id: Dispose
     path: ../Public/Functor/MainGame/Prop/Note/NoteItem.cs
-    startLine: 172
+    startLine: 253
   assemblies:
   - RGBLineCoreLib_ForEditor
   namespace: RGBLineCoreLib.Functor
@@ -5037,6 +5077,59 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
+- uid: RGBLineCoreLib.Functor.NoteItem.GetNoteRotation*
+  commentId: Overload:RGBLineCoreLib.Functor.NoteItem.GetNoteRotation
+  href: RGBLineCoreLib.Functor.NoteItem.html#RGBLineCoreLib_Functor_NoteItem_GetNoteRotation_System_Single__System_Guid__
+  name: GetNoteRotation
+  nameWithType: NoteItem.GetNoteRotation
+  fullName: RGBLineCoreLib.Functor.NoteItem.GetNoteRotation
+- uid: RGBLineCoreLib.Functor.INoteItem.GetNoteRotation(System.Single@,System.Guid@)
+  commentId: M:RGBLineCoreLib.Functor.INoteItem.GetNoteRotation(System.Single@,System.Guid@)
+  parent: RGBLineCoreLib.Functor.INoteItem
+  isExternal: true
+  href: RGBLineCoreLib.Functor.INoteItem.html#RGBLineCoreLib_Functor_INoteItem_GetNoteRotation_System_Single__System_Guid__
+  name: GetNoteRotation(in float, in Guid)
+  nameWithType: INoteItem.GetNoteRotation(in float, in Guid)
+  fullName: RGBLineCoreLib.Functor.INoteItem.GetNoteRotation(in float, in System.Guid)
+  nameWithType.vb: INoteItem.GetNoteRotation(Single, Guid)
+  fullName.vb: RGBLineCoreLib.Functor.INoteItem.GetNoteRotation(Single, System.Guid)
+  name.vb: GetNoteRotation(Single, Guid)
+  spec.csharp:
+  - uid: RGBLineCoreLib.Functor.INoteItem.GetNoteRotation(System.Single@,System.Guid@)
+    name: GetNoteRotation
+    href: RGBLineCoreLib.Functor.INoteItem.html#RGBLineCoreLib_Functor_INoteItem_GetNoteRotation_System_Single__System_Guid__
+  - name: (
+  - name: in
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - name: in
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: RGBLineCoreLib.Functor.INoteItem.GetNoteRotation(System.Single@,System.Guid@)
+    name: GetNoteRotation
+    href: RGBLineCoreLib.Functor.INoteItem.html#RGBLineCoreLib_Functor_INoteItem_GetNoteRotation_System_Single__System_Guid__
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
 - uid: RGBLineCoreLib.Functor.NoteItem.Dispose*
   commentId: Overload:RGBLineCoreLib.Functor.NoteItem.Dispose
   href: RGBLineCoreLib.Functor.NoteItem.html#RGBLineCoreLib_Functor_NoteItem_Dispose

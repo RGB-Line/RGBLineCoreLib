@@ -8,6 +8,7 @@ using UnityEngine;
 
 using RGBLineCoreLib.Data;
 using RGBLineCoreLib.Manager;
+using System.Reflection;
 
 
 namespace RGBLineCoreLib.Functor
@@ -168,6 +169,86 @@ namespace RGBLineCoreLib.Functor
             return Mathf.Lerp(attachedLineRenderer.GetPosition(nearestLinePosIndexes[0]).x,
                               attachedLineRenderer.GetPosition(nearestLinePosIndexes[1]).x,
                               (nearestLinePosGaps[0] / (nearestLinePosGaps[0] + nearestLinePosGaps[1])));
+        }
+        public float GetNoteRotation(in float targetFrame, in Guid attachedLineID)
+        {
+            float NoteYPos = GridManager.Instance.GetYPosFromFrame(targetFrame) +
+                             GridManager.Instance.GetYPosFromFrame(StageDataInterface.LineDataInterface.GetAttachedRegionData(attachedLineID).StartOffsetFrame);
+
+            List<int> nearestLinePosIndexes = new List<int>(2);
+            LineRenderer attachedLineRenderer = LineManager.Instance.GetLineItem(attachedLineID).LineRenderer;
+
+            // For Blue Line
+            if (StageDataInterface.LineDataInterface.GetAttachedRegionData(attachedLineID).CurColorType == StageData.RegionData.ColorType.Blue)
+            {
+                return 0.0f;
+            }
+
+            //for (int index = 0; index < attachedLineRenderer.positionCount; index++)
+            //{
+            //    if (attachedLineRenderer.GetPosition(index).y == NoteYPos)
+            //    {
+            //        return attachedLineRenderer.GetPosition(index).x;
+            //    }
+            //}
+
+            // Most nearest line pos
+            int curNearestLinePosIndex = -1;
+            float curNearestLinePos = float.MaxValue;
+            for (int linePosIndex = 0; linePosIndex < attachedLineRenderer.positionCount; linePosIndex++)
+            {
+                float linePos = attachedLineRenderer.GetPosition(linePosIndex).y;
+                if (linePos > NoteYPos && Mathf.Abs(linePos - NoteYPos) < Mathf.Abs(curNearestLinePos - NoteYPos))
+                {
+                    curNearestLinePosIndex = linePosIndex;
+                    curNearestLinePos = linePos;
+                }
+            }
+            nearestLinePosIndexes.Add(curNearestLinePosIndex);
+
+            if (nearestLinePosIndexes[0] == -1)
+            {
+                return 0.0f;
+            }
+
+            if (Mathf.Abs(attachedLineRenderer.GetPosition(nearestLinePosIndexes[0]).y - NoteYPos) == 0)
+            {
+                return attachedLineRenderer.GetPosition(curNearestLinePosIndex).x;
+            }
+
+            // Second nearest line pos
+            curNearestLinePosIndex = -1;
+            curNearestLinePos = float.MaxValue;
+            for (int linePosIndex = 0; linePosIndex < attachedLineRenderer.positionCount; linePosIndex++)
+            {
+                if (nearestLinePosIndexes.Contains(linePosIndex))
+                {
+                    continue;
+                }
+
+                float linePos = attachedLineRenderer.GetPosition(linePosIndex).y;
+                if (linePos < NoteYPos && Mathf.Abs(linePos - NoteYPos) < Mathf.Abs(curNearestLinePos - NoteYPos))
+                {
+                    curNearestLinePosIndex = linePosIndex;
+                    curNearestLinePos = linePos;
+                }
+            }
+            nearestLinePosIndexes.Add(curNearestLinePosIndex);
+
+            if (nearestLinePosIndexes[1] == -1)
+            {
+                return 0.0f;
+            }
+
+            //// Mathf.Lerp를 사용하기 위한 준비
+            //float[] nearestLinePosGaps = new float[2];
+            //for (int index = 0; index < nearestLinePosIndexes.Count; index++)
+            //{
+            //    nearestLinePosGaps[index] = Mathf.Abs(attachedLineRenderer.GetPosition(nearestLinePosIndexes[index]).y - NoteYPos);
+            //}
+
+            return Mathf.Atan2(attachedLineRenderer.GetPosition(nearestLinePosIndexes[1]).y - attachedLineRenderer.GetPosition(nearestLinePosIndexes[0]).y,
+                               attachedLineRenderer.GetPosition(nearestLinePosIndexes[1]).x - attachedLineRenderer.GetPosition(nearestLinePosIndexes[0]).x) * 180.0f / Mathf.PI + 90.0f;
         }
 
         public virtual void Dispose()

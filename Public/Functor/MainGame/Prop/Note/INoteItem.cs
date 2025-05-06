@@ -19,5 +19,6 @@ namespace RGBLineCoreLib.Functor
 
         void Render(in Guid noteID);
         float GetNoteXPos(in float targetFrame, in Guid attachedLineID);
+        float GetNoteRotation(in float targetFrame, in Guid attachedLineID);
     }
 }

@@ -5,6 +5,7 @@ items:
   id: INoteItem
   parent: RGBLineCoreLib.Functor
   children:
+  - RGBLineCoreLib.Functor.INoteItem.GetNoteRotation(System.Single@,System.Guid@)
   - RGBLineCoreLib.Functor.INoteItem.GetNoteXPos(System.Single@,System.Guid@)
   - RGBLineCoreLib.Functor.INoteItem.GreenNote
   - RGBLineCoreLib.Functor.INoteItem.NoteID
@@ -218,6 +219,42 @@ items:
   nameWithType.vb: INoteItem.GetNoteXPos(Single, Guid)
   fullName.vb: RGBLineCoreLib.Functor.INoteItem.GetNoteXPos(Single, System.Guid)
   name.vb: GetNoteXPos(Single, Guid)
+- uid: RGBLineCoreLib.Functor.INoteItem.GetNoteRotation(System.Single@,System.Guid@)
+  commentId: M:RGBLineCoreLib.Functor.INoteItem.GetNoteRotation(System.Single@,System.Guid@)
+  id: GetNoteRotation(System.Single@,System.Guid@)
+  parent: RGBLineCoreLib.Functor.INoteItem
+  langs:
+  - csharp
+  - vb
+  name: GetNoteRotation(in float, in Guid)
+  nameWithType: INoteItem.GetNoteRotation(in float, in Guid)
+  fullName: RGBLineCoreLib.Functor.INoteItem.GetNoteRotation(in float, in System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Public/Functor/MainGame/Prop/Note/INoteItem.cs
+      branch: master
+      repo: https://github.com/RGB-Line/RGBLineCoreLib.git
+    id: GetNoteRotation
+    path: ../Public/Functor/MainGame/Prop/Note/INoteItem.cs
+    startLine: 21
+  assemblies:
+  - RGBLineCoreLib_ForEditor
+  namespace: RGBLineCoreLib.Functor
+  syntax:
+    content: float GetNoteRotation(in float targetFrame, in Guid attachedLineID)
+    parameters:
+    - id: targetFrame
+      type: System.Single
+    - id: attachedLineID
+      type: System.Guid
+    return:
+      type: System.Single
+    content.vb: Function GetNoteRotation(targetFrame As Single, attachedLineID As Guid) As Single
+  overload: RGBLineCoreLib.Functor.INoteItem.GetNoteRotation*
+  nameWithType.vb: INoteItem.GetNoteRotation(Single, Guid)
+  fullName.vb: RGBLineCoreLib.Functor.INoteItem.GetNoteRotation(Single, System.Guid)
+  name.vb: GetNoteRotation(Single, Guid)
 references:
 - uid: RGBLineCoreLib.Functor
   commentId: N:RGBLineCoreLib.Functor
@@ -360,3 +397,9 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
+- uid: RGBLineCoreLib.Functor.INoteItem.GetNoteRotation*
+  commentId: Overload:RGBLineCoreLib.Functor.INoteItem.GetNoteRotation
+  href: RGBLineCoreLib.Functor.INoteItem.html#RGBLineCoreLib_Functor_INoteItem_GetNoteRotation_System_Single__System_Guid__
+  name: GetNoteRotation
+  nameWithType: INoteItem.GetNoteRotation
+  fullName: RGBLineCoreLib.Functor.INoteItem.GetNoteRotation

@@ -1761,6 +1761,22 @@ references:
   commentId: T:RGBLineCoreLib.Functor.INoteItem
   fullName: RGBLineCoreLib.Functor.INoteItem
   nameWithType: INoteItem
+- uid: RGBLineCoreLib.Functor.INoteItem.GetNoteRotation(System.Single@,System.Guid@)
+  name: GetNoteRotation(in float, in Guid)
+  href: api/RGBLineCoreLib.Functor.INoteItem.html#RGBLineCoreLib_Functor_INoteItem_GetNoteRotation_System_Single__System_Guid__
+  commentId: M:RGBLineCoreLib.Functor.INoteItem.GetNoteRotation(System.Single@,System.Guid@)
+  name.vb: GetNoteRotation(Single, Guid)
+  fullName: RGBLineCoreLib.Functor.INoteItem.GetNoteRotation(in float, in System.Guid)
+  fullName.vb: RGBLineCoreLib.Functor.INoteItem.GetNoteRotation(Single, System.Guid)
+  nameWithType: INoteItem.GetNoteRotation(in float, in Guid)
+  nameWithType.vb: INoteItem.GetNoteRotation(Single, Guid)
+- uid: RGBLineCoreLib.Functor.INoteItem.GetNoteRotation*
+  name: GetNoteRotation
+  href: api/RGBLineCoreLib.Functor.INoteItem.html#RGBLineCoreLib_Functor_INoteItem_GetNoteRotation_
+  commentId: Overload:RGBLineCoreLib.Functor.INoteItem.GetNoteRotation
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.INoteItem.GetNoteRotation
+  nameWithType: INoteItem.GetNoteRotation
 - uid: RGBLineCoreLib.Functor.INoteItem.GetNoteXPos(System.Single@,System.Guid@)
   name: GetNoteXPos(in float, in Guid)
   href: api/RGBLineCoreLib.Functor.INoteItem.html#RGBLineCoreLib_Functor_INoteItem_GetNoteXPos_System_Single__System_Guid__
@@ -2301,6 +2317,22 @@ references:
   isSpec: "True"
   fullName: RGBLineCoreLib.Functor.NoteItem.Dispose
   nameWithType: NoteItem.Dispose
+- uid: RGBLineCoreLib.Functor.NoteItem.GetNoteRotation(System.Single@,System.Guid@)
+  name: GetNoteRotation(in float, in Guid)
+  href: api/RGBLineCoreLib.Functor.NoteItem.html#RGBLineCoreLib_Functor_NoteItem_GetNoteRotation_System_Single__System_Guid__
+  commentId: M:RGBLineCoreLib.Functor.NoteItem.GetNoteRotation(System.Single@,System.Guid@)
+  name.vb: GetNoteRotation(Single, Guid)
+  fullName: RGBLineCoreLib.Functor.NoteItem.GetNoteRotation(in float, in System.Guid)
+  fullName.vb: RGBLineCoreLib.Functor.NoteItem.GetNoteRotation(Single, System.Guid)
+  nameWithType: NoteItem.GetNoteRotation(in float, in Guid)
+  nameWithType.vb: NoteItem.GetNoteRotation(Single, Guid)
+- uid: RGBLineCoreLib.Functor.NoteItem.GetNoteRotation*
+  name: GetNoteRotation
+  href: api/RGBLineCoreLib.Functor.NoteItem.html#RGBLineCoreLib_Functor_NoteItem_GetNoteRotation_
+  commentId: Overload:RGBLineCoreLib.Functor.NoteItem.GetNoteRotation
+  isSpec: "True"
+  fullName: RGBLineCoreLib.Functor.NoteItem.GetNoteRotation
+  nameWithType: NoteItem.GetNoteRotation
 - uid: RGBLineCoreLib.Functor.NoteItem.GetNoteXPos(System.Single@,System.Guid@)
   name: GetNoteXPos(in float, in Guid)
   href: api/RGBLineCoreLib.Functor.NoteItem.html#RGBLineCoreLib_Functor_NoteItem_GetNoteXPos_System_Single__System_Guid__

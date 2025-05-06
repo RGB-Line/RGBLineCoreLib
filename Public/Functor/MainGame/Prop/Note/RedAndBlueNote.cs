@@ -24,14 +24,14 @@ namespace RGBLineCoreLib.Functor
 
         private INoteItem m_noteItem;
 
-        private SpriteRenderer m_spriteRenderer = null;
-        private BoxCollider2D m_judgeBox = null;
+        [SerializeField] private SpriteRenderer m_spriteRenderer = null;
+        [SerializeField] private BoxCollider2D m_judgeBox = null;
 
 
         public void Awake()
         {
-            m_spriteRenderer = GetComponent<SpriteRenderer>();
-            m_judgeBox = GetComponent<BoxCollider2D>();
+            //m_spriteRenderer = GetComponent<SpriteRenderer>();
+            //m_judgeBox = GetComponent<BoxCollider2D>();
         }
 
         public Guid AttachedNoteID
@@ -85,6 +85,10 @@ namespace RGBLineCoreLib.Functor
                     GridManager.Instance.GetUnitFrameSize() * curNoteData.MinorOffsetTime,
                 z = -7.5f
             };
+            if(noteType == StageData.NoteData.NoteType.Double)
+            {
+                m_spriteRenderer.transform.rotation = Quaternion.Euler(0.0f, 0.0f, m_noteItem.GetNoteRotation(curNoteData.StartOffsetFrame + curNoteData.MinorOffsetTime, curNoteData.AttachedLineID));
+            }
 
             StageData.StageConfigData curStageConfigData = StageDataInterface.StageConfigDataInterface.GetStageConfigData();
             StageMetadata stageMetadata = StageMetadataInterface.GetStageMetadata();
