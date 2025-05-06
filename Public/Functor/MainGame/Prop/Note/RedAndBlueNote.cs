@@ -25,13 +25,12 @@ namespace RGBLineCoreLib.Functor
         private INoteItem m_noteItem;
 
         [SerializeField] private SpriteRenderer m_spriteRenderer = null;
-        [SerializeField] private BoxCollider2D m_judgeBox = null;
+        private BoxCollider2D m_judgeBox = null;
 
 
         public void Awake()
         {
-            //m_spriteRenderer = GetComponent<SpriteRenderer>();
-            //m_judgeBox = GetComponent<BoxCollider2D>();
+            m_judgeBox = GetComponent<BoxCollider2D>();
         }
 
         public Guid AttachedNoteID
